@@ -16,7 +16,8 @@
 <?php require('inc/links.php'); ?>
 
 <div class="my-5 px-4">
-<h2 class ="fw-bold h-font text-" >Contact</h2>
+<h2 class ="fw-bold h-font text-center" >Contact</h2>
+<div class="h-line bg-dark"></div>
 
 
 <?php require('inc/links.php'); ?>

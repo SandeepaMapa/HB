@@ -106,3 +106,10 @@ input[type=number] {
     touch-action: manipulation;
     
   }
+
+  .h-line{
+    width : 150px;
+    margin: 0 auto;
+    height: 1.7px;
+    
+  }
