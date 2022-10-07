@@ -45,7 +45,7 @@
 
 
 <?php require('inc/footer.php')?>
-
+<h6 class="text-center bg-dark text-white p-3 m-0">Group 14</h6>
 
 
   
