@@ -17,9 +17,9 @@
             Accommodation
           </a>
           <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Standard Rooms</a></li>
-            <li><a class="dropdown-item" href="#">Villa</a></li>
-             <li><a class="dropdown-item" href="#">Challet</a></li>
+            <li><a class="dropdown-item" href="Accomodation.php">Standard Rooms</a></li>
+            <li><a class="dropdown-item" href="Accomodation.php">Villa</a></li>
+             <li><a class="dropdown-item" href="Accomodation.php">Challet</a></li>
           </ul>
         </li>
 
@@ -47,7 +47,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="Accomodation.php">Activities</a>
+          <a class="nav-link active me-2" aria-current="page" href="#">Activities</a>
         </li>
 
         <li class="nav-item">
