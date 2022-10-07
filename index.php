@@ -83,7 +83,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="#">Activities</a>
+          <a class="nav-link active me-2" aria-current="page" href="#">contact</a>
         </li>
 
         <li class="nav-item">
