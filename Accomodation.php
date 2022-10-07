@@ -41,7 +41,8 @@
 
    <div class="container">
     <div class="row">
-      <div class="col-lg-3">
+
+      <div class="col-lg-3 col-md-12">
       <nav class="navbar navbar-expand-lg navbar-light bg-white rounded shadow">
       <div class="container-fluid flex-lg-column align-items-stretch">
        <h4 class="mt-2">FILTERS</h4>
