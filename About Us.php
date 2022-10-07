@@ -64,28 +64,28 @@
     <div class="row">
     <div class="col-lg-3 col-md-6 mb-4 px-4">
     <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-      <img src="xampp\htdocs\HB\Photos\Rooms\rooms.com" width="100">
+      <img src="Photos\Rooms\rooms.com" width="100">
         <h4>100+ Rooms</h4>
       </div>
     </div>
 
     <div class="col-lg-3 col-md-6 mb-4 px-4">
     <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-      <img src="xampp\htdocs\HB\Photos\Rooms\rooms.com" width="100">
+      <img src="Photos\Rooms\rooms.com" width="100">
         <h4>100+ Rooms</h4>
       </div>
     </div>
 
     <div class="col-lg-3 col-md-6 mb-4 px-4">
     <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-      <img src="xampp\htdocs\HB\Photos\Rooms\rooms.com" width="100">
+      <img src="Photos\Rooms\rooms.com" width="100">
         <h4>200+ Customers</h4>
       </div>
     </div>
 
       <div class="col-lg-3 col-md-6 mb-4 px-4">
     <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-      <img src="xampp\htdocs\HB\Photos\Rooms\rooms.com" width="100">
+      <img src="Photos\Rooms\rooms.com" width="100">
         <h4>100+ Rooms</h4>
       </div>
     </div>
@@ -98,19 +98,31 @@
         <!-- Swiper -->
       <div class="swiper mySwiper">
       <div class="swiper-wrapper mb-5">
-        <div class="swiper-slide">
-          <img src="C:\xampp\htdocs\HB\Photos\Rooms\ch.png" class="w-100">
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Demo\R1.jpeg" class="w-100">
           <h5 class="mt-2">Random Name</h5>
         </div>
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Front\3rd dec.jpg" class="w-100">
+          <h5 class="mt-2">Random Name</h5>
+        </div>
+
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Front\3rd dec.jpg" class="w-100">
+          <h5 class="mt-2">Random Name</h5>
+        </div>
+
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Front\3rd dec.jpg" class="w-100">
+          <h5 class="mt-2">Random Name</h5>
+        </div>
+
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Front\3rd dec.jpg" class="w-100">
+          <h5 class="mt-2">Random Name</h5>
+        </div>
+        
       </div>
       <div class="swiper-pagination"></div>
       </div>
@@ -130,9 +142,25 @@
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".mySwiper", {
+    slidesPerView :4,
+    spaceBetween:40,
     pagination: {
       el: ".swiper-pagination",
     },
+    breakpoints: {
+      320: {
+        slidesPerView:1,
+      },
+      640: {
+        slidesPerView:1,
+      },
+      768: {
+        slidesPerView:2,
+      },
+      1024: {
+        slidesPerView:3,
+      },
+    }
   });
 </script>
 </body>
