@@ -42,12 +42,12 @@
    <div class="container">
     <div class="row">
 
-      <div class="col-lg-3 col-md-12">
+    <div class="col-lg-3 col-md-12 mb-lg-0 mb-4">
       <nav class="navbar navbar-expand-lg navbar-light bg-white rounded shadow">
       <div class="container-fluid flex-lg-column align-items-stretch">
        <h4 class="mt-2">FILTERS</h4>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#filterDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+         <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#filterDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
           </button>
      <div class="collapse navbar-collapse flex-column align-items-stretch mt-2" id="filterDropdown">
       <div class="border bg-light p-3 rounded mb-3">
@@ -86,8 +86,11 @@
         </div>
       </div>
     </div>
-  </div>
-</nav>
+    <div class="col-lg-9 col-md-12 px-4">
+      
+    </div>
+  
+   </div>
       </div>
    </div>
     </div>
@@ -100,21 +103,7 @@
 
 
   
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".swiper-container", {
-          spaceBetween: 30,
-          effect: "fade",
-          loop: true,
-          autoplay:{
-            delay: 3500,
-            disableOnInteraction: false,
-          }
-
-        });
-      </script>
+  
 
 </body>
 </html> 
