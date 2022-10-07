@@ -53,6 +53,10 @@
         <li class="nav-item">
           <a class="nav-link active me-2" aria-current="page" href="#">Gallery</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link active me-2" aria-current="page" href="About Us.php">About Us</a>
+        </li>
 </ul>
       
         <div class="d-flex">
