@@ -30,8 +30,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 <div class="row">
   <div class="col-lg-6 col-md-6 mb-5 px-4">
     <div class="bg-white rounded shadow p-4 ">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.151117286474!2d80.0630986!3d6.225736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36b288ccc4774ebc!2sRiver&#39;s%20Edge%20madampe%20Ambalangoda!5e0!3m2!1sen!2slk!4v1665017607784!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  
+    <iframe class="w-100 rounded mb-4" height="320px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.151117286474!2d80.0630986!3d6.225736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36b288ccc4774ebc!2sRiver&#39;s%20Edge%20madampe%20Ambalangoda!5e0!3m2!1sen!2slk!4v1665017607784!5m2!1sen!2slk" ></iframe>
+  <h5>Address</h5>
+  <a herf="https://g.page/river-s-edge-madampe-ambalangoda?share">
+    <i class="bi bi-geo-alt-fill"></i>River's Edge madampe Ambalangoda
+    </a>
      
 </div>
 </div>
