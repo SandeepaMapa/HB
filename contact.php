@@ -13,14 +13,14 @@
 </head>
 <body class="bg-light">
 
-<?php require('inc/links.php'); ?>
+<?php require('inc/Header.php'); ?>
 
 <div class="my-5 px-4">
 <h2 class ="fw-bold h-font text-center" >Contact</h2>
 <div class="h-line bg-dark"></div>
 
 
-<?php require('inc/links.php'); ?>
+<?php require('inc/footer.php'); ?>
 
 
 </body>
