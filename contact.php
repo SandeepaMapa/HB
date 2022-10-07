@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>River's Edge Home-Contact</title>
-<link rel="stylesheet" href="https://unpkg.com/sswiper@7/swiper-bundle.min.css">
-<?php require('inc/links.php'); ?>
+<title>River's Edge Home</title>
+<?php require('inc/links.php')?>
+<link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<in.css">
 <style>
 
 .availability-form{
@@ -30,168 +32,11 @@
 <body class="bg-light">
     
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary px-lg-3 py-lg-2 shadow-sm sticky-top">
-  <div class="container-fluid">
-    <a class="navbar-brand f2" href="#">River's Edge</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<?php require('inc/header.php');?>
+    
 
 
-        <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active me-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Accommodation
-          </a>
-          <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Standard Rooms</a></li>
-            <li><a class="dropdown-item" href="#">Villa</a></li>
-             <li><a class="dropdown-item" href="#">Challet</a></li>
-          </ul>
-        </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active me-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Restaurant
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Take Away</a></li>
-            <li><a class="dropdown-item" href="#">Dine-in</a></li>
-             <li><a class="dropdown-item" href="#">BBQ</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active me-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Events
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Wedding</a></li>
-            <li><a class="dropdown-item" href="#">Parties</a></li>
-            <li><a class="dropdown-item" href="#">Meeting</a></li>
-            <li><a class="dropdown-item" href="#">Day Out</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="#">contact</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="#">Gallery</a>
-        </li>
-</ul>
-      
-        <div class="d-flex">
-         
-          
-          <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2 " data-bs-toggle="modal" data-bs-target="#loginModal">
-  Login
-</button>
-<button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">
-  Register
-</button>
-</div>
-    </div>
-  </div>
-</nav>
-
-<!-- Modal -->
-  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form action="">
-        <div class="modal-header">
-          <h5 class="modal-title d-flex align-items-center">
-            <i class="bi bi-person-circle fs-3 me-2"></i>
-          User Login</h5>
-          <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-        <label  class="form-label">Email address</label>
-        <input type="email" class="form-control shadow-none">
-         
-      </div>
-
-      <div class="mb-4 ">
-        <label  class="form-label">Password</label>
-        <input type="password" class="form-control shadow-none">
-      </div> 
-
-      <div class="d-flex align-items-center justify-content-between mb-2">
-        <button type="submit" class="btn btn-dark shadow-none">LOGIN  </button>
-        <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot Password?</a>
-      </div>
-          
-        </div>
-        
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <form>
-        <div class="modal-header">
-          <h5 class="modal-title d-flex align-items-center">
-          <i class="bi bi-person-lines-fill fs-3 me-2"></i>
-          User Registration</h5>
-          <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
-          Important: Your details must match with your ID (NIC, Passport) details.
-       </span>
-       <div class="container-fluid">
-        <div class="row">
-        <div class="col-md-6 ps-0 mb-3">
-          <label  class="form-label">Name</label>
-        <input type="text" class="form-control shadow-none">
-          </div>
-          <div class="col-md-6 ps-0 mb-3">
-          <label  class="form-label">NIC Number</label>
-        <input type="text" class="form-control shadow-none">
-          </div>
-        <div class="col-md-6 ps-0 mb-3">
-          <label  class="form-label">Email</label>
-        <input type="email" class="form-control shadow-none">
-           </div>
-           <div class="col-md-6 ps-0 mb-3">
-          <label  class="form-label">Phone Number</label>
-        <input type="number" class="form-control shadow-none">
-          </div>
-        <div class="col-md-6 ps-0 mb-3">
-          <label  class="form-label">Password</label>
-        <input type="password" class="form-control shadow-none">
-           </div>
-           <div class="col-md-6 ps-0 mb-3">
-          <label  class="form-label">Confirm Password</label>
-        <input type="password" class="form-control shadow-none">
-           </div>
-           <div class="text-center my-1 mb-1">
-            <button type="submit" class="btn btn-dark shadow-none">Register</button>
-           </div>
-          </div>
-        </div>
-      
-      
-          
-        </div>
-        
-        </form>
-      </div>
-    </div>
-  </div>
-
-<p>Manushi test</p>
-<p>Isuru test</p>
   <!-- carousel -->
   <div class="container-fluid px-lg mt-4">
   <!-- Swiper -->
@@ -536,39 +381,8 @@
   </div>
 </div>
 
-<!--Footer-->
 
-<div class="container-fluid bg-primary mt-5">
-  <div class="row">
-    <div class="col-lg-4 p-4">
-      <h3 class="f2 fw-bold fs-3 mb-2">River's Edge</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Atque recusandae, porro velit est dolore earum neque aperiam eveniet, 
-        quisquam eaque quibusdam quia cum quam itaque pariatur, 
-        molestias fugiat magnam ratione!</p>
-    </div>
-    <div class="col-lg-4 p-4">
-      <h5 class="mb-3">Quick Links</h5>
-      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a><br>
-      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Accommodation</a><br>
-      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Events</a><br>
-      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Activities</a><br>
-      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Gallery</a><br>
-    </div>
-    <div class="col-lg-4 p-4">
-      <h5 class="mb-3">Follow us</h5>
-      <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
-          <i class="bi bi-twitter me-1 "></i> Twitter
-      </a><br>
-      <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
-        <i class="bi bi-instagram me-1 "></i> Instagram
-    </a><br>
-    <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
-      <i class="bi bi-facebook me-1 "></i> Facebook
-  </a><br>
-    </div>
-  </div>
-</div>
+<?php require('inc/footer.php')?>
 
 <h6 class="text-center bg-dark text-white p-3 m-0">Group 14</h6>
 
