@@ -11,11 +11,12 @@
     </div>
     <div class="col-lg-4 p-4">
       <h5 class="mb-3">Quick Links</h5>
-      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a><br>
       <a href="Accomodation.php" class="d-inline-block mb-2 text-dark text-decoration-none">Accommodation</a><br>
+      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Restaurant</a><br>
       <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Events</a><br>
-      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Activities</a><br>
       <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Gallery</a><br>
+      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">Contact</a><br>
+      <a href="#" class="d-inline-block mb-2 text-dark text-decoration-none">About us</a><br>
     </div>
     <div class="col-lg-4 p-4">
       <h5 class="mb-3">Follow us</h5>

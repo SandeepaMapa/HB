@@ -45,13 +45,11 @@
             <li><a class="dropdown-item" href="Events.php">Day Out</a></li>
           </ul>
         </li>
-
-        <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="contact.php">Contact</a>
-        </li>
-
         <li class="nav-item">
           <a class="nav-link active me-2" aria-current="page" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active me-2" aria-current="page" href="contact.php">Contact</a>
         </li>
 
         <li class="nav-item">
