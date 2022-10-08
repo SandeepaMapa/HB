@@ -54,7 +54,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
        
      
 
-     <h5 class="mb-4">Follow us</h5>
+     <h5 class="mt-4">Follow us</h5>
       <a href="#" class="d-inline-block text-dark fs-5 me-2 ">
           <i class="bi bi-twitter me-1 "></i>
       </a>
