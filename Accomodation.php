@@ -218,7 +218,7 @@
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
           <h6 class="mb-4">Rs. 8000 per night</h6>  
             <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
-            <a href="#" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
+            <a href="StandardRooms.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
 </div>
