@@ -46,7 +46,8 @@
 
 
 
-  <h5 class="mb-3 ms-3">Hotel view</h5>
+  
+  <h5 class="my-5 fw-bold h-foot text-center">Hotel view</h5>
       <div class="container px-6">
         <!-- Swiper -->
       <div class="swiper mySwiper">
