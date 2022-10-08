@@ -51,30 +51,19 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
     <a href="mailto:riversegde@gmail.com"class="d-inline-block mb-2 text-decoratioon-none text-dark">
      <i class="bi bi-envelope-fill"> </i> riversegde@gmail.com
      </a>
+       
+     <h5 class="mb-3">Follow us</h5>
+      <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
+          <i class="bi bi-twitter me-1 "></i> Twitter
+      </a><br>
+      <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
+        <i class="bi bi-instagram me-1 "></i> Instagram
+    </a><br>
+    <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
+      <i class="bi bi-facebook me-1 "></i> Facebook
+  </a>
+     
 
-     <h5 class="mt-4">Follow us</h5>
-     <a href="#" class="d-inline-block mb-3"
-     <span calss="badge bg-light text-dark fs-6 p-2">
-      <i class= "bi bi-facebook me-1"></i> Facebook
-    </span>
-    </a>
-
-    <br>
-
-    <a href="#" class="d-inline-block mb-3"
-     <span calss="badge bg-light text-dark fs-6 p-2">
-      <i class= "bi bi-instagram me-1"></i> Instagram
-    </span>
-    </a>
-
-    <br>
-    
-    <a href="#" class="d-inline-block mb-3"
-     <span calss="badge bg-light text-dark fs-6 p-2">
-      <i class= "bi bi-twitter me-1"></i> Twitter
-    </span>
-    </a>
-    
 </div>
 </div>
 <div class="col-lg-6 col-md-6  px-4">
