@@ -16,7 +16,7 @@
           <a class="nav-link active me-2" aria-current="page" href="Accomodation.php">Accomodation</a>
         </li>
 
-        <<li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link active me-2" aria-current="page" href="#">Restaurant</a>
         </li>
 
