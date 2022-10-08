@@ -32,10 +32,49 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
     <div class="bg-white rounded shadow p-4 ">
     <iframe class="w-100 rounded mb-4" height="320px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.151117286474!2d80.0630986!3d6.225736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36b288ccc4774ebc!2sRiver&#39;s%20Edge%20madampe%20Ambalangoda!5e0!3m2!1sen!2slk!4v1665017607784!5m2!1sen!2slk" ></iframe>
   <h5>Address</h5>
-  <a herf="https://g.page/river-s-edge-madampe-ambalangoda?share">
-    <i class="bi bi-geo-alt-fill"></i>River's Edge madampe Ambalangoda
+  <a herf="https://g.page/river-s-edge-madampe-ambalangoda?share" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
+    <i class="bi bi-geo-alt-fill"></i> River's Edge madampe Ambalangoda
     </a>
-     
+
+     <h5 class="mt-4">Call us </h5>
+     <a href="tel:  07793064301" class="d-inline-block mb-2 text-decoratioon-none text-dark">
+      <i class="bi bi-telephone-fill"></i> 0779306430
+    </a>
+
+    <br>
+
+    <a href="tel:  0779306430" class="d-inline-block mb-2 text-decoratioon-none text-dark">
+      <i class="bi bi-telephone-fill"></i> 0779306430
+    </a>
+
+    <h5 class="mt-4">Email</h5>
+    <a href="mailto:riversegde@gmail.com"class="d-inline-block mb-2 text-decoratioon-none text-dark">
+     <i class="bi bi-envelope-fill"> </i> riversegde@gmail.com
+     </a>
+
+     <h5 class="mt-4">Follow us</h5>
+     <a href="#" class="d-inline-block mb-3"
+     <span calss="badge bg-light text-dark fs-6 p-2">
+      <i class= "bi bi-facebook me-1"></i> Facebook
+    </span>
+    </a>
+
+    <br>
+
+    <a href="#" class="d-inline-block mb-3"
+     <span calss="badge bg-light text-dark fs-6 p-2">
+      <i class= "bi bi-instagram me-1"></i> Instagram
+    </span>
+    </a>
+
+    <br>
+    
+    <a href="#" class="d-inline-block mb-3"
+     <span calss="badge bg-light text-dark fs-6 p-2">
+      <i class= "bi bi-twitter me-1"></i> Twitter
+    </span>
+    </a>
+    
 </div>
 </div>
 <div class="col-lg-6 col-md-6  px-4">
