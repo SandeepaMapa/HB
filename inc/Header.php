@@ -12,38 +12,16 @@
         <li class="nav-item">
           <a class="nav-link active me-2" aria-current="page" href="index.php">Home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active me-2" href="Accomodation.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Accommodation
-          </a>
-          <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="Accomodation.php">Standard Rooms</a></li>
-            <li><a class="dropdown-item" href="Accomodation.php">Villa</a></li>
-             <li><a class="dropdown-item" href="Accomodation.php">Challet</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link active me-2" aria-current="page" href="Accomodation.php">Accomodation</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active me-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Restaurant
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Take Away</a></li>
-            <li><a class="dropdown-item" href="#">Dine-in</a></li>
-             <li><a class="dropdown-item" href="#">BBQ</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link active me-2" aria-current="page" href="#">Restaurant</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active me-2" href="Events.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Events
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="Events.php">Wedding</a></li>
-            <li><a class="dropdown-item" href="Events.php">Parties</a></li>
-            <li><a class="dropdown-item" href="Events.php">Meeting</a></li>
-            <li><a class="dropdown-item" href="Events.php">Day Out</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link active me-2" aria-current="page" href="Events.php">Events</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active me-2" aria-current="page" href="Gallery.php">Gallery</a>
