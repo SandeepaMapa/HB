@@ -46,8 +46,8 @@
 
 
 
-  <h5 class="mb-3">Hotel view</h5>
-      <div class="container px-4">
+  <h5 class="mb-3 ms-3">Hotel view</h5>
+      <div class="container px-6">
         <!-- Swiper -->
       <div class="swiper mySwiper">
       <div class="swiper-wrapper mb-5">
@@ -78,7 +78,7 @@
     
 
 
-      <h5 class="mb-3">Standard Room</h5>
+      <h5 class="mb-3 ms-3">Standard Room</h5>
       <div class="container px-4">
         <!-- Swiper -->
       <div class="swiper mySwiper">
@@ -111,7 +111,7 @@
 
 
 
-      <h5 class="mb-3">villa</h5>
+      <h5 class="mb-3 ms-3">villa</h5>
       <div class="container px-4">
         <!-- Swiper -->
       <div class="swiper mySwiper">
@@ -140,6 +140,84 @@
       <div class="swiper-pagination"></div>
       </div>
       </div>
+
+
+
+
+      <h5 class="mb-3 ms-3">Challet</h5>
+      <div class="container px-4">
+        <!-- Swiper -->
+      <div class="swiper mySwiper">
+      <div class="swiper-wrapper mb-5">
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Rooms\standard_ph01.jpg" class="w-100">
+         
+        </div>
+
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Rooms\standard_ph01.jpg" class="w-100">
+          
+        </div>
+
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Rooms\standard_ph01.jpg" class="w-100">
+          
+        </div>
+
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Rooms\standard_ph01.jpg" class="w-100">
+        
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      </div>
+      </div>
+
+
+
+
+
+      <h5 class="mb-3 ms-3">Weddings</h5>
+      <div class="container px-4">
+        <!-- Swiper -->
+      <div class="swiper mySwiper">
+      <div class="swiper-wrapper mb-5">
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Gallery\wed1.jpg" class="w-100">
+         
+        </div>
+
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Gallery\wed1.jpg" class="w-100">
+          
+        </div>
+
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Gallery\wed1.jpg" class="w-100">
+          
+        </div>
+
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Gallery\wed1.jpg" class="w-100">
+        
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
