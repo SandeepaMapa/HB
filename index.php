@@ -39,16 +39,16 @@
     <div class="swiper swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="photos/Demo/colombo_2.jpg" class="w-100 d-block" height="450"/>
+            <img src="photos/Demo/colombo_2.jpg" class="w-100 d-block" height="530"/>
           </div>
           <div class="swiper-slide">
-            <img src="photos/Demo/df09c33940de39df187b3eda0d20d386.jpg" class="w-100 d-block" height="450"/>
+            <img src="photos/Demo/df09c33940de39df187b3eda0d20d386.jpg" class="w-100 d-block" height="530"/>
           </div>
           <div class="swiper-slide">
-            <img src="photos/Demo/digital-marketing-for-hotels.jpg" class="w-100 d-block" height="450" />
+            <img src="photos/Demo/digital-marketing-for-hotels.jpg" class="w-100 d-block" height="530" />
           </div>
           <div class="swiper-slide">
-            <img src="photos/Demo/modd.png"  class="w-100 d-block" height="450" />
+            <img src="photos/Demo/modd.png"  class="w-100 d-block" height="530" />
           </div>
         </div>
         
@@ -58,8 +58,8 @@
 
 <!-- check availability -->
 
-<div class="container availability-form">
-  <div class="row">
+<div class="container availability-form ">
+  <div class="row ">
     <div class="col-lg-12 bg-white shadow p-4 rounded">
       <h5 class="mb-4">Check Booking Availability</h5>
       <form >
@@ -73,7 +73,7 @@
                 <label class="form-label" style="font-weight: 500;">Check-out</label>
                 <input type="date" class="form-control shadow-none">
               </div>
-              <div class="col-lg-3 mb-3">
+              <div class="col-lg-2 mb-3">
                 <label class="form-label" style="font-weight: 500;">Adults</label>
                 <select class="form-select shadow-none">
                   <option selected>Select number</option>
@@ -92,8 +92,8 @@
                   <option value="3">Three</option>
                 </select>
               </div>
-                <div class="col-lg-1 mb-lg-3 mt-2">
-                  <button type="submit" class="btn text-white shadow-none custom-bg">Submit</button>
+                <div class="col-lg-2 mb-lg-3 mt-2">
+                  <button type="submit" class="btn text-white shadow-none custom-bg">Book Now</button>
                 </div>
             </div>
 
