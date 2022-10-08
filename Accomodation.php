@@ -72,9 +72,10 @@
                 <label class="form-label" style="font-weight: 500;">Adults</label>
                 <select class="form-select shadow-none">
                   <option selected>Select number</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4</option>
                 </select>
               </div>
 
@@ -82,9 +83,10 @@
                 <label class="form-label" style="font-weight: 500;">Children</label>
                 <select class="form-select shadow-none">
                   <option selected>Select number</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4</option>
                 </select>
               </div>
                 <div class="col-lg-2 mb-lg-3 mt-2">
