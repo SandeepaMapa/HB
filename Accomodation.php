@@ -8,12 +8,95 @@
 <?php require('inc/links.php')?>
 <link
   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <style>
+
+.availability-form{
+  margin-top: -50px;
+  z-index: 2;
+  position:relative;
+}
+
+@media screen and (max-width: 575px){
+
+  .availability-form{
+  margin-top: 25px;
+  padding:0 35px;
+}
+
+}
+
+</style>
   
 </head>
 <body class="bg-light">
     
    <?php require('inc/header.php');?>
      
+   <!-- carousel -->
+  <div class="container-fluid px-lg mt-4">
+  <!-- Swiper -->
+    <div class="swiper swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="Photos\Rooms\ch.png" class="w-100 d-block" height="530"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="Photos\Rooms\CWY-Beach-Chalet-1090X610.jpg" class="w-100 d-block" height="530"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="Photos\Rooms\Villa.jpg" class="w-100 d-block" height="530" />
+          </div>
+        </div>
+        
+      </div>
+
+</div>
+
+<!-- check availability -->
+
+<div class="container availability-form">
+  <div class="row">
+    <div class="col-lg-12 bg-white shadow p-4 rounded">
+      <form >
+            <div class="row align-items-end">
+              <div class="col-lg-3 mb-3">
+                <label class="form-label" style="font-weight: 500;">Check-in</label>
+                <input type="date" class="form-control shadow-none">
+              </div>
+
+              <div class="col-lg-3 mb-3">
+                <label class="form-label" style="font-weight: 500;">Check-out</label>
+                <input type="date" class="form-control shadow-none">
+              </div>
+              <div class="col-lg-2 mb-3">
+                <label class="form-label" style="font-weight: 500;">Adults</label>
+                <select class="form-select shadow-none">
+                  <option selected>Select number</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="col-lg-2 mb-3">
+                <label class="form-label" style="font-weight: 500;">Children</label>
+                <select class="form-select shadow-none">
+                  <option selected>Select number</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+                <div class="col-lg-2 mb-lg-3 mt-2">
+                  <button type="submit" class="btn text-white shadow-none custom-bg">Book Now</button>
+                </div>
+            </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
 
    <div class="my-5 px-4">
     <h2 class="fw-bold h-font text-center">ACCOMODATION</h2>
@@ -243,7 +326,19 @@
 
 
    <?php require('inc/footer.php')?>
+   <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+          spaceBetween: 30,
+          effect: "fade",
+          loop: true,
+          autoplay:{
+            delay: 3500,
+            disableOnInteraction: false,
+          }
 
+        });
+      </script>
 
 </body>
 </html> 
