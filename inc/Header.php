@@ -17,7 +17,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="#">Restaurant</a>
+          <a class="nav-link active me-2" aria-current="page" href="Restaurant.php">Restaurant</a>
         </li>
 
         <li class="nav-item">
