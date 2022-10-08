@@ -78,8 +78,7 @@
       </div>
     
 
-
-      <h5 class="mb-3 ms-3">Accomadation</h5>
+      <h5 class="my-5 fw-bold h-foot text-center">Accomadation</h5>
       <div class="container px-4">
         <!-- Swiper -->
       <div class="swiper mySwiper">
@@ -111,7 +110,7 @@
   
 
 
-      <h5 class="mb-3 ms-3">Restaurent</h5>
+      <h5 class="my-5 fw-bold h-foot text-center">Restaurent</h5>
       <div class="container px-4">
         <!-- Swiper -->
       <div class="swiper mySwiper">
@@ -144,7 +143,7 @@
 
 
 
-      <h5 class="mb-3 ms-3">Event</h5>
+     <h5 class="my-5 fw-bold h-foot text-center">Hotel view</h5>
       <div class="container px-4">
         <!-- Swiper -->
       <div class="swiper mySwiper">
