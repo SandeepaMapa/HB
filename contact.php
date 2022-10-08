@@ -37,18 +37,18 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </a>
 
      <h5 class="mt-4">Call us </h5>
-     <a href="tel:  07793064301" class="d-inline-block mb-2 text-decoratioon-none text-dark">
+     <a href="tel:  07793064301" class="d-inline-block mb-2 text-decoration-none text-dark">
       <i class="bi bi-telephone-fill"></i> 0779306430
     </a>
 
     <br>
 
-    <a href="tel:  0779306430" class="d-inline-block mb-2 text-decoratioon-none text-dark">
+    <a href="tel:  0779306430" class="d-inline-block mb-2 text-decoration-none text-dark">
       <i class="bi bi-telephone-fill"></i> 0779306430
     </a>
 
     <h5 class="mt-4">Email</h5>
-    <a href="mailto:riversegde@gmail.com"class="d-inline-block mb-2 text-decoratioon-none text-dark">
+    <a href="mailto:riversegde@gmail.com"class="d-inline-block text-decoration-none text-dark">
      <i class="bi bi-envelope-fill"> </i> riversegde@gmail.com
      </a>
        
