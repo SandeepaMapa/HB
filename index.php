@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>River's Edge Home</title>
-<?php require('inc/links.php')?>
-<link
-  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-<in.css">
+<?php require('inc/links.php');?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
 <style>
 
 .availability-form{
@@ -33,9 +32,6 @@
     
 
 <?php require('inc/header.php');?>
-    
-
-
 
   <!-- carousel -->
   <div class="container-fluid px-lg mt-4">
@@ -381,15 +377,7 @@
   </div>
 </div>
 
-
-<?php require('inc/footer.php')?>
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+<?php require('inc/footer.php');?>
   <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".swiper-container", {
