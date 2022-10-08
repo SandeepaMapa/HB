@@ -52,29 +52,49 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
      <i class="bi bi-envelope-fill"> </i> riversegde@gmail.com
      </a>
        
-     <h5 class="mb-3">Follow us</h5>
-      <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
-          <i class="bi bi-twitter me-1 "></i> Twitter
-      </a><br>
-      <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
-        <i class="bi bi-instagram me-1 "></i> Instagram
-    </a><br>
-    <a href="#" class="d-inline-block text-dark text-decoration-none mb-2">
-      <i class="bi bi-facebook me-1 "></i> Facebook
+     
+
+     <h5 class="mt-4">Follow us</h5>
+      <a href="#" class="d-inline-block text-dark fs-5 me-2 ">
+          <i class="bi bi-twitter me-1 "></i>
+      </a>
+      
+      <a href="#" class="d-inline-block  text-dark fs-5 me-2">
+        <i class="bi bi-instagram me-1 "></i> 
+    </a>
+     
+    <a href="#" class="d-inline-block text-dark fs-5 me-2">
+      <i class="bi bi-facebook me-1 "></i>
   </a>
      
 
 </div>
 </div>
 <div class="col-lg-6 col-md-6  px-4">
-    <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
-      <div class="d-flex align-item-center mb-2">
-      <img src="images/features/wifi.svg" width="40px">
-      <h5 class="m-0 ms-3">Wifi</h5>
-</div>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-        Totam harum nam eos debitis sunt ipsum ut nobis obcaecati !</p>
-</div>
+    <div class="bg-white rounded shadow p-4 ">
+      <form>
+        <h5> Send a Message </h5>
+        <div class=" mt-3">
+          <label  class="form-label" style="font-weight: 500;">Name</label>
+        <input type="text" class="form-control shadow-none">
+           </div>
+
+           <div class=" mt-3">
+          <label  class="form-label" style="font-weight: 500;">Email</label>
+        <input type="email" class="form-control shadow-none">
+           </div>
+
+           <div class=" mt-3">
+          <label  class="form-label" style="font-weight: 500;">Subject</label>
+        <input type="text" class="form-control shadow-none">
+           </div>
+
+           <div class=" mt-3">
+          <label  class="form-label" style="font-weight: 500;">Message</label>
+        <textarea class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
+           </div>
+           <button type="submit" class="btn text-white custom-bg mt-3">SEND</button>
+      </form>
 </div>
 </div>
 </div>

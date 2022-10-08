@@ -35,14 +35,14 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active me-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle active me-2" href="Events.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Events
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Wedding</a></li>
-            <li><a class="dropdown-item" href="#">Parties</a></li>
-            <li><a class="dropdown-item" href="#">Meeting</a></li>
-            <li><a class="dropdown-item" href="#">Day Out</a></li>
+            <li><a class="dropdown-item" href="Events.php">Wedding</a></li>
+            <li><a class="dropdown-item" href="Events.php">Parties</a></li>
+            <li><a class="dropdown-item" href="Events.php">Meeting</a></li>
+            <li><a class="dropdown-item" href="Events.php">Day Out</a></li>
           </ul>
         </li>
 
@@ -52,6 +52,10 @@
 
         <li class="nav-item">
           <a class="nav-link active me-2" aria-current="page" href="#">Gallery</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active me-2" aria-current="page" href="About Us.php">About Us</a>
         </li>
 </ul>
       
