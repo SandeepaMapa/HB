@@ -46,7 +46,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="#">Gallery</a>
+          <a class="nav-link active me-2" aria-current="page" href="Gallery.php">Gallery</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active me-2" aria-current="page" href="contact.php">Contact</a>
