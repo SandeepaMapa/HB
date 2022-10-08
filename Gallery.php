@@ -117,22 +117,22 @@
       <div class="swiper mySwiper">
       <div class="swiper-wrapper mb-5">
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Rooms\ch.png" class="w-100">
+          <img src="Photos\Rooms\Villa.jpg" class="w-100">
          
         </div>
 
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Rooms\ch.png" class="w-100">
+          <img src="Photos\Rooms\Villa.jpg" class="w-100">
           
         </div>
 
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Rooms\ch.png" class="w-100">
+          <img src="Photos\Rooms\Villa.jpg" class="w-100">
           
         </div>
 
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Rooms\ch.png" class="w-100">
+          <img src="Photos\Rooms\Villa.jpg" class="w-100">
         
         </div>
 
