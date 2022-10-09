@@ -107,7 +107,7 @@
 
    <!--Topics-->
    <div class="my-5 px-4">
-    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">Dine-in</h2>
+    <h2 class="mt-5 pt-4 mb-3 text-center fw-bold f2">Dine-in</h2>
     <div class="h-line bg-dark"></div>
       <p class="text-center mt-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -184,6 +184,8 @@
 </div>
 <br><br>
 
+<br>
+<br>
 
 
  <!--facilities-->
@@ -195,47 +197,27 @@
       <h6>Wi-Fi</h6>
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos/Facilities/hot-water.svg" alt="Hot water" width="40">
-      <h6>Hot Water</h6>
+      <img src="Photos\Facilities\parking.png" alt="Parking" width="40">
+      <h6>Parking</h6>
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\fan-cooling-service-hotel-512.webp" alt="Fans" width="40">
-      <h6>Fans</h6>
+      <img src="Photos\Facilities\self service.png" alt="Self-Service" width="40">
+      <h6>Self-Service</h6>
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\electric_kettle-removebg-preview.png" alt="Electric kettle" width="40">
-      <h6>Electric kettle</h6>
+      <img src="Photos\Facilities\pets.png" alt="Pets are Not Allowed" width="40">
+      <h6>Pets are Not Allowed</h6>
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\lcd-tv-icon-28.jpg" alt="Bed" width="40">
-      <h6>Tv</h6>
+      <img src="Photos\Facilities\open.png" alt="Open Environment" width="40">
+      <h6>Open Environment</h6>
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\24-512.webp" alt="Attached bathroom" width="40">
-      <h6>Attached bathroom</h6>
+      <img src="Photos\Facilities\kids.png" alt="kids friendly" width="40">
+      <h6>Kids friendly</h6>
     </div>
    </div>
-   <div class="row justify-content-evenly px-lg-0 px-md-0 px-2">
-    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src= "Photos\Facilities\air_conditioner-512.webp" alt="Air conditioning" width="40">
-      <h6>Air conditioning</h6>
-    </div>
-    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\png-transparent-computer-icons-refrigerator-room-refrigerator-television-angle-electronics-thumbnail.png" alt="Mini fridge" width="40">
-      <h6>Mini fridge</h6>
-    </div>
-    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\032-512.webp" alt="Hair dryer" width="40">
-      <h6>Hair dryer</h6>
-    </div>
-    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\41-512.webp" alt="closet" width="40">
-      <h6>Wardrobe or closet </h6>
-    </div>
-    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\bed.png" alt="Bed" width="40">
-      <h6>Bed</h6>
-    </div>
+   
    </div>
 </div>
 
