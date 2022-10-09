@@ -141,9 +141,13 @@
                 <h6 class="mb-1">Lunch   :- 12PM to 3PM</h6>
 
               </div>
-              <div class="guests">
+              <div class="Dinner mb-3">
                 <h6 class="mb-1">Dinner :- 7PM to 10PM </h6>
                 
+              </div>
+              <div class="capacity mb-3">
+                <h6 class="mb-1 badge rounded-pill bg-light text-dark text-wrap">Capacity :- 100 persons</h6>
+                 
               </div>
         </div>   
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
@@ -161,50 +165,20 @@
          <img src="Photos\Restaurant\B1.jpg" class="img-fluid rounded">
         </div>
         <div class="col-md-5 px-lg-4 px-md-3 px-0">
-         <h5 class="mb-3">BBQ</h5>
+         <h4 class="mb-3">BBQ</h4>
            <div class="features mb-3">
-                <h6 class="mb-1">Features</h6>
-                <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      1 Room
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      1 Bathroom
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      1 Double-bed
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                    2 Sofa
-                </span>
+                <h6 class="mb-1">Open in Friday to Sunday :- 7PM to 10PM</h6>
+                
             </div>
             <div class="facilities mb-3">
-                <h6 class="mb-1">Facilities</h6>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      AC
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      Free Wifi
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      Hot water
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                    Mini-bar
-                </span>
+                <h6 class="mb-1 badge rounded-pill bg-light text-dark text-wrap">Capacity :- 50 persons</h6>
+                 
               </div>
-              <div class="guests">
-                <h6 class="mb-1">Guests</h6>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      4 Adults
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      3 Children
-                  </span>  
-              </div>
+              
         </div>   
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-          <h6 class="mb-4">Rs. 18000 per night</h6>  
-            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
+          <h6 class="mb-4">Rs. 1500 per Person</h6>  
+            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
             <a href="#" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
@@ -215,50 +189,17 @@
          <img src="Photos\Restaurant\t1.jpg" class="img-fluid rounded">
         </div>
         <div class="col-md-5 px-lg-4 px-md-3 px-0">
-         <h5 class="mb-3">Takeaway</h5>
+         <h4 class="mb-3">Takeaway</h4>
            <div class="features mb-3">
-                <h6 class="mb-1">Features</h6>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      1 Room
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      1 Bathroom
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      1 Double-bed
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                    2 Sofa
-                </span>
+                <h6 class="mb-1">We will provide this opportunity soon</h6>
+                  
             </div>
-            <div class="facilities mb-3">
-                <h6 class="mb-1">Facilities</h6>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      AC
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      Free Wifi
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      Hot water
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                    Mini-bar
-                </span>
-              </div>
-              <div class="guests">
-                <h6 class="mb-1">Guests</h6>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      4 Adults
-                  </span>
-                  <span class="badge rounded-pill bg-light text-dark text-wrap">
-                      3 Children
-                  </span>  
-              </div>
+           
+              
         </div>   
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-          <h6 class="mb-4">Rs. 15000 per night</h6>  
-            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
+          <h6 class="mb-4">Rs. 3000 per person</h6>  
+            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
             <a href="#" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
