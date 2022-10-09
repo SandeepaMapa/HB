@@ -1,7 +1,3 @@
-<?php
-  required('admin/inc/db_config.php');
-  required('admin/inc/essentials.php');
-?>
     <nav class="navbar navbar-expand-lg navbar-light px-lg-4 py-lg-3 shadow-sm sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand f2 text-white" href="#">River's Edge</a>
