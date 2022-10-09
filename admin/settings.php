@@ -67,6 +67,23 @@
         </div>
        </div>
 
+       <!-- Shutdown Website-->
+
+       <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h5 class="card-title m-0">General Settings</h5>
+                            <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#general-s">
+                            <i class="bi bi-pencil-square"></i>Edit
+                                </button>
+                        </div>
+                        <h6 class="card-subtitle mb-1 fw-bold">Site Title</h6>
+                        <p class="card-text" id="site_title"></p>
+                        <h6 class="card-subtitle mb-1 fw-bold">About Us</h6>
+                        <p class="card-text" id="site_about"></p>  
+                    </div>
+                </div> 
+
 
         <?php require('inc/scripts.php');?>
         <script>
@@ -106,13 +123,20 @@
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
 
                 xhr.onload = function(){
-                    general_data = JSON.parse(this.responseText);
-                    
-                    site_title.innerText = general_data.site_title;
-                    site_about.innerText = general_data.site_about;
 
-                    site_title_inp.value = general_data.site_title;
-                    site_about_inp.value = general_data.site_about;
+                    var myModal = document.getElementById('general-s');
+                    var modal = bootstrap.Modal.getInstance(myModal);
+                    modal.hide();
+
+                    if(this.responseText ==1)
+                    {
+                        alert('success', 'Changes saved!');
+                        get_general();
+                    }
+                    else
+                    {
+                        alert('ERROR', ' No Changes made!');
+                    }
                 }
 
 
