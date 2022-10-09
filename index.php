@@ -318,12 +318,12 @@
 <br><br>
 
 <!-- Events -->
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">Events we can take care of</h2>
+<h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2"> EVENTS WE CAN TAKE CARE OF</h2>
 <div class="container-fluid">
   <div class="row justify-content-evenly px-lg-0 px-md-0 px-5">
     <div class="my-3 " style="max-width: 350px; margin:auto;">
 <div class="card bg-dark">
-  <img src="Photos/Events/wedding-ceremony-ideas-beach-wedding-ceremony.jpg" class="card-img" alt="...">
+  <img src="Photos\Events\wed2.jpg" class="card-img" alt="...">
   <div class="card-img-overlay">
     <h5 class="mt-1 pt-4 mb-4 text-center fw-bold f2 shadow-none">Weddings</h5>
    
@@ -334,7 +334,7 @@
 </div>
 <div class="my-3 " style="max-width: 350px; margin:auto;">
   <div class="card bg-dark">
-    <img src="Photos/Events/wedding-ceremony-ideas-beach-wedding-ceremony.jpg" class="card-img" alt="...">
+    <img src="Photos\Events\dayouts.jpeg" class="card-img" alt="...">
     <div class="card-img-overlay">
       <h5 class="mt-1 pt-4 mb-4 text-center fw-bold f2 shadow-none">Days out</h5>
      
@@ -345,7 +345,7 @@
   </div>
   <div class="my-3 " style="max-width: 350px; margin:auto;">
     <div class="card bg-dark">
-      <img src="Photos/Events/wedding-ceremony-ideas-beach-wedding-ceremony.jpg" class="card-img" alt="...">
+      <img src="Photos\Events\WhatsApp Image 2022-08-22 at 11.49.47 PM (1).jpeg" class="card-img" alt="...">
       <div class="card-img-overlay">
         <h5 class="mt-1 pt-4 mb-4 text-center fw-bold f2 shadow-none">Parties</h5>
        
@@ -356,7 +356,7 @@
     </div>
     <div class="my-3 " style="max-width: 350px; margin:auto;">
       <div class="card bg-dark">
-        <img src="Photos/Events/wedding-ceremony-ideas-beach-wedding-ceremony.jpg" class="card-img" alt="...">
+        <img src="Photos\Events\photo1.jpg" class="card-img" alt="...">
         <div class="card-img-overlay">
           <h5 class="mt-1 pt-4 mb-4 text-center fw-bold f2 shadow-none">Photoshoots</h5>
          
