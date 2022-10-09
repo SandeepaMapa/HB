@@ -103,14 +103,16 @@
 </div>
  
 <br>
-<h6 class=" text1 text-left">HOME &nbsp > &nbsp Restaurant &nbsp >&nbsp  Dine-in</h6>
+<h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Restaurant.php" style="text-decoration:none">Restaurant</a> &nbsp > &nbsp Dine-in</h6>
+
 
    <!--Topics-->
    <div class="my-5 px-4">
     <h2 class="mt-5 pt-4 mb-3 text-center fw-bold f2">Dine-in</h2>
     <div class="h-line bg-dark"></div>
+    
       <p class="text-center mt-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Vel non culpa quas est, nisi deserunt explicabo earum hic<br> molestias, nam, voluptate repellendus recusandae.
   Natus vero eaque sit unde sequi illum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Vel non culpa quas est, nisi deserunt explicabo earum hic<br> molestias, nam, voluptate repellendus recusandae.
@@ -130,6 +132,7 @@
     </div>
     <div class="col-md-7 px-lg-5 px-md-3 px-0">
       <div class="card-body">
+      <h5 class="my-3 fw-bold h-foot ">DETAILS</h5>
         <p class="card-text">There is a cosy little dining nook and to make it even better, the room comes with tea and coffee making
              facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas have free WiFi for your convenience. 
           The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
@@ -152,6 +155,7 @@
     </div>
     <div class="col-md-7 px-lg-5 px-md-3 px-0">
       <div class="card-body">
+      <h5 class="my-3 fw-bold h-foot ">DETAILS</h5>
         <p class="card-text">There is a cosy little dining nook and to make it even better, the room comes with tea and coffee making
              facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas have free WiFi for your convenience. 
           The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
@@ -173,6 +177,7 @@
   </div>
   <div class="col-md-7 px-lg-5 px-md-3 px-0">
     <div class="card-body">
+    <h5 class="my-3 fw-bold h-foot ">DETAILS</h5>
       <p class="card-text">There is a cosy little dining nook and to make it even better, the room comes with tea and coffee making
            facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas have free WiFi for your convenience. 
         The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
