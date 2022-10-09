@@ -274,7 +274,7 @@
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
           <h6 class="mb-4">Rs. 18000 per night</h6>  
             <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
-            <a href="#" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
+            <a href="Villa.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
 </div>
@@ -284,7 +284,7 @@
          <img src="Photos/Demo/R1.jpeg" class="img-fluid rounded">
         </div>
         <div class="col-md-5 px-lg-4 px-md-3 px-0">
-         <h5 class="mb-3">Challet</h5>
+         <h5 class="mb-3">Chalet</h5>
            <div class="features mb-3">
                 <h6 class="mb-1">Features</h6>
                   <span class="badge rounded-pill bg-light text-dark text-wrap">
@@ -328,7 +328,7 @@
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
           <h6 class="mb-4">Rs. 15000 per night</h6>  
             <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
-            <a href="#" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
+            <a href="Challet.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
 </div>

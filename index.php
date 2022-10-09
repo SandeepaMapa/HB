@@ -230,7 +230,7 @@
         <img class="card-img-top" src="Photos/Demo/R1.jpeg" alt="Card image cap">
 
         <div class="card-body">
-          <h5 class="card-title">Challet</h5>
+          <h5 class="card-title">Chalet</h5>
           <h6 class="mb-4">Rs. 15000 per night</h6>
               <div class="features mb-4">
                 <h6 class="mb-1">Features</h6>
@@ -358,7 +358,7 @@
       <div class="card bg-dark">
         <img src="Photos/Events/wedding-ceremony-ideas-beach-wedding-ceremony.jpg" class="card-img" alt="...">
         <div class="card-img-overlay">
-          <h5 class="mt-1 pt-4 mb-4 text-center fw-bold f2 shadow-none">Meetings</h5>
+          <h5 class="mt-1 pt-4 mb-4 text-center fw-bold f2 shadow-none">Photoshoots</h5>
          
         </div>
         

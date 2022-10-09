@@ -45,7 +45,7 @@
     
    <br>
      
-           <img src="Photos\Rooms\standard_ph01.jpg" class="w-100 d-block" height="550"/>
+           <img src="Photos\Rooms\pic8.jpeg" class="w-100 d-block" height="550"/>
          
   
          <!-- check availability -->
@@ -96,17 +96,16 @@
 </div>
  
 <br>
-<h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Accomodation.php" style="text-decoration:none">ACCOMODATION</a> &nbsp > &nbsp STANDARD ROOMS</h6>
+<h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Accomodation.php" style="text-decoration:none">ACCOMODATION</a> &nbsp > &nbsp VILLA</h6>
 
    <!--Topics-->
    <div class="my-5 px-4">
-    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">STANDARD ROOMS</h2>
+    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">VILLA</h2>
     <div class="h-line bg-dark"></div>
       <p class="text-center mt-3">
         Celebrate your love story amidst plush greenery and the magic of River's Edge Reception.<br>
       </p>
   </div>
-
 
   
   <!--image grid-->
@@ -116,7 +115,7 @@
       
        <div class="row g-0 p-3 align-items-center">
         <div class="col-md-5 mb-lg-0 ms-5 mb-md-0 mb-3">
-          <img src="Photos\Rooms\IMG_5022.jpg" class="img-fluid rounded" class="img-fluid rounded">
+          <img src="Photos\Rooms\Villa.jpg" class="img-fluid rounded" class="img-fluid rounded">
         </div>
         <div class="col-md-5 px-lg-4 px-md-3 px-0">
          <h5 class="mb-3 mt-1 ms-3">DETAILS</h5> 
@@ -127,9 +126,9 @@
           spot to sit back and savour a beverage
            immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower
             in the en-suite luxury bathroom..</p>
-            <h6 class="mb-2 ms-3">Maximum occupancy : 3</h6>  
-            <h6 class="mb-2 ms-3">No.of.Rooms : 5</h6> 
-            <h6 class="mb-2 ms-3">Rs. 8000 per night</h6> 
+          <h6 class="mb-2 ms-3">Maximum occupancy : 3</h6>  
+          <h6 class="mb-2 ms-3">No.of.Rooms : 5</h6> 
+          <h6 class="mb-2 ms-3">Rs. 18000 per night</h6> 
         </div>   
   </div>
 </div>
