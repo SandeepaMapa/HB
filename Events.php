@@ -43,128 +43,104 @@
   </p>
   </div>
 
+
+
+      <!--Weddings-->
   <div class="container">
-    <div class="row justify-content-between align-items-center">
-      <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-        <h3 class="mb-3">hello how are yo</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Qui consectetur iusto dolorem veniam dicta, quam
-          accusantium sequi, porro atque id eveniet cumque voluptas possimus! Quasi animi aperiam esse sequi doloremque!
-        </p>
-      </div>
-      <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-          <img src="Photos\Facilities\VAGO.png" class="w-100">
-      </div>
-    </div>
-  </div>
-
-      <!--Adding the event boxes -->
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-      <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-        <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
-          <div class="ol-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-          <img src= "Photos\Facilities\VAGO.png" class="w-100">
-          <h5 class="mb-3">Weddings</h5>
-          </div>
-          
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae facere eveniet nam? 
-            Dicta vitae quasi, corporis consequatur magni at, ullam, 
-            ex maxime nobis provident pariatur dolor nostrum doloribus nesciunt!
-          </p>
-        </div>
-      </div>
-
-
-
-      <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2 bg-white rounded shadow p-4 border-top border-4 border-dark pop">
-      <h3 class="mb-3">hello how are yo</h3>
+      <h3 class="mb-3">Weddings</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Qui consectetur iusto dolorem veniam dicta, quam
-          accusantium sequi, porro atque id eveniet cumque voluptas possimus! Quasi animi aperiam esse sequi doloremque!
+        The city's sought-after location for weddings, Rivers Edge Reception offers unique and luxuriously styled venues<br> 
+      with a dedicated team who will help make your special day a memorable one.<br>
+
+    Let us make your dream wedding come to life. Browse through our curation of bespoke experiences, packages, and venues here.
         </p>
+        <!--Buttons-->
+        <div class="col-md-4 mt-lg-0 mt-md-0 mt-4 text-center">
+            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Venue</a>
+            <a href="StandardRooms.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
+        </div>
       </div>
-      <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-          <img src="Photos\Facilities\VAGO.png" class="w-100">
-      </div>
+        <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
+          <img src="Photos\Front\3rd dec.jpg" class="w-100">
+        </div>
     </div>
   </div>
+<!--Weddings end-->
 
-      <div class="col-lg-4 col-md-6 mb-5 px-4">
-        <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
-          <div class="d-flex align-items-center mb-2">
-          <img src= "Photos/Facilities/wifi-logo-svgrepo-com.svg" width="40px">
-          <h5 class="m-0 ms-3">WIFI</h5>
-          </div>
-          
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae facere eveniet nam? 
-            Dicta vitae quasi, corporis consequatur magni at, ullam, 
-            ex maxime nobis provident pariatur dolor nostrum doloribus nesciunt!
-          </p>
+
+      <!--Parties-->
+      <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-6 col-md-5 mb-4 order-lg-2 order-md-2 order-1 bg-white rounded shadow p-4 border-top border-4 border-dark pop">
+      <h3 class="mb-3">Parties</h3>
+        <p>
+        The city's sought-after location for Parties, Rivers Edge Reception offers unique and luxuriously styled venues<br> 
+      with a dedicated team who will help make your special day a memorable one.<br>
+
+    Let us make your dream wedding come to life. Browse through our curation of bespoke experiences, packages, and venues here.
+        </p>
+        <!--Buttons-->
+        <div class="col-md-4 mt-lg-0 mt-md-0 mt-4 text-center">
+            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Venue</a>
+            <a href="StandardRooms.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
         </div>
       </div>
-
-      <div class="col-lg-4 col-md-6 mb-5 px-4">
-        <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
-          <div class="d-flex align-items-center mb-2">
-          <img src= "Photos/Facilities/wifi-logo-svgrepo-com.svg" width="40px">
-          <h5 class="m-0 ms-3">WIFI</h5>
-          </div>
-          
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae facere eveniet nam? 
-            Dicta vitae quasi, corporis consequatur magni at, ullam, 
-            ex maxime nobis provident pariatur dolor nostrum doloribus nesciunt!
-          </p>
+        <div class="col-lg-5 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
+          <img src="Photos\Events\Party2.jpg" class="w-100">
         </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-5 px-4">
-        <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
-          <div class="d-flex align-items-center mb-2">
-          <img src= "Photos/Facilities/wifi-logo-svgrepo-com.svg" width="40px">
-          <h5 class="m-0 ms-3">WIFI</h5>
-          </div>
-          
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae facere eveniet nam? 
-            Dicta vitae quasi, corporis consequatur magni at, ullam, 
-            ex maxime nobis provident pariatur dolor nostrum doloribus nesciunt!
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-5 px-4">
-        <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
-          <div class="d-flex align-items-center mb-2">
-          <img src= "Photos/Facilities/wifi-logo-svgrepo-com.svg" width="40px">
-          <h5 class="m-0 ms-3">WIFI</h5>
-          </div>
-          
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae facere eveniet nam? 
-            Dicta vitae quasi, corporis consequatur magni at, ullam, 
-            ex maxime nobis provident pariatur dolor nostrum doloribus nesciunt!
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-5 px-4">
-        <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
-          <div class="d-flex align-items-center mb-2">
-          <img src= "Photos/Facilities/wifi-logo-svgrepo-com.svg" width="40px">
-          <h5 class="m-0 ms-3">WIFI</h5>
-          </div>
-          
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae facere eveniet nam?
-            Dicta vitae quasi, corporis consequatur magni at, ullam,
-            ex maxime nobis provident pariatur dolor nostrum doloribus nesciunt!
-          </p>
-        </div>
-      </div>
     </div>
   </div>
+<!--Parties end-->
+
+<!--Dayouts-->
+<div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2 bg-white rounded shadow p-4 border-top border-4 border-dark pop">
+      <h3 class="mb-3">Dayouts</h3>
+        <p>
+        The city's sought-after location for Parties, Rivers Edge Reception offers unique and luxuriously styled venues<br> 
+      with a dedicated team who will help make your special day a memorable one.<br>
+
+    Let us make your dream wedding come to life. Browse through our curation of bespoke experiences, packages, and venues here.
+        </p>
+        <!--Buttons-->
+        <div class="col-md-4 mt-lg-0 mt-md-0 mt-4 text-center">
+            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Venue</a>
+            <a href="StandardRooms.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
+        </div>
+      </div>
+        <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
+          <img src="Photos\Events\Oruwa.jpg" class="w-100">
+        </div>
+    </div>
+  </div>
+<!--Dayouts end-->
+
+<!--Photoshoots-->
+<div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-6 col-md-5 mb-4 order-lg-2 order-md-2 order-1 bg-white rounded shadow p-4 border-top border-4 border-dark pop">
+      <h3 class="mb-3">Photoshoots</h3>
+        <p>
+        The city's sought-after location for Parties, Rivers Edge Reception offers unique and luxuriously styled venues<br> 
+      with a dedicated team who will help make your special day a memorable one.<br>
+
+    Let us make your dream wedding come to life. Browse through our curation of bespoke experiences, packages, and venues here.
+        </p>
+        <!--Buttons-->
+        <div class="col-md-4 mt-lg-0 mt-md-0 mt-4 text-center">
+            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Venue</a>
+            <a href="StandardRooms.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
+        </div>
+      </div>
+        <div class="col-lg-5 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
+          <img src="Photos\Front\3rd dec.jpg" class="w-100">
+        </div>
+    </div>
+  </div>
+<!--Photoshoots end-->
 
   
 
