@@ -103,7 +103,7 @@
 </div>
 
 <!--Rooms-->
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">Our Rooms</h2>
+<h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">OUR ROOMS</h2>
 
 <div class="container">
   <div class="row">
@@ -158,7 +158,7 @@
               </div>
               <div class="d-flex justify-content-evenly mb-2">
                 <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
-                <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
+                <a href="StandardRooms.php" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
               </div>
          
         </div>
@@ -230,7 +230,7 @@
         <img class="card-img-top" src="Photos/Demo/R1.jpeg" alt="Card image cap">
 
         <div class="card-body">
-          <h5 class="card-title">Challet</h5>
+          <h5 class="card-title">Chalet</h5>
           <h6 class="mb-4">Rs. 15000 per night</h6>
               <div class="features mb-4">
                 <h6 class="mb-1">Features</h6>
@@ -282,12 +282,12 @@
       </div>
     </div>
 
-
     <div class="col-lg-12 text-center mt-5">
-      <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-sm">More Rooms >>></a>
+      <a href="Accomodation.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-sm">More Rooms >>></a>
     </div>
   </div>
 </div>
+<br><br>
 <!--End of rooms-->
 
 <!--Facilities-->
@@ -315,14 +315,15 @@
   </div>
 </div>
 <!--End of Facilities-->
+<br><br>
 
 <!-- Events -->
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold ">Events we can take care of</h2>
+<h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2"> EVENTS WE CAN TAKE CARE OF</h2>
 <div class="container-fluid">
   <div class="row justify-content-evenly px-lg-0 px-md-0 px-5">
     <div class="my-3 " style="max-width: 350px; margin:auto;">
 <div class="card bg-dark">
-  <img src="Photos/Events/wedding-ceremony-ideas-beach-wedding-ceremony.jpg" class="card-img" alt="...">
+  <img src="Photos\Events\wed2.jpg" class="card-img" alt="...">
   <div class="card-img-overlay">
     <h5 class="mt-1 pt-4 mb-4 text-center fw-bold f2 shadow-none">Weddings</h5>
    
@@ -333,7 +334,7 @@
 </div>
 <div class="my-3 " style="max-width: 350px; margin:auto;">
   <div class="card bg-dark">
-    <img src="Photos/Events/wedding-ceremony-ideas-beach-wedding-ceremony.jpg" class="card-img" alt="...">
+    <img src="Photos\Events\dayouts.jpeg" class="card-img" alt="...">
     <div class="card-img-overlay">
       <h5 class="mt-1 pt-4 mb-4 text-center fw-bold f2 shadow-none">Days out</h5>
      
@@ -344,7 +345,7 @@
   </div>
   <div class="my-3 " style="max-width: 350px; margin:auto;">
     <div class="card bg-dark">
-      <img src="Photos/Events/wedding-ceremony-ideas-beach-wedding-ceremony.jpg" class="card-img" alt="...">
+      <img src="Photos\Events\WhatsApp Image 2022-08-22 at 11.49.47 PM (1).jpeg" class="card-img" alt="...">
       <div class="card-img-overlay">
         <h5 class="mt-1 pt-4 mb-4 text-center fw-bold f2 shadow-none">Parties</h5>
        
@@ -355,17 +356,22 @@
     </div>
     <div class="my-3 " style="max-width: 350px; margin:auto;">
       <div class="card bg-dark">
-        <img src="Photos/Events/wedding-ceremony-ideas-beach-wedding-ceremony.jpg" class="card-img" alt="...">
+        <img src="Photos\Events\photo1.jpg" class="card-img" alt="...">
         <div class="card-img-overlay">
-          <h5 class="mt-1 pt-4 mb-4 text-center fw-bold f2 shadow-none">Meetings</h5>
+          <h5 class="mt-1 pt-4 mb-4 text-center fw-bold f2 shadow-none">Photoshoots</h5>
          
         </div>
         
       </div>
       
       </div>
+      <div class="col-lg-12 text-center mt-5">
+      <a href="Events.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-sm">View Events >>></a>
+    </div>
 </div>
 </div>
+<br><br>
+
 
 <!--Reach Us-->
 <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">Reach Us</h2>

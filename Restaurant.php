@@ -108,7 +108,7 @@
 
      <!--Topics-->
   <div class="my-5 px-4">
-  <h2 class="fm-bold h-font text-center">Restaurant</h2>
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">RESTAURANT</h2>
   <div class="h-line bg-dark"></div>
   <p class="text-center mt-3">
   The lake, the temple, the paddy field and the traditional festivities; the soul of every rural village in Sri Lanka is encapsulated in these four elements. At Sigiriya<br>

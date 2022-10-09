@@ -102,7 +102,7 @@
 
      <!--Topics-->
   <div class="my-5 px-4">
-  <h2 class="fm-bold h-font text-center">ACCOMODATION</h2>
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">ACCOMODATION</h2>
   <div class="h-line bg-dark"></div>
   <p class="text-center mt-3">
   The lake, the temple, the paddy field and the traditional festivities; the soul of every rural village in Sri Lanka is encapsulated in these four elements. At Sigiriya<br>
@@ -166,7 +166,7 @@
      </div>
         </nav> 
    </div>
-      
+        <!--Rooms-->
     <div class="col-lg-9 col-md-12 px-4">
       <div class="card mb-3 border-0 shadow">
        <div class="row g-0 p-3 align-items-center">
@@ -223,7 +223,7 @@
   </div>
 </div>
 
-   <!--Rooms-->
+ 
 <div class="card mb-3 border-0 shadow">
        <div class="row g-0 p-3 align-items-center">
         <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
@@ -274,7 +274,7 @@
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
           <h6 class="mb-4">Rs. 18000 per night</h6>  
             <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
-            <a href="#" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
+            <a href="Villa.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
 </div>
@@ -284,7 +284,7 @@
          <img src="Photos/Demo/R1.jpeg" class="img-fluid rounded">
         </div>
         <div class="col-md-5 px-lg-4 px-md-3 px-0">
-         <h5 class="mb-3">Challet</h5>
+         <h5 class="mb-3">Chalet</h5>
            <div class="features mb-3">
                 <h6 class="mb-1">Features</h6>
                   <span class="badge rounded-pill bg-light text-dark text-wrap">
@@ -328,7 +328,7 @@
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
           <h6 class="mb-4">Rs. 15000 per night</h6>  
             <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
-            <a href="#" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
+            <a href="Challet.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
 </div>
