@@ -42,9 +42,7 @@
         along with the corporate requirements of today’s fast paced lifestyle.
   </p>
   </div>
-
-
-
+  
       <!--Weddings-->
   <div class="container">
     <div class="row justify-content-between align-items-center">
