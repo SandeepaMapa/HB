@@ -96,36 +96,88 @@
 </div>
  
 <br>
-<h6 class=" text1 ms-5 text-left">HOME &nbsp > &nbsp ACCOMODATION &nbsp >&nbsp  STANDARD ROOMS</h6>
+<h6 class=" text1 text-left">HOME &nbsp > &nbsp ACCOMODATION &nbsp >&nbsp  STANDARD ROOMS</h6>
 
    <!--Topics-->
    <div class="my-5 px-4">
-    <h2 class="fm-bold h-font text-center">Standard Rooms</h2>
+    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">STANDARD ROOMS</h2>
     <div class="h-line bg-dark"></div>
       <p class="text-center mt-3">
         Celebrate your love story amidst plush greenery and the magic of River's Edge Reception.<br>
       </p>
   </div>
 
+  <br><br>
   <!--image grid-->
-   <div class="container">
-     <div class="row">
-       <div class="col-sm-3">
-            <img src="Photos/Demo/R1.jpeg">
-        </div>
-     <div class="col-sm-9">
-       <div class="row">
-         <div class="col-8 col-sm-6">
-           Level 2: .col-8 .col-sm-6
-         </div>
-          <div class="col-4 col-sm-6">
-           Level 2: .col-4 .col-sm-6
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+
   
+  <div class="row g-0 p-3 align-items-center">
+    <div class="col-md-4 mb-lg-0 ms-4 mb-md-0 mb-3">
+    <img src="Photos\Rooms\IMG_50222.jpg" class="img-fluid rounded" width=600px height=800px>
+    </div>
+    <div class="col-md-4 px-lg-5 px-md-3 px-0">
+      <div class="card-body">
+        <p class="card-text">There is a cosy little dining nook and to make it even better, the room comes with tea and coffee making
+             facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas have free WiFi for your convenience. 
+          The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
+           immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower in the en-suite luxury bathroom..</p>
+      </div>
+    </div>
+  </div>
+ <br><br>
+
+ <!--facilities-->
+ <h3 class="fm-bold h-font text-center">Facilities</h3>
+ <div class="container">
+   <div class="row justify-content-evenly px-lg-0 px-md-0 px-2">
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src="Photos/Facilities/wifi-logo-svgrepo-com.svg" alt="Wi-Fi" width="40">
+      <h6>Wi-Fi</h6>
+    </div>
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src="Photos/Facilities/hot-water.svg" alt="Hot water" width="40">
+      <h6>Hot Water</h6>
+    </div>
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src="Photos\Facilities\fan-cooling-service-hotel-512.webp" alt="Fans" width="40">
+      <h6>Fans</h6>
+    </div>
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src="Photos\Facilities\electric_kettle-removebg-preview.png" alt="Electric kettle" width="40">
+      <h6>Electric kettle</h6>
+    </div>
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src="Photos\Facilities\lcd-tv-icon-28.jpg" alt="Bed" width="40">
+      <h6>Tv</h6>
+    </div>
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src="Photos\Facilities\24-512.webp" alt="Attached bathroom" width="40">
+      <h6>Attached bathroom</h6>
+    </div>
+   </div>
+   <div class="row justify-content-evenly px-lg-0 px-md-0 px-2">
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src= "Photos\Facilities\air_conditioner-512.webp" alt="Air conditioning" width="40">
+      <h6>Air conditioning</h6>
+    </div>
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src="Photos\Facilities\png-transparent-computer-icons-refrigerator-room-refrigerator-television-angle-electronics-thumbnail.png" alt="Mini fridge" width="40">
+      <h6>Mini fridge</h6>
+    </div>
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src="Photos\Facilities\032-512.webp" alt="Hair dryer" width="40">
+      <h6>Hair dryer</h6>
+    </div>
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src="Photos\Facilities\41-512.webp" alt="closet" width="40">
+      <h6>Wardrobe or closet </h6>
+    </div>
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src="Photos\Facilities\bed.png" alt="Bed" width="40">
+      <h6>Bed</h6>
+    </div>
+   </div>
+</div>
 
 <!--Footer-->
   <?php require('inc/footer.php'); ?>
