@@ -1,6 +1,6 @@
 :root {
-  --teal: #2ec1ac;
-  --teal_hover:  #279e8c;
+  --teal: #0C3E77;
+  --teal_hover:  #002B5B;
 }
 
 .f1{
@@ -114,6 +114,12 @@ input[type=number] {
     
   }
 
+.navbar{
+ background-color: #012e62;
+  font-size:17px;
+ }
 
-
+.container-fluid1{
+   background-color: #012e62;
+}
 

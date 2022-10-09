@@ -1,7 +1,7 @@
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary px-lg-3 py-lg-2 shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light px-lg-4 py-lg-3 shadow-sm sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand f2" href="#">River's Edge</a>
+    <a class="navbar-brand f2 text-white" href="#">River's Edge</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,38 +10,38 @@
 
 
         <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link active me-2 text-white" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="Accomodation.php">Accomodation</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="Restaurant.php">Restaurant</a>
+          <a class="nav-link active me-2 text-white" aria-current="page" href="Accomodation.php">Accomodation</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="Events.php">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="Gallery.php">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="contact.php">Contact</a>
+          <a class="nav-link active me-2 text-white" aria-current="page" href="Restaurant.php">Restaurant</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active me-2" aria-current="page" href="About Us.php">About Us</a>
+          <a class="nav-link active me-2 text-white" aria-current="page" href="Events.php">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active me-2 text-white" aria-current="page" href="Gallery.php">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active me-2 text-white" aria-current="page" href="contact.php">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active me-2 text-white" aria-current="page" href="About Us.php">About Us</a>
         </li>
 </ul>
       
         <div class="d-flex">
          
           
-          <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2 " data-bs-toggle="modal" data-bs-target="#loginModal">
+          <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2 text-white border-white " data-bs-toggle="modal" data-bs-target="#loginModal">
   Login
 </button>
-<button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">
+<button type="button" class="btn btn-outline-dark shadow-none text-white border-white" data-bs-toggle="modal" data-bs-target="#registerModal">
   Register
 </button>
 </div>
