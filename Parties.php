@@ -56,16 +56,16 @@
       </div>
  
 <br>
-<h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Events.php" style="text-decoration:none">EVENTS</a> &nbsp > &nbsp WEDDINGS</h6>
+<h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Events.php" style="text-decoration:none">EVENTS</a> &nbsp > &nbsp PARTIES</h6>
 
    <!--Topics-->
    <div class="my-5 px-4">
-    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">WEDDINGS</h2>
+    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">PARTIES</h2>
     <div class="h-line bg-dark"></div>
       <p class="text-center mt-3">
-      The tearful smiles of the walk down the aisle. The first kiss as a couple.
-      The celebrations that follow. Your wedding is a chance to craft moments that will last you a lifetime.
-      At River's Edge, we want those moments to be truly memorable.<br>
+      These services are a wonderful way to add a unique element to your special event.
+      Regardless of what your Event Hosting needs are, we guarantee that the River's Edge team can manage every request to your precise specifications.
+      Our Event Hosting services are ready for your celebration so get the party started and contact us today<br>
       </p>
   </div>
 
