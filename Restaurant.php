@@ -81,7 +81,7 @@
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
-                  <option value="3">4</option>
+                  <option value="4">4</option>
                 </select>
               </div>
 
@@ -92,7 +92,7 @@
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
-                  <option value="3">4</option>
+                  <option value="4">4</option>
                 </select>
               </div>
                 <div class="col-lg-2 mb-lg-3 mt-2">
@@ -153,7 +153,7 @@
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
           <h6 class="mb-4">Rs. 2500 per person</h6>  
             <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
-            <a href="StandardRooms.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
+            <a href="Dine-in.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
 </div>
