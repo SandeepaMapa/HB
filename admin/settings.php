@@ -22,7 +22,7 @@
 
                 <!-- General Settings Section -->
 
-                <div class="card">
+                <div class="card border-0 shadow-sm mb-4">
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <h5 class="card-title m-0">General Settings</h5>
@@ -63,27 +63,31 @@
                     </div>
                     </div>
 
+                    <!-- Shutdown Website-->
+
+       <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h5 class="card-title m-0">Shutdown Website</h5>
+                            <div class="form-check form-switch">
+                                <form >
+                                <input onchange="upd_shutdown(this.value)" class="form-check-input" type="checkbox" id="shutdown-toggle">
+                                </form>
+                                </div>
+                           
+                        </div>
+                        <p class="card-text">
+                            No customers will be allowed to make reservations when shutdown mode is turned on!
+                        </p>  
+                    </div>
+                </div> 
+
+
             </div>
         </div>
        </div>
 
-       <!-- Shutdown Website-->
-
-       <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <h5 class="card-title m-0">General Settings</h5>
-                            <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#general-s">
-                            <i class="bi bi-pencil-square"></i>Edit
-                                </button>
-                        </div>
-                        <h6 class="card-subtitle mb-1 fw-bold">Site Title</h6>
-                        <p class="card-text" id="site_title"></p>
-                        <h6 class="card-subtitle mb-1 fw-bold">About Us</h6>
-                        <p class="card-text" id="site_about"></p>  
-                    </div>
-                </div> 
-
+       
 
         <?php require('inc/scripts.php');?>
         <script>
@@ -95,6 +99,8 @@
 
                 let site_title_inp = document.getElementById('site_title_inp');
                 let site_about_inp = document.getElementById('site_about_inp');
+
+                let shutdown_toggle = document.getElementById('shutdown-toggle');
 
                 let xhr =new XMLHttpRequest();
                 xhr.open("POST","ajax,settings_crud.php",true);
@@ -111,6 +117,15 @@
 
                     site_title_inp.value = general_data.site_title;
                     site_about_inp.value = general_data.site_about;
+
+                    if(general_data.shutdown ==0){
+                        shutdown_toggle.checked = false;
+                        shutdown_toggle.value = 0;
+                    }
+                    else{
+                        shutdown_toggle.checked = true;
+                        shutdown_toggle.value = 1;
+                    }
                 }
 
 
@@ -141,6 +156,29 @@
 
 
                 xhr.send('site_title='+site_title_val+'&site_about='+site_about_val+'&upd_general');
+            }
+
+            function upd_shutdown(val)
+            {
+                let xhr =new XMLHttpRequest();
+                xhr.open("POST","ajax,settings_crud.php",true);
+                xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
+
+                xhr.onload = function(){
+                    if(this.responseText ==1 && general_data.shutdown==0)
+                    {
+                        alert('success', 'Site is shutdown!');
+                       
+                    }
+                    else
+                    {
+                        alert('Success', ' Shutdown mode deactivated!');
+                    }
+                    get_general();
+                }
+
+
+                xhr.send('upd_shutdown='+ val);
             }
 
             window.onload = function(){
