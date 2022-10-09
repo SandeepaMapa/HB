@@ -283,7 +283,7 @@
     </div>
 
     <div class="col-lg-12 text-center mt-5">
-      <a href="Accomodation.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-sm">More Rooms >>></a>
+      <a href="Accomodation.php" class="button-hall btn-sm btn-outline-dark rounded-0 fw-bold shadow-sm">More Rooms >>></a>
     </div>
   </div>
 </div>
@@ -366,7 +366,7 @@
       
       </div>
       <div class="col-lg-12 text-center mt-5">
-      <a href="Events.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-sm">View Events >>></a>
+      <a href="Events.php" class="button-hall btn-sm btn-outline-dark rounded-0 fw-bold shadow-sm">View Events >>></a>
     </div>
 </div>
 </div>
