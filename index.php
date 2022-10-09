@@ -103,7 +103,7 @@
 </div>
 
 <!--Rooms-->
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">Our Rooms</h2>
+<h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">OUR ROOMS</h2>
 
 <div class="container">
   <div class="row">
@@ -158,7 +158,7 @@
               </div>
               <div class="d-flex justify-content-evenly mb-2">
                 <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
-                <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
+                <a href="StandardRooms.php" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
               </div>
          
         </div>
@@ -282,12 +282,12 @@
       </div>
     </div>
 
-
     <div class="col-lg-12 text-center mt-5">
-      <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-sm">More Rooms >>></a>
+      <a href="Accomodation.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-sm">More Rooms >>></a>
     </div>
   </div>
 </div>
+<br><br>
 <!--End of rooms-->
 
 <!--Facilities-->
@@ -315,9 +315,10 @@
   </div>
 </div>
 <!--End of Facilities-->
+<br><br>
 
 <!-- Events -->
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold ">Events we can take care of</h2>
+<h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">Events we can take care of</h2>
 <div class="container-fluid">
   <div class="row justify-content-evenly px-lg-0 px-md-0 px-5">
     <div class="my-3 " style="max-width: 350px; margin:auto;">
@@ -364,8 +365,13 @@
       </div>
       
       </div>
+      <div class="col-lg-12 text-center mt-5">
+      <a href="Events.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-sm">View Events >>></a>
+    </div>
 </div>
 </div>
+<br><br>
+
 
 <!--Reach Us-->
 <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">Reach Us</h2>

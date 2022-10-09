@@ -34,6 +34,8 @@
   </p>
   </div>
 
+  <br><br>
+  
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
