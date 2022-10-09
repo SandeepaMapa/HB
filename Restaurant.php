@@ -158,7 +158,6 @@
   </div>
 </div>
 
-   <!--Rooms-->
 <div class="card mb-3 border-0 shadow">
        <div class="row g-0 p-3 align-items-center">
         <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
@@ -179,7 +178,7 @@
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
           <h6 class="mb-4">Rs. 1500 per Person</h6>  
             <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
-            <a href="#" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
+            <a href="BBQ.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
 </div>

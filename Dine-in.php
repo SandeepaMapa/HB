@@ -137,7 +137,9 @@
              facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas have free WiFi for your convenience. 
           The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
            immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower in the en-suite luxury bathroom..</p>
-           <h5>open hours :- 6AM to 10AM <br><br> Capacity :- 100 persons</h5>
+           <h6 class="mb-2 ms-3">open hours :- 6AM to 11PM</h6>  
+          <h6 class="mb-2 ms-3">Capacity :- 100 persons</h6> 
+          <h6 class="mb-2 ms-3">Rs. 2500 per person</h6> 
       </div>
    
     </div>
@@ -160,7 +162,10 @@
              facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas have free WiFi for your convenience. 
           The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
            immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower in the en-suite luxury bathroom..</p>
-           <h5>open hours :- 12PM to 3PM <br><br> Capacity :- 100 persons</h5>
+           <h6 class="mb-2 ms-3">open hours :- 12PM to 3PM</h6>  
+          <h6 class="mb-2 ms-3">Capacity :- 100 persons</h6> 
+          <h6 class="mb-2 ms-3">Rs. 2500 per person</h6> 
+      </div>
       </div>
    
     </div>
@@ -182,7 +187,9 @@
            facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas have free WiFi for your convenience. 
         The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
          immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower in the en-suite luxury bathroom..</p>
-         <h5>open hours :- 7PM to 10PM <br><br> Capacity :- 100 persons</h5>
+         <h6 class="mb-2 ms-3">open hours :- 7PM to 10PM</h6>  
+          <h6 class="mb-2 ms-3">Capacity :- 100 persons</h6> 
+          <h6 class="mb-2 ms-3">Rs.2500 per person</h6> 
     </div>
  
   </div>
