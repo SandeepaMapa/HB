@@ -103,54 +103,33 @@
     <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">WEDDINGS</h2>
     <div class="h-line bg-dark"></div>
       <p class="text-center mt-3">
-        Celebrate your love story amidst plush greenery and the magic of River's Edge Reception.<br>
+      The tearful smiles of the walk down the aisle. The first kiss as a couple.
+      The celebrations that follow. Your wedding is a chance to craft moments that will last you a lifetime.
+      At River's Edge, we want those moments to be truly memorable.<br>
       </p>
   </div>
 
+    <!--Services-->
 
-  
-  <!--image grid-->
-
-  <div class="containeer">
+  <div class="container">
 <div class="row">
   <div class="col-lg-6 col-md-6 mb-5 px-4">
     <div class="bg-white rounded shadow p-4 ">
-    <iframe class="w-100 rounded mb-4" height="320px" img src="Photos\Events\wed7.jpg" ></iframe>
-  <h5>Address</h5>
-  <a herf="https://g.page/river-s-edge-madampe-ambalangoda?share" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
-    <i class="bi bi-geo-alt-fill"></i> River's Edge madampe Ambalangoda
-    </a>
-
-     <h5 class="mt-4">Call us </h5>
-     <a href="tel:  07793064301" class="d-inline-block mb-2 text-decoration-none text-dark">
-      <i class="bi bi-telephone-fill"></i> 0779306430
-    </a>
-
-    <br>
-
-    <a href="tel:  0779306430" class="d-inline-block mb-2 text-decoration-none text-dark">
-      <i class="bi bi-telephone-fill"></i> 0779306430
-    </a>
-
-    <h5 class="mt-4">Email</h5>
-    <a href="mailto:riversegde@gmail.com"class="d-inline-block text-decoration-none text-dark">
-     <i class="bi bi-envelope-fill"> </i> riversegde@gmail.com
-     </a>
-       
-     
-
-     <h5 class="mt-4">Follow us</h5>
-      <a href="#" class="d-inline-block text-dark fs-5 me-2 ">
-          <i class="bi bi-twitter me-1 "></i>
-      </a>
-      
-      <a href="#" class="d-inline-block  text-dark fs-5 me-2">
-        <i class="bi bi-instagram me-1 "></i> 
-    </a>
-     
-    <a href="https://www.facebook.com/Riversedgemadampe/?ref=page_internal" class="d-inline-block text-dark fs-5 me-2">
-      <i class="bi bi-facebook me-1 "></i>
-  </a>
+  <h5>Free Services</h5>
+  <ul class="list-unstyled">
+    <li>Decorations</li>
+    <li>Oil Lamp</li>
+    <li>Registration Table</li>
+    <li>Car Park</li>
+  </ul>
+  <br>
+  <h5>Payable Other Services</h5>
+  <ul class="list-unstyled">
+    <li>Decorations</li>
+    <li>Oil Lamp</li>
+    <li>Registration Table</li>
+    <li>Car Park</li>
+  </ul>
      
 
 </div>
@@ -220,7 +199,8 @@
 </div>
 <!--Information Form Ends-->
 
-</div>     
+</div>
+  </div>
 
  <br><br><br><br>
 
