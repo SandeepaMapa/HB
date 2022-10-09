@@ -9,33 +9,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <?php require('inc/links.php'); ?>
     
-    <!--Styling the border of the box-->
-    <style>
-      .pop:hover{
-        border-top-color: var(--teal) !important;
-        transform: scale(1.03 );
-        transition: all 0.3s;
-      }
-      .availability-form{
-        margin-top: -50px;
-        z-index: 2;
-        position:relative;
-      }
-
-    @media screen and (max-width: 575px){
-
-      .availability-form{
-        margin-top: 25px;
-        padding:0 35px;
-       }
-    }
-
-    .text1 {
-        font-size:15px; 
-    }
-  
-    
-    </style>
   </head>
 
   <body class="bg-light">
@@ -47,53 +20,40 @@
      
            <img src="Photos\Events\50.jpg" class="w-100 d-block" height="550"/>
          
-  
-         <!-- check availability -->
+  <!--slider-->
+  <div class="container">
+        <!-- Swiper -->
+      <div class="swiper mySwiper">
+      <div class="swiper-wrapper mb-5">
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Demo\R1.jpeg" class="w-100">
+          <h5 class="mt-2">Random Name</h5>
+        </div>
 
-<div class="container availability-form">
-  <div class="row">
-    <div class="col-lg-12 bg-white shadow p-4 rounded">
-      <form >
-            <div class="row align-items-end">
-              <div class="col-lg-3 mb-3">
-                <label class="form-label" style="font-weight: 500;">Check-in</label>
-                <input type="date" class="form-control shadow-none">
-              </div>
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Front\3rd dec.jpg" class="w-100">
+          <h5 class="mt-2">Random Name</h5>
+        </div>
 
-              <div class="col-lg-3 mb-3">
-                <label class="form-label" style="font-weight: 500;">Check-out</label>
-                <input type="date" class="form-control shadow-none">
-              </div>
-              <div class="col-lg-2 mb-3">
-                <label class="form-label" style="font-weight: 500;">Adults</label>
-                <select class="form-select shadow-none">
-                  <option selected>Select number</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="3">4</option>
-                </select>
-              </div>
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Front\3rd dec.jpg" class="w-100">
+          <h5 class="mt-2">Random Name</h5>
+        </div>
 
-              <div class="col-lg-2 mb-3">
-                <label class="form-label" style="font-weight: 500;">Children</label>
-                <select class="form-select shadow-none">
-                  <option selected>Select number</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="3">4</option>
-                </select>
-              </div>
-                <div class="col-lg-2 mb-lg-3 mt-2">
-                  <button type="submit" class="btn text-white shadow-none custom-bg">Book Now</button>
-                </div>
-            </div>
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Front\3rd dec.jpg" class="w-100">
+          <h5 class="mt-2">Random Name</h5>
+        </div>
 
-      </form>
-    </div>
-  </div>
-</div>
+        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+          <img src="Photos\Front\3rd dec.jpg" class="w-100">
+          <h5 class="mt-2">Random Name</h5>
+        </div>
+        
+      </div>
+      <div class="swiper-pagination"></div>
+      </div>
+      </div>
  
 <br>
 <h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Events.php" style="text-decoration:none">EVENTS</a> &nbsp > &nbsp WEDDINGS</h6>
@@ -208,6 +168,32 @@
 
 <!--Footer-->
   <?php require('inc/footer.php'); ?>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView :4,
+    spaceBetween:40,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView:1,
+      },
+      640: {
+        slidesPerView:1,
+      },
+      768: {
+        slidesPerView:2,
+      },
+      1024: {
+        slidesPerView:3,
+      },
+    }
+  });
+</script>
 </body>
 </html>
