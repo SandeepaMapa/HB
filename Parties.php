@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>River's Edge - Weddings</title>
+    <title>River's Edge - Parties</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <?php require('inc/links.php'); ?>
@@ -18,10 +18,10 @@
     
    <br>
      
-           <img src="Photos\Events\50.jpg" class="w-100 d-block" height="550"/>
+           <img src="Photos\Events\Party2.jpg" class="w-100 d-block" height="550"/>
          
   <!--slider-->
-  <div class="container">
+  <div class="container px-4">
         <!-- Swiper -->
       <div class="swiper mySwiper">
       <div class="swiper-wrapper mb-5">
@@ -168,6 +168,7 @@
 
 <!--Footer-->
   <?php require('inc/footer.php'); ?>
+  
  <!-- Swiper JS -->
  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
