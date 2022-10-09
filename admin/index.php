@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+    require('inc/essentials.php'); //
+>>>>>>> 1367deb75c07c588db36275ec9b48e668d62c519
     require('inc/db_config.php');
 ?>
 
@@ -36,12 +40,12 @@
         <h4 class="bg-dark text-white py-3">ADMIN LOGIN PANEL</h4>
         <div class="p-4">
         <div class="mb-3">
-            <input name="admin_name" required type="text" class="form-control shadow-none text-center" placeholder="Admin Name">  
+        <input name="admin_name" required type="text" class="form-control shadow-none text-center" placeholder="Admin Name">  
       </div>
 
 <<<<<<< Updated upstream
            <div class="mb-4 ">
-                    <input name ="admin_pass" required type="password" class="form-control shadow-none" placeholder="Password">
+            <input name ="admin_pass" required type="password" class="form-control shadow-none" placeholder="Password">
               </div>
                  <button name="login" type="submit" class="btn text-white custom-bg shadow-none">LOGIN
 =======
@@ -73,14 +77,9 @@ if (isset($_POST['login'])) {
 
     $res = select($query, $values, "ss");
     if($res->num_rows==1){
-        echo"got user";
+        $row = mysqli_fetch_assoc($res);
     }else{
-        echo <<<alert
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        alert;
+        alert('error', 'Loin failed - Invalid Credentials!');
     }
     
 }
