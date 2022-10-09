@@ -83,8 +83,9 @@
 
 
 
-                xhr.onreadystatechange = function(){
-                    if
+                xhr.onload = function(){
+                    general_data = this.responseText;
+                    console.log.(general_data)
                 }
                 xhr.send('get_general');
             }
