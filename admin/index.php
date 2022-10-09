@@ -1,8 +1,12 @@
 <?php
-    require('inc/essentials.php'); //
+<<<<<<
     require('inc/db_config.php');
 ?>
 
+=======
+  require('inc/db_config.php');
+?>
+>>>>>>> Stashed changes
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,6 +45,11 @@
      </form>
 
 </div>
+<?php
+  
+  if(isset($_POST['login']))
+  {
+    $frm_data = filteration($_POST);
 
 <?php
 if (isset($_POST['login'])) {
