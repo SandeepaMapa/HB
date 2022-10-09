@@ -31,9 +31,9 @@
                                 </button>
                         </div>
                         <h6 class="card-subtitle mb-1 fw-bold">Site Title</h6>
-                        <p class="card-text">Content</p>
+                        <p class="card-text" id="site_title"></p>
                         <h6 class="card-subtitle mb-1 fw-bold">About Us</h6>
-                        <p class="card-text">Content</p>  
+                        <p class="card-text" id="site_about"></p>  
                     </div>
                 </div> 
 
@@ -47,11 +47,11 @@
                         <div class="modal-body">
                         <div class="mb-3">
                             <label  class="form-label">Site Title</label>
-                            <input type="text" name="site_title" class="form-control shadow-none">
+                            <input type="text" name="site_title" id="site_title_inp" class="form-control shadow-none">
                             </div>
                             <div class="mb-3">
                                 <label  class="form-label">About Us</label>
-                                <textarea name="site_about" class="form-control shadow-none" rows="6"></textarea>
+                                <textarea name="site_about" id="site_about_inp" class="form-control shadow-none" rows="6"></textarea>
                                 </div>
                         </div>
                         <div class="modal-footer">
@@ -73,8 +73,11 @@
             let general_data;
 
             function get_general(){
-                let site_title;
-                let site_about;
+                let site_title = document.getElementById('site_title');
+                let site_about = document.getElementById('site_about');
+
+                let site_title_inp = document.getElementById('site_title_inp');
+                let site_about_inp = document.getElementById('site_about_inp');
 
                 let xhr =new XMLHttpRequest();
                 xhr.open("POST","ajax,settings_crud.php",true);
@@ -84,10 +87,22 @@
 
 
                 xhr.onload = function(){
-                    general_data = this.responseText;
-                    console.log.(general_data)
+                    general_data = JSON.parse(this.responseText);
+                    
+                    site_title.innerText = general_data.site_title;
+                    site_about.innerText = general_data.site_about;
+
+                    site_title_inp.value = general_data.site_title;
+                    site_about_inp.value = general_data.site_about;
                 }
+
+
                 xhr.send('get_general');
+            }
+
+
+            window.onload = function(){
+                get_general();
             }
         </script>
     </body>
