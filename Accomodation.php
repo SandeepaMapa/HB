@@ -102,7 +102,7 @@
 
      <!--Topics-->
   <div class="my-5 px-4">
-  <h2 class="fm-bold h-font text-center">ACCOMODATION</h2>
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">ACCOMODATION</h2>
   <div class="h-line bg-dark"></div>
   <p class="text-center mt-3">
   The lake, the temple, the paddy field and the traditional festivities; the soul of every rural village in Sri Lanka is encapsulated in these four elements. At Sigiriya<br>
@@ -166,7 +166,7 @@
      </div>
         </nav> 
    </div>
-      
+        <!--Rooms-->
     <div class="col-lg-9 col-md-12 px-4">
       <div class="card mb-3 border-0 shadow">
        <div class="row g-0 p-3 align-items-center">
@@ -223,7 +223,7 @@
   </div>
 </div>
 
-   <!--Rooms-->
+ 
 <div class="card mb-3 border-0 shadow">
        <div class="row g-0 p-3 align-items-center">
         <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">

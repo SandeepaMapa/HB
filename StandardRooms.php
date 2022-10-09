@@ -108,23 +108,33 @@
   </div>
 
   <br><br>
+  
   <!--image grid-->
 
-  
-  <div class="row g-0 p-3 align-items-center">
-    <div class="col-md-4 mb-lg-0 ms-4 mb-md-0 mb-3">
-    <img src="Photos\Rooms\IMG_50222.jpg" class="img-fluid rounded" width=600px height=800px>
-    </div>
-    <div class="col-md-4 px-lg-5 px-md-3 px-0">
-      <div class="card-body">
-        <p class="card-text">There is a cosy little dining nook and to make it even better, the room comes with tea and coffee making
-             facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas have free WiFi for your convenience. 
-          The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
-           immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower in the en-suite luxury bathroom..</p>
-      </div>
-    </div>
+  <div class="container">
+     <div class="row">
+      
+       <div class="row g-0 p-3 align-items-center">
+        <div class="col-md-5 mb-lg-0 ms-5 mb-md-0 mb-3">
+          <img src="Photos\Rooms\IMG_5022.jpg" class="img-fluid rounded" class="img-fluid rounded">
+        </div>
+        <div class="col-md-5 px-lg-4 px-md-3 px-0">
+         <h5 class="mb-3 mt-1 ms-3">DETAILS</h5> 
+         <p class="me-0 ms-3">There is a cosy little dining nook and to make it even better, the room comes with tea and coffee making
+             facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas
+              have free WiFi for your convenience. 
+          The highlight of the room is the outside patio. Completely private, this is the ideal 
+          spot to sit back and savour a beverage
+           immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower
+            in the en-suite luxury bathroom..</p>
+            <h6 class="mb-2 ms-3">Maximum occupancy : 3</h6>  
+          <h6 class="mb-2 ms-3">No.of.Rooms : 5</h6> 
+        </div>   
   </div>
- <br><br>
+</div>
+</div>      
+
+ <br><br><br><br>
 
  <!--facilities-->
  <h3 class="fm-bold h-font text-center">Facilities</h3>
