@@ -123,3 +123,8 @@ input[type=number] {
    background-color: #012e62;
 }
 
+.custom-alert{
+  position: fixed;
+  top:25px;
+  right:25px;
+}

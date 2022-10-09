@@ -7,6 +7,8 @@
     <title>River's Edge - Dayouts</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <?php require('inc/links.php'); ?>
     
   </head>
@@ -69,68 +71,65 @@
       </p>
   </div>
 
+  
     <!--Services-->
 
   <div class="container">
+
+  <div class="card mb-3 border-0 shadow">
+       <div class="row g-0 p-3 align-items-center">
+        <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+         <img src="Photos\Gallery\rest.jpg" class="img-fluid rounded">
+        </div>
+        <div class="col-md-5 px-lg-4 px-md-3 px-0">
+         <h4 class="mb-3">Dayout Packages</h4>
+           <div class="features mb-3">
+                <h6 class="mb-1"></h6>
+                
+            </div>
+          </div>   
+        <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
+          <h6 class="mb-4"></h6>  
+            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
+            <a href="BBQ.php" class="btn btn-sm w-100 btn-outline-dark shadow-none" 
+            data-toggle="modal" data-target="#basicModal_V-align">View Menus</a>
+    </div>
+  </div>
+</div>
 <div class="row">
   <div class="col-lg-6 col-md-6 mb-5 px-4">
     <div class="bg-white rounded shadow p-4 ">
-  <h5>Free Services</h5>
-  <ul class="list-unstyled">
-    <li>Decorations</li>
-    <li>Oil Lamp</li>
-    <li>Registration Table</li>
-    <li>Car Park</li>
-  </ul>
-  <br>
-  <h5>Payable Other Services</h5>
-  <ul class="list-unstyled">
-    <li>Decorations</li>
-    <li>Oil Lamp</li>
-    <li>Registration Table</li>
-    <li>Car Park</li>
-  </ul>
-  <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2 text-white border-white " data-bs-toggle="modal" data-bs-target="#loginModal">
-  Login
-</button>
-<button type="button" class="btn btn-outline-dark shadow-none text-white border-white" data-bs-toggle="modal" data-bs-target="#registerModal">
-  Register
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form action="">
-        <div class="modal-header">
-          <h5 class="modal-title d-flex align-items-center">
-            <i class="bi bi-person-circle fs-3 me-2"></i>
-          User Login</h5>
-          <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+  
+  
+<!--Starting Basic Modal________________________________________________________________________________________ -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicModal_V-align">
+            Basic Modal Vertical
+        </button>
+        <!--Basic modal-->
+        <div class="modal" tabindex="1" role="dialog" id="basicModal_V-align" >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+
+                <!--Model Content
+                There is a header/ content/ footer in a model-->
+                <div class="modal-content">
+                  
+
+                    <!--Body
+                    We can put anything in the body; either text or tables or badges or whatever we want-->
+                    <div class="modal-body">
+                        <img src ="Photos\Menus\DayOut Resized.png">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                        <button type="button" class="btn btn-primary"> Save Changes</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <div class="mb-3">
-        <label  class="form-label">Email address</label>
-        <input type="email" class="form-control shadow-none">
-         
-      </div>
+        <!--Ending Basic Modal________________________________________________________________________________________ -->
 
-      <div class="mb-4 ">
-        <label  class="form-label">Password</label>
-        <input type="password" class="form-control shadow-none">
-      </div> 
 
-      <div class="d-flex align-items-center justify-content-between mb-2">
-        <button type="submit" class="btn btn-dark shadow-none">LOGIN  </button>
-        <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot Password?</a>
-      </div>
-          
-        </div>
-        
-        </form>
-      </div>
-    </div>
-  </div>
 
 </div>
 </div>
@@ -236,5 +235,13 @@
     }
   });
 </script>
+
+ <!--adding js CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+        </script>
 </body>
 </html>
