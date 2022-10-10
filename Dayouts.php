@@ -19,8 +19,7 @@
   <?php require('inc/header.php'); ?>
     
    <br>
-     
-           <img src="Photos\Events\Party2.jpg" class="w-100 d-block" height="550"/>
+    <img src="Photos\Events\Party2.jpg" class="w-100 d-block" height="550"/>
          
   <!--slider-->
   <div class="container px-4">
@@ -55,7 +54,8 @@
       </div>
       <div class="swiper-pagination"></div>
       </div>
-      </div>
+  </div>
+  <!--Slider ends-->
  
 <br>
 <h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Events.php" style="text-decoration:none">EVENTS</a> &nbsp > &nbsp DAYOUTS</h6>
@@ -70,14 +70,13 @@
       Our Event Hosting services are ready for your celebration so get the party started and contact us today<br>
       </p>
   </div>
-
+  <!--Topic End -->
   
-    <!--Services-->
-
+  <!--Dayouts Start-->
   <div class="container">
 
   <div class="card mb-3 border-0 shadow">
-       <div class="row g-0 p-3 align-items-center">
+      <div class="row g-0 p-3 align-items-center">
         <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
          <img src="Photos\Gallery\rest.jpg" class="img-fluid rounded">
         </div>
@@ -85,121 +84,34 @@
          <h4 class="mb-3">Dayout Packages</h4>
            <div class="features mb-3">
                 <h6 class="mb-1"></h6>
-                
-            </div>
-          </div>   
-        <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-          <h6 class="mb-4"></h6>  
-            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
-            <a href="BBQ.php" class="btn btn-sm w-100 btn-outline-dark shadow-none" 
-            data-toggle="modal" data-target="#basicModal_V-align">View Menus</a>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-lg-6 col-md-6 mb-5 px-4">
-    <div class="bg-white rounded shadow p-4 ">
-
-  
-  
-<!--Starting Basic Modal________________________________________________________________________________________ -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicModal_V-align">
-            Basic Modal Vertical
-        </button>
-        <!--Basic modal-->
-        <div class="modal" tabindex="1" role="dialog" id="basicModal_V-align" >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-
-                <!--Model Content
-                There is a header/ content/ footer in a model-->
-                <div class="modal-content">
-                  
-
-                    <!--Body
-                    We can put anything in the body; either text or tables or badges or whatever we want-->
-                    <div class="modal-body">
-                        <img src ="Photos\Menus\DayOut Resized.png">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
-                        <button type="button" class="btn btn-primary"> Save Changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Ending Basic Modal________________________________________________________________________________________ -->
-
-
-
-</div>
-</div>
-
-<!--Information Form-->
-<div class="col-lg-6 col-md-6  px-4">
-    <div class="bg-white rounded shadow p-4 ">
-      <form>
-        <h5> Send Us Your Details </h5>
-        <p>Make your dreams come true with our impeccable event planning service. 
-          Simply provide us with your information and our highly professional 
-          concierge will get in touch to serve you</p>
-        <div class=" mt-3">
-          <label  class="form-label" style="font-weight: 500;">Full Name</label>
-        <input type="text" class="form-control shadow-none">
-           </div>
-
-           <div class=" mt-3">
-          <label  class="form-label" style="font-weight: 500;">Email Address</label>
-        <input type="email" class="form-control shadow-none">
-           </div>
-
-           <div class=" mt-3">
-          <label  class="form-label" style="font-weight: 500;">Contact Number</label>
-        <input type="text" class="form-control shadow-none">
-           </div>
-
-           <div class="row">
-           <div class="mt-3">
-                <label class="form-label" style="font-weight: 500;">Expected Date</label>
-                <input type="date" class="form-control shadow-none">
-              </div>
-
-              <div class="mt-3">
-                <label class="form-label" style="font-weight: 500;">Expected Crowd</label>
-                <input type="number" min="50" max="300" class="form-control shadow-none">
-              </div>
-           </div>
-      <br>
-              <select class="form-select" aria-label="Default select">
-                <option selected>Event Time</option>
-                <option value="1">Day</option>
-                <option value="2">Night</option>
-                <option value="3">All Day</option>
-              </select>
-
-          <div class="mt-3">
-                <label class="form-label" style="font-weight: 500;">Do you need an extra Guestroom?</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">Yes</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">No</label>
             </div>
           </div>
 
-           <div class=" mt-3">
-          <label  class="form-label" style="font-weight: 500;">Additional Information</label>
-        <textarea class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
-           </div>
-           <button type="submit" class="btn text-white custom-bg mt-3">SEND</button>
-      </form>
-</div>
-</div>
-<!--Information Form Ends-->
-
-</div>
+        <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
+          <h6 class="mb-4"></h6>
+            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
+            <a href="Dayouts.php" class="btn btn-sm w-100 btn-outline-dark shadow-none"
+            data-toggle="modal" data-target="#ViewMenu">View Menus</a>
+            <!--Starting Basic Modal_________________________________________ -->
+            <!--Basic modal-->
+        <div class="modal" tabindex="1" role="dialog" id="ViewMenu" >
+            <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+              <div class="modal-body">
+              <img src ="Photos\Menus\DayOut Resized.png">
+              </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">CLOSE</button>
+                </div>
+            </div>
+        </div>
+       <!--Ending Basic Modal_________________________________________________ -->
+        </div>
+      </div>
   </div>
+</div>
+<!--Dayouts End-->
+
+
 
  <br><br><br><br>
 
