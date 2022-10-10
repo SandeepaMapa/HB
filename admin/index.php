@@ -19,10 +19,10 @@
 <title>Admin Login panel</title>
 <?php require('inc/links.php'); ?>
 <style>
-    div.login-form{
+   div.login-form{
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 30%;
+        left: 40%;
         transform: translate(-50%,-50%)
         width: 400px;
     }
