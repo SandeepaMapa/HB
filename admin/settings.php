@@ -69,6 +69,23 @@
 
 
         <?php require('inc/scripts.php');?>
+        <script>
+            let general_data;
+
+            function get_general(){
+                let site_title;
+                let site_about;
+
+                let xhr =new XMLHttpRequest();
+                xhr.open("POST","ajax,settings_crud.php",true);
+                xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
+
+
+
+                
+                xhr.send('get_general');
+            }
+        </script>
     </body>
 
     </html>
