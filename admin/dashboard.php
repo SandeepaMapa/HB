@@ -19,7 +19,6 @@
 
        
        <div class="container-fluid"  id="main-content">
-         <h3 class="mb-0">ADMIN PANEL</h3>
     
     
        </div>
