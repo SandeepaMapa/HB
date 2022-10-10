@@ -16,7 +16,7 @@
 <!--Header-->
   <?php require('inc/header.php'); ?>
     
-   <br>
+
      
    <!--Image carousal-->
    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
