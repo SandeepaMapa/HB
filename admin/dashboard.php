@@ -18,9 +18,9 @@
     <?php require('inc/header.php') ?>    
 
        
-       <div class="container-fluid bg-dark text-light p-3 d-flex align-items-center justify-content-between"  id="main-content">
+       <div class="container-fluid"  id="main-content">
          <h3 class="mb-0">ADMIN PANEL</h3>
-         <a href="logout.php" class="btn btn-light btn-sm">LOG OUT</a>
+    
     
        </div>
 

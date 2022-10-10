@@ -1,8 +1,7 @@
-<div class="container fluid bg-dark text-light p-3 d-flex align-items-center justify-content-between sticky-top">
+<div class="navbar navbar-expand-lg navbar-light px-lg-4 py-lg-3 shadow-sm align-items-center justify-content-between sticky-top bg-dark text-light">
     <h3 class="mb-0 h-font">River's Edge</h3>
     <a href="logout.php" class="btn btn-light btn-sm">LOG OUT</a>
 </div>
-
 <div class="col-lg-2 bg-dark border-top border-3 border-secondary " id="dashboard-menu">
     <nav class="navbar navbar-expand-lg navbar-dark ">
     <div class="container-fluid flex-lg-column align-items-stretch">
