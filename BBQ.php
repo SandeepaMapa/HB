@@ -97,7 +97,7 @@
 
    <!--Topics-->
    <div class="my-5 px-4">
-    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">VILLA</h2>
+    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">BBQ</h2>
     <div class="h-line bg-dark"></div>
       <p class="text-center mt-3">
         Celebrate your love story amidst plush greenery and the magic of River's Edge Reception. Celebrate your love 
@@ -125,7 +125,7 @@
           spot to sit back and savour a beverage
            immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower
             in the en-suite luxury bathroom..</p>
-          <h6 class="mb-2 ms-3">>Open in Friday to Sunday :- 7PM to 10PM</h6>  
+          <h6 class="mb-2 ms-3">Open in Friday to Sunday :- 7PM to 10PM</h6>  
           <h6 class="mb-2 ms-3">Capacity :- 50 persons</h6> 
           <h6 class="mb-2 ms-3">Rs. 1500 per person</h6> 
         </div>   
