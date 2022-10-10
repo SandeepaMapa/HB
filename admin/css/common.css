@@ -120,8 +120,9 @@ input[type=number] {
       height: auto;
       width: 100%;
     }
+
     #main-content{
-      margin-top: 60px;
+      margin-top: 50px;
     }
   }
 
