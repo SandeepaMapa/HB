@@ -1,3 +1,8 @@
+:root {
+  --teal: #0C3E77;
+  --teal_hover:  #002B5B;
+}
+
 .f1{
     
     font-family: 'Poppins', sans-serif;
@@ -118,4 +123,10 @@ input[type=number] {
     #main-content{
       margin-top: 60px;
     }
+  }
+
+  .custom-alert{
+    position: fixed;
+    top:25px;
+    right:25px;
   }

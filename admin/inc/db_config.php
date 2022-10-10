@@ -31,11 +31,13 @@
                 $res = mysqli_stmt_get_result($stmt);
                 mysqli_stmt_close($stmt);
                 return $res;
-            }else {
+            }
+            else {
                 mysqli_stmt_close($stmt);
                 die("Query cannot be executed - Select");
             }
-        }else {
+        }
+        else {
             die("Query cannot be executed - Select");
         }
     }
