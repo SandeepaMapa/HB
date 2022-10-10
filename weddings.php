@@ -112,19 +112,21 @@
           <label  class="form-label" style="font-weight: 500;">Email Address</label>
         <input type="email" class="form-control shadow-none">
            </div>
-
+           <div class="row align-items-end">   
+          </div>
            <div class=" mt-3">
-          <label  class="form-label" style="font-weight: 500;">Contact Number</label>
-        <input type="text" class="form-control shadow-none">
+             <label  class="form-label" style="font-weight: 500;">Contact Number</label>
+            <input type="text" class="form-control shadow-none">
+        
            </div>
 
-           <div class="row">
-           <div class="mt-3">
+           <div class="row align-items-end">
+           <div class="col-lg-5 mb-3 mt-3">
                 <label class="form-label" style="font-weight: 500;">Expected Date</label>
                 <input type="date" class="form-control shadow-none">
               </div>
 
-              <div class="mt-3">
+              <div class="col-lg-5 mb-3 mt-3">
                 <label class="form-label" style="font-weight: 500;">Expected Crowd</label>
                 <input type="number" min="50" max="300" class="form-control shadow-none">
               </div>
