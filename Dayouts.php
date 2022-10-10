@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>River's Edge - Weddings</title>
+    <title>River's Edge - Dayouts</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <?php require('inc/links.php'); ?>
@@ -18,7 +18,7 @@
     
    <br>
      
-           <img src="Photos\Events\50.jpg" class="w-100 d-block" height="550"/>
+           <img src="Photos\Events\Party2.jpg" class="w-100 d-block" height="550"/>
          
   <!--slider-->
   <div class="container px-4">
@@ -56,16 +56,16 @@
       </div>
  
 <br>
-<h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Events.php" style="text-decoration:none">EVENTS</a> &nbsp > &nbsp WEDDINGS</h6>
+<h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Events.php" style="text-decoration:none">EVENTS</a> &nbsp > &nbsp DAYOUTS</h6>
 
    <!--Topics-->
    <div class="my-5 px-4">
-    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">WEDDINGS</h2>
+    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">DAYOUTS</h2>
     <div class="h-line bg-dark"></div>
       <p class="text-center mt-3">
-      The tearful smiles of the walk down the aisle. The first kiss as a couple.
-      The celebrations that follow. Your wedding is a chance to craft moments that will last you a lifetime.
-      At River's Edge, we want those moments to be truly memorable.<br>
+      These services are a wonderful way to add a unique element to your special event.
+      Regardless of what your Event Hosting needs are, we guarantee that the River's Edge team can manage every request to your precise specifications.
+      Our Event Hosting services are ready for your celebration so get the party started and contact us today<br>
       </p>
   </div>
 
@@ -90,7 +90,47 @@
     <li>Registration Table</li>
     <li>Car Park</li>
   </ul>
-     
+  <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2 text-white border-white " data-bs-toggle="modal" data-bs-target="#loginModal">
+  Login
+</button>
+<button type="button" class="btn btn-outline-dark shadow-none text-white border-white" data-bs-toggle="modal" data-bs-target="#registerModal">
+  Register
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form action="">
+        <div class="modal-header">
+          <h5 class="modal-title d-flex align-items-center">
+            <i class="bi bi-person-circle fs-3 me-2"></i>
+          User Login</h5>
+          <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+        <label  class="form-label">Email address</label>
+        <input type="email" class="form-control shadow-none">
+         
+      </div>
+
+      <div class="mb-4 ">
+        <label  class="form-label">Password</label>
+        <input type="password" class="form-control shadow-none">
+      </div> 
+
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <button type="submit" class="btn btn-dark shadow-none">LOGIN  </button>
+        <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot Password?</a>
+      </div>
+          
+        </div>
+        
+        </form>
+      </div>
+    </div>
+  </div>
 
 </div>
 </div>

@@ -82,7 +82,10 @@
 
 
 
-                
+
+                xhr.onreadystatechange = function(){
+                    if
+                }
                 xhr.send('get_general');
             }
         </script>
