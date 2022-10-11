@@ -1,3 +1,8 @@
+<?php
+  require('admin/inc/db_config.php');
+  require('admin/inc/essentials.php');
+
+?>
 <nav class="navbar navbar-expand-lg navbar-light px-lg-4 py-lg-3 shadow-sm sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand f2 text-white" href="#"><img class="logo" src="Photos\logo neww.png" width="150" height="40"></a>
