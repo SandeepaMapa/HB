@@ -1,10 +1,7 @@
 <?php
 
-require('inc/db_config.php');
-require('inc/essentials.php');
-adminLogin();
 
-   if(isset($_POST['add_feature']))
+if(isset($_POST['add_feature']))
    {
     $frm_data = filteration($_POST);
     $q = "INSERT INTO features (name) VALUES (?)"; 
@@ -45,5 +42,7 @@ adminLogin();
     $res=delete($q,$values,'i');
     echo $res;
    }
+   
+   
    
 ?>
