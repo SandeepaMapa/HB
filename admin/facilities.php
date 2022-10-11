@@ -31,13 +31,13 @@
                             <i class="bi bi-plus-square"></i>Add
                                 </button>
                         </div>
-                       <div class="table-responsive-lg" style="height:450px; overflow-y: scroll;">
+                       <div class="table-responsive-md" style="height:350px; overflow-y: scroll;">
                       <table class="table table-hover border">
                         <thead>
                             <tr class="bg-dark text-light">
                                 <th scope="col">#</th>
                                 <th scope="col">Name</th>
-                                <th scope="col">Area</th>
+                                <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody id="features-data">
@@ -101,7 +101,7 @@
             if(this.responseText = 1){
                 alert('New feature added!');
                 feature_s_form.elements['feature_name'].value='';
-                //get_features();
+                get_features();
             }
             else{
                 alert('error','Server Down!');     
@@ -121,9 +121,14 @@
             document.getElementById('feature-data').innerHTML= this.responseText;
            }
             xhr.send('get_features');
-        }
-        </script>
+        } 
 
+         window.onload=function(){
+           get_features();
+         }
+
+        </script>
+   
     
   </body>
 </html>
