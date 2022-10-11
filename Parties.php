@@ -7,6 +7,8 @@
     <title>River's Edge - Parties</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <?php require('inc/links.php'); ?>
     
   </head>
@@ -103,8 +105,8 @@
       <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
         <h6 class="mb-4"></h6>
           <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
-          <a href="Dayouts.php" class="btn btn-sm w-100 btn-outline-dark shadow-none"
-          data-toggle="modal" data-target="#ViewMenu">View Menus</a>
+          <button class="btn btn-sm w-100 btn-outline-dark shadow-none"
+            data-toggle="modal" data-target="#ViewMenu">View Menus</button>
           <!--Starting Basic Modal_________________________________________ -->
           <!--Basic modal-->
       <div class="modal" tabindex="1" role="dialog" id="ViewMenu" >
@@ -252,5 +254,13 @@
     }
   });
 </script>
+ <!--adding js CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+        </script>
+
 </body>
 </html>
