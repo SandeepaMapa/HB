@@ -7,14 +7,14 @@ adminLogin();
    if(isset($_POST['add_feature']))
    {
     $frm_data = filteration($_POST);
-    $q = "INSERT INTO `features`(`name`) VALUES (?)"; 
+    $q = "INSERT INTO features (name) VALUES (?)"; 
     $values = [$frm_data['name']];
     $res = insert($q,$values,'s');
     echo $res;
    }
 
 
-   if(isset($_POST['get_feature']))
+   if(isset($_POST['get_features']))
     {
      $res = selectAll('features');
      $i=1;
@@ -36,4 +36,14 @@ adminLogin();
      }
    }
 
+   if(isset($_POST['rem_feature']))
+   {
+    $frm_data=filteration($_POST);
+    $values=[$frm_data['rem_feature']];
+
+    $q="DELETE FROM features WHERE id=?";
+    $res=delete($q,$values,'i');
+    echo $res;
+   }
+   
 ?>
