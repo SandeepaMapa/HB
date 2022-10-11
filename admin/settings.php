@@ -95,11 +95,11 @@
                 <div class="col-lg-6">
                 <div class="mb-4">
                 <h6 class="card-subtitle mb-1 fw-bold">Address</h6>
-                <p class="card-text" id="address">Test address</p>
+                <p class="card-text" id="address"></p>
                 </div>
                 <div class="mb-4">
                 <h6 class="card-subtitle mb-1 fw-bold">Google Map</h6>
-                <p class="card-text" id="gmap">Test address</p>
+                <p class="card-text" id="gmap"></p>
                 </div>
                 <div class="mb-4">
                 <h6 class="card-subtitle mb-1 fw-bold">Phone Numbers</h6>
@@ -114,7 +114,7 @@
 
                 <div class="mb-4">
                 <h6 class="card-subtitle mb-1 fw-bold">E-mail</h6>
-                <p class="card-text" id="email">Test address</p>
+                <p class="card-text" id="email"></p>
                 </div>
                 </div>
                 <div class="col-lg-6">
@@ -265,7 +265,12 @@
 
                 xhr.onload = function(){
                    contacts_data = JSON.parse(this.responseText);
-                   console.log(contacts_data);
+                   contacts_data = Object.values(contacts_data);
+
+                   for(i=o;i<contacts_p_id.length;i++){
+                    document.getElementById(contacts_p_id[i]).innerText = contacts_data[i+1];
+                   }
+                   iframe.src = contacts_data[8];
              }
 
 
@@ -274,6 +279,7 @@
 
             window.onload = function(){
                 get_general();
+                get_contacts();
             }
         </script>
     </body>

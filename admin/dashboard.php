@@ -2,7 +2,6 @@
     require('inc/essentials.php');
     adminLogin();
     ?>
-
 <!DOCTYPE html>
     <html lang="en">
     <head>
