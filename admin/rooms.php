@@ -88,19 +88,19 @@
                         </div>
                         <div class=" col-12 mb-3">
                          <label class="form-label fw-bold">Features</label>
-                         <div class="row">
-                            <?php
-                              $res = selectAll('features');
-                              while($opt = mysqli_fetch_assoc($res)){
-                                echo"
-                                <div class='col-md-3'>
-                                  <label>
-                                   <input type='checkbox' name='features' value='$opt[id]' class='form-check-input shadow-none'>
-                                     $opt[name]
-                                  </label>
-                                </div>
-                                ";
-                              }
+                          <div class="row">
+                           <?php
+                             // $res = selectAll('features');
+                             // while($opt = mysqli_fetch_assoc($res)){
+                               // echo"
+                                //<div class='col-md-3'>
+                                //  <label>
+                                //   <input type='checkbox' name='features' value='$opt[id]' class='form-check-input shadow-none'>
+                                //     $opt[name]
+                               //   </label>
+                               // </div>
+                              //  ";
+                             // }
                             ?>
                           </div>
                         </div>
@@ -119,52 +119,52 @@
 
     <?php require('inc/scripts.php');?>
 
-        <script>
-           let feature_s_form = document.getElementById('feature_s_form');
+   <script>
+    let add_room_form = document.getElementById('add_room_form');
 
-           feature_s_form.addEventListener('submit',function(e){
-            e.preventDefault();
-            add_feature();
-           });
-         
-         function add_feature()
-           {
-            let data=new FormData();
-            data.append('name',feature_s_form.elements['features_name'].value);
-            data.append('add_feature','');
-           
-           let xhr=new XMLHttpRequest();
-           xhr.open("POST","ajax/features.php",true);
+    add_room_form.addEventListener('submit',function(e){
+        e.preventDefault();
+        add_rooms();
+    });
 
-           xhr.onload=function(){
-            var myModal=document.getElementById('feature-s');
-            var modal=bootstrap.Modal.getInstance(myModal);
-            modal.hide();
-            
-            if(this.responseText==1){
-                alert('succes','New feature added!');
-                feature_s_form.elements['features_name'].value='';
-                get_features();
-            }
-            else{
-                alert('error','Server Down!');     
-            }
-            }
-            xhr.send(data);
-           }
+                function add_rooms()
+               {
+                    let data=new FormData();
+                    data.append('add_toom','');
+                    data.append('name',add_room_form.elements['name'].value);
+                    data.append('price',add_room_form.elements['price'].value);
+                    data.append('quantity',add_room_form.elements['quantity'].value);
+                    data.append('adult',add_room_form.elements['adult'].value);
+                    data.append('children',add_room_form.elements['children'].value);
 
-           function get_features()
-           {
-            let xhr=new XMLHttpRequest();
-           xhr.open("POST","ajax/features.php",true);
-           xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+                    let features=[];
+                    add_room_form.elements['features'].forEach(el =>{
+                        if(el.checked){
+                            console.log(el.value);
+                        }
+                    })
+                    
+               // let xhr=new XMLHttpRequest();
+               // xhr.open("POST","ajax/features.php",true);
 
-           xhr.onload=function(){
-            document.getElementById('feature-data').innerHTML= this.responseText;
-           }
-            xhr.send('get_features');
-        }
-        </script>
+               // xhr.onload=function(){
+                //    var myModal=document.getElementById('feature-s');
+                //    var modal=bootstrap.Modal.getInstance(myModal);
+                 //   modal.hide();
+                    
+                 //   if(this.responseText = 1){
+                 //       alert('success','New feature added!');
+                 //       feature_s_form.elements['feature_name'].value='';
+                 //       get_features();
+                 //   }
+                 //   else{
+                  //      alert('error','Server Down!');     
+                  //  }
+                    }
+                 //   xhr.send(data);
+              //  }
+        
+    </script>
     
 
     
