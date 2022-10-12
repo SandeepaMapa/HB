@@ -42,7 +42,7 @@
                 </thead>
                 <tbody>
                     <?php
-                    $q = "SELECT *FROM 'user' ORDER BY 'sr-no' DESC";
+                    $q = "SELECT *FROM 'user-queries' ORDER BY 'sr-no' DESC";
                     $data = mysqli_query($con,$q);
                     $i=1;
 
