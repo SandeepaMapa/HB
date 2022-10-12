@@ -50,7 +50,7 @@
                     {
                         $seen='';
                         if($row['seen']!=1){
-                            $seen = "<a herf='btn btn-sm rounded-pill btn-primary'>Mark as read</a>";
+                            $seen = "<a herf='' class='btn btn-sm rounded-pill btn-primary'>Mark as read</a>";
                         }
                         echo<<<query
                         <tr>
