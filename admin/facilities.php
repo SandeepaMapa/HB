@@ -115,7 +115,7 @@
                         
                     <div class="modal-footer">
                         <button type="reset" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
-                        <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
+                        <button type="submit" name="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
                         </div>
                         </div>
                         </form>
