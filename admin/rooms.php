@@ -88,7 +88,7 @@
                         </div>
                         <div class=" col-12 mb-3">
                          <label class="form-label fw-bold">Features</label>
-                          <div class="row">
+                         <div class="row">
                             <?php
                               $res = selectAll('features');
                               while($opt = mysqli_fetch_assoc($res)){
@@ -96,6 +96,7 @@
                                 <div class='col-md-3'>
                                   <label>
                                    <input type='checkbox' name='features' value='$opt[id]' class='form-check-input shadow-none'>
+                                     $opt[name]
                                   </label>
                                 </div>
                                 ";
