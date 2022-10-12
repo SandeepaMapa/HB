@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,21 +110,27 @@ $contact_r = mysqli_fetch_assoc(select($contact_q, $values,'i));
 
 <?php
 
-if(isset($_POST['send']))
-{
-  $frm_data = filteration($_POST);
+    $hname = 'localhost';
+    $uname = 'root';
+    $pass  = '';
+    $db    = 'hbwebsite';
 
-  $q ="INSERT INTO user_queries( name, email , subject , message) VALUES (?,?,?,?)";
-  $values = [$frm_data['name'],$frm_data['email'],$frm_data['subject'],$frm_data['message']];
-
-  $res = insert($q, $values,'ssss');
-  if($res==1){
-    alert('Success','Mail Sent!');
-  } 
-  else{
-    alert('Error','Server Down! Try again later.');
+    $con   = mysqli_connect($hname, $uname, $pass, $db);
+  
+    if(!$con){
+      die("Could not connect to database: " . mysqli_connect_error());
   }
-}
+  echo "Connected successfully";
+
+
+  $sql = "INSERT INTO user_queries(name, email, subject, message) VALUES ('','','','')";
+  if (mysqli_query($con, $sql)) {
+        echo "Mail Sent!";
+  } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+  mysqli_close($con);
+  
 
 ?>
 
