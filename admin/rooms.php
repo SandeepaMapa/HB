@@ -140,29 +140,32 @@
                     let features=[];
                     add_room_form.elements['features'].forEach(el =>{
                         if(el.checked){
-                            console.log(el.value);
+                            features.push(el.value);
                         }
                     })
                     
-               // let xhr=new XMLHttpRequest();
-               // xhr.open("POST","ajax/features.php",true);
+                data.append('features',JSON.stringify(features));
 
-               // xhr.onload=function(){
-                //    var myModal=document.getElementById('feature-s');
-                //    var modal=bootstrap.Modal.getInstance(myModal);
-                 //   modal.hide();
+
+                let xhr=new XMLHttpRequest();
+                xhr.open("POST","ajax/rooms.php",true);
+
+                 xhr.onload=function(){
+                    var myModal=document.getElementById('feature-s');
+                    var modal=bootstrap.Modal.getInstance(myModal);
+                    modal.hide();
                     
-                 //   if(this.responseText = 1){
-                 //       alert('success','New feature added!');
-                 //       feature_s_form.elements['feature_name'].value='';
-                 //       get_features();
-                 //   }
-                 //   else{
-                  //      alert('error','Server Down!');     
-                  //  }
+                    if(this.responseText = 1){
+                        alert('success','New feature added!');
+                        feature_s_form.elements['feature_name'].value='';
+                        get_features();
                     }
-                 //   xhr.send(data);
-              //  }
+                    else{
+                        alert('error','Server Down!');     
+                    }
+                    }
+                    xhr.send(data);
+                }
         
     </script>
     

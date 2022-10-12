@@ -4,7 +4,7 @@
 if(isset($_POST['add_feature']))
    {
     $frm_data = filteration($_POST);
-    $q = "INSERT INTO `features`(`name`) VALUES ('?')"; 
+    $q = "INSERT INTO features(name) VALUES ('')"; 
     $values = [$frm_data['name']];
     $res = insert($q,$values,'s');
     echo $res;

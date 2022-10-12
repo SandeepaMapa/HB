@@ -80,9 +80,9 @@
 
 
     <?php require('inc/scripts.php');?>
+    
 
     <script src="Scripts\features.js"> </script>
    
-    
   </body>
 </html>
