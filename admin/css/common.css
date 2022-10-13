@@ -127,7 +127,7 @@ input[type=number] {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgb(36,36,36);
 }
 
 /* Handle on hover */
