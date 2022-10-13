@@ -3,19 +3,53 @@
  require('inc/db_config.php');
  adminLogin();
 
- if(issert($_GET['seeen']))
+ if(issert($_GET['seen']))
  {
     $frm_data = filteration($_GET);
 
     if($frm_data['seen']=='all'){
+        $sq = "UPDATE = `user_queries` SET `seen`=?";
+        $values = [1];
+        if(update($q,$values,'i')){
+         alert('Success','Marked all as read!');
+        }
+        else{
+         alert('error,''Operation Failed!');
+        }
+
+ }
+ else{
+  $sq = "UPDATE = `user_queries` SET `seen`=?'[value-7]' WHERE 'sr_no'=?";
+   $values = [1,$frm_data['seen']];
+   if(update($q,$values,'li')){
+    alert('Success','Marked as read!');
+   }
+   else{
+    alert('error,''Operation Failed!');
+   }
+ }
+}
+
+if(issert($_GET['del']))
+ {
+    $frm_data = filteration($_GET);
+
+    if($frm_data['del']=='all'){
+        $sq = "UPDATE = DELETE FROM `user_queries`";
+   if(mysq_query($con,$q)){
+    alert('Success','All data deleted!');
+   }
+   else{
+    alert('error,''Operation Failed!');
+   }
         
 
  }
  else{
-  $sq = "UPDATE `user_queries` SET `seen`=?'[value-7]' WHERE 'sr_no'=?";
-   $values = [1$frm_data['seen']];
-   if(update($q,$values,'li')){
-    alert('Success','Marked as read!');
+  $sq = "UPDATE = DELETE FROM `user_queries` WHERE 'sr_no'=?";
+   $values = [$frm_data['del']];
+   if(delete($q,$values,'i')){
+    alert('Success','Data deleted!');
    }
    else{
     alert('error,''Operation Failed!');
@@ -45,6 +79,13 @@
 
                 <div class="card border-0 shadow-sm mb-4">
                     <div class="card-body">
+
+                    <div class="text-end mb-4">
+                    <a herf="?seen=all" class="btn btn-dark rounded-pill shadow-none btn-sm">
+                       <i class="bi bi-check-all"></i> Make all read</a>
+                        <a herf="?del=all" class="btn btn-danger rounded-pill shadow-none btn-sm">
+                        <i class="bi bi-trash"></i>   Delete all</a>
+                        </div>
 
                     <div class="table-responsive-md" style="height:150px; overflow-y: scoll;">
                     <table class="table table-hover border">
