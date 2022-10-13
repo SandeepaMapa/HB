@@ -151,14 +151,14 @@
                 xhr.open("POST","ajax/rooms.php",true);
 
                  xhr.onload=function(){
-                    var myModal=document.getElementById('feature-s');
+                    var myModal=document.getElementById('add-room');
                     var modal=bootstrap.Modal.getInstance(myModal);
                     modal.hide();
                     
                     if(this.responseText = 1){
-                        alert('success','New feature added!');
-                        feature_s_form.elements['feature_name'].value='';
-                        get_features();
+                        alert('success','New room added!');
+                        add_room_form.reset();
+                       // get_features();
                     }
                     else{
                         alert('error','Server Down!');     

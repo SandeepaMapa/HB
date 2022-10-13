@@ -80,7 +80,7 @@
 
 
     <?php require('inc/scripts.php');?>
-    
+    <?php require('ajax\features.php');?>
 
     <script src="Scripts\features.js"> </script>
    
