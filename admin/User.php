@@ -121,7 +121,7 @@ if(issert($_GET['del']))
                         <td>$row[subject]</td>
                         <td>$row[message]</td>
                         <td>$row[date]</td>
-                        <td>$row[seen]</td>
+                        <td>$seen</td>
                         </tr>
                         query;
                         $i++;
