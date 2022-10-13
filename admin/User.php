@@ -110,7 +110,7 @@ if(issert($_GET['del']))
                     {
                         $seen='';
                         if($row['seen']!=1){
-                            $seen = "<a herf=?'seen=$row[sr_no]'class='btn btn-sm rounded-pill btn-primary'>Mark as read</a>";
+                            $seen = "<a herf=?'seen=$row[sr_no]'class='btn btn-sm rounded-pill btn-primary'>Mark as read</a> <br>";
                         }
                         $seen = "<a herf=?'del=$row[sr_no]'class='btn btn-sm rounded-pill btn danger mt=2'>Delete</a>";
                         echo<<<query
