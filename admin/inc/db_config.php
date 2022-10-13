@@ -5,7 +5,7 @@
     $pass  = '';
     $db    = 'hbwebsite';
 
-    $con   = mysqli_connect($hname, $uname, $pass, $db);
+    $con = mysqli_connect($hname, $uname, $pass, $db);
 
     if(!$con){
         die("Could not connect to database: " . mysqli_connect_error());

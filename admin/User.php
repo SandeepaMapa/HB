@@ -3,6 +3,25 @@
  require('inc/db_config.php');
  adminLogin();
 
+ if(issert($_GET['seeen']))
+ {
+    $frm_data = filteration($_GET);
+
+    if($frm_data['seen']=='all'){
+        
+
+ }
+ else{
+  $sq = "UPDATE `user_queries` SET `seen`=?'[value-7]' WHERE 'sr_no'=?";
+   $values = [1$frm_data['seen']];
+   if(update($q,$values,'li')){
+    alert('Success','Marked as read!');
+   }
+   else{
+    alert('error,''Operation Failed!');
+   }
+ }
+}
 
 ?>
 
