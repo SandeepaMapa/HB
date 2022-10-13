@@ -1,8 +1,9 @@
 <?php
-  
-  require('../inc/db_config.php');
-  require('../inc/essentials.php');
-  adminLogin();
+ require('inc/essentials.php');
+ require('inc/db_config.php');
+
+
+
 
 if(isset($_POST['add_feature']))
    {
