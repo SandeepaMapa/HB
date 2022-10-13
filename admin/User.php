@@ -3,7 +3,7 @@
  require('inc/db_config.php');
  adminLogin();
 
- if(isset($_GET['seen']))
+ if(issert($_GET['seen']))
  {
     $frm_data = filteration($_GET);
 
@@ -30,7 +30,7 @@
  }
 }
 
-if(isset($_GET['del']))
+if(issert($_GET['del']))
  {
     $frm_data = filteration($_GET);
 
@@ -102,7 +102,7 @@ if(isset($_GET['del']))
                 </thead>
                 <tbody>
                     <?php
-                    $q = "SELECT *FROM user_queries ORDER BY 'sr_no' DESC";
+                    $q = "SELECT *FROM user-queries ORDER BY 'sr_no' DESC";
                     $data = mysqli_query($con,$q);
                     $i=1;
 
@@ -110,9 +110,9 @@ if(isset($_GET['del']))
                     {
                         $seen='';
                         if($row['seen']!=1){
-                            $seen = "<a href=?'seen=$row[sr_no]'class='btn btn-sm rounded-pill btn-primary'>Mark as read</a> <br>";
+                            $seen = "<a herf=?'seen=$row[sr_no]'class='btn btn-sm rounded-pill btn-primary'>Mark as read</a> <br>";
                         }
-                        $seen = "<a href=?'del=$row[sr_no]'class='btn btn-sm rounded-pill btn danger mt=2'>Delete</a>";
+                        $seen = "<a herf=?'del=$row[sr_no]'class='btn btn-sm rounded-pill btn-danger mt=2'>Delete</a>";
                         echo<<<query
                         <tr>
                         <td>$i</td>
@@ -121,7 +121,7 @@ if(isset($_GET['del']))
                         <td>$row[subject]</td>
                         <td>$row[message]</td>
                         <td>$row[date]</td>
-                        <td>$row[seen]</td>
+                        <td>$seen</td>
                         </tr>
                         query;
                         $i++;
