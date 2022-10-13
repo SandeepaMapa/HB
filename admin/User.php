@@ -14,7 +14,7 @@
          alert('Success','Marked all as read!');
         }
         else{
-         alert('error','Operation Failed!');
+         alert('error,''Operation Failed!');
         }
 
  }
@@ -25,7 +25,7 @@
     alert('Success','Marked as read!');
    }
    else{
-    alert('error','Operation Failed!');
+    alert('error,''Operation Failed!');
    }
  }
 }
@@ -40,7 +40,7 @@ if(issert($_GET['del']))
     alert('Success','All data deleted!');
    }
    else{
-    alert('error','Operation Failed!');
+    alert('error,''Operation Failed!');
    }
         
 
@@ -52,7 +52,7 @@ if(issert($_GET['del']))
     alert('Success','Data deleted!');
    }
    else{
-    alert('error','Operation Failed!');
+    alert('error,''Operation Failed!');
    }
  }
 }
@@ -121,6 +121,7 @@ if(issert($_GET['del']))
                         <td>$row[subject]</td>
                         <td>$row[message]</td>
                         <td>$row[date]</td>
+                        <td>$row[seen]</td>
                         </tr>
                         query;
                         $i++;
