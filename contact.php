@@ -28,51 +28,71 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 </div>
 <br><br>
 
-<!--
+<?php
 
 $contact_q = "SELECT * FROM contact_details WHERE sr_no=?";
 $values = [1];
-$contact_r = mysqli_fetch_assoc(select($contact_q, $values,'i));
+$contact_r = mysqli_fetch_assoc(select($contact_q, $values, 'i'));
 
--->
+?>
 
 <div class="row">
   <div class="col-lg-6 col-md-6 mb-5 px-4">
+
     <div class="bg-white rounded shadow p-4 ">
-    <iframe class="w-100 rounded mb-4" height="320px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.151117286474!2d80.0630986!3d6.225736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36b288ccc4774ebc!2sRiver&#39;s%20Edge%20madampe%20Ambalangoda!5e0!3m2!1sen!2slk!4v1665017607784!5m2!1sen!2slk" ></iframe>
-  <h5>Address</h5>
-  <a herf="https://g.page/river-s-edge-madampe-ambalangoda?share" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
-    <i class="bi bi-geo-alt-fill"></i> River's Edge madampe Ambalangoda
-    </a>
+    <iframe class="w-100 rounded mb-4" height="320px" src="<?php echo $contact_r['iframe'] ?>" ></iframe>
+  
+      <h5>Address</h5>
+      <a herf="+<?php echo $contact_r['gmap'] ?>" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
+      <i class="bi bi-geo-alt-fill"></i> <?php echo $contact_r['address'] ?>
+      </a>
 
      <h5 class="mt-4">Call us </h5>
-     <a href="tel:  07793064301" class="d-inline-block mb-2 text-decoration-none text-dark">
-      <i class="bi bi-telephone-fill"></i> 0779306430
+     <a href="tel:  <?php echo $contact_r['pn1'] ?>" class="d-inline-block mb-2 text-decoration-none text-dark">
+      <i class="bi bi-telephone-fill"></i> <?php echo $contact_r['pn1'] ?>
     </a>
-
     <br>
 
-    <a href="tel:  0779306430" class="d-inline-block mb-2 text-decoration-none text-dark">
-      <i class="bi bi-telephone-fill"></i> 0779306430
-    </a>
+    <?php
+      if ($contact_r['pn2'] !=='')
+      {
+        echo<<<data
+        <a href="tel: $contact_r[pn2]" class="d-inline-block mb-2 text-decoration-none text-dark">
+          <i class="bi bi-telephone-fill"></i> $contact_r[pn2]
+        </a>
+        data;
+      }
+
+    ?>
+
+    
 
     <h5 class="mt-4">Email</h5>
-    <a href="mailto:riversegde@gmail.com"class="d-inline-block text-decoration-none text-dark">
-     <i class="bi bi-envelope-fill"> </i> riversegde@gmail.com
+    <a href="mailto: <?php echo $contact_r['email'] ?>"class="d-inline-block text-decoration-none text-dark">
+     <i class="bi bi-envelope-fill"> </i> <?php echo $contact_r['email'] ?>
      </a>
-       
+    
      
 
      <h5 class="mt-4">Follow us</h5>
-      <a href="#" class="d-inline-block text-dark fs-5 me-2 ">
+      <?php
+        if($contact_r['tw'] !=''){
+          echo<<<data
+          <a href="contact_r[tw]" class="d-inline-block text-dark fs-5 me-2 ">
           <i class="bi bi-twitter me-1 "></i>
       </a>
+      data;
+        }
       
-      <a href="#" class="d-inline-block  text-dark fs-5 me-2">
+      ?>
+
+      
+      
+      <a href="<?php echo $contact_r['insta'] ?>" class="d-inline-block  text-dark fs-5 me-2">
         <i class="bi bi-instagram me-1 "></i> 
     </a>
      
-    <a href="https://www.facebook.com/Riversedgemadampe/?ref=page_internal" class="d-inline-block text-dark fs-5 me-2">
+    <a href="<?php echo $contact_r['fb'] ?>" class="d-inline-block text-dark fs-5 me-2">
       <i class="bi bi-facebook me-1 "></i>
   </a>
      

@@ -142,33 +142,33 @@
 
     <!-- Contact details Modal-->
     <div class="modal fade" id="contacts-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <form id="contacts_s_form">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" >Contacts Settings</h5>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid p-0">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label  class="form-label fw-bold">Address</label>
-                                        <input type="text" name="address" id="address_inp" class="form-control shadow-none" required></input>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label  class="form-label fw-bold">Google Map Link</label>
-                                        <input type="text" name="gmap"  id="gmap_inp" class="form-control shadow-none" rows="6" required></input>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label  class="form-label fw-bold">Phone Numbers (with country code)</label>
+        <div class="modal-dialog modal-lg">
+            <form id="contacts_s_form">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" >Contacts Settings</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label  class="form-label fw-bold">Address</label>
+                                    <input type="text" name="address" id="address_inp" class="form-control shadow-none" required></input>
+                                </div>
+                                <div class="mb-3">
+                                    <label  class="form-label fw-bold">Google Map Link</label>
+                                    <input type="text" name="gmap"  id="gmap_inp" class="form-control shadow-none" rows="6" required></input>
+                                </div>
+                                <div class="mb-3">
+                                    <label  class="form-label fw-bold">Phone Numbers (with country code)</label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text"></span>
-                                            <input type="text" name="pn1" id="pn1_inp" class="form-control shadow-none" required>
+                                            <input type="number" name="pn1" id="pn1_inp" class="form-control shadow-none" required>
                                         </div>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text"></span>
-                                            <input type="text" name="pn2" id="pn2_inp" class="form-control shadow-none" required>
+                                            <input type="number" name="pn2" id="pn2_inp" class="form-control shadow-none" required>
                                         </div>
                                     </div>
                                     <div class="mb-3">
@@ -195,17 +195,17 @@
                                         <input type="text" name="Iframe" id="iframe_inp" class="form-control shadow-none" required></input>
                                     </div>
                                     </div>
-                                </div>
-                            </div>                                                  
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" onclick = "site_title.value = general_data.site_title, site_about.value = general_data.site_about" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
-                            <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
-                        </div>
-                        </div>
-                        </form>
+                    </div>                                              
+                </div>
+                    <div class="modal-footer">
+                        <button type="button" onclick = "site_title.value = general_data.site_title, site_about.value = general_data.site_about" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
+                        <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
                     </div>
-                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
 
 
             </div>
