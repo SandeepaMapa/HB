@@ -30,7 +30,7 @@
                         <div class=" text-end mb-3">
                             
                             <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#add-room">
-                            <i class="bi bi-plus-square"></i>Add
+                            <i class="bi bi-plus-square"></i> Add
                                 </button>
                         </div>
                        <div class="table-responsive-lg" style="height:450px; overflow-y: scroll;">
