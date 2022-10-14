@@ -32,8 +32,8 @@ if(isset($_POST['add_feature']))
              </button>
          </td>
         </tr>
-    data;
-    $i++;
+       data;
+       $i++;
      }
    }
 
