@@ -12,11 +12,11 @@
     <div class="col-lg-4 p-4 text-white">
       <h5 class="mb-3 text-white">Quick Links</h5>
       <a href="Accomodation.php" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">Accommodation</a><br>
-      <a href="#" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">Restaurant</a><br>
-      <a href="#" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">Events</a><br>
-      <a href="#" class= " text-white d-inline-block mb-2 text-dark text-decoration-none">Gallery</a><br>
-      <a href="#" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">Contact</a><br>
-      <a href="#" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">About us</a><br>
+      <a href="Restaurant.php" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">Restaurant</a><br>
+      <a href="Events.php" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">Events</a><br>
+      <a href="Gallery.php" class= " text-white d-inline-block mb-2 text-dark text-decoration-none">Gallery</a><br>
+      <a href="contact.php" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">Contact</a><br>
+      <a href="About Us.php" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">About us</a><br>
     </div>
     <div class="col-lg-4 p-4 text-white">
       <h5 class=" text-white mb-3">Follow us</h5>
