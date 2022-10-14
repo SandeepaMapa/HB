@@ -8,7 +8,7 @@
             
             function add_feature()
             {
-                let data=new FormData();
+                let data = new FormData();
                 data.append('name',feature_s_form.elements['feature_name'].value);
                 data.append('add_feature','');
             
