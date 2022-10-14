@@ -20,13 +20,23 @@
     </div>
     <div class="col-lg-4 p-4 text-white">
       <h5 class=" text-white mb-3">Follow us</h5>
-      <a href="#" class="text-white d-inline-block text-dark text-decoration-none mb-2">
+
+      <?php
+        if($contact_r['tw']!='')
+        {
+          echo<<<data
+          <a href="$contact_r[tw]" class="text-white d-inline-block text-dark text-decoration-none mb-2">
           <i class="bi bi-twitter me-1 "></i> Twitter
-      </a><br>
-      <a href="#" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
+          </a><br>
+          data;
+        }
+      ?>
+
+      
+      <a href="<?php echo $contact_r['insta'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
         <i class="bi bi-instagram me-1 "></i> Instagram
     </a><br>
-    <a href="#" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
+    <a href="<?php echo $contact_r['fb'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
       <i class="bi bi-facebook me-1 "></i> Facebook
   </a><br>
 </div>
