@@ -32,11 +32,20 @@ if(isset($_POST['add_feature']))
              </button>
          </td>
         </tr>
-       data;
-       $i++;
+    data;
+    $i++;
      }
    }
 
+   if(isset($_POST['rem_feature']))
+   {
+    $frm_data = filteration($_POST);
+    $values = [$frm_data['rem_feature']];
+
+    $q = "DELETE FROM features WHERE id=?";
+    $res = delete($q,$values,'i');
+    echo $res;
+   }
    
    
    

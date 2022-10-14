@@ -15,9 +15,9 @@
             let xhr=new XMLHttpRequest();
             xhr.open("POST","ajax/features.php",true);
 
-            xhr.onload=function(){
-                var myModal=document.getElementById('feature-s');
-                var modal=bootstrap.Modal.getInstance(myModal);
+            xhr.onload = function(){
+                var myModal = document.getElementById('feature-s');
+                var modal = bootstrap.Modal.getInstance(myModal);
                 modal.hide();
                 
                 if(this.responseText = 1){
@@ -35,11 +35,11 @@
 
             function get_features()
             {
-                let xhr=new XMLHttpRequest();
+                let xhr = new XMLHttpRequest();
                 xhr.open("POST","ajax/features.php",true);
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
 
-            xhr.onload=function(){
+            xhr.onload = function(){
                 document.getElementById('feature-data').innerHTML= this.responseText;
             }
                 xhr.send('get_features');
@@ -51,16 +51,16 @@
 
 
             function rem_features(val){
-                let xhr=new XMLHttpRequest();
+                let xhr = new XMLHttpRequest();
                 xhr.open("POST","ajax/features.php",true);
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
             
-                xhr.onload=function(){
+                xhr.onload = function(){
                 if(this.responseText = 1){
                     alert('success','New feature removed!');
                     get_features();
                 }
-                else if(this.responseText='room_added'){
+                else if(this.responseText = 'room_added'){
                     alert('error','Feature is added in room !');
                 }
                 else{

@@ -29,8 +29,4 @@ function alert($type,$msg){
   alert;
 }
 
-
-
-
-
 ?>
