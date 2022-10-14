@@ -130,27 +130,24 @@ $contact_r = mysqli_fetch_assoc(select($contact_q, $values, 'i'));
 
 <?php
 
-    $hname = 'localhost';
-    $uname = 'root';
-    $pass  = '';
-    $db    = 'hbwebsite';
+   if(isset($_POST['send']))
+   {
+     $frm_data = filteration($_POST);
 
-    $con   = mysqli_connect($hname, $uname, $pass, $db);
-  
-    if(!$con){
-      die("Could not connect to database: " . mysqli_connect_error());
-  }
-  echo "Connected successfully";
+     $q = "INSERT INTO user_queries('name', 'email', 'subject', 'message') VALUES (?,?,?,?)";
+     $values = [$frm_data['name'],$frm_data['email'],$frm_data['subject'],$frm_data['message']];
+
+     $res = insert($q,$values,'ssss');
+     if($res==1)
+     {
+      alert('success','Mail sent');
+     }
+     else{
+      alert('error','Server Down Try again Later');
+     }
+   }
 
 
-  $sql = "INSERT INTO user_queries('name', 'email', 'subject', 'message') VALUES (?,?,?,?)";
-  if (mysqli_query($con, $sql)) {
-        echo "Mail Sent!";
-  } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }
-  mysqli_close($con);
-  
 
 ?>
 
