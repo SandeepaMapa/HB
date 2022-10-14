@@ -7,7 +7,7 @@
   $contact_r = mysqli_fetch_assoc(select($contact_q, $values, 'i'));
 
 ?>
-<nav class="navbar navbar-expand-lg navbar-light px-lg-4 py-lg-3 shadow-sm sticky-top">
+<nav id="nav-bar" class="navbar navbar-expand-lg navbar-light px-lg-4 py-lg-3 shadow-sm sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand f2 text-white" href="#"><img class="logo" src="Photos\logo neww.png" width="150" height="40"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,28 +18,28 @@
 
 
         <li class="nav-item">
-          <a class="nav-link active me-2 text-white" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link me-2 text-white" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active me-2 text-white" aria-current="page" href="Accomodation.php">Accomodation</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active me-2 text-white" aria-current="page" href="Restaurant.php">Restaurant</a>
+          <a class="nav-link me-2 text-white" href="Accomodation.php">Accomodation</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active me-2 text-white" aria-current="page" href="Events.php">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active me-2 text-white" aria-current="page" href="Gallery.php">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active me-2 text-white" aria-current="page" href="contact.php">Contact</a>
+          <a class="nav-link me-2 text-white" href="Restaurant.php">Restaurant</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active me-2 text-white" aria-current="page" href="About Us.php">About Us</a>
+          <a class="nav-link me-2 text-white" href="Events.php">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-2 text-white" href="Gallery.php">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-2 text-white" href="contact.php">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link me-2 text-white" href="About Us.php">About Us</a>
         </li>
 </ul>
       
