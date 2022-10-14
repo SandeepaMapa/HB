@@ -166,12 +166,12 @@
                                 <div class="mb-3">
                                     <label  class="form-label fw-bold">Phone Numbers (with country code)</label>
                                         <div class="input-group mb-3">
-                                            <span class="input-group-text"></span>
+                                            <span class="input-group-text"><i class="bi bi_telephone-fill"></i></span>
                                             <input type="number" name="pn1" id="pn1_inp" class="form-control shadow-none" required>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <span class="input-group-text"></span>
-                                            <input type="number" name="pn2" id="pn2_inp" class="form-control shadow-none" required>
+                                            <span class="input-group-text"><i class="bi bi_telephone-fill"></i></span>
+                                            <input type="number" name="pn2" id="pn2_inp" class="form-control shadow-none" >
                                         </div>
                                     </div>
                                     <div class="mb-3">
@@ -194,7 +194,7 @@
 
                                     </div>
                                     <div class="mb-3">
-                                        <label  class="form-label fw-bold">IFrame Src</label>
+                                        <label  class="form-label fw-bold">iFrame Src</label>
                                         <input type="text" name="Iframe" id="iframe_inp" class="form-control shadow-none" required></input>
                                     </div>
                                     </div>
@@ -336,7 +336,7 @@
                    for(i=o;i<contacts_p_id.length;i++){
                     document.getElementById(contacts_p_id[i]).innerText = contacts_data[i+1];
                    }
-                   iframe.src = contacts_data[8];
+                   iframe.src = contacts_data[9];
              }
 
 
