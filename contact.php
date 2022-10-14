@@ -123,7 +123,7 @@ $contact_r = mysqli_fetch_assoc(select($contact_q, $values,'i));
   echo "Connected successfully";
 
 
-  $sql = "INSERT INTO user_queries(name, email, subject, message) VALUES ('','','','')";
+  $sql = "INSERT INTO user_queries('name', 'email', 'subject', 'message') VALUES (?,?,?,?)";
   if (mysqli_query($con, $sql)) {
         echo "Mail Sent!";
   } else {
