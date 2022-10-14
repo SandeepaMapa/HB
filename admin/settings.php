@@ -2,7 +2,8 @@
     require('inc/essentials.php');
     adminLogin();
     ?>
-    <! DOCTYPE html>
+
+    <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -32,6 +33,7 @@
                         </div>
                         <h6 class="card-subtitle mb-1 fw-bold">Site Title</h6>
                         <p class="card-text" id="site_title">Test Title</p>
+                        
                         <h6 class="card-subtitle mb-1 fw-bold">About Us</h6>
                         <p class="card-text" id="site_about">This is a test about</p>  
                     </div>
@@ -56,7 +58,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" onclick = "site_title.value = general_data.site_title, site_about.value = general_data.site_about" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
-                            <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
+                            <button type="submit" onclick="upd_grnaral(site_title.value,site_about.value)" class="btn custom-bg text-white shadow-none">SUBMIT</button>
                         </div>
                         </div>
                         </form>
@@ -214,8 +216,8 @@
 
         <?php require('inc/scripts.php');?>
         <script>
+            
             let general_data, contacts_data;
-
             let general_s_form = document.getElementById('general_s_form');
             let site_title_inp = document.getElementById('site_title_inp');
             let site_about_inp = document.getElementById('site_about_inp');
