@@ -223,6 +223,8 @@
             let site_title_inp = document.getElementById('site_title_inp');
             let site_about_inp = document.getElementById('site_about_inp');
 
+            let contacts_s_form = document.getElementById('contacts_s_form');
+
             function get_general(){
                 let site_title = document.getElementById('site_title');
                 let site_about = document.getElementById('site_about');
@@ -353,7 +355,10 @@
                 }
             }
 
-
+            contact_s_form.addEventListener('submit',function(e){
+                e.preventDefault();
+                upd_contacts();
+            })
 
             window.onload = function(){
                 get_general();
