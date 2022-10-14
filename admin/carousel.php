@@ -30,7 +30,7 @@
                     <i class="bi bi-plus-square"></i>Add
                     </button>                  
                 </div>
-                <div class="row" id="team-data">
+                <div class="row" id="carousal-data">
             
         </div>
             </div>
@@ -40,7 +40,7 @@
 
     <div class="modal fade" id="carousal-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <form id="team_s_form">
+                <form id="carousal_form">
                     <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" >Add Team Member Settings</h5>
@@ -70,7 +70,7 @@
        </div>
 
         <?php require('inc/scripts.php');?>
-        <script src="scripts/settings.js"></script>
+        <script src="scripts/carousal.js"></script>
     </body>
 
     </html>
