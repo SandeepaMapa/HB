@@ -23,7 +23,7 @@
         position: absolute;
         top: 30%;
         left: 40%;
-        transform: translate(-50%,-50%)
+        transform: translate(-50%,-50%);
         width: 400px;
     }
 </style>
