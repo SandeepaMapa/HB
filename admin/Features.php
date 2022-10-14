@@ -3,59 +3,6 @@
  require('inc/db_config.php');
  adminLogin();
 
-if(isset($_GET['seen']))
- {
-    $frm_data = filteration($_GET);
-
-    if($frm_data['seen']=='all'){
-        $sq = "UPDATE = `user_queries` SET `seen`=?";
-        $values = [1];
-        if(update($q,$values,'i')){
-         alert('Success','Marked all as read!');
-        }
-        else{
-         alert('error','Operation Failed!');
-        }
-
- }
- else{
-  $sq = "UPDATE = `user_queries` SET `seen`=?'[value-7]' WHERE 'sr_no'=?";
-   $values = [1,$frm_data['seen']];
-   if(update($q,$values,'li')){
-    alert('Success','Marked as read!');
-   }
-   else{
-    alert('error','Operation Failed!');
-   }
- }
-}
-
-if(isset($_GET['del']))
- {
-    $frm_data = filteration($_GET);
-
-    if($frm_data['del']=='all'){
-        $sq = "UPDATE = DELETE FROM `user_queries`";
-   if(mysq_query($con,$q)){
-    alert('Success','All data deleted!');
-   }
-   else{
-    alert('error','Operation Failed!');
-   }
-        
-
- }
- else{
-  $sq = "UPDATE = DELETE FROM `user_queries` WHERE 'sr_no'=?";
-   $values = [$frm_data['del']];
-   if(delete($q,$values,'i')){
-    alert('Success','Data deleted!');
-   }
-   else{
-    alert('error','Operation Failed!');
-   }
- }
-}
 
 ?>
 
@@ -83,7 +30,7 @@ if(isset($_GET['del']))
                     <div class="d-flex align-items-center justify-content-between mb-3">
                 <h5 class="card-title m-0"></h5>
                 <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#feature-s">
-                <i class="bi bi-plus-square"></i>Add
+                <i class="bi bi-plus-square"></i> Add
                     </button>
             </div>
 
@@ -183,6 +130,27 @@ if(isset($_GET['del']))
                 xhr.send('get_features');
             } 
                
+
+
+            function rem_features(val){
+                let xhr = new XMLHttpRequest();
+                xhr.open("POST","ajax/features.php",true);
+                xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+            
+                xhr.onload = function(){
+                if(this.responseText = 1){
+                    alert('success','New feature removed!');
+                    get_features();
+                }
+                else if(this.responseText = 'room_added'){
+                    alert('error','Feature is added in room !');
+                }
+                else{
+                    alert('error','Server Down!');     
+                }
+                }
+                xhr.send('rem_feature='+val);
+            }
                 window.onload = function(){
                  get_features();
             }
