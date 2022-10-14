@@ -337,6 +337,8 @@
                     document.getElementById(contacts_p_id[i]).innerText = contacts_data[i+1];
                    }
                    iframe.src = contacts_data[9];
+                   Contacts_inp(contacats_data);
+
              }
 
 
