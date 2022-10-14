@@ -110,9 +110,15 @@ if(isset($_GET['del']))
                     {
                         $seen='';
                         if($row['seen']!=1){
+<<<<<<< HEAD
                             $seen = "<a href=?'seen=$row[sr_no]'class='btn btn-sm rounded-pill btn-primary'>Mark as read</a> <br>";
                         }
                         $seen = "<a href=?'del=$row[sr_no]'class='btn btn-sm rounded-pill btn-danger mt=2'>Delete</a>";
+=======
+                            $seen = "<a herf='?seen=$row[sr_no]'class='btn btn-sm rounded-pill btn-primary'>Mark as read</a> <br>";
+                        }
+                        $seen = "<a herf='?del=$row[sr_no]'class='btn btn-sm rounded-pill btn-danger mt=2'>Delete</a>";
+>>>>>>> eca054af6ff43e4928882e94db4a572a38f4d096
                         echo<<<query
                         <tr>
                         <td>$i</td>
