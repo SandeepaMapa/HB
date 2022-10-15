@@ -324,7 +324,7 @@
                 let contacts_p_id = ['address','gmap', 'pn1','pn2','email','fb','insta'];
                 let iframe = document.getElementById('iframe');
            
-                let xhr =new XMLHttpRequest();
+                let xhr = new XMLHttpRequest();
                 xhr.open("POST","ajax,settings_crud.php",true);
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
 

@@ -40,7 +40,7 @@
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
 
                xhr.onload = function(){
-                document.getElementById('feature-data').innerHTML = this.responseText;
+                document.getElementById('features-data').innerHTML = this.responseText;
             }
                 xhr.send('get_features');
             } 
