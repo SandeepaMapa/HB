@@ -1,30 +1,3 @@
-<<<<<<< HEAD
-let general_data;
-
-function get_general()
-{
-    let site_title = document.getElementById('site_title');
-    let site_about = document.getElementById('site_about');
-
-   
-
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST","ajax/settings_crud.php",true);
-    xhr.setRequestHeader('Contacat_Type','application/x-www-form-urlencoded');
-
-    xhr.onload = function(){
-        general_data = JSON.parse(this.responseText);
-
-        site_title.innerText = general_data.site_title;
-        site_about.innerText = general_data.site_about;
-        
-    }
-}
-
-window.onload = function(){
-    get_general();
-}
-=======
 
 let general_data, contacts_data;
 let general_s_form = document.getElementById('general_s_form');
@@ -212,4 +185,4 @@ function get_general()
                 get_contacts();
             }
         
->>>>>>> 2a180969ec2ba9e388e902a382ca3b0abaa8177f
+
