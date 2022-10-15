@@ -30,7 +30,7 @@
                         <div class=" text-end mb-3">
                             
                             <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#add-room">
-                            <i class="bi bi-plus-square"></i> Add
+                            <i class="bi bi-plus-square"></i>Add
                                 </button>
                         </div>
                        <div class="table-responsive-lg" style="height:450px; overflow-y: scroll;">
@@ -57,7 +57,7 @@
             </div>
 
                 <!-- Add room modal-->
-                   <div class="modal fade" id="add-room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                   <div class="modal fade" id="add_room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <form  id="add_room_form" autocomplete="off" action="">
                         <div class="modal-content">
@@ -87,20 +87,20 @@
                             <input type="number" min="1" name="children" class="form-control shadow-none" required>
                         </div>
                         <div class=" col-12 mb-3">
-                         <label class="form-label fw-bold">Features</label>
+                         <label class="form-label fw-bold">Facilities</label>
                           <div class="row">
                            <?php
-                             // $res = selectAll('features');
-                             // while($opt = mysqli_fetch_assoc($res)){
-                               // echo"
-                                //<div class='col-md-3'>
-                                //  <label>
-                                //   <input type='checkbox' name='features' value='$opt[id]' class='form-check-input shadow-none'>
-                                //     $opt[name]
-                               //   </label>
-                               // </div>
-                              //  ";
-                             // }
+                              $res = selectAll('facilities');
+                              while($opt = mysqli_fetch_assoc($res)){
+                                echo"
+                                <div class='col-md-3'>
+                                  <label>
+                                   <input type='checkbox' name='facilities' value='$opt[id]' class='form-check-input shadow-none'>
+                                     $opt[name]
+                                  </label>
+                                </div>
+                                ";
+                              }
                             ?>
                           </div>
                         </div>
@@ -114,7 +114,7 @@
              </div>
            </div>
        
-                
+                  
 
 
     <?php require('inc/scripts.php');?>
@@ -130,7 +130,7 @@
                 function add_rooms()
                {
                     let data=new FormData();
-                    data.append('add_toom','');
+                    data.append('add_room','');
                     data.append('name',add_room_form.elements['name'].value);
                     data.append('price',add_room_form.elements['price'].value);
                     data.append('quantity',add_room_form.elements['quantity'].value);

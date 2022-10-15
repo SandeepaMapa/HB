@@ -12,7 +12,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin Panel - Features</title>
+        <title>Admin Panel - Facilities</title>
         <?php require('inc/links.php'); ?>
     </head>
     <body class="bg-light"> 
@@ -22,7 +22,7 @@
     <div class="container-fluid" id="main-content">
         <div class="row">
             <div class="col-lg-10 ms-auto p-4 overflow-hidden">
-                <h3 class="mb-4">FEATURES</h3>
+                <h3 class="mb-4">Facilities</h3>
 
                 <div class="card border-0 shadow-sm mb-4">
                     <div class="card-body">
@@ -59,7 +59,7 @@
                         <form id="feature_s_form">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" >Add Feature</h5>
+                            <h5 class="modal-title" >Add Facility</h5>
                         </div>
                         <div class="modal-body">
                             <div class=" mb-3">
