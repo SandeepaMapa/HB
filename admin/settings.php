@@ -330,8 +330,6 @@
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
 
 
-
-
                 xhr.onload = function(){
                    contacts_data = JSON.parse(this.responseText);
                    contacts_data = Object.values(contacts_data);
