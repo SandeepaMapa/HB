@@ -23,7 +23,7 @@
     }
 
 
-    function selectAll($data){
+    function selectAll($table){
         $con = $GLOBALS['con'];
         $res = mysqli_query($con,"SELECT * FROM $table");
         return $res;

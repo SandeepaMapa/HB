@@ -81,7 +81,7 @@ if(isset($_GET['del']))
                     <div class="card-body">
                      
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                <h5 class="card-title m-0">Features</h5>
+                <h5 class="card-title m-0"></h5>
                 <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#feature-s">
                 <i class="bi bi-plus-square"></i>Add
                     </button>
@@ -135,14 +135,14 @@ if(isset($_GET['del']))
 
     <?php require('inc/scripts.php');?>
     <script>
-        let feature_s_form = document.getElementById('feature_s_form');
+                    let feature_s_form = document.getElementById('feature_s_form');
 
             feature_s_form.addEventListener('submit',function(e){
                 e.preventDefault();
                 add_feature();
             });
 
-            function add_feature()
+        function add_feature()
             {
                 let data = new FormData();
                 data.append('name',feature_s_form.elements['feature_name'].value);
@@ -170,20 +170,21 @@ if(isset($_GET['del']))
 
 
         function get_features()
-        {
-            let xhr = new XMLHttpRequest();
-            xhr.open("POST","ajax/features.php",true);
-            xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+            {
+                let xhr = new XMLHttpRequest();
+                xhr.open("POST","ajax/features.php",true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
-        xhr.onload = function(){
-            document.getElementById('feature-data').innerHTML = this.responseText;
-        }
-            xhr.send('get_features');
-        } 
+                xhr.onload = function(){
+                 document.getElementById('features-data').innerHTML = this.responseText;
+            }
+                xhr.send('get_features');
+            } 
 
-            window.onload = function(){
-            get_features();
-        }
+                window.onload = function(){
+                 get_features();
+            }
+
     </script>
 
         
