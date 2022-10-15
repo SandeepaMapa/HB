@@ -57,9 +57,9 @@
             </div>
 
                 <!-- Add room modal-->
-                   <div class="modal fade" id="add_room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                   <div class="modal fade" id="add-room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
-                        <form  id="add_room_form" autocomplete="off" action="">
+                        <form  id="add_room_form" autocomplete="off" method="POST" action="">
                         <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" >Add Room</h5>
@@ -129,7 +129,7 @@
 
                 function add_rooms()
                {
-                    let data=new FormData();
+                    let data = new FormData();
                     data.append('add_room','');
                     data.append('name',add_room_form.elements['name'].value);
                     data.append('price',add_room_form.elements['price'].value);
@@ -137,28 +137,28 @@
                     data.append('adult',add_room_form.elements['adult'].value);
                     data.append('children',add_room_form.elements['children'].value);
 
-                    let features=[];
-                    add_room_form.elements['features'].forEach(el =>{
+                    let facilities=[];
+                    add_room_form.elements['facilities'].forEach(el =>{
                         if(el.checked){
-                            features.push(el.value);
+                            facilities.push(el.value);
                         }
-                    })
+                    });
                     
-                data.append('features',JSON.stringify(features));
+                   data.append('facilities',JSON.stringify(facilities));
 
 
-                let xhr=new XMLHttpRequest();
-                xhr.open("POST","ajax/rooms.php",true);
+                l   let xhr = new XMLHttpRequest();
+                    xhr.open("POST","ajax/rooms.php",true);
 
-                 xhr.onload=function(){
-                    var myModal=document.getElementById('add-room');
-                    var modal=bootstrap.Modal.getInstance(myModal);
-                    modal.hide();
+                    xhr.onload=function(){
+                     var myModal = document.getElementById('add-room');
+                     var modal = bootstrap.Modal.getInstance(myModal);
+                     modal.hide();
                     
                     if(this.responseText = 1){
                         alert('success','New room added!');
                         add_room_form.reset();
-                       // get_features();
+                       
                     }
                     else{
                         alert('error','Server Down!');     
