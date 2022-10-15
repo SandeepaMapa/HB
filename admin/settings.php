@@ -319,13 +319,14 @@
             }
 
 
-            function get_contacts(){
+            function get_contacts()
+            {
 
                 let contacts_p_id = ['address','gmap', 'pn1','pn2','email','fb','insta'];
                 let iframe = document.getElementById('iframe');
            
                 let xhr = new XMLHttpRequest();
-                xhr.open("POST","ajax,settings_crud.php",true);
+                xhr.open("POST","ajax/settings_crud.php",true);
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
 
 
@@ -338,7 +339,7 @@
                    for(i=o;i<contacts_p_id.length;i++){
                     document.getElementById(contacts_p_id[i]).innerText = contacts_data[i+1];
                    }
-                   iframe.src = contacts_data[9];
+                   iframe.src = contacts_data[8];
                    contacts_inp(contacats_data);
 
              }
