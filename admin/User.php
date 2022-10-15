@@ -19,7 +19,7 @@
 
  }
  else{
-  $sq = "UPDATE = 'user_queries' SET 'seen'=? WHERE 'sr_no'=?";
+  $sq = "UPDATE 'user_queries' SET 'seen'=? WHERE 'sr_no'=?";
    $values = [1,$frm_data['seen']];
    if(update($sq,$values,'ii')){
     alert('Success','Marked as read!');
