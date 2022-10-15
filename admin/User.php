@@ -8,7 +8,7 @@
     $frm_data = filteration($_GET);
 
     if($frm_data['seen']=='all'){
-        $sq = "UPDATE = `user_queries` SET `seen`=?";
+        $sq = "UPDATE = 'user_queries' SET 'seen'=?";
         $values = [1];
         if(update($q,$values,'i')){
          alert('Success','Marked all as read!');
@@ -19,9 +19,9 @@
 
  }
  else{
-  $sq = "UPDATE = `user_queries` SET `seen`=?'[value-7]' WHERE 'sr_no'=?";
+  $sq = "UPDATE = 'user_queries' SET 'seen'=? WHERE 'sr_no'=?";
    $values = [1,$frm_data['seen']];
-   if(update($q,$values,'li')){
+   if(update($q,$values,'ii')){
     alert('Success','Marked as read!');
    }
    else{
@@ -35,7 +35,7 @@ if(isset($_GET['del']))
     $frm_data = filteration($_GET);
 
     if($frm_data['del']=='all'){
-        $sq = "UPDATE = DELETE FROM `user_queries`";
+        $sq = "DELETE FROM 'user_queries'";
    if(mysq_query($con,$q)){
     alert('Success','All data deleted!');
    }
@@ -46,7 +46,7 @@ if(isset($_GET['del']))
 
  }
  else{
-  $sq = "UPDATE = DELETE FROM `user_queries` WHERE 'sr_no'=?";
+  $sq = "UPDATE = DELETE FROM 'user_queries' WHERE 'sr_no'=?";
    $values = [$frm_data['del']];
    if(delete($q,$values,'i')){
     alert('Success','Data deleted!');
