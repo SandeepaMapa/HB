@@ -8,9 +8,9 @@
     $frm_data = filteration($_GET);
 
     if($frm_data['seen']=='all'){
-        $sq = "UPDATE = `user_queries` SET `seen`=?";
+        $sq = "UPDATE user_queries SET seen=?";
         $values = [1];
-        if(update($q,$values,'i')){
+        if(update($sq,$values,'i')){
          alert('Success','Marked all as read!');
         }
         else{
@@ -19,9 +19,9 @@
 
  }
  else{
-  $sq = "UPDATE = `user_queries` SET `seen`=?'[value-7]' WHERE 'sr_no'=?";
+  $sq = "UPDATE user_queries SET seen=? WHERE 'sr_no'=?";
    $values = [1,$frm_data['seen']];
-   if(update($q,$values,'li')){
+   if(update($sq,$values,'i')){
     alert('Success','Marked as read!');
    }
    else{
@@ -35,8 +35,8 @@ if(isset($_GET['del']))
     $frm_data = filteration($_GET);
 
     if($frm_data['del']=='all'){
-        $sq = "UPDATE = DELETE FROM `user_queries`";
-   if(mysq_query($con,$q)){
+        $sq = " DELETE FROM user_queries";
+   if(mysqli_query($con,$sq)){
     alert('Success','All data deleted!');
    }
    else{
@@ -46,9 +46,9 @@ if(isset($_GET['del']))
 
  }
  else{
-  $sq = "UPDATE = DELETE FROM `user_queries` WHERE 'sr_no'=?";
+  $sq = "DELETE FROM user_queries WHERE 'sr_no'=?";
    $values = [$frm_data['del']];
-   if(delete($q,$values,'i')){
+   if(delete($sq,$values,'i')){
     alert('Success','Data deleted!');
    }
    else{
@@ -111,9 +111,9 @@ if(isset($_GET['del']))
                         $seen='';
                         if($row['seen']!=1){
 
-                        $seen = "<a href='?seen=$row[sr_no]'class='btn btn-sm rounded-pill btn-primary'>Mark as read</a> <br>";
+                        $seen = "<a href='?seen=$row[sr_no]'class='btn btn-sm  btn-primary'>Mark as read</a> <br>";
                         }
-                        $seen.= "<a href='?del=$row[sr_no]'class='btn btn-sm rounded-pill btn-danger mt-2'>Delete</a>";
+                        $seen.= "<a href='?del=$row[sr_no]'class='btn btn-sm btn-danger mt-2'>Delete</a>";
                       
 
                            
