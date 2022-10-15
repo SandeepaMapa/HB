@@ -137,7 +137,8 @@ if(isset($_GET['del']))
     <script>
                     let feature_s_form = document.getElementById('feature_s_form');
 
-            feature_s_form.addEventListener('submit',function(e){
+                feature_s_form.addEventListener('submit',function(e)
+                {
                 e.preventDefault();
                 add_feature();
             });
@@ -169,6 +170,7 @@ if(isset($_GET['del']))
             }
 
 
+       
         function get_features()
             {
                 let xhr = new XMLHttpRequest();
@@ -180,7 +182,7 @@ if(isset($_GET['del']))
             }
                 xhr.send('get_features');
             } 
-
+               
                 window.onload = function(){
                  get_features();
             }
