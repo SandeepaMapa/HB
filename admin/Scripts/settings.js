@@ -18,7 +18,7 @@ function get_general()
         let shutdown_toggle = document.getElementById('shutdown-toggle');
 
         let xhr =new XMLHttpRequest();
-        xhr.open("POST","ajax,settings_crud.php",true);
+        xhr.open("POST","ajax/settings_crud.php",true);
         xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
 
         xhr.onload = function(){
@@ -53,7 +53,7 @@ function get_general()
             function upd_general(site_title_val, site_about_val)
             {
                 let xhr =new XMLHttpRequest();
-                xhr.open("POST","ajax,settings_crud.php",true);
+                xhr.open("POST","ajax/settings_crud.php",true);
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
 
                 xhr.onload = function(){
@@ -80,7 +80,7 @@ function get_general()
             function upd_shutdown(val)
             {
                 let xhr =new XMLHttpRequest();
-                xhr.open("POST","ajax,settings_crud.php",true);
+                xhr.open("POST","ajax/settings_crud.php",true);
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
 
                 xhr.onload = function(){
@@ -156,7 +156,7 @@ function get_general()
                 data_str += "upd_contacats";
 
                 let xhr =new XMLHttpRequest();
-                xhr.open("POST","ajax,settings_crud.php",true);
+                xhr.open("POST","ajax/settings_crud.php",true);
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
 
                 xhrr.onload = function(){
