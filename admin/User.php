@@ -87,7 +87,7 @@ if(isset($_GET['del']))
                         <i class="bi bi-trash"></i>   Delete all</a>
                         </div>
 
-                    <div class="table-responsive-md" style="height:150px; overflow-y: scoll;">
+                    <div class="table-responsive-md" style="height:500px; overflow-y: scroll;">
                     <table class="table table-hover border">
                 <thead class="stick-top">
                     <tr class="bg-dark text-light">

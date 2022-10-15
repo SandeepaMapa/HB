@@ -12,10 +12,10 @@
                 data.append('name',feature_s_form.elements['feature_name'].value);
                 data.append('add_feature','');
             
-            let xhr=new XMLHttpRequest();
-            xhr.open("POST","ajax/features.php",true);
+                let xhr=new XMLHttpRequest();
+                xhr.open("POST","ajax/features.php",true);
 
-            xhr.onload = function(){
+                xhr.onload = function(){
                 var myModal = document.getElementById('feature-s');
                 var modal = bootstrap.Modal.getInstance(myModal);
                 modal.hide();
@@ -39,13 +39,13 @@
                 xhr.open("POST","ajax/features.php",true);
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
 
-            xhr.onload = function(){
-                document.getElementById('feature-data').innerHTML= this.responseText;
+               xhr.onload = function(){
+                document.getElementById('feature-data').innerHTML = this.responseText;
             }
                 xhr.send('get_features');
             } 
 
-                window.onload=function(){
+                window.onload = function(){
                 get_features();
             }
 

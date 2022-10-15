@@ -35,7 +35,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
     <iframe class="w-100 rounded mb-4" height="320px" src="<?php echo $contact_r['iframe'] ?>" ></iframe>
   
       <h5>Address</h5>
-      <a herf="+<?php echo $contact_r['gmap'] ?>" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
+      <a href="+<?php echo $contact_r['gmap'] ?>" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
       <i class="bi bi-geo-alt-fill"></i> <?php echo $contact_r['address'] ?>
       </a>
 
@@ -67,18 +67,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
      
 
      <h5 class="mt-4">Follow us</h5>
-      <?php
-        if($contact_r['tw'] !=''){
-          echo<<<data
-          <a href="contact_r[tw]" class="d-inline-block text-dark fs-5 me-2 ">
-          <i class="bi bi-twitter me-1 "></i>
-      </a>
-      data;
-        }
-      
-      ?>
-
-      
       
       <a href="<?php echo $contact_r['insta'] ?>" class="d-inline-block  text-dark fs-5 me-2">
         <i class="bi bi-instagram me-1 "></i> 
@@ -126,7 +114,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
    {
      $frm_data = filteration($_POST);
 
-     $q = "INSERT INTO user_queries('name', 'email', 'subject', 'message') VALUES (?,?,?,?)";
+     $q = "INSERT INTO user_queries(name, email, subject, message) VALUES ('','','','')";
      $values = [$frm_data['name'],$frm_data['email'],$frm_data['subject'],$frm_data['message']];
 
      $res = insert($q,$values,'ssss');
