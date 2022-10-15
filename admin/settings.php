@@ -280,7 +280,7 @@
                     var modal = bootstrap.Modal.getInstance(myModal);
                     modal.hide();
 
-                    if(this.responseText ==1)
+                    if(this.responseText =1)
                     {
                         alert('success', 'Changes saved!');
                         get_general();
