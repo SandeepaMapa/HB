@@ -28,10 +28,10 @@ if(isset($_POST['add_feature']))
           <td>$row[name]</td>
          <td>
            <button type="button" onclick="rem_feature($row[id])" class="btn btn-danger btn-sm shadow-none">
-             <i class="bi bi-trash"></i>Delete
+             <i class="bi bi-trash">"<a href='?del=$row[sr_no]'class='btn btn-sm btn-danger mt-2'>Delete</a>"</i>
              </button>
          </td>
-        </tr>
+        </tr>  
     data; 
     $i++;
      }

@@ -114,9 +114,7 @@ if(isset($_GET['del']))
                         $seen = "<a href='?seen=$row[sr_no]'class='btn btn-sm  btn-primary'>Mark as read</a> <br>";
                         }
                         $seen.= "<a href='?del=$row[sr_no]'class='btn btn-sm btn-danger mt-2'>Delete</a>";
-                      
-
-                           
+                                    
                         echo<<<query
                         <tr>
                         <td>$i</td>
