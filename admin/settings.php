@@ -166,11 +166,11 @@
                                     <label  class="form-label fw-bold">Phone Numbers (with country code)</label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text"><i class="bi bi_telephone-fill"></i></span>
-                                            <input type="number" name="pn1" id="pn1_inp" class="form-control shadow-none" required>
+                                            <input type="text" name="pn1" id="pn1_inp" class="form-control shadow-none" required>
                                         </div>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text"><i class="bi bi_telephone-fill"></i></span>
-                                            <input type="number" name="pn2" id="pn2_inp" class="form-control shadow-none" >
+                                            <input type="text" name="pn2" id="pn2_inp" class="form-control shadow-none" >
                                         </div>
                                     </div>
                                     <div class="mb-3">
@@ -242,7 +242,7 @@
                         </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" onclick = "" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
+                            <button type="button" onclick = "contacts_inp(contacts_data)" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
                             <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
                         </div>
                     </div>

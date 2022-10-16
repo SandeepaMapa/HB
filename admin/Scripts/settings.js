@@ -181,6 +181,7 @@ function get_general()
 
             }
 
+
             window.onload = function(){
                 get_general();
                 get_contacts();
