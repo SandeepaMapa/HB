@@ -9,6 +9,7 @@ function adminLogin()
         </script>";
         exit;
  }
+
 }
 
  function redirect($url){
@@ -29,9 +30,5 @@ function alert($type,$msg){
     
   alert;
 }
-
-
-
-
 
 ?>
