@@ -1,5 +1,6 @@
 
 let general_data, contacts_data;
+
 let general_s_form = document.getElementById('general_s_form');
 let site_title_inp = document.getElementById('site_title_inp');
 let site_about_inp = document.getElementById('site_about_inp');
