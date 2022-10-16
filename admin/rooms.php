@@ -30,7 +30,7 @@
                         <div class=" text-end mb-3">
                             
                             <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#add-room">
-                            <i class="bi bi-plus-square"></i> Add
+                            <i class="bi bi-plus-square"></i>Add
                                 </button>
                         </div>
                        <div class="table-responsive-lg" style="height:450px; overflow-y: scroll;">
@@ -59,7 +59,7 @@
                 <!-- Add room modal-->
                    <div class="modal fade" id="add-room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
-                        <form  id="add_room_form" autocomplete="off" action="">
+                        <form  id="add_room_form" autocomplete="off" method="POST" action="">
                         <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" >Add Room</h5>
@@ -87,20 +87,20 @@
                             <input type="number" min="1" name="children" class="form-control shadow-none" required>
                         </div>
                         <div class=" col-12 mb-3">
-                         <label class="form-label fw-bold">Features</label>
+                         <label class="form-label fw-bold">Facilities</label>
                           <div class="row">
                            <?php
-                             // $res = selectAll('features');
-                             // while($opt = mysqli_fetch_assoc($res)){
-                               // echo"
-                                //<div class='col-md-3'>
-                                //  <label>
-                                //   <input type='checkbox' name='features' value='$opt[id]' class='form-check-input shadow-none'>
-                                //     $opt[name]
-                               //   </label>
-                               // </div>
-                              //  ";
-                             // }
+                              $res = selectAll('facilities');
+                              while($opt = mysqli_fetch_assoc($res)){
+                                echo"
+                                <div class='col-md-3'>
+                                  <label>
+                                   <input type='checkbox' name='facilities' value='$opt[id]' class='form-check-input shadow-none'>
+                                     $opt[name]
+                                  </label>
+                                </div>
+                                ";
+                              }
                             ?>
                           </div>
                         </div>
@@ -114,7 +114,7 @@
              </div>
            </div>
        
-                
+                  
 
 
     <?php require('inc/scripts.php');?>
@@ -129,36 +129,36 @@
 
                 function add_rooms()
                {
-                    let data=new FormData();
-                    data.append('add_toom','');
+                    let data = new FormData();
+                    data.append('add_room','');
                     data.append('name',add_room_form.elements['name'].value);
                     data.append('price',add_room_form.elements['price'].value);
                     data.append('quantity',add_room_form.elements['quantity'].value);
                     data.append('adult',add_room_form.elements['adult'].value);
                     data.append('children',add_room_form.elements['children'].value);
 
-                    let features=[];
-                    add_room_form.elements['features'].forEach(el =>{
+                    let facilities=[];
+                    add_room_form.elements['facilities'].forEach(el =>{
                         if(el.checked){
-                            features.push(el.value);
+                            facilities.push(el.value);
                         }
-                    })
+                    });
                     
-                data.append('features',JSON.stringify(features));
+                   data.append('facilities',JSON.stringify(facilities));
 
 
-                let xhr=new XMLHttpRequest();
-                xhr.open("POST","ajax/rooms.php",true);
+                l   let xhr = new XMLHttpRequest();
+                    xhr.open("POST","ajax/rooms.php",true);
 
-                 xhr.onload=function(){
-                    var myModal=document.getElementById('add-room');
-                    var modal=bootstrap.Modal.getInstance(myModal);
-                    modal.hide();
+                    xhr.onload=function(){
+                     var myModal = document.getElementById('add-room');
+                     var modal = bootstrap.Modal.getInstance(myModal);
+                     modal.hide();
                     
                     if(this.responseText = 1){
                         alert('success','New room added!');
                         add_room_form.reset();
-                       // get_features();
+                       
                     }
                     else{
                         alert('error','Server Down!');     

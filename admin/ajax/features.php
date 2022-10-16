@@ -8,7 +8,7 @@
 if(isset($_POST['add_feature']))
    {
     $frm_data = filteration($_POST);
-    $q = "INSERT INTO features(name) VALUES (?)"; 
+    $q = "INSERT INTO facilities(name) VALUES (?)"; 
     $values = [$frm_data['name']];
     $res = insert($q,$values,'s');
     echo $res;
@@ -17,7 +17,7 @@ if(isset($_POST['add_feature']))
 
    if(isset($_POST['get_features']))
     {
-     $res = selectAll('features');
+     $res = selectAll('facilities');
      $i=1;
 
      while($row = mysqli_fetch_assoc($res))
@@ -27,8 +27,8 @@ if(isset($_POST['add_feature']))
           <td>$i</td>
           <td>$row[name]</td>
          <td>
-           <button type="button" onclick="rem_feature($row[id])" class="btn btn-danger btn-sm shadow-none">
-             <i class="bi bi-trash">"<a href='?del=$row[sr_no]'class='btn btn-sm btn-danger mt-2'>Delete</a>"</i>
+           <button type="button" onclick="del($row[id])" class="btn btn-danger btn-sm shadow-none">
+             <i class="bi bi-trash"></i>Delete
              </button>
          </td>
         </tr>  
@@ -37,12 +37,12 @@ if(isset($_POST['add_feature']))
      }
    }
 
-   if(isset($_POST['rem_feature']))
+   if(isset($_POST['del']))
    {
     $frm_data = filteration($_POST);
     
-    $sq = "DELETE FROM features WHERE id=?";
-    $values = [$frm_data['rem_feature']];
+    $sq = "DELETE FROM facilities WHERE id=?";
+    $values = [$frm_data['del']];
     if(delete($sq,$values,'i')){
       alert('Success','Data deleted!');
     }
