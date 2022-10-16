@@ -1,9 +1,9 @@
 <?php
 
-    $hname = 'localhost';
-    $uname = 'root';
-    $pass  = '';
-    $db    = 'hbwebsite';
+    $hname = "localhost";
+    $uname = "root";
+    $pass  = "";
+    $db    = "hbwebsite";
 
     $con   = mysqli_connect($hname, $uname, $pass, $db);
 
