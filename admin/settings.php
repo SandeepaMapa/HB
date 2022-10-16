@@ -141,7 +141,7 @@
             </div>
         </div>
     </div>
-
+   
     <!-- Contact details Modal-->
     <div class="modal fade" id="contacts-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -209,27 +209,33 @@
         </div>
     </div>
 
-     <!--Management Team Section-->
+     
+       
+    
+    <!-- Mangement Team Section -->
 
-     <div class="card border-0 shadow-sm mb-4">
-            <div class="card-body">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h5 class="card-title m-0">Management Team</h5>
-                    <button type="button" class="btn btn-dark shadow-none btn-sm" data-toggle="modal" data-bs-target="#team-s">
-                    <i class="bi bi-plus-square"></i>Add
-                    </button>                  
-                </div>
-                <div class="row" id="team-data"></div>
-            </div>
-    </div>
+       <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <h5 class="card-title m-0">Management Team</h5>
+                            <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#teamm-s">
+                            <i class="bi bi-plus-square"></i>Add
+                            </button>
+                        </div>
+                        
+                        <div class="row" id="team-data">
+                        </div>
+                    </div>
+                </div> 
 
-        <!--Management team modal-->
-        <div class="modal fade" id="team-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     <!--Management Team model-->
+
+     <div class="modal fade" id="teamm-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <form id="team_s_form">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" >Add Team Member Settings</h5>
+                        <h5 class="modal-title" >Add Team Member</h5>
                     </div>
                         <div class="modal-body">
                         <div class="mb-3">
@@ -249,7 +255,6 @@
                 </form>
             </div>
         </div>
-
 
             </div>
         </div>
