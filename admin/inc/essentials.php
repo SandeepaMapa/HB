@@ -1,5 +1,7 @@
 <?php
 
+define ('UPLOAD_IMAGE_PATH', $_SERVER['DOCUMENT_ROOT']);
+
 function adminLogin()
 {
     session_start();
@@ -29,6 +31,11 @@ function alert($type,$msg){
   </div>
     
   alert;
+}
+
+function uploadImage($image, $folder)
+{
+
 }
 
 ?>
