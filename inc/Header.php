@@ -95,7 +95,7 @@
   <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <form>
+        <form id="register-form" >
         <div class="modal-header">
           <h5 class="modal-title d-flex align-items-center">
           <i class="bi bi-person-lines-fill fs-3 me-2"></i>
@@ -110,27 +110,27 @@
         <div class="row">
         <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Name</label>
-        <input type="text" class="form-control shadow-none">
+        <input type="text" class="form-control shadow-none" required >
           </div>
           <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">NIC Number</label>
-        <input type="text" class="form-control shadow-none">
+        <input type="text" class="form-control shadow-none" required>
           </div>
         <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Email</label>
-        <input type="email" class="form-control shadow-none">
+        <input type="email" class="form-control shadow-none" required>
            </div>
            <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Phone Number</label>
-        <input type="number" class="form-control shadow-none">
+        <input type="number" class="form-control shadow-none" required>
           </div>
         <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Password</label>
-        <input type="password" class="form-control shadow-none">
+        <input type="password" class="form-control shadow-none" required>
            </div>
            <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Confirm Password</label>
-        <input type="password" class="form-control shadow-none">
+        <input type="password" class="form-control shadow-none" required>
            </div>
            <div class="text-center my-1 mb-1">
             <button type="submit" class="btn btn-dark shadow-none">Register</button>
@@ -143,6 +143,7 @@
         </div>
         
         </form>
+
       </div>
     </div>
   </div>
