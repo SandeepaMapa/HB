@@ -30,7 +30,7 @@
                         <div class=" text-end mb-3">
                             
                             <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#add-room">
-                            <i class="bi bi-plus-square"></i>Add
+                            <i class="bi bi-plus-square"></i> Add
                                 </button>
                         </div>
                        <div class="table-responsive-lg" style="height:450px; overflow-y: scroll;">
@@ -138,8 +138,8 @@
                     data.append('children',add_room_form.elements['children'].value);
 
                     let facilities=[];
-                    add_room_form.elements['facilities'].forEach(el =>{
-                        if(el.checked){
+                    add_room_form.elements['facilities'].forEach(e1 =>{
+                        if(e1.checked){
                             facilities.push(el.value);
                         }
                     });
@@ -147,7 +147,7 @@
                    data.append('facilities',JSON.stringify(facilities));
 
 
-                l   let xhr = new XMLHttpRequest();
+                    let xhr = new XMLHttpRequest();
                     xhr.open("POST","ajax/rooms.php",true);
 
                     xhr.onload=function(){
