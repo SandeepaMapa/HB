@@ -110,19 +110,19 @@
         <div class="row">
         <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Name</label>
-        <input type="text" class="form-control shadow-none" required >
+        <input name="name" type="text" class="form-control shadow-none" required >
           </div>
           <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">NIC Number</label>
-        <input type="text" class="form-control shadow-none" required>
+        <input name="nicnum"  type="text" class="form-control shadow-none" required>
           </div>
         <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Email</label>
-        <input type="email" class="form-control shadow-none" required>
+        <input name="email" type="email" class="form-control shadow-none" required>
            </div>
            <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Phone Number</label>
-        <input type="number" class="form-control shadow-none" required>
+        <input name="phonenum" type="number" class="form-control shadow-none" required>
           </div>
         <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Password</label>
