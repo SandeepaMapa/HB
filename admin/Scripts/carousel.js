@@ -15,7 +15,7 @@ function add_image()
     data.append('add_image','');
 
     let xhr =new XMLHttpRequest();
-    xhr.open("POST","ajax/settings_crud.php",true);
+    xhr.open("POST","ajax/carousel_crud.php",true);
 
     xhr.onload = function(){
         var myModal = document.getElementById('Carousel-s');
