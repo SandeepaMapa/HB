@@ -52,7 +52,7 @@
           </div>
         </div>
 
-                <!-- Feature modal-->
+                <!-- facility modal-->
                    <div class="modal fade" id="feature-s" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog ">
                         <form id="feature_s_form">
