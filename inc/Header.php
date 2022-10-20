@@ -126,11 +126,11 @@
           </div>
         <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Password</label>
-        <input type="password" class="form-control shadow-none" required>
+        <input name="pass" type="password" class="form-control shadow-none" required>
            </div>
            <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Confirm Password</label>
-        <input type="password" class="form-control shadow-none" required>
+        <input name="cpass" type="password" class="form-control shadow-none" required>
            </div>
            <div class="text-center my-1 mb-1">
             <button type="submit" class="btn btn-dark shadow-none">Register</button>
