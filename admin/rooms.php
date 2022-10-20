@@ -140,7 +140,7 @@
                     let facilities=[];
                     add_room_form.elements['facilities'].forEach(e1 =>{
                         if(e1.checked){
-                            facilities.push(el.value);
+                            facilities.push(e1.value);
                         }
                     });
                     
