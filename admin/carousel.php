@@ -48,11 +48,11 @@
                         <div class="modal-body">
                         <div class="mb-3">
                             <label  class="form-label fw-bold">Picture</label>
-                            <input type="file" name="member_picture" id="member_picture_inp" accept=".jpg, .png, .webp, .jpeg" class="form-control shadow-none" required>
+                            <input type="file" name="Carousel_picture" id="Carousel_picture_inp" accept=".jpg, .png, .webp, .jpeg" class="form-control shadow-none" required>
                         </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" onclick = "member_picture.value=''" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
+                            <button type="button" onclick = "Carousel_picture.value=''" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
                             <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
                         </div>
                     </div>

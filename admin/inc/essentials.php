@@ -2,8 +2,9 @@
 
 //frontend purpose data
 
+define('SITE_URL', 'http://127.0.0.1/HB/');
 define ('UPLOAD_IMAGE_PATH', $_SERVER['DOCUMENT_ROOT']);
-
+define('CAROUSEL_IMG_PATH', SITE_URL.'Photos/carousel/');
 
 
 //backend purpose data
@@ -11,6 +12,7 @@ define ('UPLOAD_IMAGE_PATH', $_SERVER['DOCUMENT_ROOT']);
 
 
 define('CAROUSEL_FOLDER','carousel/');
+
 
 function adminLogin()
 {
@@ -21,7 +23,6 @@ function adminLogin()
         </script>";
         exit;
  }
-
 }
 
  function redirect($url){
