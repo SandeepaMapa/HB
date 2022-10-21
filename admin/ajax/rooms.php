@@ -54,7 +54,7 @@ if(isset($_POST['add_room']))
 
     while($row = mysqli_fetch_assoc($res))
     {
-      $data.= "
+      $data= "
       <tr class='align-middle'>
        <td>$i</td>
        <td>$row[name]</td>
