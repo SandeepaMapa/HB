@@ -1,6 +1,16 @@
 <?php
 
+//frontend purpose data
+
 define ('UPLOAD_IMAGE_PATH', $_SERVER['DOCUMENT_ROOT']);
+
+
+
+//backend purpose data
+
+
+
+define('CAROUSEL_FOLDER','carousel/');
 
 function adminLogin()
 {
