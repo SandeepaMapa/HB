@@ -20,9 +20,14 @@ $u_exist = select("SELECT * FROM 'user_cred' WHERE 'email' = ? AND 'phonenum' = 
 [$data['email'],$data['phonenum']]"ss");
 
 if(mysqli_num_rowa($u_exit)!=0){
-
-
+$u_exit_fetch = mysqli_fetch_assoc($u_exit);
+echo ($u_exit_fetch['email'] == $data['email']) ? 'email_already' : 'phone_already';
+exit;
 }
+
+// send confirmation link to user's email
+
+
 
 
 }
