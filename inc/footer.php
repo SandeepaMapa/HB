@@ -74,6 +74,19 @@
     data.append('pass'register_form.elements['pass'].values);
     data.append('cpass'register_form.elements['cpass'].values);
     data.append('register','');
+
+    var myModel = document.getElementById('registerModel');
+    var model = bootstarp.Model.getInstance(myModel);
+    mddal.hide();
+
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST","ajax/login_register.php",true);
+    
+    xhr.onload = function(){
+      
+    }
+    xhr.send(data);
+
     });
 
     setActive();
