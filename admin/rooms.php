@@ -93,7 +93,7 @@
                               $res = selectAll('facilities');
                               while($opt = mysqli_fetch_assoc($res)){
                                 echo"
-                                <div class='col-md-3'>
+                                <div class='col-md-3 mb-1'>
                                   <label>
                                    <input type='checkbox' name='facilities' value='$opt[id]' class='form-check-input shadow-none'>
                                      $opt[name]
@@ -119,55 +119,7 @@
 
     <?php require('inc/scripts.php');?>
 
-   <script>
-    let add_room_form = document.getElementById('add_room_form');
-
-    add_room_form.addEventListener('submit',function(e){
-        e.preventDefault();
-        add_rooms();
-    });
-
-                function add_rooms()
-               {
-                    let data = new FormData();
-                    data.append('add_room','');
-                    data.append('name',add_room_form.elements['name'].value);
-                    data.append('price',add_room_form.elements['price'].value);
-                    data.append('quantity',add_room_form.elements['quantity'].value);
-                    data.append('adult',add_room_form.elements['adult'].value);
-                    data.append('children',add_room_form.elements['children'].value);
-
-                    let facilities=[];
-                    add_room_form.elements['facilities'].forEach(e1 =>{
-                        if(e1.checked){
-                            facilities.push(e1.value);
-                        }
-                    });
-                    
-                   data.append('facilities',JSON.stringify(facilities));
-
-
-                    let xhr = new XMLHttpRequest();
-                    xhr.open("POST","ajax/rooms.php",true);
-
-                    xhr.onload=function(){
-                     var myModal = document.getElementById('add-room');
-                     var modal = bootstrap.Modal.getInstance(myModal);
-                     modal.hide();
-                    
-                    if(this.responseText = 1){
-                        alert('success','New room added!');
-                        add_room_form.reset();
-                       
-                    }
-                    else{
-                        alert('error','Server Down!');     
-                    }
-                    }
-                    xhr.send(data);
-                }
-        
-    </script>
+    <script src="Scripts\rooms.js"> </script>
     
 
     
