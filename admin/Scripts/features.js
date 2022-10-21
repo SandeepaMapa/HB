@@ -68,6 +68,7 @@
                 }
                 xhr.send('rem_feature='+val);
             }
+            
                 window.onload = function(){
                  get_features();
             }

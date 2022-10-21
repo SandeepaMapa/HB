@@ -5,7 +5,7 @@ let add_room_form = document.getElementById('add_room_form');
         add_rooms();
     });
 
-                function add_rooms()
+            function add_rooms()
                {
                     let data = new FormData();
                     data.append('add_room','');
@@ -27,7 +27,7 @@ let add_room_form = document.getElementById('add_room_form');
                     let xhr = new XMLHttpRequest();
                     xhr.open("POST","ajax/rooms.php",true);
 
-                    xhr.onload=function(){
+                    xhr.onload = function(){
                      var myModal = document.getElementById('add-room');
                      var modal = bootstrap.Modal.getInstance(myModal);
                      modal.hide();
@@ -43,3 +43,20 @@ let add_room_form = document.getElementById('add_room_form');
                     }
                     xhr.send(data);
                 }
+
+
+        function get_all_rooms()
+        {
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST","ajax/rooms.php",true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhr.onload = function(){
+             document.getElementById('room-data').innerHTML = this.responseText;
+        }
+            xhr.send('get_all_rooms');
+        } 
+
+        window.onload = function(){
+            get_all_rooms();
+        }

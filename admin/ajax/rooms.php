@@ -9,7 +9,7 @@ if(isset($_POST['add_room']))
     $frm_data = filteration($_POST);
     $flag = 0;
 
-    $q1 = "INSERT INTO rooms(name, price, quantity, adult, children) VALUES (?,?,?,?)";
+    $q1 = "INSERT INTO rooms(name, price, quantity, adult, children) VALUES (?,?,?,?,?)";
     $values = [$frm_data['name'],$frm_data['price'],$frm_data['quantity'],$frm_data['adult'],$frm_data['children']];
 
     if(insert($q1,$values,'siiii')){
@@ -43,5 +43,36 @@ if(isset($_POST['add_room']))
  
   }
 
+
+
+  if(isset($_POST['get_all_rooms']))
+  {
+    $res = selectAll('rooms');
+    $i = 0;
+
+    $data = "1";
+
+    while($row = mysqli_fetch_assoc($res))
+    {
+      $data.= "
+      <tr class='align-middle'>
+       <td>$i</td>
+       <td>$row[name]</td>
+       <td>
+        <span class='badge rounded-pill bg-light text-dark'>
+         Adult: $row[adult]
+        </span><br>
+        <span class='badge rounded-pill bg-light text-dark'>
+         Children: $row[children]
+        </span>
+       <td>$row[price]</td>
+       <td>$row[quantity]</td>
+       <td>Status</td>
+       <td>Buttons</td>
+      </tr>
+      ";
+    }
+    echo $data;
+  }
    
 ?>
