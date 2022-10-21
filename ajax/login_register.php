@@ -16,6 +16,7 @@ exit;
 }
 
 //check user exites or not
+$u_exist = select("")
 
 
 }
