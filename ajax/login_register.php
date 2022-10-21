@@ -16,12 +16,12 @@ exit;
 }
 
 //check user exites or not
-$u_exist = select("SELECT * FROM 'user_cred' WHERE 'email' = ? AND 'phonenum' = ?", 
+$u_exist = select("SELECT * FROM 'user_cred' WHERE 'email' = ? AND 'phonenum' = ? LIMIT 1", 
 [$data['email'],$data['phonenum']]"ss");
 
 if(mysqli_num_rowa($u_exit)!=0){
 
-    
+
 }
 
 
