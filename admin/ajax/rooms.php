@@ -48,26 +48,39 @@ if(isset($_POST['add_room']))
   if(isset($_POST['get_all_rooms']))
   {
     $res = selectAll('rooms');
-    $i = 0;
+    $i = 1;
 
-    $data = "1";
+    $data = "";
 
     while($row = mysqli_fetch_assoc($res))
     {
-      $data= "
+
+      if($row['status']==1){
+         $status = " <button class='btn btn-dark btn-sm shadow-none'>active</button>
+         ";
+      }
+      else{
+        $status = "<button class='btn btn-warning btn-sm shadow-none'>inactive</button>
+        ";
+      }
+         
+      
+
+
+      $data.= "
       <tr class='align-middle'>
        <td>$i</td>
        <td>$row[name]</td>
        <td>
         <span class='badge rounded-pill bg-light text-dark'>
-         Adult: $row[adult]
+         Adults: $row[adult]
         </span><br>
         <span class='badge rounded-pill bg-light text-dark'>
          Children: $row[children]
         </span>
-       <td>$row[price]</td>
+       <td>Rs. $row[price]</td>
        <td>$row[quantity]</td>
-       <td>Status</td>
+       <td>$status</td>
        <td>Buttons</td>
       </tr>
       ";
