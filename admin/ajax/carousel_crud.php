@@ -4,63 +4,61 @@ require('../inc/db_config.php');
 require('../inc/essentials.php');
 adminLogin();
 
-if(isset($_POST['get_general']))
+
+if(isset($_POST['add_image']))
 {
- $q = "SELECT * FROM 'settings' WHERE 'sr_no'=?";
- $values = [1];
- $res = select($q,$values,"i");
- $data = mysqli_fetch_assoc($res);
- $json_data = json_encode($data);
- echo $json_data;
+    $img_r = uploadImage($_FILES['picture'],CAROUSEL_FOLDER);
+
+    if($img_r == 'inv_img'){
+        echo $img_r;
+    }
+    else if( $img_r== 'inv_size'){
+        echo $img_r;
+    }
+    else if($img_r == 'upd_failed'){
+        echo $img_r;
+    }
+    else{
+        $q = "INSERT INTO `carousel`(`image`) VALUES (?)";
+        $values = [$img_r];
+        $res = insert($q, $values, 'ss');
+        echo $res;
+    }
 }
 
-if(isset($_POST['upd_general']))
+if(isset($_POST['get_Carousel']))
 {
-    $frm_data = filteration($_POST);
+    $res = selectAll('Carousel');
 
-    $q = "UPDATE 'settings' SET 'site_title'= ? ,'site_about'= ?  WHERE 'sr_no'=?";
-    $values = [$frm_data['site_title'], $frm_data['site_about'],1];
-    $res = update($q,$values,'ssi');
+    while($row = mysqli_fetch_assoc($res))
+    {
+        $path = CAROUSEL_IMG_PATH;
+        echo <<<data
+            <div class="col-md-2 mb-3">
+                <div class="card bg-dark ></div>
+            </div>
+        <!--fill from essentials-->
+    }
+}
+
+
+
+
+
+
+
+
+if(isset($_POST['rem_image']))
+{
+    $frm_data = filteration($POST);
+    $values   = [$frm_data[rem_image]];
+
+    $pre_q = "SELECT * FROM 'carousel' WHERE 'sr_no'=?";
+    $res = select($pre_q, values,'i');
+    $img = mysqli_fetch_assoc($res);
+    
+    $res = delete($q, values,'1');
     echo $res;
-}
-
-if(isset($_POST['upd_shutdown']))
-{
-    $frm_data = ($_POST['upd_shutdown']==0) ? 1 : 0;
-
-    $q = "UPDATE 'settings' SET 'shutdown'= ?  WHERE 'sr_no'=?";
-    $values = [$frm_data,1];
-    $res = update($q,$values,'ii');
-    echo $res;
-}
-
-if(isset($_POST['get_contacts']))
-{
- $q = "SELECT * FROM 'contact_details' WHERE 'sr_no'=?";
- $values = [1];
- $res = select($q,$values,"i");
- $data = mysqli_fetch_assoc($res);
- $json_data = json_encode($data);
- echo $json_data;
-}
-
-if(isset($_POST['upd_contacts']))
-{
-    $frm_data = filteration($_POST);
-
-
-    $q = "UPDATE 'contact_details' SET 'address'=?, 'gmap'=?, 'pn1'=?, 'pn2'=?, 'email'=?, 'fb'=?, 'insta'=?, 'iframe'=? WHERE 'sr_no'=? ";
-    $values = [$frm_data['address'], $frm_data['gmap'], $frm_data['pn1'], $frm_data['pn2'], $frm_data['email'], $frm_data['fb'], $frm_data['insta'], $frm_data['iframe']];
-    $res = update($q,$values,'ssssssssi');
-
-    echo $res;
-}
-
-if(isset($_POST['add_member']))
-{
-    $frm_data = filteration($_POST);
-
-    uploadImage($_FILES['picture'],)
-}
+}    
 
 ?>
