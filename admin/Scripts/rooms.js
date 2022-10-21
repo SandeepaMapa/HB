@@ -22,8 +22,7 @@ let add_room_form = document.getElementById('add_room_form');
                         }
                     });
                     
-                   data.append('facilities',JSON.stringify(facilities));
-
+                    data.append('facilities',JSON.stringify(facilities));
 
                     let xhr = new XMLHttpRequest();
                     xhr.open("POST","ajax/rooms.php",true);
@@ -33,7 +32,7 @@ let add_room_form = document.getElementById('add_room_form');
                      var modal = bootstrap.Modal.getInstance(myModal);
                      modal.hide();
                     
-                    if(this.responseText = 1){
+                    if(this.responseText == 1){
                         alert('success','New room added!');
                         add_room_form.reset();
                        
