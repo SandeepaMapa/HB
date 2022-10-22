@@ -56,11 +56,11 @@ if(isset($_POST['add_room']))
     {
 
       if($row['status']==1){
-         $status = " <button class='btn btn-dark btn-sm shadow-none'>active</button>
+         $status = " <button onclick='toggle_status($row[id],0)' class='btn btn-dark btn-sm shadow-none'>active</button>
          ";
       }
       else{
-        $status = "<button class='btn btn-warning btn-sm shadow-none'>inactive</button>
+        $status = "<button onclick='toggle_status($row[id],1)' class='btn btn-warning btn-sm shadow-none'>inactive</button>
         ";
       }
          
