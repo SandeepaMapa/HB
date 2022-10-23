@@ -196,22 +196,21 @@ function get_general()
                 let xhr =new XMLHttpRequest();
                 xhr.open("POST","ajax/settings_crud.php",true);
                
-
                 xhr.onload = function(){
+                    console.log(this.responseText);
+                  //  var myModal = document.getElementById('general-s');
+                   // var modal = bootstrap.Modal.getInstance(myModal);
+                   // modal.hide();
 
-                   /* var myModal = document.getElementById('general-s');
-                    var modal = bootstrap.Modal.getInstance(myModal);
-                    modal.hide();
-
-                    if(this.responseText =1)
-                    {
-                        alert('success', 'Changes saved!');
-                        get_general();
-                    }
-                    else
-                    {
-                        alert('ERROR', ' No Changes made!');
-                    }*/
+                   // if(this.responseText ==1)
+                    //{
+                    //    alert('success', 'Changes saved!');
+                   //     get_general();
+                   // }
+                   // else
+                   // {
+                   //     alert('ERROR', ' No Changes made!');
+                   // }
                 }
 
 

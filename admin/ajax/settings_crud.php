@@ -60,7 +60,23 @@ if(isset($_POST['add_member']))
 {
     $frm_data = filteration($_POST);
 
-    uploadImage($_FILES['picture'],)
+    $img_r = uploadImage($_FILES['picture'],PHOTOS_FOLDER);
+
+    if($img_r == 'inv_img'){
+        echo $img_r;
+    }
+    elseif($img_r == 'inv_size'){
+        echo $img_r;
+    }
+    elseif($img_r == 'upd_failed'){
+        echo $img_r;
+    }
+    else{
+        $q = "INSERT INTO `team_details`(`name`, `picture`) VALUES (?,?)";
+        $values = [$frm_data['name'],$img_r];
+        $res =insert($q, $values, 'ss');
+        echo $res; 
+    }
 }
 
 ?>
