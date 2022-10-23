@@ -226,15 +226,17 @@
                         <div class="row" id="team-data">
                             <div class="col-md-2 mb-3">
                             <div class="card text-bg-dark">
-                                <img src="..." class="card-img">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                <img src="../Photos/Events/par2.jpg" class="card-img">
+                                <div class="card-img-overlay text-end">
+                                    <button type= "button" class="btn btn-danger btn-sm shadow-none">
+                                       <i class="bi bi-trash"></i> DELETE
+                                    </button>
                                 </div>
+                                <p class="card-text text-center px-3 py-2"><small>Name</small></p>
                             </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div> 
 
