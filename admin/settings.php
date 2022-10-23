@@ -224,7 +224,17 @@
                         </div>
                         
                         <div class="row" id="team-data">
+                            <div class="col-md-2 mb-3">
+                            <div class="card text-bg-dark">
+                                <img src="..." class="card-img">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            </div>
                         </div>
+                        
                     </div>
                 </div> 
 
@@ -255,7 +265,7 @@
                 </form>
             </div>
         </div>
-
+                
             </div>
         </div>
        </div>
