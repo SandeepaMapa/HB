@@ -115,6 +115,54 @@ if(isset($_POST['add_room']))
     echo $data;
   }
 
+  
+  if(isset($_POST['edit_room']))
+  {
+    $facilities = filteration(json_decode($_POST['facilities']));
+    $frm_data = filteration($_POST);
+    $flag = 0;
+
+    $q1 = "UPDATE rooms SET name=?, price=?, quantity=? , adult=?, children=?  WHERE id=?";
+    $values = [$frm_data['name'],$frm_data['price'],$frm_data['quantity'],$frm_data['adult'],$frm_data['children'],$frm_data['room_id']];
+
+    if(update($q1,$values,'siiiii')){
+      $flag = 1;
+    }
+
+    $del_facilities = delete("DELETE FROM room_facilities WHERE room_id=?",[$frm_data['room_id']],'i');
+
+    if(!($del_facilities)){
+      $flag = 0;
+    }
+
+    $q2 = "INSERT INTO room_facilities(room_id, facilities_id) VALUES (?,?)";
+ 
+    if($stmt = mysqli_prepare($con,$q2))
+    {
+       foreach($facilities as $f)
+       {
+         mysqli_stmt_bind_param($stmt,'ii',$frm_data['room_id'],$f);
+         mysqli_stmt_execute($stmt);
+       }
+       $flag = 1;
+       mysqli_stmt_close($stmt);
+    }
+    else{
+      $flag = 0;
+      die('query cannot be prepared - insert');
+    }
+
+    if($flag){
+      echo 1;
+    }
+    else{
+      echo 0;
+    }
+ 
+  }
+
+
+  
 
 
 
