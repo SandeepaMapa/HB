@@ -42,6 +42,40 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
  
   <script>
+
+function alert(type,msg){
+        let bs_class = (type == 'success') ? 'alert-success' : 'alert-danger';
+        let element = document.createElement('div');
+        element.innerHTML =  '
+        <div class ="alert ${bs_class} alert-dismissible fade show" role="alert">
+                <strong class="me-3">${msg}</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        ';
+        
+        if(postion=='body'){
+          document.body.append(element);
+          element.classList.add('custom_alert');
+
+        }
+        else{
+          document.getElementById(position).appendChild(element);
+        }
+   
+    
+    setTimeout(remAlert, 2000);
+   }
+
+   function remAlert(){
+     document.getElementByClassName('alert')[0].remove();
+   }
+
+
+
+
+
+
+
     function setActive()
     {
       let navbar = document.getElementById('dashboard-menu');
@@ -83,8 +117,11 @@
     xhr.open("POST","ajax/login_register.php",true);
     
     xhr.onload = function(){
-      
+      if(this.responseText == ''){
+        alert()
+      }
     }
+
     xhr.send(data);
 
     });
