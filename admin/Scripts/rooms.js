@@ -35,6 +35,7 @@ let add_room_form = document.getElementById('add_room_form');
                     if(this.responseText == 1){
                         alert('success','New room added!');
                         add_room_form.reset();
+                        get_all_rooms();
                        
                     }
                     else{
@@ -62,6 +63,23 @@ let add_room_form = document.getElementById('add_room_form');
         }
 
 
+        let edit_room_form = document.getElementById('edit_room_form');
+
+        function edit_details(id)
+        {
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST","ajax/rooms.php",true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhr.onload = function(){
+                let data = JSON.parse(this.responseText);
+             
+            }
+            xhr.send('get_room='+id);
+        }
+
+
+
         function toggle_status(id,val)
         {
             let xhr = new XMLHttpRequest();
@@ -69,11 +87,18 @@ let add_room_form = document.getElementById('add_room_form');
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
             xhr.onload = function(){
-             document.getElementById('room-data').innerHTML = this.responseText;
+             if(this.responseText==1){
+                alert('success','Status toggled!');
+                get_all_rooms();
+             }
+             else{
+                alert('error','Server Down!');
+             }
         }
-            xhr.send('get_all_rooms');
+            xhr.send('toggle_status='+id+'&value='+val);
         } 
 
-        window.onload = function(){
+        window.onload = function()
+        {
             get_all_rooms();
         }
