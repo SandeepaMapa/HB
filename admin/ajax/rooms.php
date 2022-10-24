@@ -48,7 +48,7 @@ if(isset($_POST['add_room']))
   if(isset($_POST['get_all_rooms']))
   {
     $res = selectAll('rooms');
-    $i = 1;
+    $i = 0;
 
     $data = "";
 
@@ -56,15 +56,14 @@ if(isset($_POST['add_room']))
     {
 
       if($row['status']==1){
-         $status = " <button onclick='toggle_status($row[id],0)' class='btn btn-dark btn-sm shadow-none'>active</button>
-         ";
+         $status = "<button onclick='toggle_status($row[id],0)' class='btn btn-dark btn-sm shadow-none'>active</button>";
       }
       else{
-        $status = "<button onclick='toggle_status($row[id],1)' class='btn btn-warning btn-sm shadow-none'>inactive</button>
-        ";
+         $status = "<button onclick='toggle_status($row[id],1)' class='btn btn-warning btn-sm shadow-none'>inactive</button>";
+        
       }
-         
-      
+     
+     $i++;
 
 
       $data.= "
@@ -81,11 +80,57 @@ if(isset($_POST['add_room']))
        <td>Rs. $row[price]</td>
        <td>$row[quantity]</td>
        <td>$status</td>
-       <td>Buttons</td>
+       <td>
+           <button type='button' onclick='edit_details($row[id])' class='btn btn-primary shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#add-room'>
+            <i class='bi bi-pencil-square'></i> 
+              </button>
+       </td>
       </tr>
       ";
     }
     echo $data;
+    
   }
    
+
+  if(isset($_POST['get_room']))
+  {
+    $frm_data = filteration($_POST);
+
+    $res1 = select("SELECT * FROM rooms WHERE id=?",[$frm_data['get_room']],'i');
+    $res2 = select("SELECT * FROM room_facilities WHERE room_id=?",[$frm_data['get_room']],'i');
+
+    $roomdata = mysqli_fetch_assoc($res1);
+    $facilities = [];
+
+    if(mysqli_num_rows($res2)>0){
+      while($row =  mysqli_fetch_assoc($res2)){
+        array_push($facilities,$row['facilities_id']);
+      }
+    }
+
+    $data = ["roomdata" => $roomdata, "facilities" =>$facilities];
+    $data = json_encode($data);
+
+    echo $data;
+  }
+
+
+
+
+  if(isset($_POST['toggle_status']))
+  {
+    $frm_data = filteration($_POST);
+
+    $qu = "UPDATE rooms SET status=? WHERE id=?";
+    $v = [$frm_data['value'],$frm_data['toggle_status']];
+
+    if(update($qu,$v,'ii')){
+      echo 1;
+    }
+    else{
+      echo 0;
+    }
+  }
+
 ?>
