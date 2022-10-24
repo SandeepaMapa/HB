@@ -12,10 +12,7 @@ define('PHOTOS_FOLDER','Photos/')
 
 
 define('ABOUT_FOLDER','about/');
-define('CAROUSEL_FOLDER','carousel/');
-define('FACILITIES_FOLDER','facilities/');
-define('ROOMS_FOLDER','rooms/');
-define('USERS_FOLDER','users/');
+
 
 // sendgrid api key
 
