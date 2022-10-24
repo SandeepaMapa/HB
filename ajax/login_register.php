@@ -5,8 +5,18 @@ require('../admin/inc/essentials.php');
 require("../inc/sendgrid/sendgrid-php.php");
 
 function sendMail()
+
+
+
 {
-    
+    $email = new \sendGrid\MAil\MAil();
+    $email->setForm("test@example.com", "Example User");
+    $email->setSubject("Sending with SendGrid is Fun");
+    $email->addTo("test@example.com", "Example User");
+    $email->addCountent("test/plain", "and easy to do anywhere,even with PHP");
+    $email->addContent(
+        "text/html", "<strong>and easy to do anywhere,  even with PHP</strong>"
+    );
 }
 
 if(isset($_POST['register']))
