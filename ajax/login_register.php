@@ -4,19 +4,27 @@ require('../admin/inc/db_config.php');
 require('../admin/inc/essentials.php');
 require("../inc/sendgrid/sendgrid-php.php");
 
-function sendMail()
-
-
-
+function send_mail($email,$name)
 {
     $email = new \sendGrid\MAil\MAil();
-    $email->setForm("test@example.com", "Example User");
-    $email->setSubject("Sending with SendGrid is Fun");
-    $email->addTo("test@example.com", "Example User");
+    $email->setForm("thayagiperera@gmail.com", "Rives edge");
+    $email->setSubject("Account Verification Link");
+
+    $email->addTo($email);
+    
     $email->addCountent("test/plain", "and easy to do anywhere,even with PHP");
     $email->addContent(
         "text/html", "<strong>and easy to do anywhere,  even with PHP</strong>"
     );
+    $sendgrid = new \sendGrid(getenv('SENDGRID_API_KEY'));
+    try{
+        $response = $sendgrid->send($email);
+        print $response->statusCode() . "\n";
+        print_r($response->headers());
+        print $response->body() . "\n";
+    } catch (Exception $e) {
+        eho 'caught exception: '. $e->getMessage() ."\n";
+    }
 }
 
 if(isset($_POST['register']))
@@ -42,7 +50,7 @@ exit;
 
 // send confirmation link to user's email
 
-
+send_mail($data['email'],$data['name']);
 
 
 }
