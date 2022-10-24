@@ -127,6 +127,8 @@ input[type=number] {
   position: fixed;
   top:25px;
   right:25px;
+  z-index:1111;
+
 }
 
 .carousel {
