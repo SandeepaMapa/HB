@@ -23,8 +23,6 @@
             <div class="col-lg-10 ms-auto p-4 overflow-hidden">
                 <h3 class="mb-4">ROOMS</h3>
 
-               
-
                 <div class="card border-0 shadow-sm mb-4">
                     <div class="card-body">
                         <div class=" text-end mb-3">
@@ -57,9 +55,9 @@
             </div>
 
                 <!-- Add room modal-->
-                   <div class="modal fade" id="add-room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                 <div class="modal fade" id="add-room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
-                        <form  id="add_room_form" autocomplete="off" method="POST" action="">
+                        <form  id="add_room_form" autocomplete="off">
                         <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" >Add Room</h5>
@@ -114,15 +112,13 @@
              </div>
            </div>
        
-    
-        
-        <!-- edit room modal-->
 
-               <div class="modal fade" id="edit-room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
+           <!-- edit room modal-->
+           <div class="modal fade" id="edit-room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
-                        <form  id="edit_room_form" autocomplete="off" method="POST" action="">
+                        <form  id="edit_room_form" autocomplete="off">
                         <div class="modal-content">
-                        <div class="modal-header">
+                         <div class="modal-header">
                             <h5 class="modal-title" >Edit Room</h5>
                         </div>
                         <div class="modal-body">
@@ -175,6 +171,10 @@
                 </form>
              </div>
            </div>
+       
+    
+        
+        
 
 
     <?php require('inc/scripts.php');?>

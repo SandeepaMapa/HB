@@ -73,6 +73,11 @@ let add_room_form = document.getElementById('add_room_form');
 
             xhr.onload = function(){
                 let data = JSON.parse(this.responseText);
+                edit_room_form.elements['name'].value = data.roomdata.name;
+                edit_room_form.elements['price'].value = data.roomdata.price;
+                edit_room_form.elements['quantity'].value = data.roomdata.quantity;
+                edit_room_form.elements['adult'].value = data.roomdata.adult;
+                edit_room_form.elements['children'].value = data.roomdata.children;
              
             }
             xhr.send('get_room='+id);
