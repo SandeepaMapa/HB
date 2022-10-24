@@ -11,6 +11,7 @@ if(isset($_POST['add_feature']))
     $q = "INSERT INTO facilities(name) VALUES (?)"; 
     $values = [$frm_data['name']];
     $res = insert($q,$values,'s');
+    
     echo $res;
    }
 
@@ -43,7 +44,8 @@ if(isset($_POST['add_feature']))
     
     $sq = "DELETE FROM facilities WHERE id=?";
     $values = [$frm_data['del']];
-    if(delete($sq,$values,'i')){
+    if(delete($sq,$values,'i'))
+    {
       alert('Success','Data deleted!');
     }
     else{

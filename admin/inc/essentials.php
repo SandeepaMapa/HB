@@ -5,14 +5,17 @@
 define('SITE_URL', 'http://127.0.0.1/HB/');
 define ('UPLOAD_IMAGE_PATH', $_SERVER['DOCUMENT_ROOT']);
 define('CAROUSEL_IMG_PATH', SITE_URL.'Photos/carousel/');
-define('PHOTOS_FOLDER','Photos/')
+define('PHOTOS_FOLDER','Photos/'); 
 
 
 //backend purpose data
 
 
 define('ABOUT_FOLDER','about/');
-
+define('CAROUSEL_FOLDER','carousel/');
+define('FACILITIES_FOLDER','facilities/');
+define('ROOMS_FOLDER','rooms/');
+define('USERS_FOLDER','users/');
 
 // sendgrid api key
 

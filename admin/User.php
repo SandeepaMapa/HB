@@ -36,7 +36,7 @@ if(isset($_GET['del']))
 
     if($frm_data['del']=='all'){
         $sq = " DELETE FROM user_queries";
-   if(mysq_query($con,$sq)){
+   if(delete($con,$sq,'i')){
     alert('Success','All data deleted!');
    }
    else{
