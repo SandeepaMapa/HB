@@ -44,15 +44,13 @@ if(isset($_POST['add_feature']))
     
     $sq = "DELETE FROM facilities WHERE id=?";
     $values = [$frm_data['del']];
-    if(delete($sq,$values,'i'))
-    {
-      alert('Success','Data deleted!');
-    }
-    else{
-     alert('error','Operation Failed!');
-    }
+   if(delete($sq,$values,'i')){
+    alert('Success','Data deleted!');
    }
-   
+   else{
+    alert('error','Operation Failed!');
+   }
+   }
    
    
 ?>
