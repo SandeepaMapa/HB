@@ -78,12 +78,23 @@ let add_room_form = document.getElementById('add_room_form');
                 edit_room_form.elements['quantity'].value = data.roomdata.quantity;
                 edit_room_form.elements['adult'].value = data.roomdata.adult;
                 edit_room_form.elements['children'].value = data.roomdata.children;
+                edit_room_form.elements['room_id'].value = data.roomdata.id;
              
+               
+                edit_room_form.elements['facilities'].forEach(el =>{
+                    if(data.facilities.include(el.value)){
+                        el.checked = true;
+                    }
+                });
             }
             xhr.send('get_room='+id);
         }
 
-
+        edit_room_form.addEventListener('submit',function(e){
+            e.preventDefault();
+            submit_edit_rooms();
+        });
+     
 
         function toggle_status(id,val)
         {
