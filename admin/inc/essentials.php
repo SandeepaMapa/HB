@@ -10,8 +10,16 @@ define('CAROUSEL_IMG_PATH', SITE_URL.'Photos/carousel/');
 //backend purpose data
 
 
-
+define('ABOUT_FOLDER','about/');
 define('CAROUSEL_FOLDER','carousel/');
+define('FACILITIES_FOLDER','facilities/');
+define('ROOMS_FOLDER','rooms/');
+define('USERS_FOLDER','users/');
+
+// sendgrid api key
+
+define('SENDGRID_API_KEY',"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");
+
 
 
 function adminLogin()

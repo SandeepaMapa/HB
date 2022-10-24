@@ -22,14 +22,15 @@ function send_mail($email,$name,$token)
         </a>
         "
     );
-    
-    $sendgrid = new \sendGrid(getenv('SENDGRID_API_KEY'));
+
+    $sendgrid = new \sendGrid(SENDGRID_API_KEY);
     try{
         $response = $sendgrid->send($email);
         print $response->statusCode() . "\n";
         print_r($response->headers());
         print $response->body() . "\n";
-    } catch (Exception $e) {
+    } 
+    catch (Exception $e) {
         eho 'caught exception: '. $e->getMessage() ."\n";
     }
 }
