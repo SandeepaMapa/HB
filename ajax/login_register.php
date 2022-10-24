@@ -4,9 +4,34 @@ require('../admin/inc/db_config.php');
 require('../admin/inc/essentials.php');
 require("../inc/sendgrid/sendgrid-php.php");
 
-function sendMail()
+function send_mail($email,$name,$token)
 {
+    $email = new \sendGrid\MAil\MAil();
+    $email->setForm("thayagiperera@gmail.com", "Rives edge");
+    $email->setSubject("Account Verification Link");
+
+    $email->addTo($email);
     
+    $email->addCountent("test/plain", "and easy to do anywhere,even with PHP");
+    $email->addContent(
+        "text/html"
+        "
+        Click the link tp confirm you email; <br>
+        <a href='".SITE_URL."email_confirm.php?email=$email&token=$token"."'>
+        CLICK ME
+        </a>
+        "
+    );
+    
+    $sendgrid = new \sendGrid(getenv('SENDGRID_API_KEY'));
+    try{
+        $response = $sendgrid->send($email);
+        print $response->statusCode() . "\n";
+        print_r($response->headers());
+        print $response->body() . "\n";
+    } catch (Exception $e) {
+        eho 'caught exception: '. $e->getMessage() ."\n";
+    }
 }
 
 if(isset($_POST['register']))
@@ -32,7 +57,8 @@ exit;
 
 // send confirmation link to user's email
 
-
+$token = bin2hex(random_bytes(16));
+send_mail($data['email'],$data['name'],$token);
 
 
 }
