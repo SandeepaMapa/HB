@@ -4,7 +4,7 @@ require('../admin/inc/db_config.php');
 require('../admin/inc/essentials.php');
 require("../inc/sendgrid/sendgrid-php.php");
 
-function send_mail($email,$name)
+function send_mail($email,$name,$token)
 {
     $email = new \sendGrid\MAil\MAil();
     $email->setForm("thayagiperera@gmail.com", "Rives edge");
@@ -14,8 +14,15 @@ function send_mail($email,$name)
     
     $email->addCountent("test/plain", "and easy to do anywhere,even with PHP");
     $email->addContent(
-        "text/html", "<strong>and easy to do anywhere,  even with PHP</strong>"
+        "text/html"
+        "
+        Click the link tp confirm you email; <br>
+        <a href='".SITE_URL."email_confirm.php?email=$email&token=$token"."'>
+        CLICK ME
+        </a>
+        "
     );
+    
     $sendgrid = new \sendGrid(getenv('SENDGRID_API_KEY'));
     try{
         $response = $sendgrid->send($email);
@@ -50,7 +57,8 @@ exit;
 
 // send confirmation link to user's email
 
-send_mail($data['email'],$data['name']);
+$token = bin2hex(random_bytes(16));
+send_mail($data['email'],$data['name'],$token);
 
 
 }
