@@ -227,6 +227,25 @@ function get_general()
 
             }
 
+            function get_members()
+            {
+                let xhr =new XMLHttpRequest();
+                xhr.open("POST","ajax/settings_crud.php",true);
+                xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
+
+                xhr.onload = function(){
+                    
+                        }
+
+
+                        xhr.send('get_general');
+                    }
+
+                    general_s_form.addEventListener('submit',function(e){
+                        
+                    }
+            }
+
             window.onload = function(){
                 get_general();
                 get_contacts();
