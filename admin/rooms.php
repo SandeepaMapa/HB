@@ -114,7 +114,8 @@
        
 
            <!-- edit room modal-->
-           <div class="modal fade" id="edit-room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+               <div class="modal fade" id="edit-room" >
                     <div class="modal-dialog modal-lg">
                         <form  id="edit_room_form" autocomplete="off">
                         <div class="modal-content">
@@ -177,9 +178,9 @@
         
 
 
-    <?php require('inc/scripts.php');?>
+      <?php require('inc/scripts.php');?>
 
-    <script src="Scripts\rooms.js"> </script>
+      <script src="Scripts\rooms.js"> </script>
     
 
     
