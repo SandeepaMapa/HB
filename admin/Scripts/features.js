@@ -1,5 +1,5 @@
 
-                    let feature_s_form = document.getElementById('feature_s_form');
+            let feature_s_form = document.getElementById('feature_s_form');
 
                 feature_s_form.addEventListener('submit',function(e)
                 {
@@ -7,6 +7,7 @@
                 add_feature();
             });
 
+            
         function add_feature()
             {
                 let data = new FormData();
@@ -66,7 +67,7 @@
                     alert('error','Server Down!');     
                 }
                 }
-                xhr.send('rem_feature='+val);
+                xhr.send('rem_features='+val);
             }
             
                 window.onload = function(){

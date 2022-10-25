@@ -19,9 +19,6 @@
         else{
           document.getElementById(position).appendChild(element);
         }
-   
-    
-   
     setTimeout(remAlert, 2000);
    }
 

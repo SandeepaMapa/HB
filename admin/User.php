@@ -128,8 +128,6 @@ if(isset($_GET['del']))
                         query;
                         $i++;
 
-
-
                     }
 
                     
