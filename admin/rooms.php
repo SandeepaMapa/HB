@@ -115,12 +115,12 @@
 
            <!-- edit room modal-->
 
-               <div class="modal fade" id="edit-room" >
+           <div class="modal fade" id="edit-room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <form  id="edit_room_form" autocomplete="off">
                         <div class="modal-content">
-                         <div class="modal-header">
-                            <h5 class="modal-title" >Edit Room</h5>
+                        <div class="modal-header">
+                            <h5 class="modal-title" >Add Room</h5>
                         </div>
                         <div class="modal-body">
                             <div class="row">
@@ -161,7 +161,6 @@
                               }
                             ?>
                           </div>
-                          <input type="hidden" name="room_id">
                         </div>
                      </div> 
                     <div class="modal-footer">
@@ -172,12 +171,9 @@
                 </form>
              </div>
            </div>
-       
-    
-        
-        
 
-
+               
+               
       <?php require('inc/scripts.php');?>
 
       <script src="Scripts\rooms.js"> </script>
