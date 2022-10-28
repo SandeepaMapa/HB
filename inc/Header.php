@@ -128,7 +128,10 @@
         <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Password</label>
         <input name="pass" type="password" class="form-control shadow-none" required>
-           </div>
+      <span class="eye">
+        <i id="hide1" class="fa fa-eye"></i>
+        <i id="hide2" class="fa fa-eye-slash"></i>    
+      </div>
            <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Confirm Password</label>
         <input name="cpass" type="password" class="form-control shadow-none" required>
