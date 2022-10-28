@@ -195,7 +195,7 @@ input[type=number] {
 	font-size: 14px;
 	margin-top: 12px;
 	font-weight:400;
-	color:#f36500;
+	color:#89CFF0;
 }
 
 /*Reservation end---------------*/
@@ -238,7 +238,7 @@ a {
 
 a:hover,
 a:focus{
-	color:#f36700;
+	color:#89CFF0;
     text-decoration: none;
     outline: none;
 }
@@ -270,7 +270,7 @@ ul,ol{
 	display: block;
 	width: 15px;
 	height: 2px;
-	background-color: #f36700;
+	background-color: #89CFF0;
 	margin: 15px 0px 30px;
 }
 
@@ -280,16 +280,16 @@ ul,ol{
 
 .section-header .sub-title {
 	font-weight:400;
-	color: #f36700;
+	color: #89CFF0;
 }
 
-* --- Buttons --- */
+/* --- Buttons --- */
 .main-button {
 	display:inline-block;
 	padding:15px 30px;
 	border:none;
 	border-radius:40px;
-	background-color:#f36700;
+	background-color:#89CFF0;
 	color:#FFF;
 	text-transform: uppercase;
 	font-weight: 700;
