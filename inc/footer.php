@@ -106,6 +106,7 @@ function alert(type,msg,postion='body')
     data.append('phonenum'register_form.elements['phonenum'].values);
     data.append('pass'register_form.elements['pass'].values);
     data.append('cpass'register_form.elements['cpass'].values);
+    data.append('pincode'register_form.elements['pincode'].values);
     data.append('register','');
 
     var myModel = document.getElementById('registerModel');

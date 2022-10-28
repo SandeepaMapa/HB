@@ -66,13 +66,13 @@ if(!send_mail($data['email'],$data['name'],$token)){
 
 $enc_pass = password_hash($data['pass'],PASSWORD_BCRYPT);
 
-$query ="INSERT INTO 'user_cred' ('id', 'name', 'email', 'address', 'phonenum', 'pincode', 'dob',
- 'profile', 'password',  'token') VALUES (?,?,?,?,?,?,?,?,?,?)";
+$query ="INSERT INTO 'user_cred' ('nicnum', 'name', 'email', 'address', 'phonenum', 'pincode', 
+  'password',  'token') VALUES (?,?,?,?,?,?,?,?)";
 
-$values = [$data['id'],$data['name'],$data['email'],$data['address'],$data['phonenum'],$data['pincode'],$data['dob'],
-$img,$enc_pass,$token];
+$values = [$data['nicnum'],$data['name'],$data['email'],$data['address'],$data['phonenum'],$data['pincode'],
+$enc_pass,$token];
 
-if(insert($query,$values,'ssssssssss')){
+if(insert($query,$values,'ssssssss')){
     echo 1;
 }
 else{
