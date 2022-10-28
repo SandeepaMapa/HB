@@ -134,7 +134,6 @@
 </div>      
 
  <br><br><br><br>
-
  
  <!--facilities-->
  <h3 class="fm-bold h-font text-center">Facilities</h3>
