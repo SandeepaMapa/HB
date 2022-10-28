@@ -130,7 +130,7 @@
         <input name="pass" type="password" class="form-control shadow-none" required>
       <span class="eye">
         <i id="hide1" class="fa fa-eye"></i>
-        <i id="hide2" class="fa fa-eye-slash"></i>    
+        <i id="hide2" class="fa fa-eye-slash"></i>  </span>  
       </div>
            <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Confirm Password</label>
