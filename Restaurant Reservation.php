@@ -129,18 +129,13 @@
   <div class="h-line bg-dark"></div>
   
   </div>
-
 		<!-- Reservation -->
 		<div id="reservation" class="section">
-
 			<!-- container -->
 			<div class="container">
-
 				<!-- row -->
 				<div class="row">
-
 					<!-- reservation form -->
-
                     <div class="card mb-3 border-0 shadow">
                     <div class="row g-0 p-3 align-items-center">
 					<div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1">
