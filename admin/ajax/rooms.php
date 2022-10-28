@@ -81,7 +81,7 @@ if(isset($_POST['add_room']))
        <td>$row[quantity]</td>
        <td>$status</td>
        <td>
-       <button type='button' class='btn btn-primary shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#loginModal'>
+       <button type='button' class='btn btn-primary shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#edit-room'>
               <i class='bi bi-pencil-square'></i> 
            </button>
        </td>
