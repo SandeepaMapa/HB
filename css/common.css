@@ -152,16 +152,3 @@ input[type=number] {
   height: 32rem;
 }
 
-::placeholder{
-    color: #ccc;
-}
-.fa{
-    margin-right: 10px;
-
-}
-.eye{
-  position: absolute;
-}
-#hide1{
-  display: none;
-}
