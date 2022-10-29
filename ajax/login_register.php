@@ -69,10 +69,10 @@ $enc_pass = password_hash($data['pass'],PASSWORD_BCRYPT);
 $query ="INSERT INTO 'user_cred' ('nicnum', 'name', 'email', 'address', 'phonenum', 'pincode', 
   'password',  'token') VALUES (?,?,?,?,?,?,?,?)";
 
-$values = [$data['nicnum'],$data['name'],$data['email'],$data['address'],$data['phonenum'],$data['pincode'],
+$values = [$data['nicnum'],$data['name'],$data['email'],$data['address'],$data['phonenum'],
 $enc_pass,$token];
 
-if(insert($query,$values,'ssssssss')){
+if(insert($query,$values,'sssssss')){
     echo 1;
 }
 else{
