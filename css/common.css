@@ -170,7 +170,7 @@ input[type=number] {
 }
 
 .reserve-form  .form-group label {
-	color: #FFF;
+	color: rgb(230, 11, 11);
 	margin-left: 10px;
 }
 
@@ -202,7 +202,7 @@ input[type=number] {
 
 /* --- typography --- */
 body {
-	color:#969696;
+	color:#0c0000;
 	font-size:16px;
 	overflow-x:hidden;
 	font-family: 'Cabin', sans-serif;

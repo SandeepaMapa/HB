@@ -7,24 +7,6 @@
 <title>River's Edge - Restaurant</title>
 <?php require('inc/links.php')?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  <style>
-
-.availability-form{
-  margin-top: -50px;
-  z-index: 2;
-  position:relative;
-}
-
-@media screen and (max-width: 575px){
-
-  .availability-form{
-  margin-top: 25px;
-  padding:0 35px;
-}
-
-}
-
-</style>
   
 </head>
 <body class="bg-light">
@@ -52,65 +34,12 @@
 
 </div>
 
-<!-- check availability -->
-
-<div class="container availability-form">
-  <div class="row">
-    <div class="col-lg-12 bg-white shadow p-4 rounded">
-      <form >
-            <div class="row align-items-end">
-              <div class="col-lg-3 mb-3">
-                <label class="form-label" style="font-weight: 500;">Date</label>
-                <input type="date" class="form-control shadow-none">
-              </div>
-
-              <div class="col-lg-2 mb-3">
-                <label class="form-label" style="font-weight: 500;">Dine-in or BBQ</label>
-                <select class="form-select shadow-none">
-                  <option selected>Selection</option>
-                  <option value="Dine-in">dine-in</option>
-                  <option value="BBQ">BBQ</option>
-      
-                </select>
-              </div>
-
-              <div class="col-lg-2 mb-3">
-                <label class="form-label" style="font-weight: 500;">Adults</label>
-                <select class="form-select shadow-none">
-                  <option selected>Select number</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </div>
-
-              <div class="col-lg-2 mb-3">
-                <label class="form-label" style="font-weight: 500;">Children</label>
-                <select class="form-select shadow-none">
-                  <option selected>Select number</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </div>
-                <div class="col-lg-2 mb-lg-3 mt-2">
-                  <button type="submit" class="btn text-white shadow-none custom-bg">Reservation</button>
-                </div>
-            </div>
-
-      </form>
-    </div>
-  </div>
-</div>
-
 
      <!--Topics-->
-  <div class="my-5 px-4">
-  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">RESTAURANT</h2>
+  <div class="my-3 px-4">
+  <h2 class="mt-3 pt-4 mb-4 text-center fw-bold f2">RESTAURANT</h2>
   <div class="h-line bg-dark"></div>
-  <p class="text-center mt-3">
+  <p class="text-center mt-4">
   The lake, the temple, the paddy field and the traditional festivities; the soul of every rural village in Sri Lanka is encapsulated in these four elements. At Sigiriya<br>
    Village, we have created a village within a village, providing you with 3 types of dwellings as superior, classic and deluxe. Placed in 6 clusters, there are 120 rooms<br>
     to choose from, every single one built to make your stay as unique and comfortable as possible.
@@ -122,10 +51,6 @@
 
    <div class="container">
      <div class="row">
-
-   
-      
-    
       <div class="card mb-3 border-0 shadow">
        <div class="row g-0 p-3 align-items-center">
         <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
@@ -152,7 +77,7 @@
         </div>   
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
           <h6 class="mb-4">Rs. 2500 per person</h6>  
-            <a href="Restaurant Reservation.php" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
+            <a href="Restaurant Reservation.php" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2" data-bs-toggle="modal" data-bs-target="#Dine-IN-Modal">Reservation</a>
             <a href="Dine-in.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
@@ -207,7 +132,134 @@
 
 
  </div>
-</div>
+
+ <div class="modal fade" id="Dine-IN-Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <form id="" >
+        <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+       <!-- Reservation -->
+		<div id="reservation" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- reservation form -->
+                    <div class="card mb-3 border-0 shadow">
+                    <div class="row g-0 p-3 align-items-center">
+					<div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1">
+						<form class="reserve-form row">
+							<div class="section-header text-center">
+								<h4 class="sub-title">Reservation</h4>
+								<h2 class="title white-text">Book Your Table</h2>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">Name:</label>
+									<input class="input" type="text" placeholder="Name" id="name">
+								</div>
+								<div class="form-group">
+									<label for="phone">Phone:</label>
+									<input class="input" type="tel" placeholder="Phone" id="phone">
+								</div>
+								<div class="form-group">
+									<label for="date">Date:</label>
+									<input class="input" type="text" placeholder="MM/DD/YYYY" id="date">
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="email">Email:</label>
+									<input class="input" type="email" placeholder="Email" id="email">
+								</div>
+								<div class="form-group">
+									<label for="number">Number of Guests:</label>
+									<select class="input" id="number">
+										<option>1 Person</option>
+										<option>2 People</option>
+										<option>3 People</option>
+										<option>4 People</option>
+										<option>5 People</option>
+										<option>6 People</option>
+									</select>
+								</div>
+								<div class="form-group">
+								  <label for="time">Time:</label>
+								  <input class="input" type="text" placeholder="HH:MM" id="time">
+								</div>
+							</div>
+
+							<div class="col-md-12 text-center">
+								<button class="main-button">Book Now</button>
+							</div>
+
+						</form>
+					</div>
+                    
+					<!-- /reservation form -->
+
+					<!-- opening time -->
+					<div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+						<div class="opening-time row">
+							<div class="section-header text-center">
+								<h2 class="title white-text">Opening Time</h2>
+							</div>
+							<ul>
+								<li>
+									<h4 class="day">Sunday</h4>
+									<h4 class="hours">8:00 am – 11:00 pm</h4>
+								</li>
+								<li>
+									<h4 class="day">Monday</h4>
+									<h4 class="hours">8:00 am – 11:00 pm</h4>
+								</li>
+								<li>
+									<h4 class="day">Tuesday</h4>
+									<h4 class="hours">8:00 am – 11:00 pm</h4>
+								</li>
+								<li>
+									<h4 class="day">Wednesday</h4>
+									<h4 class="hours">8:00 am – 11:00 pm</h4>
+								</li>
+								<li>
+									<h4 class="day">Thursday</h4>
+									<h4 class="hours">8:00 am – 11:00 pm</h4>
+								</li>
+								<li>
+									<h4 class="day">Friday</h4>
+									<h4 class="hours">Closed</h4>
+								</li>
+								<li>
+									<h4 class="day">Saturday</h4>
+									<h4 class="hours">Closed</h4>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- /opening time -->
+                    </div>
+                    </div>
+				</div>
+				<!-- /row -->
+
+			</div>
+			<!-- /container -->
+
+		</div>
+		<!-- /Reservation -->
+      
+      
+          
+        </div>
+        
+        </form>
+
+      </div>
+    </div>
+  </div>
 
 
    <?php require('inc/footer.php')?>
