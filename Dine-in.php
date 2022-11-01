@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>River's Edge - Dine-in</title>
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <?php require('inc/links.php'); ?>
     
@@ -17,8 +16,7 @@
   <?php require('inc/header.php'); ?>
     
    <br>
-     
-           <img src="Photos\Restaurant\dine-in1.jpg" class="w-100 d-block" height="550"/>
+  <img src="Photos\Restaurant\dine-in1.jpg" class="w-100 d-block" height="550"/>
 
  
 <br>
@@ -26,8 +24,8 @@
 
 
    <!--Topics-->
-   <div class="my-5 px-4">
-    <h2 class="mt-5 pt-4 mb-3 text-center fw-bold f2">Dine-in</h2>
+   <div class=" px-4">
+    <h2 class=" pt-4 mb-3 text-center fw-bold f2">Dine-in</h2>
     <div class="h-line bg-dark"></div>
     
       <p class="text-center mt-3">
@@ -41,10 +39,8 @@
       </p>
   </div>
 
-  <br><br>
-
-
-  
+  <br>
+ 
   <div class="row g-0 p-3 align-items-center">
     <div class="col-md-4 mb-lg-0 ms-4 mb-md-0 mb-3">
     <img src="Photos\Restaurant\dine-in.jpg" class="img-fluid rounded" width=600px height=800px>
@@ -57,7 +53,7 @@
           The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
            immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower in the en-suite luxury bathroom..</p>
            <h6 class="mb-2 ms-3">open hours :- 6AM to 11PM</h6>  
-          <h6 class="mb-2 ms-3">Capacity :- 100 persons</h6> 
+          <h6 class="mb-2 ms-3">Capacity :- 100 Seats</h6> 
           <h6 class="mb-2 ms-3">Rs. 2500 per person</h6> 
       </div>
    
@@ -81,7 +77,7 @@
           The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
            immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower in the en-suite luxury bathroom..</p>
            <h6 class="mb-2 ms-3">open hours :- 12PM to 3PM</h6>  
-          <h6 class="mb-2 ms-3">Capacity :- 100 persons</h6> 
+          <h6 class="mb-2 ms-3">Capacity :- 100 Seats</h6> 
           <h6 class="mb-2 ms-3">Rs. 2500 per person</h6> 
       </div>
       </div>
@@ -106,7 +102,7 @@
         The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
          immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower in the en-suite luxury bathroom..</p>
          <h6 class="mb-2 ms-3">open hours :- 7PM to 10PM</h6>  
-          <h6 class="mb-2 ms-3">Capacity :- 100 persons</h6> 
+          <h6 class="mb-2 ms-3">Capacity :- 100 Seats</h6> 
           <h6 class="mb-2 ms-3">Rs.2500 per person</h6> 
     </div>
  
@@ -136,7 +132,7 @@
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
       <img src="Photos\Facilities\open.png" alt="Out Door" width="40">
-      <h6>Out Door</h6>
+      <h6>Outdoor</h6>
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
       <img src="Photos\Facilities\kids.png" alt="kid friendly" width="40">

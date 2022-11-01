@@ -63,15 +63,15 @@
                  
             </div>
             <div class="Lunch mb-3">
-                <h6 class="mb-1">Lunch   :- 12PM to 3PM</h6>
+                <h6 class="mb-1">Lunch      :- 12PM to 3PM</h6>
 
               </div>
               <div class="Dinner mb-3">
-                <h6 class="mb-1">Dinner :- 7PM to 10PM </h6>
+                <h6 class="mb-1">Dinner     - 7PM to 10PM </h6>
                 
               </div>
               <div class="capacity mb-3">
-                <h6 class="mb-1 badge rounded-pill bg-light text-dark text-wrap">Capacity :- 100 persons</h6>
+                <h6 class="mb-1 badge rounded-pill bg-light text-dark text-wrap">Capacity :- 100 Seats</h6>
                  
               </div>
         </div>   
@@ -95,14 +95,14 @@
                 
             </div>
             <div class="facilities mb-3">
-                <h6 class="mb-1 badge rounded-pill bg-light text-dark text-wrap">Capacity :- 50 persons</h6>
+                <h6 class="mb-1 badge rounded-pill bg-light text-dark text-wrap">Capacity :- 50 Seats</h6>
                  
               </div>
               
         </div>   
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
           <h6 class="mb-4">Rs. 1500 per Person</h6>  
-            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
+            <a href="BBQ-Modal" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
             <a href="BBQ.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
@@ -132,7 +132,7 @@
 
 
  </div>
-
+<!-- Reservation Model -->
  <div class="modal fade" id="Dine-IN-Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -261,6 +261,93 @@
     </div>
   </div>
 
+<!-- BBQ Reservation Model -->
+<div class="modal fade" id="BBQ-Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <form id="" >
+        <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+       <!-- Reservation -->
+		<div id="reservation" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- reservation form -->
+                    <div class="card mb-3 border-0 shadow">
+                    <div class="row g-0 p-3 align-items-center">
+					<div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1">
+						<form class="reserve-form row">
+							<div class="section-header text-center">
+								<h4 class="sub-title">Reservation</h4>
+								<h2 class="title white-text">Book Your Table</h2>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name">Name:</label>
+									<input class="input" type="text" placeholder="Name" id="name">
+								</div>
+								<div class="form-group">
+									<label for="phone">Phone:</label>
+									<input class="input" type="tel" placeholder="Phone" id="phone">
+								</div>
+								<div class="form-group">
+									<label for="date">Date:</label>
+									<input class="input" type="text" placeholder="MM/DD/YYYY" id="date">
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="email">Email:</label>
+									<input class="input" type="email" placeholder="Email" id="email">
+								</div>
+								<div class="form-group">
+									<label for="number">Number of Guests:</label>
+									<select class="input" id="number">
+										<option>1 Person</option>
+										<option>2 People</option>
+										<option>3 People</option>
+										<option>4 People</option>
+										<option>5 People</option>
+										<option>6 People</option>
+									</select>
+								</div>
+								<div class="form-group">
+								  <label for="time">Time:</label>
+								  <input class="input" type="text" placeholder="HH:MM" id="time">
+								</div>
+							</div>
+
+							<div class="col-md-12 text-center">
+								<button class="main-button">Book Now</button>
+							</div>
+
+						</form>
+					</div>
+          </div>
+          </div>
+				</div>
+				<!-- /row -->
+
+			</div>
+			<!-- /container -->
+
+		</div>
+		<!-- /Reservation -->
+      
+      
+          
+        </div>
+        
+        </form>
+
+      </div>
+    </div>
+  </div>
+
 
    <?php require('inc/footer.php')?>
    <!-- Initialize Swiper -->
@@ -276,6 +363,8 @@
 
         });
       </script>
+
+
 
 </body>
 </html> 

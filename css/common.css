@@ -92,6 +92,7 @@ input[type=number] {
   }
 
   .text1{
+    font-size:25px;
     position: relative;
     overflow: hidden;
     color: black;
