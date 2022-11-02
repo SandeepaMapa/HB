@@ -5,7 +5,7 @@
 
 
 
-if(isset($_POST['add_feature']))
+if(isset($_POST['add_facilities']))
    {
     $frm_data = filteration($_POST);
     $q = "INSERT INTO facilities(name) VALUES (?)"; 
@@ -15,7 +15,7 @@ if(isset($_POST['add_feature']))
    }
 
 
-   if(isset($_POST['get_features']))
+   if(isset($_POST['get_facilities']))
     {
      $res = selectAll('facilities');
      $i=1;
@@ -27,7 +27,7 @@ if(isset($_POST['add_feature']))
           <td>$i</td>
           <td>$row[name]</td>
          <td>
-           <button type="button" onclick="rem_features($row[id])" class="btn btn-danger btn-sm shadow-none">
+           <button type="button" onclick="rem_facilities($row[id])" class="btn btn-danger btn-sm shadow-none">
              <i class="bi bi-trash"></i>Delete
              </button>
          </td>
@@ -39,12 +39,12 @@ if(isset($_POST['add_feature']))
 
    
 
-   if(isset($_POST['rem_features']))
+   if(isset($_POST['rem_facilities']))
    {
     $frm_data = filteration($_POST);
-    $values = [$frm_data['rem_features']];
+    $values = [$frm_data['rem_facilities']];
 
-    $check_q = select('SELECT * FROM room_facilities WHERE facilities-id=?',[$frm_data['rem_features']]);
+    $check_q = select('SELECT * FROM room_facilities WHERE facilities_id=?',[$frm_data['rem_facilities']],'i');
 
     if(mysqli_num_rows($check_q)==0){
       $q = "DELETE FROM facilities WHERE id=?";

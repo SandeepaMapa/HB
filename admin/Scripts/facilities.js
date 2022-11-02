@@ -1,31 +1,31 @@
 
-            let feature_s_form = document.getElementById('feature_s_form');
+            let facilities_s_form = document.getElementById('facilities_s_form');
 
-                feature_s_form.addEventListener('submit',function(e)
+              facilities_s_form.addEventListener('submit',function(e)
                 {
                 e.preventDefault();
-                add_feature();
+                add_facilities();
             });
 
             
-        function add_feature()
+        function add_facilities()
             {
                 let data = new FormData();
-                data.append('name',feature_s_form.elements['feature_name'].value);
-                data.append('add_feature','');
+                data.append('name',facilities_s_form.elements['facilities_name'].value);
+                data.append('add_facilities','');
 
                 let xhr=new XMLHttpRequest();
-                xhr.open("POST","ajax/features.php",true);
+                xhr.open("POST","ajax/facilities.php",true);
 
                 xhr.onload = function(){
-                var myModal = document.getElementById('feature-s');
+                var myModal = document.getElementById('facilities-s');
                 var modal = bootstrap.Modal.getInstance(myModal);
                 modal.hide();
                 
                 if(this.responseText = 1){
-                    alert('success','New feature added!');
-                    feature_s_form.elements['feature_name'].value='';
-                    get_features();
+                    alert('success','New facility added!');
+                    feature_s_form.elements['facilities_name'].value='';
+                    get_facilities();
                 }
                 else{
                     alert('error','Server Down!');     
@@ -36,42 +36,42 @@
 
 
        
-        function get_features()
+        function get_facilities()
             {
                 let xhr = new XMLHttpRequest();
-                xhr.open("POST","ajax/features.php",true);
+                xhr.open("POST","ajax/facilities.php",true);
                 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
                 xhr.onload = function(){
-                 document.getElementById('features-data').innerHTML = this.responseText;
+                 document.getElementById('facilities-data').innerHTML = this.responseText;
             }
-                xhr.send('get_features');
+                xhr.send('get_facilities');
             } 
                
 
 
-            function rem_features(val){
+            function rem_facilities(val){
                 let xhr = new XMLHttpRequest();
-                xhr.open("POST","ajax/features.php",true);
+                xhr.open("POST","ajax/facilities.php",true);
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
             
                 xhr.onload = function(){
                 if(this.responseText = 1){
-                    alert('success','New feature removed!');
-                    get_features();
+                    alert('success','New facility removed!');
+                    get_facilities();
                 }
                 else if(this.responseText = 'room_added'){
-                    alert('error','Feature is added in room !');
+                    alert('error','facility is added in room !');
                 }
                 else{
                     alert('error','Server Down!');     
                 }
                 }
-                xhr.send('rem_features='+val);
+                xhr.send('rem_facilities='+val);
             }
             
                 window.onload = function(){
-                 get_features();
+                 get_facilities();
             }
 
  

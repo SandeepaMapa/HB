@@ -90,7 +90,6 @@ let add_room_form = document.getElementById('add_room_form');
             xhr.send('get_room='+id);
         }
 
-
         edit_room_form.addEventListener('submit',function(e){
             e.preventDefault();
             submit_edit_rooms();
