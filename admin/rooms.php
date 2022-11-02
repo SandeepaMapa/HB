@@ -55,7 +55,7 @@
             </div>
 
                 <!-- Add room modal-->
-                 <div class="" id="add-room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-body " id="add-room" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <form  id="add_room_form" autocomplete="off">
                         <div class="modal-content">
@@ -115,7 +115,7 @@
 
            <!-- edit room modal-->
 
-           <div class="modal fade" id="edit-room" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade" id="edit-room" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <form  id="edit_room_form" autocomplete="off">
                         <div class="modal-content">
@@ -161,6 +161,7 @@
                               }
                             ?>
                           </div>
+                          <input type="hidden" name="room_id">
                         </div>
                      </div> 
                     <div class="modal-footer">

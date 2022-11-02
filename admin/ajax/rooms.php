@@ -65,7 +65,6 @@ if(isset($_POST['add_room']))
      
      $i++;
 
-
       $data.= "
       <tr class='align-middle'>
        <td>$i</td>
@@ -81,7 +80,7 @@ if(isset($_POST['add_room']))
        <td>$row[quantity]</td>
        <td>$status</td>
        <td>
-       <button type='button' class='btn btn-primary shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#edit-room'>
+       <button type='button' onclick='edit_details($row[id])' class='btn btn-primary shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#edit-room'>
               <i class='bi bi-pencil-square'></i> 
            </button>
        </td>
