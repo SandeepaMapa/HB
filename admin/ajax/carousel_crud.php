@@ -19,16 +19,16 @@ if(isset($_POST['add_image']))
         echo $img_r;
     }
     else{
-        $q = "INSERT INTO `carousel`(`image`) VALUES (?)";
+        $q = "INSERT INTO carousel (image) VALUES ('')";
         $values = [$img_r];
-        $res = insert($q, $values, 'ss');
+        $res = insert($q, $values, 's');
         echo $res;
     }
 }
 
 if(isset($_POST['get_Carousel']))
 {
-    $res = selectAll('Carousel');
+    $res = selectAll('carousel');
 
     while($row = mysqli_fetch_assoc($res))
     {

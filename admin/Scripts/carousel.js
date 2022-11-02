@@ -61,7 +61,7 @@ function rem_image(val)
         xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
 
         xhr.onload = function(){
-            if(this.responseText==1){
+            if(this.responseText=1){
                 alert('success', 'Image Removed!');
                 get_Carousel();
             }
