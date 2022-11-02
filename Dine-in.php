@@ -18,8 +18,6 @@
    <br>
   <img src="Photos\Restaurant\dine-in1.jpg" class="w-100 d-block" height="550"/>
 
- 
-<br>
 <h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Restaurant.php" style="text-decoration:none">Restaurant</a> &nbsp > &nbsp Dine-in</h6>
 
 
@@ -52,7 +50,7 @@
              facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas have free WiFi for your convenience. 
           The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
            immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower in the en-suite luxury bathroom..</p>
-           <h6 class="mb-2 ms-3">open hours :- 6AM to 11PM</h6>  
+           <h6 class="mb-2 ms-3">Open hours :- 6AM to 11PM</h6>  
           <h6 class="mb-2 ms-3">Capacity :- 100 Seats</h6> 
           <h6 class="mb-2 ms-3">Rs. 2500 per person</h6> 
       </div>
@@ -76,7 +74,7 @@
              facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas have free WiFi for your convenience. 
           The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
            immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower in the en-suite luxury bathroom..</p>
-           <h6 class="mb-2 ms-3">open hours :- 12PM to 3PM</h6>  
+           <h6 class="mb-2 ms-3">Open hours :- 12PM to 3PM</h6>  
           <h6 class="mb-2 ms-3">Capacity :- 100 Seats</h6> 
           <h6 class="mb-2 ms-3">Rs. 2500 per person</h6> 
       </div>
@@ -101,7 +99,7 @@
            facilities and a mini-fridge that can be updated to a minibar upon request. All rooms and public areas have free WiFi for your convenience. 
         The highlight of the room is the outside patio. Completely private, this is the ideal spot to sit back and savour a beverage
          immersed in the nature surrounding after exploring Sigiriya before heading back in to enjoy a rejuvenating rain shower in the en-suite luxury bathroom..</p>
-         <h6 class="mb-2 ms-3">open hours :- 7PM to 10PM</h6>  
+         <h6 class="mb-2 ms-3">Open hours :- 7PM to 10PM</h6>  
           <h6 class="mb-2 ms-3">Capacity :- 100 Seats</h6> 
           <h6 class="mb-2 ms-3">Rs.2500 per person</h6> 
     </div>
@@ -131,7 +129,7 @@
       <h6>Self-Service</h6>
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\open.png" alt="Out Door" width="40">
+      <img src="Photos\Facilities\Open.png" alt="Out Door" width="40">
       <h6>Outdoor</h6>
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
