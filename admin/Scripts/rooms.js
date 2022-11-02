@@ -82,7 +82,7 @@ let add_room_form = document.getElementById('add_room_form');
              
                
                 edit_room_form.elements['facilities'].forEach(el =>{
-                    if(data.facilities.include(el.value)){
+                    if(data.facilities.includes(Number(el.value))){
                         el.checked = true;
                     }
                 });

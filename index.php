@@ -39,7 +39,7 @@
     <div class="swiper swiper-container">
         <div class="swiper-wrapper">
         <?php
-          $res = selectAll('Carousel');
+          $res = selectAll('carousel');
           while($row = mysqli_fetch_assoc($res))
         {
             $path = CAROUSEL_IMG_PATH;

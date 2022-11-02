@@ -44,15 +44,17 @@
 </ul>
       
         <div class="d-flex">
-         
-          
           <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2 text-white border-white " data-bs-toggle="modal" data-bs-target="#loginModal">
   Login
 </button>
 <button type="button" class="btn btn-outline-dark shadow-none text-white border-white" data-bs-toggle="modal" data-bs-target="#registerModal">
   Register
-</button>
+</button> &nbsp;&nbsp;
+<button type="button" class="btn btn-outline-dark shadow-none text-white border-white" data-bs-toggle="modal" data-bs-target="">
+<a class="text-white" style="text-decoration:none; " href="admin\index.php">Admin</a>
 </div>
+</button>
+  
     </div>
   </div>
 </nav>
