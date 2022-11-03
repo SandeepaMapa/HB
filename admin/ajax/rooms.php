@@ -83,7 +83,7 @@ if(isset($_POST['add_rooms']))
            <button type='button' onclick='edit_details($row[id])' class='btn btn-primary shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#edit-room'>
               <i class='bi bi-pencil-square'></i> 
            </button>
-           <button type='button' onclick='' class='btn btn-info shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#room-images'>
+           <button type='button' onclick=\"room_images($row[id], '$row[name]')\" class='btn btn-info shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#room-images'>
               <i class='bi bi-images'></i> 
            </button>
        </td>
@@ -164,10 +164,6 @@ if(isset($_POST['add_rooms']))
   }
 
 
-  
-
-
-
   if(isset($_POST['toggle_status']))
   {
     $frm_data = filteration($_POST);
@@ -182,5 +178,29 @@ if(isset($_POST['add_rooms']))
       echo 0;
     }
   }
+
+ 
+  if(isset($_POST['add_image']))
+{
+    $frm_data = filteration($_POST);
+
+    $img_r = uploadImage($_FILES['image'],ROOMS_FOLDER);
+
+    if($img_r == 'inv_img'){
+        echo $img_r;
+    }
+    elseif($img_r == 'inv_size'){
+        echo $img_r;
+    }
+    elseif($img_r == 'upd_failed'){
+        echo $img_r;
+    }
+    else{
+        $q = "INSERT INTO room_images (room_id, image) VALUES (?,?)";
+        $values = [$frm_data['room_id'],$img_r];
+        $res = insert($q, $values, 'is');
+        echo $res; 
+    }
+}
 
 ?>

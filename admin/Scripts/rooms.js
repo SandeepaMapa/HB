@@ -158,7 +158,51 @@ let add_room_form = document.getElementById('add_room_form');
             xhr.send('toggle_status='+id+'&value='+val);
         } 
 
-        let add_image_form = document.getElementById('edit_room_form');
+        let add_image_form = document.getElementById('add_image_form');
+        
+        add_image_form.addEventListener('submit',function(e){
+            e.preventDefault();
+            add_image();
+        });
+
+ 
+       function add_image()
+       {
+         let data = new FormData();
+         data.append('image',add_image_form.elements['image'].files[0]);
+         data.append('room_id',add_image_form.elements['room_id'].value);
+         data.append('add_image','');
+    
+         let xhr = new XMLHttpRequest();
+         xhr.open("POST","ajax/rooms.php",true);
+    
+          xhr.onload = function()
+          {
+    
+            if(this.responseText =='inv.img'){
+                alert('error','Only JPG,WEBP or PNG images are supported!');
+            }
+            else if(this.responseText =='inv_size'){
+                alert('error','Image should be less than 2MB');
+            }
+            else if(this.responseText =='upd_failed'){
+                alert('error','Image upload failed. Server Down!');
+            }
+            else{
+                alert('success', ' New Image added successfully','image-alert');
+                add_image_form.reset();
+            }
+        }
+    
+         xhr.send(data);
+       }
+
+
+       function room_images(id,rname)
+       {
+        document.querySelector("#room-images .modal-title").innerText = rname;
+        add_image_form.elements['room_id'].value = id;
+       }
 
         window.onload = function()
         {

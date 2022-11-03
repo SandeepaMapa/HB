@@ -179,9 +179,12 @@
           <div class="modal-content">
            <div class="modal-header">
             <h1 class="modal-title fs-5">Room Name</h1>
-             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
              </div>
              <div class="modal-body">
+                <div id="image-alert">
+
+                </div>
               <div class="border-bottom border-3 pb-3 mb-3">
                 <form id="add_image_form">
                   <label  class="form-label fw-bold">Add Image</label>
