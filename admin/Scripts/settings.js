@@ -198,20 +198,31 @@ function get_general()
                
 
                 xhr.onload = function(){
+                    console.log(this.responseText);
 
-                   /* var myModal = document.getElementById('general-s');
+                    var myModal = document.getElementById('team-s');
                     var modal = bootstrap.Modal.getInstance(myModal);
                     modal.hide();
 
-                    if(this.responseText =1)
+                    if(this.responseText == 'inv_img')
                     {
-                        alert('success', 'Changes saved!');
-                        get_general();
+                       alert('error','Only JPG & PNG files are allowed1');
                     }
-                    else
+
+                    else if(this.responseText == 'inv_size')
                     {
-                        alert('ERROR', ' No Changes made!');
-                    }*/
+                        alert('error','Image should be less than 2mb');
+                    }
+                    else if(this.responseText == 'upd_failed')
+                    {
+                        alert('error','Image upload failed. Server Down!');
+                    }
+                    else {
+                        alert('success', 'New member added!');
+                        member_name_inp.value ='';
+                        member_picture_inp.value = '';
+                    }
+                    
                 }
 
 
@@ -219,6 +230,19 @@ function get_general()
 
 
 
+            }
+
+            function get_members()
+            {
+                let xhr =new XMLHttpRequest();
+        xhr.open("POST","ajax/settings_crud.php",true);
+        xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
+
+        xhr.onload = function(){
+        }
+
+
+                xhr.send('get_members');
             }
 
             window.onload = function(){
