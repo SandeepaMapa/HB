@@ -197,7 +197,7 @@ if(isset($_POST['add_rooms']))
     }
     else{
         $q = "INSERT INTO room_images (room_id, image) VALUES (?,?)";
-        $values = [$frm_data['room_id'],$img_r];
+        $values = [$frm_data['room_id'] , $img_r];
         $res = insert($q, $values, 'is');
         echo $res; 
     }

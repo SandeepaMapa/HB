@@ -5,22 +5,3 @@
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<?php
-
-session_start();
-data_defult_timezone_set("Asia/sri lanaka");
-
-require('admin/inc/db_configg.php');
-require('admin/inc/essentials.php');
-
-$contact_q = "SELECT * FROM 'contact_details' WHERE 'sr_no'=?";
-$setting_q = "SELECT * FROM 'settings' WHERE 'sr_no'=?";
-$values = [1];
-$contact_r = mysqli_fetch_assoc(select($contact_q,$values,'i'));
-$settings_r = mysqli_fetch_assoc(select($settings_q,$values,'i'));
-
-
-
-
-
-?>
