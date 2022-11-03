@@ -158,6 +158,8 @@ let add_room_form = document.getElementById('add_room_form');
             xhr.send('toggle_status='+id+'&value='+val);
         } 
 
+        let add_image_form = document.getElementById('edit_room_form');
+
         window.onload = function()
         {
             get_all_rooms();
