@@ -11,7 +11,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         ';
-        if(postion=='body'){
+        if(position=='body'){
           document.body.append(element);
           element.classList.add('custom_alert');
 
@@ -21,6 +21,7 @@
         }
     setTimeout(remAlert, 2000);
    }
+   
 
    function remAlert(){
      document.getElementByClassName('alert')[0].remove();
