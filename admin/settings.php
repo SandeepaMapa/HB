@@ -1,4 +1,4 @@
-<?php
+  <?php
     require('inc/essentials.php');
     adminLogin();
     ?>
@@ -39,7 +39,7 @@
                 </div> 
 
                     <!--General setting model-->
-                <div class="modal fade" id="general-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                 <div class="modal fade" id="general-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <form id="general_s_form">
                         <div class="modal-content">

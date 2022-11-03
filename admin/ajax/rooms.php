@@ -3,7 +3,7 @@
  require('../inc/essentials.php');
  adminLogin();
 
-if(isset($_POST['add_room']))
+if(isset($_POST['add_rooms']))
    {
     $facilities = filteration(json_decode($_POST['facilities']));
     $frm_data = filteration($_POST);
@@ -80,8 +80,11 @@ if(isset($_POST['add_room']))
        <td>$row[quantity]</td>
        <td>$status</td>
        <td>
-       <button type='button' onclick='edit_details($row[id])' class='btn btn-primary shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#edit-room'>
+           <button type='button' onclick='edit_details($row[id])' class='btn btn-primary shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#edit-room'>
               <i class='bi bi-pencil-square'></i> 
+           </button>
+           <button type='button' onclick='' class='btn btn-info shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#room-images'>
+              <i class='bi bi-images'></i> 
            </button>
        </td>
       </tr>

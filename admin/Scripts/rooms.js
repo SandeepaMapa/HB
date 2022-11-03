@@ -8,7 +8,7 @@ let add_room_form = document.getElementById('add_room_form');
             function add_rooms()
                {
                     let data = new FormData();
-                    data.append('add_room','');
+                    data.append('add_rooms','');
                     data.append('name',add_room_form.elements['name'].value);
                     data.append('price',add_room_form.elements['price'].value);
                     data.append('quantity',add_room_form.elements['quantity'].value);
@@ -28,7 +28,7 @@ let add_room_form = document.getElementById('add_room_form');
                     xhr.open("POST","ajax/rooms.php",true);
 
                     xhr.onload = function(){
-                     var myModal = document.getElementById('add-room');
+                     var myModal = document.getElementById('add-rooms');
                      var modal = bootstrap.Modal.getInstance(myModal);
                      modal.hide();
                     
@@ -82,7 +82,7 @@ let add_room_form = document.getElementById('add_room_form');
              
                
                 edit_room_form.elements['facilities'].forEach(el =>{
-                    if(data.facilities.includes(Number(el.value))){
+                    if(data.facilities.include(Number(el.value))){
                         el.checked = true;
                     }
                 });
