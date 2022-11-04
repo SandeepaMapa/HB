@@ -370,7 +370,15 @@
               </select>
               <div class="validate"></div>
             </div>
-            
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+            <select class="form-select"  name="people" id="people" placeholder="Menu" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                <option disabled selected >Menu No</option>
+                <option value="1">Day</option>
+                <option value="2">Night</option>
+                <option value="3">All Day</option>
+              </select>
+              <div class="validate"></div>
+            </div>
           </div>
           <div class="form-group mt-3">
             <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
