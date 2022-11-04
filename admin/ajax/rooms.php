@@ -186,13 +186,13 @@ if(isset($_POST['add_rooms']))
 
     $img_r = uploadImage($_FILES['image'],ROOMS_FOLDER);
 
-    if($img_r == 'inv_img'){
+    if($img_r = 'inv_img'){
         echo $img_r;
     }
-    elseif($img_r == 'inv_size'){
+    elseif($img_r = 'inv_size'){
         echo $img_r;
     }
-    elseif($img_r == 'upd_failed'){
+    elseif($img_r = 'upd_failed'){
         echo $img_r;
     }
     else{
@@ -214,13 +214,22 @@ if(isset($_POST['get_room_images']))
 
     while($row = mysqli_fetch_assoc($res))
     {
+      if($row['thumb']==1){
+        $thumb_btn = "<i class='bi bi-check-lg text-light bg-success px-2 py-1 rounded fs-5'></i>";
+        }
+        else{
+          $thumb_btn = "<button onclick='thumb_image($row[sr_no],$row[room_id])' class='btn btn-secondary btn-sm shadow-none'>
+          <i class='bi bi-check-lg'></i>
+         </button>";
+        }
+
       echo<<<data
       <tr class='align-middle'>
        <td><img src='$path$row[image]' class='img-fluid'></td>
-       <td>thumb</td>
+       <td>$thumb_btn</td>
        <td>
          <button onclick='rem_image($row[sr_no],$row[room_id])' class='btn btn-danger btn-sm shadow-none'>
-          <i class="bi bi-trash"></i>
+          <i class='bi bi-trash'></i>
          </button>
        </td>
       </tr>
@@ -237,7 +246,7 @@ if (isset($_POST['rem_image']))
     $res = select($pre_q, $values, 'ii');
     $img = mysqli_fetch_assoc($res);
     
-    if(deleteImage($img['image'], ROOMS_FOLDER)){
+    if(deleteImage($img['image'],ROOMS_FOLDER)){
         $q = "DELETE FROM room_images WHERE sr_no=? AND room_id=?";
         $res = delete($q, $values, 'ii');
     echo $res;
@@ -245,6 +254,22 @@ if (isset($_POST['rem_image']))
 else {
     echo 0;
     }
+
+} 
+
+if (isset($_POST['thumb_image']))
+{
+    $frm_data = filteration($POST);
+
+    $pre_q = "UPDATE room_images SET thumb =? WHERE room_id =?";
+    $pre_v = [0,$frm_data['room_id']];
+    $pre_res = update($pre_q,$pre_v,'ii');
+
+    $q = "UPDATE room_images SET thumb =? WHERE sr_no=? AND room_id =?";
+    $v = [1,$frm_data['image_id'],$frm_data['room_id']];
+    $res = update($q,$v,'iii');
+
+    echo $res;
 
 } 
 
