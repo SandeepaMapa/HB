@@ -5,3 +5,16 @@
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<?php
+if($setting_r['shutdown']){
+    echo<<<alertbar
+    <div class='bd-danger text-center p-2 fw-bold'>
+        Bookings are temporarily closed!
+    </div>
+    alertbar;
+}
+
+
+
+
+?>
