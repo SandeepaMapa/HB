@@ -3,17 +3,3 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <link rel="stylesheet" href="css/common.css">
 
-<?php
-
-if($setings_r['shutdown']){
-    echo<<<alertbar
-    <div class='bg-danger text-center p-2 fw-bold'>
-    <i class="bi bi-exclamantion-triangle-fill"></i>
-    Booking are temporarily closed!
-    </div>
-    alertbar;
-}
-
-
-
-?>

@@ -51,7 +51,7 @@ if(isset($_POST['get_Carousel']))
 if (isset($_POST['rem_image']))
 {
     $frm_data = filteration($POST);
-    $values   = [$frm_data[rem_image]];
+    $values   = [$frm_data['rem_image']];
 
     $pre_q = "SELECT * FROM carousel WHERE 'sr_no'=?";
     $res = select($pre_q, $values, 'i');
