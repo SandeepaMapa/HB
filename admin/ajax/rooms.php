@@ -203,4 +203,49 @@ if(isset($_POST['add_rooms']))
     }
 }
 
+
+
+if(isset($_POST['get_room_images']))
+{
+    $frm_data = filteration($_POST);
+    $res = select("SELECT * FROM room_images WHERE room_id=?",[$frm_data['get_room_images']],'i');
+
+    $path = ROOMS_IMG_PATH;
+
+    while($row = mysqli_fetch_assoc($res))
+    {
+      echo<<<data
+      <tr class='align-middle'>
+       <td><img src='$path$row[image]' class='img-fluid'></td>
+       <td>thumb</td>
+       <td>
+         <button onclick='rem_image($row[sr_no],$row[room_id])' class='btn btn-danger btn-sm shadow-none'>
+          <i class="bi bi-trash"></i>
+         </button>
+       </td>
+      </tr>
+      data;
+    }
+}
+
+if (isset($_POST['rem_image']))
+{
+    $frm_data = filteration($POST);
+    $values   = [$frm_data[rem_image]];
+
+    $pre_q = "SELECT * FROM carousel WHERE 'sr_no'=?";
+    $res = select($pre_q, $values, 'i');
+    $img = mysqli_fetch_assoc($res);
+    
+    if(deleteImage($img['image'], CAROUSEL_FOLDER)){
+        $q = "DELETE FROM carousel WHERE 'sr_no'=?";
+        $res = delete($q, $values, 'i');
+    echo $res;
+} 
+else {
+    echo 0;
+    }
+
+} 
+
 ?>
