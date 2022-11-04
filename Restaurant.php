@@ -15,7 +15,7 @@
    <?php require('inc/header.php');?>
      
    <!-- carousel -->
-  <div class="container-fluid px-lg mt-4">
+  <div class="container-fluid px-lg mt-1">
   <!-- Swiper -->
     <div class="swiper swiper-container">
         <div class="swiper-wrapper">
@@ -123,7 +123,7 @@
         </div>   
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
          
-            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
+            <a href="Restaurant Reservation.php" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
             <a href="Takeaway.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
@@ -152,7 +152,7 @@
 						<form class="reserve-form row">
 							<div class="section-header text-center">
 								<h4 class="sub-title">Reservation</h4>
-								<h2 class="title white-text">Book Your Table</h2>
+								<h2 class="title">Book Your Table</h2>
 							</div>
 
 							<div class="col-md-6">
@@ -166,7 +166,7 @@
 								</div>
 								<div class="form-group">
 									<label for="date">Date:</label>
-									<input class="input" type="text" placeholder="MM/DD/YYYY" id="date">
+									<input class="input" type="date" placeholder="MM/DD/YYYY" id="date">
 								</div>
 							</div>
 
@@ -176,19 +176,12 @@
 									<input class="input" type="email" placeholder="Email" id="email">
 								</div>
 								<div class="form-group">
-									<label for="number">Number of Guests:</label>
-									<select class="input" id="number">
-										<option>1 Person</option>
-										<option>2 People</option>
-										<option>3 People</option>
-										<option>4 People</option>
-										<option>5 People</option>
-										<option>6 People</option>
-									</select>
+									<label for="number" >Number of Guests:</label>
+									
 								</div>
 								<div class="form-group">
 								  <label for="time">Time:</label>
-								  <input class="input" type="text" placeholder="HH:MM" id="time">
+								  <input class="input" type="time" placeholder="HH:MM" id="time">
 								</div>
 							</div>
 
@@ -295,7 +288,7 @@
 								</div>
 								<div class="form-group">
 									<label for="date">Date:</label>
-									<input class="input" type="text" placeholder="MM/DD/YYYY" id="date">
+									<input class="input" type="date" placeholder="MM/DD/YYYY" id="date">
 								</div>
 							</div>
 
