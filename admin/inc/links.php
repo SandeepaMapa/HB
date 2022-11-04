@@ -5,7 +5,7 @@
 
 <?php
 
-if($setttings_r['shutdown']){
+if($settings_r['shutdown']){
     echo<<<alertbar
     <div class='bg-danger text-center p-2 fw-bold'>
     <i class="bi bi-exclamantion-triangle-fill"></i>
