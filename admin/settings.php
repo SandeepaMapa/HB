@@ -1,4 +1,4 @@
-<?php
+  <?php
     require('inc/essentials.php');
     adminLogin();
     ?>
@@ -39,7 +39,7 @@
                 </div> 
 
                     <!--General setting model-->
-                <div class="modal fade" id="general-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                 <div class="modal fade" id="general-s" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <form id="general_s_form">
                         <div class="modal-content">
@@ -225,17 +225,18 @@
                         
                         <div class="row" id="team-data">
                             <div class="col-md-2 mb-3">
-                            <div class="card bg-dark text-white">
-                                <img src="../Photos/about/m1.png" class="card-img">
+                            <div class="card text-bg-dark">
+                                <img src="../Photos/Events/par2.jpg" class="card-img">
                                 <div class="card-img-overlay text-end">
-                                    <button type="button" class="btn btn-danger btn-sm shadow-none">
-                                    <i class="bi bi-trash"></i> Delete
+                                    <button type= "button" class="btn btn-danger btn-sm shadow-none">
+                                       <i class="bi bi-trash"></i> DELETE
                                     </button>
                                 </div>
-                                <p class="card-text text-center px-3 py-2">Sarath Gunapala</p>
-                                </div>
+                                <p class="card-text text-center px-3 py-2"><small>Name</small></p>
+                            </div>
                             </div>
                         </div>
+    
                     </div>
                 </div> 
 
@@ -266,8 +267,7 @@
                 </form>
             </div>
         </div>
-
-       
+                
             </div>
         </div>
        </div>

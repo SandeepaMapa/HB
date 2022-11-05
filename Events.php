@@ -27,8 +27,8 @@
     
 
   <!--Topics-->
-  <div class="my-5 px-4">
-  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">EVENTS</h2>
+  <div class=" px-4">
+  <h2 class="mt-3 pt-4 mb-4 text-center fw-bold f2">EVENTS</h2>
   <div class="h-line bg-dark"></div>
   <p class="text-center mt-3">
   Celebrate your love story amidst plush greenery and the magic of River's Edge Reception.<br>

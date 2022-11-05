@@ -92,6 +92,7 @@ input[type=number] {
   }
 
   .text1{
+    font-size:18px;
     position: relative;
     overflow: hidden;
     color: black;
@@ -127,6 +128,8 @@ input[type=number] {
   position: fixed;
   top:25px;
   right:25px;
+  z-index:1111;
+
 }
 
 .carousel {
@@ -148,4 +151,169 @@ input[type=number] {
   left: 0;
   min-width: 100%;
   height: 32rem;
+}
+#reservation.section {
+	padding-bottom:0px;
+}
+
+/*Reservation Form----------------------------*/
+#reservation .bg-image  {
+	height:75%;
+}
+
+.reserve-form {
+	padding: 30px 2% 30px;
+	background: rgba(21, 21, 21, 0.9);
+}
+
+.reserve-form  .form-group {
+	margin-bottom:30px;
+}
+
+.reserve-form  .form-group label {
+	color: rgb(230, 11, 11);
+	margin-left: 10px;
+}
+
+.reserve-form .input {
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+.opening-time {
+	padding: 40px 8% 40px;
+	background: #151515;
+	margin-top: 40px;
+}
+
+.opening-time ul li .day {
+	display:inline-block;
+	font-weight:400;
+	color:#fff;
+}
+
+.opening-time ul li .hours {
+	float: right;
+	font-size: 14px;
+	margin-top: 12px;
+	font-weight:400;
+	color:#89CFF0;
+}
+
+/*Reservation end---------------*/
+
+/* --- typography --- */
+body {
+	color:#0c0000;
+	font-size:16px;
+	overflow-x:hidden;
+	font-family: 'Cabin', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:700;
+	color:#151515;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+	font-size:54px;
+}
+
+h2 {
+	font-size:36px;
+}
+
+h3 {
+	font-size:24px;
+}
+
+h4 {
+	font-size:16px;
+}
+
+a {
+	color:#151515;
+	-webkit-transition:0.2s color;
+	transition:0.2s color;
+}
+
+a:hover,
+a:focus{
+	color:#89CFF0;
+    text-decoration: none;
+    outline: none;
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.white-text {
+	color:#FFF;
+}
+
+/* --- Section --- */
+.section {
+	position:relative;
+	padding-top:80px;
+	padding-bottom:80px;
+}
+
+.section-header .title {
+	font-family: 'Dancing Script', cursive;
+	margin-top:0px;
+}
+
+.title:after {
+	content:"";
+	display: block;
+	width: 15px;
+	height: 2px;
+	background-color: #89CFF0;
+	margin: 15px 0px 30px;
+}
+
+.text-center .title:after {
+	margin: 15px auto 30px;
+}
+
+.section-header .sub-title {
+	font-weight:400;
+	color: #89CFF0;
+}
+
+/* --- Buttons --- */
+.main-button {
+	display:inline-block;
+	padding:15px 30px;
+	border:none;
+	border-radius:40px;
+	background-color:#89CFF0;
+	color:#FFF;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-transition:0.2s opacity;
+	transition:0.2s opacity;
+}
+.main-button:hover {
+	color:#FFF;
+	opacity:0.8;
+}
+
+/* --- Inputs --- */
+.input {
+	width: 100%;
+	height: 40px;
+	padding: 0px 10px;
+	border: 2px solid #ECECEC;
+	border-radius: 40px;
+	background: transparent;
+}
+
+textarea.input {
+	height: 160px;
+	padding: 10px;
+	border-radius: 20px;
 }

@@ -43,61 +43,17 @@
 <!--Header-->
   <?php require('inc/header.php'); ?>
     
-   <br>
+
      
            <img src="Photos\Restaurant\BBQ.jpg" class="w-100 d-block" height="550"/>
          
-  
-         <!-- check availability -->
-
-<div class="container availability-form">
-  <div class="row">
-    <div class="col-lg-12 bg-white shadow p-4 rounded">
-      <form >
-            <div class="row align-items-end">
-              <div class="col-lg-3 mb-3">
-                <label class="form-label" style="font-weight: 500;">Date</label>
-                <input type="date" class="form-control shadow-none">
-              </div>
-
-          
-              <div class="col-lg-2 mb-3">
-                <label class="form-label" style="font-weight: 500;">Adults</label>
-                <select class="form-select shadow-none">
-                  <option selected>Select number</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="3">4</option>
-                </select>
-              </div>
-
-              <div class="col-lg-2 mb-3">
-                <label class="form-label" style="font-weight: 500;">Children</label>
-                <select class="form-select shadow-none">
-                  <option selected>Select number</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="3">4</option>
-                </select>
-              </div>
-                <div class="col-lg-2 mb-lg-3 mt-2">
-                  <button type="submit" class="btn text-white shadow-none custom-bg">Reservation</button>
-                </div>
-            </div>
-
-      </form>
-    </div>
-  </div>
-</div>
  
 <br>
 <h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Restaurant.php" style="text-decoration:none">Restaurant</a> &nbsp > &nbsp BBQ</h6>
 
    <!--Topics-->
-   <div class="my-5 px-4">
-    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">BBQ</h2>
+   <div class="px-4">
+    <h2 class="pt-4 mb-3 text-center fw-bold f2">BBQ</h2>
     <div class="h-line bg-dark"></div>
       <p class="text-center mt-3">
         Celebrate your love story amidst plush greenery and the magic of River's Edge Reception. Celebrate your love 
@@ -134,15 +90,14 @@
 </div>      
 
  <br><br><br><br>
-
  
  <!--facilities-->
  <h3 class="fm-bold h-font text-center">Facilities</h3>
  <div class="container">
    <div class="row justify-content-evenly px-lg-0 px-md-0 px-2">
-    <<div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\dj.png" alt="kids friendly" width="40">
-      <h6>Music</h6>
+    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
+      <img src="Photos/Facilities/wifi-logo-svgrepo-com.svg" alt="Wi-Fi" width="40">
+      <h6>Wi-Fi</h6>
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
       <img src="Photos\Facilities\parking.png" alt="Parking" width="40">
@@ -153,17 +108,15 @@
       <h6>Self-Service</h6>
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\pets.png" alt="Pets are Not Allowed" width="40">
-      <h6>Pets are Not Allowed</h6>
+      <img src="Photos\Facilities\Open.png" alt="Out Door" width="40">
+      <h6>Outdoor</h6>
     </div>
     <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\open.png" alt="Open Environment" width="40">
-      <h6>Open Environment</h6>
+      <img src="Photos\Facilities\kids.png" alt="kid friendly" width="40">
+      <h6>Kid friendly</h6>
     </div>
-    <div class="col-lg-1 col-md-1 text-center bg-white rounded shadow py-3 my-5">
-      <img src="Photos\Facilities\kids.png" alt="kids friendly" width="40">
-      <h6>Kids friendly</h6>
-    </div>
+   </div>
+   
    </div>
    
    </div>

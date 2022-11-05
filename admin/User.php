@@ -36,7 +36,7 @@ if(isset($_GET['del']))
 
     if($frm_data['del']=='all'){
         $sq = " DELETE FROM user_queries";
-   if(mysq_query($con,$sq)){
+   if(mysqli_query($con,$sq)){
     alert('Success','All data deleted!');
    }
    else{
@@ -81,9 +81,9 @@ if(isset($_GET['del']))
                     <div class="card-body">
 
                     <div class="text-end mb-4">
-                    <a herf="?seen=all" class="btn btn-dark rounded-pill shadow-none btn-sm">
+                    <a href="?seen=all" class="btn btn-dark rounded-pill shadow-none btn-sm">
                        <i class="bi bi-check-all"></i> Make all read</a>
-                        <a herf="?del=all" class="btn btn-danger rounded-pill shadow-none btn-sm">
+                        <a href="?del=all" class="btn btn-danger rounded-pill shadow-none btn-sm">
                         <i class="bi bi-trash"></i>   Delete all</a>
                         </div>
 
@@ -127,8 +127,6 @@ if(isset($_GET['del']))
                         </tr>
                         query;
                         $i++;
-
-
 
                     }
 

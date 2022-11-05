@@ -35,13 +35,46 @@
   </div>
 </div>
 </footer>
-<h6 class="text-center bg-dark text-white p-3 m-0">Group 14</h6>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
  
   <script>
+
+function alert(type,msg,postion='body')
+{
+        let bs_class = (type == 'success') ? 'alert-success' : 'alert-danger';
+        let element = document.createElement('div');
+        element.innerHTML =  '
+        <div class ="alert ${bs_class} alert-dismissible fade show" role="alert">
+                <strong class="me-3">${msg}</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        ';
+        
+        if(postion=='body'){
+          document.body.append(element);
+          element.classList.add('custom_alert');
+
+        }
+        else{
+          document.getElementById(position).appendChild(element);
+        }
+  
+    setTimeout(remAlert, 3000);
+   }
+
+
+
+
+   function remAlert(){
+     document.getElementByClassName('alert')[0].remove();
+   }
+
+
+
     function setActive()
     {
       let navbar = document.getElementById('dashboard-menu');
@@ -59,5 +92,54 @@
 
       }
     }
+
+    let register_form = document.getElementById('register-form');
+
+    register_form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+
+    let data = new FormData();
+    
+    data.append('name'register_form.elements['name'].values);
+    data.append('nicnum'register_form.elements['nicnum'].values);
+    data.append('email'register_form.elements['email'].values);
+    data.append('phonenum'register_form.elements['phonenum'].values);
+    data.append('pass'register_form.elements['pass'].values);
+    data.append('cpass'register_form.elements['cpass'].values);
+    data.append('register','');
+
+    var myModel = document.getElementById('registerModel');
+    var model = bootstarp.Model.getInstance(myModel);
+    mddal.hide();
+
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST","ajax/login_register.php",true);
+    
+    xhr.onload = function(){
+      if(this.responseText == 'pass_mismatch'){
+        alert('error',"password Mismatch!");
+      }
+      else if(this.responseText == 'email_already'){
+        alert('error',"Email is already registered!");
+      }
+      else if(this.responseText == 'phone_already'){
+        alert('error',"Phone number is already registered!");
+      }
+      else if(this.responseText == 'mail_failed'){
+        alert('error',"cannot send confirmation email! Server down!");
+      }
+      else if(this.responseText == 'ins_failed'){
+        alert('error',"Registration failed! Server down!");
+      }
+      else{
+        alert('success',"Registration successful. Confirmation link sent to email");
+        register_form.resent();
+      }
+    }
+
+    xhr.send(data);
+
+    });
+
     setActive();
   </script>

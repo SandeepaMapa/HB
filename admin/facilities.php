@@ -29,7 +29,7 @@
                     <div class="card-body">
                         <div class=" text-end mb-3">
                             
-                            <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#feature-s">
+                            <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#facilities-s">
                             <i class="bi bi-plus-square"></i>Add
                                 </button>
                         </div>
@@ -42,7 +42,7 @@
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
-                        <tbody id="features-data">
+                        <tbody id="facilities-data">
                         </tbody>
                       </table>
                     </div>
@@ -52,18 +52,18 @@
           </div>
         </div>
 
-                <!-- Feature modal-->
-                   <div class="modal fade" id="feature-s" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <!-- facility modal-->
+                   <div class="modal fade" id="facilities-s" data-bs-backdrops="static" data-bs-keyboard="true" tabindex=-1 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog ">
-                        <form id="feature_s_form">
+                        <form id="facilities_s_form">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" >Add Feature</h5>
+                            <h5 class="modal-title" >Add Facility</h5>
                         </div>
                         <div class="modal-body">
                             <div class=" mb-3">
                                <label  class="form-label fw-bold">Name</label>
-                               <input type="text" name="feature_name" class="form-control shadow-none" required>
+                               <input type="text" name="facilities_name" class="form-control shadow-none" required>
                               </div>
                             </div>
                         
@@ -80,9 +80,9 @@
 
 
     <?php require('inc/scripts.php');?>
-    <?php require('ajax\features.php');?>
+    
 
-    <script src="Scripts\features.js"> </script>
+    <script src="Scripts\facilities.js"> </script>
    
   </body>
 </html>

@@ -60,24 +60,35 @@ if(isset($_POST['add_member']))
 {
     $frm_data = filteration($_POST);
 
-   $img_r = uploadImage($_FILES['picture'],ABOUT_FOLDER);
+    $img_r = uploadImage($_FILES['picture'],PHOTOS_FOLDER);
 
-   if($img_r == 'inv_img'){
+    if($img_r == 'inv_img'){
         echo $img_r;
-   }
-   else if($img_r == 'inv_size'){
+    }
+    elseif($img_r == 'inv_size'){
         echo $img_r;
-   }
-   else if ($img_r == 'upd_failed'){
+    }
+    elseif($img_r == 'upd_failed'){
         echo $img_r;
-   }
-   else{
-        $q ="INSERT INTO `team_details`(`name`, `picture`) VALUES (?,?)";
+    }
+    else{
+        $q = "INSERT INTO team_details(name, picture) VALUES (?,?)";
         $values = [$frm_data['name'],$img_r];
-        $res = insert($q,$values,'ss');
-        echo $res;
+        $res =insert($q, $values, 'ss');
+        echo $res; 
+    }
+}
 
-   }
+if (isset($_POST['get_members']))
+{
+    $res = selectAll('team_details');
+
+    while($row = mysqli_fetch_assoc($res))
+    {
+        echo <<<data
+
+        data;
+    }
 }
 
  if(isset($_))

@@ -38,23 +38,21 @@
   <!-- Swiper -->
     <div class="swiper swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="photos/Demo/colombo_2.jpg" class="w-100 d-block" height="530"/>
-          </div>
-          <div class="swiper-slide">
-            <img src="photos/Demo/df09c33940de39df187b3eda0d20d386.jpg" class="w-100 d-block" height="530"/>
-          </div>
-          <div class="swiper-slide">
-            <img src="photos/Demo/digital-marketing-for-hotels.jpg" class="w-100 d-block" height="530" />
-          </div>
-          <div class="swiper-slide">
-            <img src="photos/Demo/modd.png"  class="w-100 d-block" height="530" />
-          </div>
-        </div>
-        
+        <?php
+          $res = selectAll('carousel');
+          while($row = mysqli_fetch_assoc($res))
+        {
+            $path = CAROUSEL_IMG_PATH;
+            echo <<<data
+              <div class="swiper-slide">
+                <img src="$path$row[image]" class="w-100 d-block">
+              </div>
+            data;
+        }
+        ?>
       </div>
-
-</div>
+    </div>
+  </div>
 
 <!-- check availability -->
 
