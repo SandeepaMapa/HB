@@ -47,7 +47,7 @@ if(isset($_POST['add_rooms']))
 
   if(isset($_POST['get_all_rooms']))
   {
-    $res = selectAll('rooms');
+    $res = select("SELECT * FROM rooms WHERE removed=?" , [0],'i');
     $i = 0;
 
     $data = "";
@@ -274,6 +274,30 @@ if (isset($_POST['thumb_image']))
 
     echo $res;
 
+} 
+
+
+
+if (isset($_POST['remove_room']))
+{
+    $frm_data = filteration($POST);
+
+    $res1 = select("SELECT * FROM room_images WHERE room_id=?",[$frm_data['room_id']],'i');
+
+    while($row = mysqli_fetch_assoc($res1)){
+      deleteImage($row['image'],ROOMS_FOLDER);
+    }
+
+    $res2 = delete("DELETE FROM room_images WHERE room_id=?",[$frm_data['room_id']],'i');
+    $res3 = delete("DELETE FROM room_facilities WHERE room_id=?",[$frm_data['room_id']],'i');
+    $res4 = update("UPDATE rooms SET removed=? WHERE id=?",[1,$frm_data['room_id']],'ii');
+
+    if($res2 || $res3 || $res4){
+      echo 1;
+    }
+    else {
+      echo 0;
+    }
 } 
 
 ?>
