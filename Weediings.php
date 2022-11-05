@@ -208,7 +208,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
-            <ul class="nav nav-tabs flex-column">
+            <ul class="nav nav-tabs flex-row">
               <li class="nav-item">
                 <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Free Services</a>
               </li>

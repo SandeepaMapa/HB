@@ -606,6 +606,7 @@ body {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
   height: 100%;
+  
 }
 
 .why-us .box span {
@@ -624,7 +625,7 @@ body {
 }
 
 .why-us .box p {
-  color: #aaaaaa;
+  color: #0f0f0f;
   font-size: 15px;
   margin: 0;
   padding: 0;
@@ -737,7 +738,7 @@ body {
     padding: 12px 15px 12px 0;
     transition: 0.3s;
     color: #433f39;
-    border-radius: 0;
+    border-radius: 1;
     border-right: 2px solid #e8e7e4;
     font-weight: 600;
     font-size: 15px;
