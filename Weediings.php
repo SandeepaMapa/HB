@@ -24,7 +24,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="Weediings.css" rel="stylesheet">
+  <link href="New.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <?php require('inc/links.php'); ?>
@@ -35,81 +35,57 @@
 <!--Header-->
 <?php require('inc/header.php'); ?>
 
-  
-       <!-- ======= Gallery Section ======= -->
-       <section id="gallery" class="gallery">
-      <div class="container-fluid">
-        <div class="row g-0">
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="Photos\Events\indoor.jpg" class="gallery-lightbox">
-                <img src="Photos\Events\indoor.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
+   <!--Image carousal-->
+   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img" width="100%" height="100%" src="Photos\Events\1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <p>Choose from a variety of Menus</p>
+            <p><a class="btn btn-lg btn-primary" href="#events">View Menu</a></p>
           </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
         </div>
-
       </div>
-    </section>
-    <!-- End Gallery Section -->
- 
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="100%" height="100%" src="Photos\Events\outdoor.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="100%" height="100%" src="Photos\Events\wed9.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#gallery">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Image carousal ends-->
   <h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Events.php" style="text-decoration:none">Events</a> &nbsp > &nbsp Weddings</h6>
   <!--Topics-->
   <div class=" px-4">
@@ -231,7 +207,7 @@
     <section id="specials" class="specials">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
                 <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Free Services</a>
@@ -370,15 +346,10 @@
               </select>
               <div class="validate"></div>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-            <select class="form-select"  name="people" id="people" placeholder="Menu" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                <option disabled selected >Menu No</option>
-                <option value="1">Day</option>
-                <option value="2">Night</option>
-                <option value="3">All Day</option>
-              </select>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Menu No" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
-            </div>
+            </div
           </div>
           <div class="form-group mt-3">
             <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
