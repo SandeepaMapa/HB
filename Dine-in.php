@@ -479,13 +479,23 @@
           <div class="validate"></div>
         </div>
         <div class="col-lg-4 col-md-6 form-group mt-3">
-          <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
           <div class="validate"></div>
         </div>
         <div class="col-lg-4 col-md-6 form-group mt-3">
-          <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
           <div class="validate"></div>
         </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+            <select class="form-select"  name="people" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                <option disabled selected >Select One</option>
+                <option value="1">Breakfast</option>
+                <option value="2">Lunch</option>
+                <option value="3">Dinner</option>
+                <option value="3">A Lar Carte</option>
+              </select>
+              <div class="validate"></div>
+            </div>
         <div class="col-lg-4 col-md-6 form-group mt-3">
           <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
           <div class="validate"></div>
@@ -522,8 +532,24 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Disabling Past Date -->
   <script src="assets/js/main.js"></script>
+  <script>
+    var date = new Date();
+    
+    var tdate = date.getDate();
+    var month = date.getMonth() +1;
+    var year = date.getUTCFullYear() - 0;
+    if (month < 10) {
+        month = '0' + month
+    }
+    if (tdate < 10) {
+      tdate = '0' + tdate;
+    }
+    var minDate = year + "-" + month + "-" + tdate; //dte format
+    document.getElementById("date").setAttribute("min", minDate);
+    console.log(minDate);
+</script>
 
 </body>
 
