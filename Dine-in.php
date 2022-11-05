@@ -67,8 +67,8 @@
         <i>Vegetarian Friendly, Vegan Options, Gluten Free Options</i></p>
         <br>
         <div class="btn-group-sm" role="group">
-                            <button class="btn btn-primary"> View Menu</button>
-                            <button class="btn btn-primary"> Reserve a Table</button>
+                            <button onclick="location.href='Photos\Menus\Ports-of-Call-menu-of-Taj-Samudra-Colombo.pdf';" class="btn btn-primary"> View Menu</button>
+                            <a href="#book-a-table" class="btn btn-primary"> Reserve a Table</a>
                         </div>
         </div>
       </div>
@@ -84,6 +84,11 @@
             Starting from Rs. 2500 per person
             <br><br>
         <i>Vegetarian Friendly, Vegan Options, Gluten Free Options</i></p>
+        <br>
+        <div class="btn-group-sm" role="group">
+                            <a href="#" class="btn btn-primary"> View Menu</a>
+                            <a href="#book-a-table" class="btn btn-primary"> Reserve a Table</a>
+                        </div>
         </div>
       </div>
 
@@ -98,6 +103,11 @@
             Starting from Rs. 2500 per person
             <br><br>
        <i> Vegetarian Friendly, Vegan Options, Gluten Free Options</i></p>
+       <br><br>
+        <div class="btn-group-sm" role="group">
+                            <a href="#" class="btn btn-primary"> View Menu</a>
+                            <a href="#book-a-table" class="btn btn-primary"> Reserve a Table</a>
+                        </div>
         </div>
       </div>
 
