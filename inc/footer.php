@@ -4,10 +4,9 @@
   <div class="row">
     <div class="col-lg-4 p-4">
       <h3 class="f2 fw-bold fs-3 mb-2 text-white">River's Edge</h3>
-      <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Atque recusandae, porro velit est dolore earum neque aperiam eveniet, 
-        quisquam eaque quibusdam quia cum quam itaque pariatur, 
-        molestias fugiat magnam ratione!</p>
+      <p class="text-white text-sm">River's Edge is an outdoorsy, rustic villa type hotel with the madampa river flowing behind it. 
+      It is set in the peaceful village of Madampagama, just a few minutes from the Galle coastal road.
+      </p>
     </div>
     <div class="col-lg-4 p-4 text-white">
       <h5 class="mb-3 text-white">Quick Links</h5>
