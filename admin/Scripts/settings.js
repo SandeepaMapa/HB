@@ -217,6 +217,7 @@ function get_general()
                        alert('success', 'New member added'); 
                        member_name_inp.value ='';
                        member_picture_inp.value = '';
+                       get_members();
                     }
                 }
 
@@ -234,21 +235,22 @@ function get_general()
                 xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
 
                 xhr.onload = function(){
-                    
+                    document.getElementById('team-data').innerHTML = this.responseText;
                         }
 
 
                         xhr.send('get_general');
                     }
 
-                    general_s_form.addEventListener('submit',function(e){
-                        
-                    }
-            }
+                 
+
+
+            
 
             window.onload = function(){
                 get_general();
                 get_contacts();
+                get_members();
             }
         
-
+   

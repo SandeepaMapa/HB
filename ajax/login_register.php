@@ -15,8 +15,8 @@ function send_mail($email,$name,$token)
     $email->addCountent("test/plain", "and easy to do anywhere,even with PHP");
     $email->addContent(
         "text/html"
-        "
-        Click the link tp confirm you email; <br>
+        
+        "Click the link tp confirm you email; <br>
         <a href='".SITE_URL."email_confirm.php?email=$email&token=$token"."'>
         CLICK ME
         </a>

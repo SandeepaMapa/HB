@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>River's Edge - Dine-in</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
     <?php require('inc/links.php'); ?>
     
   </head>
@@ -15,25 +16,21 @@
 <!--Header-->
   <?php require('inc/header.php'); ?>
     
-   <br>
   <img src="Photos\Restaurant\dine-in1.jpg" class="w-100 d-block" height="550"/>
+  <br>
 
 <h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Restaurant.php" style="text-decoration:none">Restaurant</a> &nbsp > &nbsp Dine-in</h6>
 
 
    <!--Topics-->
    <div class=" px-4">
-    <h2 class=" pt-4 mb-3 text-center fw-bold f2">Dine-in</h2>
+    <h2 class=" pt-1 mb-3 text-center fw-bold f2">Dine-in</h2>
     <div class="h-line bg-dark"></div>
     
-      <p class="text-center mt-3">
-   Lorem ipsum dolor sit amet consectetur adipisicing elit.
- Vel non culpa quas est, nisi deserunt explicabo earum hic<br> molestias, nam, voluptate repellendus recusandae.
-  Natus vero eaque sit unde sequi illum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
- Vel non culpa quas est, nisi deserunt explicabo earum hic<br> molestias, nam, voluptate repellendus recusandae.
-  Natus vero eaque sit unde sequi illum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
- Vel non culpa quas est, nisi deserunt explicabo earum hi molestias, nam, voluptate repellendus recusandae.
-  Natus vero eaque sit unde sequi illum.
+      <p class="text-center mx-5 mt-3 ">
+      At River's Edge, we deliver the intense satisfaction of top-notch fusion cuisines if you love a hearty meal and a good time with family and friends.<br>
+       We give you the finest dishes prepared by the hands of our professional chefs where you will have a fabulous dining experience<br>
+        in our modern, outdoor and welcoming restaurant.
       </p>
   </div>
 
