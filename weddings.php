@@ -71,20 +71,21 @@
   </div>
   <!--Image carousal ends-->
  
-<br>
-<h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Events.php" style="text-decoration:none">EVENTS</a> &nbsp > &nbsp WEDDINGS</h6>
+
+<h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Events.php" style="text-decoration:none">Events</a> &nbsp > &nbsp Weddings</h6>
 
    <!--Topics-->
-   <div class="my-5 px-4">
-    <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">WEDDINGS</h2>
+   <div class=" px-4">
+    <h2 class=" mb-4 text-center fw-bold f2">Weddings</h2>
     <div class="h-line bg-dark"></div>
-      <p class="text-center mt-3">
+      <p class="text-center mt-4">
       The tearful smiles of the walk down the aisle. The first kiss as a couple.
-      The celebrations that follow. Your wedding is a chance to craft moments that will last you a lifetime.
+      The celebrations that follow. Your wedding is a chance to craft moments that will last you a lifetime.<br>
       At River's Edge, we want those moments to be truly memorable.<br>
       </p>
   </div>
 
+  
     <!--Services-->
 
   <div class="container">
@@ -149,7 +150,7 @@
            </div>
       <br>
               <select class="form-select" aria-label="Default select">
-                <option selected>Event Time</option>
+                <option disabled selected>Event Time</option>
                 <option value="1">Day</option>
                 <option value="2">Night</option>
                 <option value="3">All Day</option>

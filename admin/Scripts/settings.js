@@ -255,3 +255,4 @@ function get_general()
                 get_contacts();
             }
         
+   
