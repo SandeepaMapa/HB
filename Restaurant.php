@@ -59,7 +59,7 @@
         <div class="col-md-5 px-lg-4 px-md-3 px-0">
          <h4 class="mb-3">Dine-in</h4>
            <div class="Breakfast mb-3">
-                <h6 class="mb-1">Breakfast :- 6AM to 10AM </h6>
+                <h6 class="mb-1">Breakfast :- 6AM to 11AM </h6>
                  
             </div>
             <div class="Lunch mb-3">
