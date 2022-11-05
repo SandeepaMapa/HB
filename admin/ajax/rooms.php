@@ -86,6 +86,9 @@ if(isset($_POST['add_rooms']))
            <button type='button' onclick=\"room_images($row[id], '$row[name]')\" class='btn btn-info shadow-none btn-sm' data-bs-toggle='modal' data-bs-target='#room-images'>
               <i class='bi bi-images'></i> 
            </button>
+           <button type='button' onclick='remove_room($row[id])' class='btn btn-danger shadow-none btn-sm'>
+              <i class='bi bi-trash'></i> 
+           </button>
        </td>
       </tr>
       ";
@@ -215,7 +218,7 @@ if(isset($_POST['get_room_images']))
     while($row = mysqli_fetch_assoc($res))
     {
       if($row['thumb']==1){
-        $thumb_btn = "<i class='bi bi-check-lg text-light bg-success px-2 py-1 rounded fs-5'></i>";
+          $thumb_btn = "<i class='bi bi-check-lg text-light bg-success px-2 py-1 rounded fs-5'></i>";
         }
         else{
           $thumb_btn = "<button onclick='thumb_image($row[sr_no],$row[room_id])' class='btn btn-secondary btn-sm shadow-none'>
