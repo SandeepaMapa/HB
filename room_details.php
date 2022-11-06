@@ -152,7 +152,7 @@
 
 
                 echo<<<book
-                <a href="#" class="btn w-100 
+                <a href="https://buy.stripe.com/test_28o4h5fXM25Ffrq6oo" class="btn w-100 
                  text-white custom-bg shadow-none mb-1">Book Now</a>
                 book;
           ?>

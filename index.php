@@ -142,18 +142,7 @@
             $room_thumb = ROOMS_IMG_PATH . $thumb_res['image'];
           }
 
-          $book_btn = "";
-
-          if(!$settings_r['shutdown'])
-          {
-            $login=0;
-            if(isset($_SESSION['login']) && $_SESSION['login']==true )
-            {
-                $login=1;
-            }
-
-           $book_btn = "<button onclick='checkLoginToBook($login,$room_data[id])' class='btn btn-sm text-white custom-bg shadow-none>Book Now</button>";
-          }
+       
 
 
           //print room card
@@ -322,7 +311,7 @@ $contact_r =mysqli_fetch_assoc(select($contact_q,$values,'i'));
         <i class="bi bi-telephone-fill"></i>0716388682
        </a>
     </div>
-    <div class="bg-wwhite p-4 rounded mb-4">
+    <div class="bg-white p-4 rounded mb-4">
       <h5>Follow us</h5>
       <a href="#" class="d-inline-block mb-3">
         <span class="badge bg-light text-dazrk fs-6 p-2" >
