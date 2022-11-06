@@ -144,7 +144,7 @@
                 <input type="date" class="form-control shadow-none" id="checkout" onchange="chk_avail_filter()">
               </div>
               <div class="border bg-light p-3 rounded mb-3">
-                <h5 class="mb-3" style="font-size:18px:">FACILITIES</h5>
+                <h5 class="mb-3" style="font-size:18px;">FACILITIES</h5>
                 <div class="mb-2">
                   <input type="checkbox" id="f1" class="form-check-input shadow-none me-1">
                   <label class="form-check-label" for="f1">Facility one</label>
@@ -159,7 +159,7 @@
                 </div>
               </div>
               <div class="border bg-light p-3 rounded mb-3">
-                <h5 class="mb-3" style="font-size:18px:">GUESTS</h5>
+                <h5 class="mb-3" style="font-size:18px;">GUESTS</h5>
                 <div class="d-flex">
                   <div class=me-3>
                     <label class="form-label">Adults</label>
