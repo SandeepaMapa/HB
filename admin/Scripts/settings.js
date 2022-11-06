@@ -243,7 +243,23 @@ function get_general()
                     }
 
                  
+             function rem_member(val){
+                    let xhr =new XMLHttpRequest();
+                    xhr.open("POST","ajax/settings_crud.php",true);
+                    xhr.setRequestHeader('Content-Type','application/x-www-form-urlendcode');
 
+                    xhr.onload = function(){
+                        if(this.responseText==1){
+                            alert('Success','Member removed!');
+                            get_members();
+                        }
+                        else{
+                            alert('error','Server down!')
+                        }
+                            }
+                            xhr.send('rem_member='+val);
+
+                                }
 
             
 
