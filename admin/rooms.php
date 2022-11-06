@@ -113,7 +113,7 @@
        
 
              <!-- edit room modal-->
-                <div class="modal-fade" id="edit-room" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade" id="edit-room" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <form  id="edit_room_form" autocomplete="off">
                         <div class="modal-content">
