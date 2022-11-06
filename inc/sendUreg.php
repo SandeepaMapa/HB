@@ -9,6 +9,12 @@
             $email = $_POST['email'];
             $phonenum = $_POST['phonenum'];
             $pass = $_POST['pass'];
+            $cpass =$_POST['cpass'];
+
+            if ($_POST['pass'] !== $_POST['cpass']) {
+                die('<script type="text/javascript">alert("Passwords are not matching");</script>');
+             }
+             
 
             $sql = "INSERT INTO `user_reg1`(`name`, `nic`, `email`, `phonenum`, `password`) VALUES ('$name', '$nicnum','$email','$phonenum', '$pass')";
 
