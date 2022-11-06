@@ -42,10 +42,6 @@
 
          while ($room_data = mysqli_fetch_assoc($room_res)) {
           
-          if($chk_avail['checkin']!='' && $chk_avail['checkout']!='')
-          {
-            $tb_query = "";
-          }
           
           //get facilities of room
         
@@ -89,7 +85,7 @@
                 $login=1;
             }
 
-           $book_btn = "<button onclick='' class='btn btn-sm w=100'>Book</button>";
+           $book_btn = "<button onclick=''>Book</button>";
           }
 
 
@@ -138,3 +134,4 @@
  }
 
  ?> 
+
