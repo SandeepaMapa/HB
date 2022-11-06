@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>River's Edge Home-Contact</title>
-<link rel="stylesheet" href="https://unpkg.com/sswiper@7/swiper-bundle.min.css">
 <?php require('inc/links.php'); ?>
 
  
@@ -21,18 +20,26 @@
 <h2 class=" pt-4 mb-4 text-center fw-bold f2">CONTACT</h2>
 <div class="h-line bg-dark"></div>
 <p class= "text-center mt-3">
+<<<<<<< Updated upstream
+
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Vel non culpa quas est, nisi deserunt explicabo earum hic<br> molestias, nam, voluptate repellendus recusandae.
   Natus vero eaque sit unde sequi illum.
 </p>
+</div>
 
+
+=======
+If a stay by the beautiful river sounds exciting, contact us to find out more about what we offer for your getaway!
+</div>
+>>>>>>> Stashed changes
 <br><br>
 
+<div class="container">
 <div class="row">
   <div class="col-lg-6 col-md-6 mb-5 px-4">
-
-    <div class="bg-white rounded shadow p-4 ">
+ <div class="bg-white rounded shadow p-4 ">
     <iframe class="w-100 rounded mb-4" height="320px" src="https://g.page/river-s-edge-madampe-ambalangoda?share"></iframe>
   
       <h5>Address</h5>
