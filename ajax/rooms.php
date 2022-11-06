@@ -7,6 +7,28 @@
 
  if(isset($_GET['fetch_rooms']))
  {
+        $chk_avail = json_decode($_GET['chk_avail'],true);
+
+        if($chk_avail['checkin']!='' && $chk_avail['checkout']!='')
+        {
+          $today_date = new DateTime(date('Y-m-d'));
+          $checkin_date = new DateTime($chk_avail['checkin']);
+          $checkout_date = new DateTime($chk_avail['checkout']);
+
+          if($checkin_date == $checkout_date){
+            echo"<h3 class='text-center text-danger'>Invalid Dates Entered!</h3>";
+            exit;
+          }
+          elseif ($checkout_date < $checkin_date) {
+            echo"<h3 class='text-center text-danger'>Invalid Dates Entered!</h3>";
+            exit;
+          }
+          elseif ($checkin_date < $today_date){
+            echo"<h3 class='text-center text-danger'>Invalid Dates Entered!</h3>";
+            exit;
+          }
+        }
+    
         //count no.of rooms and output variable to store room cards
         $count_rooms = 0;
         $output = "";
@@ -19,6 +41,12 @@
          $room_res = select("SELECT * FROM rooms WHERE status=? AND removed=?", [1, 0], 'ii');
 
          while ($room_data = mysqli_fetch_assoc($room_res)) {
+          
+          if($chk_avail['checkin']!='' && $chk_avail['checkout']!='')
+          {
+            $tb_query = "";
+          }
+          
           //get facilities of room
         
           $fac_q = mysqli_query(
