@@ -144,6 +144,5 @@
 
 <!--Footer-->
   <?php require('inc/footer.php'); ?>
-
 </body>
 </html>
