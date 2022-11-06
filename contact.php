@@ -16,11 +16,11 @@
 
 <?php require('inc/Header.php'); ?>
 
-<div class="my-5 px-4">
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">CONTACT</h2>
+<div class=" px-4">
+<h2 class=" pt-4 mb-4 text-center fw-bold f2">CONTACT</h2>
 <div class="h-line bg-dark"></div>
 <p class= "text-center mt-3">
-If a stay by the golden shores sounds enticing, contact us to find out more about what we offer for your getaway!
+If a stay by the beautiful river sounds exciting, contact us to find out more about what we offer for your getaway!
 </div>
 
 

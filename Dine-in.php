@@ -86,7 +86,7 @@
         <i>Vegetarian Friendly, Vegan Options, Gluten Free Options</i></p>
         <br>
         <div class="btn-group-sm" role="group">
-                            <a href="#" class="btn btn-primary"> View Menu</a>
+                            <a href="Photos\Menus\Ports-of-Call-menu-of-Taj-Samudra-Colombo.pdf" download class="btn btn-primary"> View Menu</a>
                             <a href="#book-a-table" class="btn btn-primary"> Reserve a Table</a>
                         </div>
         </div>
