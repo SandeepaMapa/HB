@@ -38,22 +38,18 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
   <div class="col-lg-6 col-md-6 mb-5 px-4">
 
     <div class="bg-white rounded shadow p-4 ">
-    <iframe class="w-100 rounded mb-4" height="320px" src=<?php echo $contact_r['iframe'] ?>" loading="lazy"> </iframe>
+    <iframe class="w-100 rounded mb-4" height="320px" src="<?php echo $contact_r['iframe'] ?>" loading="lazy"> </iframe>
     
       <h5>Address</h5>
       <a href="https://g.page/river-s-edge-madampe-ambalangoda?share" target="_blank" class="d-inline-block text-decration-non text-dark mb-2">
-      <i class="bi bi-geo-alt-fill"></i>River's Edge madampe Ambalangoda
+      <i class="bi bi-geo-alt-fill"></i><?php echo $contact_r['address'] ?>
     </a>
 
      <h5 class="mt-4">Call us</h5>
-    <a href="tel:0771324857" class="d-inline-block mb-2 text-decoration-none text-dark">
-      <i class="bi bi-telephone-fill"></i>0771324857
+    <a href="tel:+<?php echo $contact_r['pn1'] ?>" class="d-inline-block mb-2 text-decoration-none text-dark">
+      <i class="bi bi-telephone-fill"></i><?php echo $contact_r['pn1'] ?>
     </a>
     <br>
-    <a href="tel:0716388682" class="d-inline-block mb-2 text-decoration-none text-dark">
-      <i class="bi bi-telephone-fill"></i>0716388682
-    </a>
-</div>
 
     <?php
       if ($contact_r['pn2'] !=='')
