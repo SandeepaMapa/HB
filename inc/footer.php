@@ -25,12 +25,18 @@
     
       
       
-      <a href="<?php echo $contact_r['insta'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
-        <i class="bi bi-instagram me-1 "></i> Instagram
-    </a><br>
-    <a href="<?php echo $contact_r['fb'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
-      <i class="bi bi-facebook me-1 "></i> Facebook
-  </a><br>
+      <h5>Follow us</h5>
+      <a href="#" class="d-inline-block mb-3">
+        <span class="badge bg-light text-dazrk fs-6 p-2" >
+        <i class="bi bi-facebook me-1"></i>facebook
+      </span>
+      </a>
+      <br>
+      <a href="#" class="d-inline-block mb-3">
+        <span class="badge bg-light text-dazrk fs-6 p-2" >
+        <i class="bi bi-instagram me-1"></i>Instagram
+      </span>
+      </a>
 
   
 </div>
@@ -100,13 +106,9 @@ function alert(type,msg,postion='body')
       }
     }
 
-    let register_form = document.getElementById('register-form');
-
-    register_form.addEventListener('submit', (e)=>{
-      e.preventDefault();
-
-    let data = new FormData();
     
+<<<<<<< HEAD
+=======
     data.append('name',register_form.elements['name'].values);
     data.append('nicnum',register_form.elements['nicnum'].values);
     data.append('email',register_form.elements['email'].values);
@@ -147,6 +149,7 @@ function alert(type,msg,postion='body')
     xhr.send(data);
 
     });
+>>>>>>> ac4eec3dd1dc64bed102dbbf5f519215ff4fb241
 
     setActive();
   </script>
