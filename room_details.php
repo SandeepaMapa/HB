@@ -91,9 +91,19 @@
   </div>
 
 
-    <div class="col-lg-5 col-md-12 px-4">
+    <div class="col-lg-5 col-md-11 px-4">
       <div class="card mb-3 border-0 shadow-sm rounded-3">
         <div class="card-body">
+        <div class="col-12">
+        <div class="">
+           <h5>Description</h5>
+           <p>
+             <?php
+                echo $room_data['description']
+             ?>
+            </p>
+        </div>
+      </div>
           <?php
              echo<<<price
              <h4>Rs. $room_data[price] per night</h4>
@@ -148,21 +158,9 @@
           ?>
         </div> 
     </div>
-
-      <!--Rooms-->
-      <div class="col-12 mt-4 px-4">
-        <div class="mb-4">
-           <h5>Description</h5>
-           <p>
-             <?php
-
-             ?>
-            </p>
-        </div>
-      </div>
-
-    </div>
+    </div> 
   </div>
+ </div>
 
 
   <?php require('inc/footer.php') ?>
