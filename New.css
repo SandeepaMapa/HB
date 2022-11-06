@@ -882,11 +882,11 @@ body {
   /*--------------------------------------------------------------
   # Book A Table
   --------------------------------------------------------------*/
-  .book-a-table {
+  .book-a-table .php-email-form {
     width: 100%;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
     padding: 30px;
-    background: #fff;
+    background: #F9F6EE;
   }
   
   .book-a-table .php-email-form .form-group {
