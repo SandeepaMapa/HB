@@ -94,13 +94,13 @@ if (isset($_POST['get_members']))
                    <i class="bi bi-trash"></i> DELETE
                 </button>
                      </div>
-                <p class="card-text text-center px-3 py-2"><small>Name</small></p>
+                <p class="card-text text-center px-3 py-2">$row[name]</p>
              </div>
              </div>
              data;
     }
 }
 
- if(isset($_))
+ 
 
 ?>
