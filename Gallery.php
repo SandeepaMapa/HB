@@ -27,8 +27,8 @@
     
 
   <!--Topics-->
-  <div class="my-5 px-4">
-  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">GALLERY</h2>
+  <div class="my-3 px-4">
+  <h2 class="mt-3 pt-4 mb-4 text-center fw-bold f2">GALLERY</h2>
   <div class="h-line bg-dark"></div>
   <p class="text-center mt-4">
   Celebrate your love story amidst plush greenery and the magic of River's Edge Reception.<br>
@@ -42,11 +42,7 @@
         along with the corporate requirements of today’s fast paced lifestyle.
   </p>
   </div>
-<br><br>
 
-
-
-  
   <h5 class="my-5 fw-bold h-foot text-center">Hotel view</h5>
       <div class="container px-6">
         <!-- Swiper -->
@@ -143,7 +139,7 @@
 
 
 
-     <h5 class="my-5 fw-bold h-foot text-center">Hotel view</h5>
+     <h5 class="my-5 fw-bold h-foot text-center">Events</h5>
       <div class="container px-4">
         <!-- Swiper -->
       <div class="swiper mySwiper">
