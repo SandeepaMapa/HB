@@ -100,12 +100,12 @@ function alert(type,msg,postion='body')
 
     let data = new FormData();
     
-    data.append('name'register_form.elements['name'].values);
-    data.append('nicnum'register_form.elements['nicnum'].values);
-    data.append('email'register_form.elements['email'].values);
-    data.append('phonenum'register_form.elements['phonenum'].values);
-    data.append('pass'register_form.elements['pass'].values);
-    data.append('cpass'register_form.elements['cpass'].values);
+    data.append('name',register_form.elements['name'].values);
+    data.append('nicnum',register_form.elements['nicnum'].values);
+    data.append('email',register_form.elements['email'].values);
+    data.append('phonenum',register_form.elements['phonenum'].values);
+    data.append('pass',register_form.elements['pass'].values);
+    data.append('cpass',register_form.elements['cpass'].values);
     data.append('register','');
 
     var myModel = document.getElementById('registerModel');
