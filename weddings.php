@@ -467,13 +467,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!--Sending the mail-->
   <script>"https://smtpjs.com/v3/smtp.js"</script>
   <script>
     function sendEmail(){
       Email.send({
         Host : "smtp.gmail.com",
         Username : "dewneed@gmail.com",
-        Password : "DewnI#1234",
+        Password : "0176735C6F127B1D7371CE99BA284F7F2E3C",
         To : 'kumar.dp777@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New contact form inquiry",
