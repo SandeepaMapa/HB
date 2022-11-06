@@ -17,6 +17,7 @@
             $value = stripslashes($value);
             $value = htmlspecialchars($value);
             $value = strip_tags($value);
+            $value = htmlspecialchars($value);
             $data[$key] = $value;
         }
         return $data;

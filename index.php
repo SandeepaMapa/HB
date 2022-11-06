@@ -291,6 +291,15 @@
     <div class="col-lg-8 col-md-8 p-4 mb-lg-0 bg-white rounded"></div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.151117286474!2d80.0630986!3d6.225736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36b288ccc4774ebc!2sRiver&#39;s%20Edge%20madampe%20Ambalangoda!5e0!3m2!1sen!2slk!4v1665017607784!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+  <div class="bg_white p-4 mb-lg-0 mb_3 bg_white rounded">
+    <h5>Call us</h5>
+    <a href="tel:0771324857" class="d-inline-block mb-2 text-decoration-none text-dark">
+      <i class="bi bi-telephone-fill"></i>0771324857
+    </a>
+    <br>
+    <a href="tel:0716388682" class="d-inline-block mb-2 text-decoration-none text-dark">
+      <i class="bi bi-telephone-fill"></i>0716388682
+    </a>
 </div>
 
 <?php require('inc/footer.php');?>
