@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>River's Edge - Weddings</title>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>River's Edge - Weddings</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="New.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <?php require('inc/links.php'); ?>
-    
-  </head>
+</head>
 
-  <body class="bg-light">
-    
+<body>
+
 <!--Header-->
-  <?php require('inc/header.php'); ?>
-    
+<?php require('inc/header.php'); ?>
 
-     
    <!--Image carousal-->
    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -27,18 +38,17 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="bd-placeholder-img" width="100%" height="100%" src="Photos\Rooms\CWY-Beach-Chalet-1090X610.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+        <img class="bd-placeholder-img" width="100%" height="100%" src="Photos\Events\1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <p>Choose from a variety of Menus</p>
+            <p><a class="btn btn-lg btn-primary" href="#events">View Menu</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="bd-placeholder-img" width="100%" height="100%" src="http://www.w3.org/2000/img" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+        <img class="bd-placeholder-img" width="100%" height="100%" src="Photos\Events\outdoor.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
 
         <div class="container">
           <div class="carousel-caption">
@@ -49,13 +59,13 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="bd-placeholder-img" width="100%" height="100%" src="http://www.w3.org/2000/img" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+        <img class="bd-placeholder-img" width="100%" height="100%" src="Photos\Events\wed9.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
 
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>One more for good measure.</h1>
             <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#gallery">Browse gallery</a></p>
           </div>
         </div>
       </div>
@@ -70,12 +80,9 @@
     </button>
   </div>
   <!--Image carousal ends-->
- 
-
-<h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Events.php" style="text-decoration:none">Events</a> &nbsp > &nbsp Weddings</h6>
-
-   <!--Topics-->
-   <div class=" px-4">
+  <h6 class=" text1 text-left"><a href="index.php" style="text-decoration:none">HOME</a> &nbsp > &nbsp <a href="Events.php" style="text-decoration:none">Events</a> &nbsp > &nbsp Weddings</h6>
+  <!--Topics-->
+  <div class=" px-4">
     <h2 class=" mb-4 text-center fw-bold f2">Weddings</h2>
     <div class="h-line bg-dark"></div>
       <p class="text-center mt-4">
@@ -85,135 +92,403 @@
       </p>
   </div>
 
-  
-    <!--Services-->
+      <!-- ======= Events Section ======= -->
+      <section id="events" class="events">
+      <div class="container">
 
-  <div class="container">
+        <div class="section-title">
+          <h2>Get Your <span>Wedding</span> at our Hotel</h2>
+        </div>
+
+        <div class="events-slider swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                
+                <div class="col-lg-6 col-md-4">
+            <div class="gallery-item">
+              <a href="Photos\Menus\1750.png" class="gallery-lightbox">
+                <img src="Photos\Menus\1750.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+                
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Menu 1</h3>
+                  <div class="price">
+                    <p><span>Rs 2150</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Menu No 2</h3>
+                  <div class="price">
+                    <p><span>$290</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Menu No 3</h3>
+                  <div class="price">
+                    <p><span>$99</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->  
+
+    <br>
+
+    <!-- ======= Specials Section ======= -->
+    <div class="container">
 <div class="row">
   <div class="col-lg-6 col-md-6 mb-5 px-4">
-    <div class="bg-white rounded shadow p-4 ">
-  <h5>Free Services</h5>
-  <ul class="list-unstyled">
-    <li>Decorations</li>
-    <li>Oil Lamp</li>
-    <li>Registration Table</li>
-    <li>Car Park</li>
-  </ul>
-  <br>
-  <h5>Payable Other Services</h5>
-  <ul class="list-unstyled">
-    <li>Decorations</li>
-    <li>Oil Lamp</li>
-    <li>Registration Table</li>
-    <li>Car Park</li>
-  </ul>
+    <div class="bg-white rounded shadow p-5 ">
+    <section id="specials" class="specials">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <ul class="nav nav-tabs flex-row">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Free Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Payable Other Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <pre class="fst-italic">
+    Decorations
+    Oil Lamp
+    Registration Table
+    Car Park
+                    </pre>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-1.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    
+                    <br><br><br>
+                    <pre class="fst-italic">
+    Decorations
+    Oil Lamp
+    Registration Table
+    Car Park
+
+                    </pre>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-2.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-3.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-4.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-5.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Specials Section -->
      
 
 </div>
 </div>
 
-<!--Information Form-->
-<div class="col-lg-6 col-md-6  px-4">
-    <div class="bg-white rounded shadow p-4 ">
-      <form>
-        <h5> Send Us Your Details </h5>
-        <p>Make your dreams come true with our impeccable event planning service. 
-          Simply provide us with your information and our highly professional 
-          concierge will get in touch to serve you</p>
-        <div class=" mt-3">
-          <label  class="form-label" style="font-weight: 500;">Full Name</label>
-        <input type="text" class="form-control shadow-none">
-           </div>
+<!-- ======= Book A Table Section ======= -->
+<div class="col-lg-6 col-md-6  px-8">
+    <div class="bg-white rounded shadow p-8 ">   
+    <section id="book-a-table" class="book-a-table">
+      <div class="container">
 
-           <div class=" mt-3">
-          <label  class="form-label" style="font-weight: 500;">Email Address</label>
-        <input type="email" class="form-control shadow-none">
-           </div>
-           <div class="row align-items-end">   
-          </div>
-           <div class=" mt-3">
-             <label  class="form-label" style="font-weight: 500;">Contact Number</label>
-            <input type="text" class="form-control shadow-none">
-        
-           </div>
+        <div class="section-title">
+          <h3>Reserve a <span>Date</span></h3>
+          <p>Make your dreams come true with our impeccable event planning service. 
+          Simply provide us with your information.</p>
+        </div>
 
-           <div class="row align-items-end">
-           <div class="col-lg-5 mb-3 mt-3">
-                <label class="form-label" style="font-weight: 500;">Expected Date</label>
-                <input type="date" class="form-control shadow-none">
-              </div>
 
-              <div class="col-lg-5 mb-3 mt-3">
-                <label class="form-label" style="font-weight: 500;">Expected Crowd</label>
-                <input type="number" min="50" max="300" class="form-control shadow-none">
-              </div>
-           </div>
-      <br>
-              <select class="form-select" aria-label="Default select">
-                <option disabled selected>Event Time</option>
+        <!--action="forms/book-a-table.php" method="post" role="form"-->
+        <form onsubmit="sendEmail(); reset(); return false;" action="forms/book-a-table.php" class="php-email-form">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Family Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" name="name" class="form-control" id="name" placeholder="First Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="date" name="date" class="form-control" id="date" placeholder="Expected Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="Expected Crowd" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+            <select class="form-select"  name="people" id="people" placeholder="Expected Crowd" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                <option disabled selected >Event Time</option>
                 <option value="1">Day</option>
                 <option value="2">Night</option>
                 <option value="3">All Day</option>
               </select>
-
-          <div class="mt-3">
-                <label class="form-label" style="font-weight: 500;">Do you need an extra Guestroom?</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">Yes</label>
+              <div class="validate"></div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">No</label>
-            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Menu No" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+</div>
           </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
 
-           <div class=" mt-3">
-          <label  class="form-label" style="font-weight: 500;">Additional Information</label>
-        <textarea class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
-           </div>
-           <button type="submit" class="btn text-white custom-bg mt-3">SEND</button>
-      </form>
-</div>
-</div>
-<!--Information Form Ends-->
+      </div>
+    </section><!-- End Book A Table Section -->
 
 </div>
   </div>
+</div>
+    </div>
 
- <br><br><br><br>
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
 
- 
+        <div class="section-title">
+          <h3>Some photos from <span>Our Weddings</span></h3>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="Photos\Events\indoor.jpg" class="gallery-lightbox">
+                <img src="Photos\Events\indoor.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
 
 <!--Footer-->
-  <?php require('inc/footer.php'); ?>
-  
- <!-- Swiper JS -->
- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<?php require('inc/footer.php'); ?>
 
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView :4,
-    spaceBetween:40,
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    breakpoints: {
-      320: {
-        slidesPerView:1,
-      },
-      640: {
-        slidesPerView:1,
-      },
-      768: {
-        slidesPerView:2,
-      },
-      1024: {
-        slidesPerView:3,
-      },
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!--Sending the mail-->
+  <script>"https://smtpjs.com/v3/smtp.js"</script>
+  <script>
+    function sendEmail(){
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "dewneed@gmail.com",
+        Password : "0176735C6F127B1D7371CE99BA284F7F2E3C",
+        To : 'kumar.dp777@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New contact form inquiry",
+        Body : "Name: " + document.getElementById("name").value
+            +"<br> Email: " + document.getElementById("email").value
+            +"<br> Phone no: " + document.getElementById("phone").value
+            +"<br> Message: " + document.getElementById("message").value
+  }).then(
+    message => alert("messages sent asuccessfully")
+  );
     }
-  });
-</script>
+
+  </script>
 </body>
+
 </html>

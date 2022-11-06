@@ -52,53 +52,6 @@
 
   </div>
 
-  <!-- check availability -->
-
-  <div class="container availability-form">
-    <div class="row">
-      <div class="col-lg-12 bg-white shadow p-4 rounded">
-        <form>
-          <div class="row align-items-end">
-            <div class="col-lg-3 mb-3">
-              <label class="form-label" style="font-weight: 500;">Check-in</label>
-              <input type="date" class="form-control shadow-none">
-            </div>
-
-            <div class="col-lg-3 mb-3">
-              <label class="form-label" style="font-weight: 500;">Check-out</label>
-              <input type="date" class="form-control shadow-none">
-            </div>
-            <div class="col-lg-2 mb-3">
-              <label class="form-label" style="font-weight: 500;">Adults</label>
-              <select class="form-select shadow-none">
-                <option selected>Select number</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="3">4</option>
-              </select>
-            </div>
-
-            <div class="col-lg-2 mb-3">
-              <label class="form-label" style="font-weight: 500;">Children</label>
-              <select class="form-select shadow-none">
-                <option selected>Select number</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="3">4</option>
-              </select>
-            </div>
-            <div class="col-lg-2 mb-lg-3 mt-2">
-              <button type="submit" class="btn text-white shadow-none custom-bg">Book Now</button>
-            </div>
-          </div>
-
-        </form>
-      </div>
-    </div>
-  </div>
-
 
   <!--Topics-->
   <div class="my-5 px-4">
@@ -131,15 +84,20 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse flex-column align-items-stretch mt-2" id="filterDropdown">
-              <div class="border bg-light p-3 rounded mb-3">
-                <h5 class="mb-3" style="font-size:18px;">CHECK AVAILABILITY</h5>
+             
+            <!-- check availability-->  
+             <div class="border bg-light p-3 rounded mb-3">
+                <h5 class="d-flex align-items-center justify-content-between mb-3" style="font-size:18px;">
+                <span>CHECK AVAILABILITY</span>
+                <button id="chk_avail_btn" onclick="chk_avail_clear()" class="btn shadow-none btn-sm text-secondary d-none">Reset</span>
+                </h5>
                 <label class="form-label">Check-in</label>
-                <input type="date" class="form-control shadow-none mb-3">
+                <input type="date" class="form-control shadow-none mb-3" id="checkin" onchange="chk_avail_filter()">
                 <label class="form-label">Check-out</label>
-                <input type="date" class="form-control shadow-none">
+                <input type="date" class="form-control shadow-none" id="checkout" onchange="chk_avail_filter()">
               </div>
               <div class="border bg-light p-3 rounded mb-3">
-                <h5 class="mb-3" style="font-size:18px:">FACILITIES</h5>
+                <h5 class="mb-3" style="font-size:18px;">FACILITIES</h5>
                 <div class="mb-2">
                   <input type="checkbox" id="f1" class="form-check-input shadow-none me-1">
                   <label class="form-check-label" for="f1">Facility one</label>
@@ -154,7 +112,7 @@
                 </div>
               </div>
               <div class="border bg-light p-3 rounded mb-3">
-                <h5 class="mb-3" style="font-size:18px:">GUESTS</h5>
+                <h5 class="mb-3" style="font-size:18px;">GUESTS</h5>
                 <div class="d-flex">
                   <div class=me-3>
                     <label class="form-label">Adults</label>
@@ -172,84 +130,69 @@
         </nav>
       </div>
       <!--Rooms-->
-      <div class="col-lg-9 col-md-12 px-4">
-
-        <?php
-        $room_res = select("SELECT * FROM rooms WHERE status=? AND removed=?", [1, 0], 'ii');
-
-        while ($room_data = mysqli_fetch_assoc($room_res)) {
-          //get facilities of room
+      <div class="col-lg-9 col-md-12 px-4" id="rooms-data">
         
-          $fac_q = mysqli_query(
-            $con,
-            "SELECT f.name FROM `facilities` f 
-               INNER JOIN room_facilities rfac ON f.id = rfac.facilities_id
-               WHERE rfac.room_id = '$room_data[id]'"
-          );
-
-
-          $facilities_data = "";
-          while ($fac_row = mysqli_fetch_assoc($fac_q)) {
-            $facilities_data .= "<span class='badge rounded-pill bg-light text-dark text-wrap'>
-            $fac_row[name]
-        </span>";
-
-          }
-
-          //get thumbnail of image
-        
-          $room_thumb = ROOMS_IMG_PATH . "thumbnail.png";
-          $thumb_q = mysqli_query(
-            $con,
-            "SELECT * FROM room_images 
-           WHERE room_id='$room_data[id]' AND thumb='1'"
-          );
-
-          if (mysqli_num_rows($thumb_q) > 0) {
-            $thumb_res = mysqli_fetch_assoc($thumb_q);
-            $room_thumb = ROOMS_IMG_PATH . $thumb_res['image'];
-          }
-
-          //print room card
-        
-          echo <<<data
-            
-          <div class="card mb-3 border-0 shadow">
-            <div class="row g-0 p-3 align-items-center">
-              <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
-               <img src="$room_thumb" class="img-fluid rounded">
-              </div>
-              <div class="col-md-5 px-lg-4 px-md-3 px-0">
-                <h5 class="mb-3">$room_data[name]</h5>
-                 <div class="facilities mb-3">
-                    <h6 class="mb-1">Facilities</h6>
-                    $facilities_data
-                  </div>
-                  <div class="guests">
-                    <h6 class="mb-1">Guests</h6>
-                      <span class="badge rounded-pill bg-light text-dark text-wrap">
-                          $room_data[adult] Adults
-                      </span>
-                      <span class="badge rounded-pill bg-light text-dark text-wrap">
-                          $room_data[children] Children
-                      </span>  
-                  </div>
-             </div>   
-             <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-              <h6 class="mb-4">Rs. $room_data[price] per night</h6>  
-                <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
-                <a href="room_details.php?id=$room_data[id]" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
-                 </div>
-            </div>
-          </div>
-
-        data;
-        }
-        ?>
-
       </div>
     </div>
   </div>
+
+  <script>
+    
+    let rooms_data = document.getElementById('rooms-data');
+
+    let checkin = document.getElementById('checkin');
+    let checkout = document.getElementById('checkout');
+    let chk_avail_btn = document.getElementById('chk_avail_btn');
+ 
+     function fetch_rooms()
+     {
+      let chk_avail = JSON.stringify({
+        checkin: checkin.value,
+        checkout: checkout.value
+      })
+
+      let xhr = new XMLHttpRequest();
+      xhr.open("GET","ajax/rooms.php?fetch_rooms&chk_avail="+chk_avail,true);
+
+      xhr.onprogress = function(){
+        rooms_data.innerHTML = 
+        '<div class="spinner-border text-info mb-3 d-block mx-auto" id="loader" role="status">'
+          '<span class="visually-hidden">Loading...</span>'
+        '</div>';
+      }
+
+      xhr.onload = function(){
+        rooms_data.innerHTML = this.responseText;
+      }
+      xhr.send();
+     }
+
+     
+     function chk_avail_filter()
+     {
+      if(checkin.value!='' && checkout.value!=''){
+        fetch_rooms();
+        chk_avail_btn.classList.remove('d-none');
+      }
+     }
+
+     function chk_avail_clear()
+     {
+      checkin.value='';
+      checkout.value='';
+      chk_avail_btn.classList.add('d-none');
+        fetch_rooms();
+        
+      }
+     
+
+
+
+     fetch_rooms();
+  </script>
+
+
+
 
 
   <?php require('inc/footer.php') ?>
@@ -263,8 +206,8 @@
         delay: 3500,
         disableOnInteraction: false,
       }
-
     });
+
   </script>
 
 </body>

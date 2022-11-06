@@ -17,19 +17,22 @@
             $value = stripslashes($value);
             $value = htmlspecialchars($value);
             $value = strip_tags($value);
+            $value = htmlspecialchars($value);
             $data[$key] = $value;
         }
         return $data;
     }
 
 
-    function selectAll($table){
+    function selectAll($table)
+    {
         $con = $GLOBALS['con'];
         $res = mysqli_query($con,"SELECT * FROM $table");
         return $res;
     }
 
-    function select($sql, $values, $datatypes){
+    function select($sql, $values, $datatypes)
+    {
         $con = $GLOBALS['con'];
         if ($stmt = mysqli_prepare($con, $sql))
         {
@@ -50,7 +53,8 @@
         }
     }
 
-    function update($sql, $values, $datatypes){
+    function update($sql, $values, $datatypes)
+    {
         $con = $GLOBALS['con'];
         if ($stmt = mysqli_prepare($con, $sql))
         {
@@ -116,6 +120,7 @@
             die("Query cannot be executed - Delete");
         }
      }
+
   
 ?>
 

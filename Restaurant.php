@@ -59,7 +59,7 @@
         <div class="col-md-5 px-lg-4 px-md-3 px-0">
          <h4 class="mb-3">Dine-in</h4>
            <div class="Breakfast mb-3">
-                <h6 class="mb-1">Breakfast :- 6AM to 10AM </h6>
+                <h6 class="mb-1">Breakfast :- 6AM to 11AM </h6>
                  
             </div>
             <div class="Lunch mb-3">
@@ -77,7 +77,7 @@
         </div>   
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
           <h6 class="mb-4">Rs. 2500 per person</h6>  
-            <a href="Restaurant Reservation.php" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2" data-bs-toggle="modal" data-bs-target="#Dine-IN-Modal">Reservation</a>
+            <a href="Dine-in.php" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2" data-bs-toggle="modal" data-bs-target="#Dine-IN-Modal">Reservation</a>
             <a href="Dine-in.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
@@ -140,116 +140,52 @@
         <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body">
        <!-- Reservation -->
-		<div id="reservation" class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- reservation form -->
-                    <div class="card mb-3 border-0 shadow">
-                    <div class="row g-0 p-3 align-items-center">
-					<div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1">
-						<form class="reserve-form row">
-							<div class="section-header text-center">
-								<h4 class="sub-title">Reservation</h4>
-								<h2 class="title">Book Your Table</h2>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="name">Name:</label>
-									<input class="input" type="text" placeholder="Name" id="name">
-								</div>
-								<div class="form-group">
-									<label for="phone">Phone:</label>
-									<input class="input" type="tel" placeholder="Phone" id="phone">
-								</div>
-								<div class="form-group">
-									<label for="date">Date:</label>
-									<input class="input" type="date" placeholder="MM/DD/YYYY" id="date">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="email">Email:</label>
-									<input class="input" type="email" placeholder="Email" id="email">
-								</div>
-								<div class="form-group">
-									<label for="number" >Number of Guests:</label>
-									
-								</div>
-								<div class="form-group">
-								  <label for="time">Time:</label>
-								  <input class="input" type="time" placeholder="HH:MM" id="time">
-								</div>
-							</div>
-
-							<div class="col-md-12 text-center">
-								<button class="main-button">Book Now</button>
-							</div>
-
-						</form>
-					</div>
-                    
-					<!-- /reservation form -->
-
-					<!-- opening time -->
-					<div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
-						<div class="opening-time row">
-							<div class="section-header text-center">
-								<h2 class="title white-text">Opening Time</h2>
-							</div>
-							<ul>
-								<li>
-									<h4 class="day">Sunday</h4>
-									<h4 class="hours">8:00 am – 11:00 pm</h4>
-								</li>
-								<li>
-									<h4 class="day">Monday</h4>
-									<h4 class="hours">8:00 am – 11:00 pm</h4>
-								</li>
-								<li>
-									<h4 class="day">Tuesday</h4>
-									<h4 class="hours">8:00 am – 11:00 pm</h4>
-								</li>
-								<li>
-									<h4 class="day">Wednesday</h4>
-									<h4 class="hours">8:00 am – 11:00 pm</h4>
-								</li>
-								<li>
-									<h4 class="day">Thursday</h4>
-									<h4 class="hours">8:00 am – 11:00 pm</h4>
-								</li>
-								<li>
-									<h4 class="day">Friday</h4>
-									<h4 class="hours">Closed</h4>
-								</li>
-								<li>
-									<h4 class="day">Saturday</h4>
-									<h4 class="hours">Closed</h4>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- /opening time -->
-                    </div>
-                    </div>
-				</div>
-				<!-- /row -->
-
-			</div>
-			<!-- /container -->
-
-		</div>
-		<!-- /Reservation -->
-      
-      
-          
+	   <section id="book-a-table" class="book-a-table">
+  <div class="container">
+ <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
         </div>
-        
+        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+          <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+            <select class="form-select"  name="people" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                <option disabled selected >Select One</option>
+                <option value="1">Breakfast</option>
+                <option value="2">Lunch</option>
+                <option value="3">Dinner</option>
+                <option value="3">A Lar Carte</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+          <div class="validate"></div>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+        <div class="validate"></div>
+      </div>
+</section><!-- End Book A Table Section -->          
+        </div>        
         </form>
-
       </div>
     </div>
   </div>
@@ -357,7 +293,24 @@
         });
       </script>
 
-
+  <!-- Disabling Past Date -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    var date = new Date();
+    
+    var tdate = date.getDate();
+    var month = date.getMonth() +1;
+    var year = date.getUTCFullYear() - 0;
+    if (month < 10) {
+        month = '0' + month
+    }
+    if (tdate < 10) {
+      tdate = '0' + tdate;
+    }
+    var minDate = year + "-" + month + "-" + tdate; //dte format
+    document.getElementById("date").setAttribute("min", minDate);
+    console.log(minDate);
+</script>
 
 </body>
 </html> 

@@ -152,3 +152,26 @@
       </div>
     </div>
   </div>
+
+  <?php
+
+   if(isset($_POST['register']))
+   {
+     $frm_data = filteration($_POST);
+
+     $q = "INSERT INTO user_reg(name, NIC, phone_no, email, password) VALUES (?,?,?,?,?)";
+     $values = [$frm_data['name'],$frm_data['NIC'],$frm_data['phone_no'],$frm_data['email'],$frm_data['password']];
+
+     $res = insert($q,$values,'ssiss');
+     if($res==1)
+     {
+      alert('success','Successfully Registered');
+     }
+     else{
+      alert('error','Server Down Try again Later');
+     }
+   }
+
+
+
+?>

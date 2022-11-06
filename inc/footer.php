@@ -2,12 +2,12 @@
 <footer class="footer">
 <div class="container-fluid1 mt-5">
   <div class="row">
+    
     <div class="col-lg-4 p-4">
       <h3 class="f2 fw-bold fs-3 mb-2 text-white">River's Edge</h3>
-      <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Atque recusandae, porro velit est dolore earum neque aperiam eveniet, 
-        quisquam eaque quibusdam quia cum quam itaque pariatur, 
-        molestias fugiat magnam ratione!</p>
+      <p class="text-white text-sm">River's Edge is an outdoorsy, rustic villa type hotel with the madampa river flowing behind it. 
+      It is set in the peaceful village of Madampagama, just a few minutes from the Galle coastal road.
+      </p>
     </div>
     <div class="col-lg-4 p-4 text-white">
       <h5 class="mb-3 text-white">Quick Links</h5>
@@ -20,7 +20,7 @@
     </div>
     <div class="col-lg-4 p-4 text-white">
       <h5 class=" text-white mb-3">Follow us</h5>
-
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     
     
 
@@ -33,6 +33,9 @@
   </a><br>
 </div>
   </div>
+</div>
+<div class="col-lg-6 col-md-12 col-xs-12 copy-rights"> 
+<div ><center>All copyrights reserved by Heritance Ahungalla - © 2022</center></div>
 </div>
 </footer>
 
@@ -47,12 +50,12 @@ function alert(type,msg,postion='body')
 {
         let bs_class = (type == 'success') ? 'alert-success' : 'alert-danger';
         let element = document.createElement('div');
-        element.innerHTML =  '
-        <div class ="alert ${bs_class} alert-dismissible fade show" role="alert">
-                <strong class="me-3">${msg}</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        ';
+        element.innerHTML =  
+        '<div class ="alert ${bs_class} alert-dismissible fade show" role="alert">'
+                '<strong class="me-3">${msg}</strong>'
+                '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>'
+           ' </div>'
+        ;
         
         if(postion=='body'){
           document.body.append(element);
@@ -93,53 +96,12 @@ function alert(type,msg,postion='body')
       }
     }
 
-    let register_form = document.getElementById('register-form');
-
-    register_form.addEventListener('submit', (e)=>{
-      e.preventDefault();
-
-    let data = new FormData();
     
-    data.append('name'register_form.elements['name'].values);
-    data.append('nicnum'register_form.elements['nicnum'].values);
-    data.append('email'register_form.elements['email'].values);
-    data.append('phonenum'register_form.elements['phonenum'].values);
-    data.append('pass'register_form.elements['pass'].values);
-    data.append('cpass'register_form.elements['cpass'].values);
-    data.append('register','');
 
-    var myModel = document.getElementById('registerModel');
-    var model = bootstarp.Model.getInstance(myModel);
-    mddal.hide();
+ 
 
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST","ajax/login_register.php",true);
-    
-    xhr.onload = function(){
-      if(this.responseText == 'pass_mismatch'){
-        alert('error',"password Mismatch!");
-      }
-      else if(this.responseText == 'email_already'){
-        alert('error',"Email is already registered!");
-      }
-      else if(this.responseText == 'phone_already'){
-        alert('error',"Phone number is already registered!");
-      }
-      else if(this.responseText == 'mail_failed'){
-        alert('error',"cannot send confirmation email! Server down!");
-      }
-      else if(this.responseText == 'ins_failed'){
-        alert('error',"Registration failed! Server down!");
-      }
-      else{
-        alert('success',"Registration successful. Confirmation link sent to email");
-        register_form.resent();
-      }
-    }
+   
 
-    xhr.send(data);
-
-    });
 
     setActive();
   </script>

@@ -24,30 +24,24 @@
     
 
 <!--Topics-->
-<div class="my-5 px-4">
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">ABOUT US</h2>
+<div class="my-3 px-4">
+<h2 class="mt-3 pt-4 mb-4 text-center fw-bold f2">ABOUT US</h2>
   <div class="h-line bg-dark"></div>
-  <p class="text-center mt-3">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-     Quas tempora quaerat ratione facere fugit soluta non obcaecati? Doloribus ad ex quia debitis<br>
-      magni recusandae facere ipsum? Eius est corrupti tempora!
-  </p>
   </div>
-
-  <br><br>
   
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
-        <h3 class="mb-3">hello how are yo</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Qui consectetur iusto dolorem veniam dicta, quam
-          accusantium sequi, porro atque id eveniet cumque voluptas possimus! Quasi animi aperiam esse sequi doloremque!
+        <b><i>River's Edge</i></b> is set in the peaceful village of Madampagama, just a few minutes from the Galle coastal road. 
+        The property features more than ten stunning Challets, the main Villa, 1 big reception hall and a 13m pool, 
+        which sit within an elegantly landscaped tropical garden of mango. amberella and coconut trees, deep purple orchids and giant ferns.
         </p>
+        <p>The name 'Rivers Egde' derives from the beautiful madampa river flowing behind the Premises.
+          During april you can see hundreds of jelly fish swimming in the river, and that is the most beautiful thing you wil ever see</p>
       </div>
       <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-          <img src="Photos\Facilities\VAGO.png" class="w-100">
+          <img src="Photos\Gallery\view2.jpg" class="w-100">
       </div>
     </div>
   </div>
@@ -56,29 +50,29 @@
     <div class="row">
     <div class="col-lg-3 col-md-6 mb-4 px-4">
     <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-      <img src="Photos\Rooms\rooms.com" width="100">
-        <h4>100+ Rooms</h4>
+      <img src="Photos\Facilities\bed.png" width="100">
+        <h4>10+ Rooms</h4>
       </div>
     </div>
 
     <div class="col-lg-3 col-md-6 mb-4 px-4">
     <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-      <img src="Photos\Rooms\rooms.com" width="100">
-        <h4>100+ Rooms</h4>
+      <img src="Photos\Facilities\swimming.png" width="100">
+        <h4>Swimming Pool</h4>
       </div>
     </div>
 
     <div class="col-lg-3 col-md-6 mb-4 px-4">
     <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-      <img src="Photos\Rooms\rooms.com" width="100">
-        <h4>200+ Customers</h4>
+      <img src="Photos\Facilities\hall.png" width="100">
+        <h4>Wedding Hall</h4>
       </div>
     </div>
 
       <div class="col-lg-3 col-md-6 mb-4 px-4">
     <div class="bg-white rounded shadow p-4 border-top border-4 text-center box">
-      <img src="Photos\Rooms\rooms.com" width="100">
-        <h4>100+ Rooms</h4>
+      <img src="Photos\Facilities\icons8-valet-parking-50.png" width="100">
+        <h4>Valet Parking</h4>
       </div>
     </div>
     
@@ -90,47 +84,32 @@
         <!-- Swiper -->
       <div class="swiper mySwiper">
       <div class="swiper-wrapper mb-5">
-
-      
-        <!--
-
-        $about_r = selectALL('team_details');
-        $path    =ABOUT_IMP_PATH;
-        while($row = mysqli_fetch_assoc()){
-          echo<<<data
-          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-            <img src="$path$row[picture]" class="w-100">
-            <h5 class="mt-2">$row[name]</h5>
-          </div>
-          data;
-        }
-        -->
-      
-
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Demo\R1.jpeg" class="w-100">
-          <h5 class="mt-2">Random Name</h5>
+          <img src="Photos\about\Director.jpg" class="w-100">
+          <h5 class="mt-2">Director<br>Mr Lal De Silva</h5>
         </div>
 
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Front\3rd dec.jpg" class="w-100">
-          <h5 class="mt-2">Random Name</h5>
+          <img src="Photos\about\HR Manager.jpg" class="w-100">
+          <h5 class="mt-2">HR Manager<br>Mr Harindu Gunasekara</h5>
         </div>
 
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Front\3rd dec.jpg" class="w-100">
-          <h5 class="mt-2">Random Name</h5>
+          <img src="Photos\about\head chef.jpg" class="w-100">
+          <h5 class="mt-2">Head Chef<br>Mr Harindra Kularathna</h5>
         </div>
 
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Front\3rd dec.jpg" class="w-100">
-          <h5 class="mt-2">Random Name</h5>
+          <img src="Photos\about\bbq.jpg" class="w-100">
+          <h5 class="mt-2">BBQ Chef<br>Mr Shamika Senadeera</h5>
         </div>
 
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Front\3rd dec.jpg" class="w-100">
-          <h5 class="mt-2">Random Name</h5>
+          <img src="Photos\about\hos.jpg" class="w-100">
+          <h5 class="mt-2">Hospitality Manager<br>Mrs Chandhi Rodrigo</h5>
         </div>
+
+        
         
       </div>
       <div class="swiper-pagination"></div>
