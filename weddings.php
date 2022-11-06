@@ -9,12 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  
-
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -111,9 +105,15 @@
 
             <div class="swiper-slide">
               <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-                </div>
+                
+                <div class="col-lg-6 col-md-4">
+            <div class="gallery-item">
+              <a href="Photos\Menus\1750.png" class="gallery-lightbox">
+                <img src="Photos\Menus\1750.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+                
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Menu 1</h3>
                   <div class="price">
@@ -311,7 +311,9 @@
           Simply provide us with your information.</p>
         </div>
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+
+        <!--action="forms/book-a-table.php" method="post" role="form"-->
+        <form onsubmit="sendEmail(); reset(); return false;" action="forms/book-a-table.php" class="php-email-form">
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
               <input type="text" name="name" class="form-control" id="name" placeholder="Family Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -349,7 +351,7 @@
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
               <input type="text" class="form-control" name="phone" id="phone" placeholder="Menu No" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
-            </div
+</div>
           </div>
           <div class="form-group mt-3">
             <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
@@ -465,7 +467,23 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>"https://smtpjs.com/v3/smtp.js"</script>
+  <script>
+    function sendEmail(){
+      Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "username",
+        Password : "password",
+        To : 'them@website.com',
+        From : "you@isp.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+  }).then(
+    message => alert(message)
+  );
+    }
 
+  </script>
 </body>
 
 </html>

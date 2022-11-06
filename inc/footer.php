@@ -2,6 +2,7 @@
 <footer class="footer">
 <div class="container-fluid1 mt-5">
   <div class="row">
+    
     <div class="col-lg-4 p-4">
       <h3 class="f2 fw-bold fs-3 mb-2 text-white">River's Edge</h3>
       <p class="text-white text-sm">River's Edge is an outdoorsy, rustic villa type hotel with the madampa river flowing behind it. 
@@ -19,7 +20,7 @@
     </div>
     <div class="col-lg-4 p-4 text-white">
       <h5 class=" text-white mb-3">Follow us</h5>
-
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     
     
 

@@ -131,12 +131,17 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse flex-column align-items-stretch mt-2" id="filterDropdown">
-              <div class="border bg-light p-3 rounded mb-3">
-                <h5 class="mb-3" style="font-size:18px;">CHECK AVAILABILITY</h5>
+             
+            <!-- check availability-->  
+             <div class="border bg-light p-3 rounded mb-3">
+                <h5 class="d-flex align-items-center justify-content-between mb-3" style="font-size:18px;">
+                <span>CHECK AVAILABILITY</span>
+                <button id="chk_avail_btn" onclick="chk_avail_clear()" class="btn shadow-none btn-sm text-secondary d-none">Reset</span>
+                </h5>
                 <label class="form-label">Check-in</label>
-                <input type="date" class="form-control shadow-none mb-3">
+                <input type="date" class="form-control shadow-none mb-3" id="checkin" onchange="chk_avail_filter()">
                 <label class="form-label">Check-out</label>
-                <input type="date" class="form-control shadow-none">
+                <input type="date" class="form-control shadow-none" id="checkout" onchange="chk_avail_filter()">
               </div>
               <div class="border bg-light p-3 rounded mb-3">
                 <h5 class="mb-3" style="font-size:18px:">FACILITIES</h5>
@@ -181,11 +186,20 @@
   <script>
     
     let rooms_data = document.getElementById('rooms-data');
+
+    let checkin = document.getElementById('checkin');
+    let checkout = document.getElementById('checkout');
+    let chk_avail_btn = document.getElementById('chk_avail_btn');
  
      function fetch_rooms()
      {
+      let chk_avail = JSON.stringify({
+        checkin: checkin.value,
+        checkout: checkout.value
+      })
+
       let xhr = new XMLHttpRequest();
-      xhr.open("GET","ajax/rooms.php?fetch_rooms",true);
+      xhr.open("GET","ajax/rooms.php?fetch_rooms&chk_avail="+chk_avail,true);
 
       xhr.onprogress = function(){
         rooms_data.innerHTML = 
@@ -199,6 +213,27 @@
       }
       xhr.send();
      }
+
+     
+     function chk_avail_filter()
+     {
+      if(checkin.value!='' && checkout.value!=''){
+        fetch_rooms();
+        chk_avail_btn.classList.remove('d-none');
+      }
+     }
+
+     function chk_avail_clear()
+     {
+      checkin.value='';
+      checkout.value='';
+      chk_avail_btn.classList.add('d-none');
+        fetch_rooms();
+        
+      }
+     
+
+
 
      fetch_rooms();
   </script>
