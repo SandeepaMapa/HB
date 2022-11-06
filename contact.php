@@ -21,10 +21,7 @@
 <h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">CONTACT</h2>
 <div class="h-line bg-dark"></div>
 <p class= "text-center mt-3">
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
- Vel non culpa quas est, nisi deserunt explicabo earum hic<br> molestias, nam, voluptate repellendus recusandae.
-  Natus vero eaque sit unde sequi illum.
-</p>
+If a stay by the golden shores sounds enticing, contact us to find out more about what we offer for your getaway!
 </div>
 
 
