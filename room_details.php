@@ -150,10 +150,17 @@
     </div>
 
       <!--Rooms-->
-      <div class="col-12 px-4">
+      <div class="col-12 mt-4 px-4">
+        <div class="mb-4">
+           <h5>Description</h5>
+           <p>
+             <?php
 
-
+             ?>
+            </p>
+        </div>
       </div>
+
     </div>
   </div>
 
