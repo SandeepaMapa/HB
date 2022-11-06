@@ -173,9 +173,7 @@
       </div>
       <!--Rooms-->
       <div class="col-lg-9 col-md-12 px-4" id="rooms-data">
-
-       
-
+        
       </div>
     </div>
   </div>
@@ -190,7 +188,10 @@
       xhr.open("GET","ajax/rooms.php?fetch_rooms",true);
 
       xhr.onprogress = function(){
-
+        rooms_data.innerHTML = 
+        '<div class="spinner-border text-info mb-3 d-block mx-auto" id="loader" role="status">'
+          '<span class="visually-hidden">Loading...</span>'
+        '</div>';
       }
 
       xhr.onload = function(){
