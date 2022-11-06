@@ -86,8 +86,18 @@ if (isset($_POST['get_members']))
     while($row = mysqli_fetch_assoc($res))
     {
         echo <<<data
-
-        data;
+            <div class="col-md-2 mb-3">
+            <div class="card text-bg-dark">
+            <img src="../Photos/Events/par2.jpg" class="card-img">
+            <div class="card-img-overlay text-end">
+                <button type= "button" class="btn btn-danger btn-sm shadow-none">
+                   <i class="bi bi-trash"></i> DELETE
+                </button>
+                     </div>
+                <p class="card-text text-center px-3 py-2"><small>Name</small></p>
+             </div>
+             </div>
+             data;
     }
 }
 
