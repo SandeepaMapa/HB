@@ -14,6 +14,7 @@ let add_room_form = document.getElementById('add_room_form');
                     data.append('quantity',add_room_form.elements['quantity'].value);
                     data.append('adult',add_room_form.elements['adult'].value);
                     data.append('children',add_room_form.elements['children'].value);
+                    data.append('description',add_room_form.elements['description'].value);
 
                     let facilities = [];
                     add_room_form.elements['facilities'].forEach(el =>{
@@ -78,6 +79,7 @@ let add_room_form = document.getElementById('add_room_form');
                 edit_room_form.elements['quantity'].value = data.roomdata.quantity;
                 edit_room_form.elements['adult'].value = data.roomdata.adult;
                 edit_room_form.elements['children'].value = data.roomdata.children;
+                edit_room_form.elements['description'].value = data.roomdata.description;
                 edit_room_form.elements['room_id'].value = data.roomdata.id;
              
                
@@ -106,6 +108,7 @@ let add_room_form = document.getElementById('add_room_form');
                     data.append('quantity',edit_room_form.elements['quantity'].value);
                     data.append('adult',edit_room_form.elements['adult'].value);
                     data.append('children',edit_room_form.elements['children'].value);
+                    data.append('description',edit_room_form.elements['description'].value);
 
                     let facilities = [];
                     edit_room_form.elements['facilities'].forEach(el =>{
