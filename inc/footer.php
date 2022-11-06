@@ -23,7 +23,7 @@
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     
     
-
+      
       
       <a href="<?php echo $contact_r['insta'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
         <i class="bi bi-instagram me-1 "></i> Instagram
@@ -31,9 +31,16 @@
     <a href="<?php echo $contact_r['fb'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
       <i class="bi bi-facebook me-1 "></i> Facebook
   </a><br>
+
+  
 </div>
+
   </div>
+  <div class="col-lg-6 col-md-12 col-xs-12"> 
+<div class="left-sec">All copyrights reserved by Heritance Ahungalla - © 2022</div>
 </div>
+</div>
+
 </footer>
 
 
