@@ -54,38 +54,19 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
       
       <h5 class="mt-4">Follow us</h5>
       <a href="#" class="d-inline-block mb-3 text-dark fs-5 me-2">
-        <i class="bi bi-facebook me-1"></i>facebook
+        <i class="bi bi-facebook me-1"></i>
      </a>
-      <br>
       <a href="#" class="d-inline-block mb-3 text-dark fs-5 me-2">
-        <i class="bi bi-instagram me-1"></i>Instagram
+        <i class="bi bi-instagram me-1"></i>
       </a>
  </div>
 </div>
   
 
-
-    
-
-  
-    
-     
-
-     <h5 class="mt-4">Follow us</h5>
-      
-      <a href="<?php echo $contact_r['insta'] ?>" class="d-inline-block  text-dark fs-5 me-2">
-        <i class="bi bi-instagram me-1 "></i> 
-    </a>
-     
-    <a href="<?php echo $contact_r['fb'] ?>" class="d-inline-block text-dark fs-5 me-2">
-      <i class="bi bi-facebook me-1 "></i>
-  </a>
-     
-
-</div>
-</div>
-<div class="col-lg-6 col-md-6  px-4">
-    <div class="bg-white rounded shadow p-4 ">
+<div class="container">
+<div class="row">
+  <div class="col-lg-6 col-md-6 mb-5 px-4">
+<div class="bg-white rounded shadow p-4 ">
       <form method="POST">
         <h5> Send a Message </h5>
         <div class=" mt-3">
