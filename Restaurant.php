@@ -8,6 +8,7 @@
 <?php require('inc/links.php')?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   
+
 </head>
 <body class="bg-light">
     
@@ -42,7 +43,7 @@
   <p class="text-center mx-5 mt-3">
   The culinary experience at River's Edge Hotel is always a delight, with an array of cuisine to choose from!<br>
 
-    At our open air restaurant, you can experience it all, from action cooking to theme nights. 
+    At our open air restaurant, you can experience it all, from action cooking to theme nights.
     Choose from menus filled with delicacies perfectly put together by our specialised chefs as you treat your taste buds to the flavours of the world.
   </p>
   </div>
@@ -73,10 +74,10 @@
                 <h6 class="mb-1 badge rounded-pill bg-light text-dark text-wrap">Capacity :- 100 Seats</h6>
                  
               </div>
-        </div>   
+        </div>
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-          <h6 class="mb-4">Rs. 2500 per person</h6>  
-            <a href="Dine-in.php" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2" data-bs-toggle="modal" data-bs-target="#Dine-IN-Modal">Reservation</a>
+          <h6 class="mb-4">Rs. 2500 per person</h6>
+            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2" data-bs-toggle="modal" data-bs-target="#Dine-IN-Modal">Reservation</a>
             <a href="Dine-in.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
@@ -98,9 +99,9 @@
                  
               </div>
               
-        </div>   
+        </div>
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-          <h6 class="mb-4">Rs. 1500 per Person</h6>  
+          <h6 class="mb-4">Rs. 1500 per Person</h6>
             <a href="DineInnn.php" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
             <a href="BBQ.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
@@ -115,16 +116,10 @@
          <h4 class="mb-3">Takeaway</h4>
            <div class="features mb-3">
                 <h6 class="mb-1">We will provide this opportunity soon</h6>
-                  
             </div>
-           
-              
-        </div>
-  </div>
-</div>
       </div>
-
-
+    </div>
+      </div>
  </div>
 <!-- Reservation Model -->
  <div class="modal fade" id="Dine-IN-Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -305,6 +300,11 @@
     document.getElementById("date").setAttribute("min", minDate);
     console.log(minDate);
 </script>
-
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 </body>
 </html> 

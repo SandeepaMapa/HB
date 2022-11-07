@@ -32,6 +32,10 @@
       <i class="bi bi-facebook me-1 "></i> Facebook
   </a><br>
 </div>
+<!-- copyright -->
+<div class="col-md-6">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<span class="copyright text-white align-right">Copyright @2018 All rights reserved |  <i class="fa fa-heart-o" aria-hidden="true"></i> </span>
   </div>
 </div>
 </footer>
@@ -93,27 +97,12 @@ function alert(type,msg,postion='body')
       }
     }
 
-    
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    data.append('name'register_form.elements['name'].values);
-    data.append('nicnum'register_form.elements['nicnum'].values);
-    data.append('email'register_form.elements['email'].values);
-    data.append('phonenum'register_form.elements['phonenum'].values);
-    data.append('pass'register_form.elements['pass'].values);
-    data.append('cpass'register_form.elements['cpass'].values);
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 5389472b08b18f612622076625100badd036d97a
     data.append('name',register_form.elements['name'].values);
     data.append('nicnum',register_form.elements['nicnum'].values);
     data.append('email',register_form.elements['email'].values);
     data.append('phonenum',register_form.elements['phonenum'].values);
     data.append('pass',register_form.elements['pass'].values);
     data.append('cpass',register_form.elements['cpass'].values);
->>>>>>> cd9cf8757d29502c6b1aca9d29205661817019be
     data.append('register','');
 
     var myModel = document.getElementById('registerModel');
