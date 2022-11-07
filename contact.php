@@ -21,12 +21,15 @@
 <div class="h-line bg-dark"></div>
 <p class= "text-center mt-3">
 
+
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Vel non culpa quas est, nisi deserunt explicabo earum hic<br> molestias, nam, voluptate repellendus recusandae.
   Natus vero eaque sit unde sequi illum.
 </p>
 </div>
 
+
+<br><br>
 
 <div class="container">
 <div class="row">
