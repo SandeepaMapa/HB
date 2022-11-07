@@ -29,12 +29,15 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
 <div class="container">
 <div class="row">
   <div class="col-lg-6 col-md-6 mb-5 px-4">
- <div class="bg-white rounded shadow p-4">
+ 
+  <div class="bg-white rounded shadow p-4">
       <iframe class="w-100 rounded" height="320px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.151117286474!2d80.0630986!3d6.225736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36b288ccc4774ebc!2sRiver&#39;s%20Edge%20madampe%20Ambalangoda!5e0!3m2!1sen!2slk!4v1665017607784!5m2!1sen!2slk"></iframe>
+        
         <h5>Address</h5>
         <a href="https://g.page/river-s-edge-madampe-ambalangoda?share" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
         <i class="bi bi-geo-alt-fill"></i> River's Edge madampe Ambalangoda
       </a>
+      
       <h5 class="mt-4">Call us</h5>
        <a href="tel: 0771324857" class="d-inline-block mb-2 text-decoration-none text-dark">
         <i class="bi bi-telephone-fill"></i>0771324857
@@ -43,9 +46,20 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
        <a href="tel: 0716388682" class="d-inline-block mb-2 text-decoration-none text-dark">
         <i class="bi bi-telephone-fill"></i>0716388682
        </a>
+       
        <h5 class="mt-4">Email</h5>
        <a href="mailto: Riversedge@gmail.com" class="d-inline-block text-decoration-none text-dark">
-        <i class="bi bi-envelope-fill"></i>Riversedge@gmail.com</a>
+        <i class="bi bi-envelope-fill"></i>Riversedge@gmail.com
+      </a>
+      
+      <h5 class="mt-4">Follow us</h5>
+      <a href="#" class="d-inline-block mb-3 text-dark fs-5 me-2">
+        <i class="bi bi-facebook me-1"></i>facebook
+     </a>
+      <br>
+      <a href="#" class="d-inline-block mb-3 text-dark fs-5 me-2">
+        <i class="bi bi-instagram me-1"></i>Instagram
+      </a>
  </div>
 </div>
   
