@@ -34,6 +34,9 @@
 </div>
   </div>
 </div>
+<div class="col-lg-6 col-md-12 col-xs-12 copy-rights"> 
+<div ><center>All copyrights reserved by Heritance Ahungalla - © 2022</center></div>
+</div>
 </footer>
 
 

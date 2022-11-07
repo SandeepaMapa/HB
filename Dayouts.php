@@ -103,7 +103,7 @@
 
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
           <h6 class="mb-4"></h6>
-            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
+            <a href="" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
             <button class="btn btn-sm w-100 btn-outline-dark shadow-none"
             data-toggle="modal" data-target="#ViewMenu">View Menus</button>
             <!--Starting Basic Modal_________________________________________ -->
