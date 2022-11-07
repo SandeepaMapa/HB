@@ -84,23 +84,6 @@
         <!-- Swiper -->
       <div class="swiper mySwiper">
       <div class="swiper-wrapper mb-5">
-
-      
-        <!--
-
-        $about_r = selectALL('team_details');
-        $path    =ABOUT_IMP_PATH;
-        while($row = mysqli_fetch_assoc()){
-          echo<<<data
-          <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-            <img src="$path$row[picture]" class="w-100">
-            <h5 class="mt-2">$row[name]</h5>
-          </div>
-          data;
-        }
-        -->
-      
-
         <div class="swiper-slide bg-white text-center overflow-hidden rounded">
           <img src="Photos\about\Director.jpg" class="w-100">
           <h5 class="mt-2">Director<br>Mr Lal De Silva</h5>
