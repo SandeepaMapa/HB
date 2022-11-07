@@ -120,12 +120,7 @@
             </div>
            
               
-        </div>   
-        <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-         
-<a href="Restaurant Reservation.php" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2" data-bs-toggle="modal" data-bs-target="#Dine-IN-Modal">Reservation</a>
-            <a href="Takeaway.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
-    </div>
+        </div>
   </div>
 </div>
       </div>

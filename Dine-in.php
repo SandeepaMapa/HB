@@ -550,7 +550,5 @@
     document.getElementById("date").setAttribute("min", minDate);
     console.log(minDate);
 </script>
-
 </body>
-
 </html>
