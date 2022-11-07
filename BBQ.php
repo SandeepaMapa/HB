@@ -53,21 +53,18 @@
         <div class="content">
           <h3>Always in the mood for some <strong>smokin', delish, and tender BBQ!?</strong> Handcrafted by Kumar</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+          We are 100% devoted to the craft of barbeque. All of our meats are smoked on-site, hand-rubbed with spices, and take upwards of few hours to become pure barbeque perfection to achieve the most tender flavorful meat possible.
           </p>
           <p class="fst-italic">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
+          We do Gas Barbecue & CharCoal Bbq where you can choose from our carefully crafted collection of the most popular BBQ Delivery menus;
           </p>
           <ul>
-            <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-            <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-            <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            <li><i class="bx bx-check-double"></i> Quadro Pack  -  The platter for <b>FOUR</b> people.</li>
+            <li><i class="bx bx-check-double"></i> Duo Pack  -  The platter for <b>FOUR</b> people.</li>
+            <li><i class="bx bx-check-double"></i> Wolf Pack  -  The platter for <b>Eight</b> people.</li>
           </ul>
           <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+          Our BBQ Junkies will grill and carve in true rancheros-style, and serve everything you’ll need to host a flavorful and memorable event.
           </p>
         </div>
 
@@ -77,59 +74,94 @@
 
   </div>
 </section><!-- End About Section -->
-<div class="section-title">
-<h3 class="my-3 fw-bold h-foot text-center ">Our <span>Signature</span> Dishes</h3>
-    </div>
 
-      <div class="container px-4">
-        <!-- Swiper -->
-      <div class="swiper mySwiper">
-      <div class="swiper-wrapper mb-5">
+       <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
 
-        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Restaurant\BBQ 1.jpg" class="w-100">
-          <h5 class="mt-2">Pork Platter</h5>
+        <div class="section-title">
+          <h3>Have a peek at <span>Our Dishes</span> and <span>Menus</span></h3>
         </div>
 
-        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Restaurant\BBQ 2.jpg" class="w-100">
-          <h5 class="mt-2">Ribs</h5>
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="Photos\Restaurant\menu3.jpg" class="gallery-lightbox">
+                <img src="Photos\Restaurant\menu3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="Photos\Restaurant\menu4.jpg" class="gallery-lightbox">
+                <img src="Photos\Restaurant\menu4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="Photos\Restaurant\BBQ 6.jpg" class="gallery-lightbox">
+                <img src="Photos\Restaurant\BBQ 6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="Photos\Restaurant\BBQ 5.jpg" class="gallery-lightbox">
+                <img src="Photos\Restaurant\BBQ 5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="Photos\Restaurant\BBQ 4.jpg" class="gallery-lightbox">
+                <img src="Photos\Restaurant\BBQ 4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="Photos\Restaurant\BBQ 3.jpg" class="gallery-lightbox">
+                <img src="Photos\Restaurant\BBQ 3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="Photos\Restaurant\BBQ 2.jpg" class="gallery-lightbox">
+                <img src="Photos\Restaurant\BBQ 2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="Photos\Restaurant\BBQ 1.jpg" class="gallery-lightbox">
+                <img src="Photos\Restaurant\BBQ 1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          
+
         </div>
 
-        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Restaurant\BBQ 3.jpg" class="w-100">
-          <h5 class="mt-2">Savannah Salad</h5>
-        </div>
-
-        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Restaurant\BBQ 4.jpg" class="w-100">
-          <h5 class="mt-2">Pulled Pork Sandwich </h5>
-        </div>
-
-        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Restaurant\BBQ 5.jpg" class="w-100">
-          <h5 class="mt-2">Veggie Burger</h5>
-        </div>   
-
-        <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-          <img src="Photos\Restaurant\BBQ 6.jpg" class="w-100">
-          <h5 class="mt-2">BBQ Salad</h5>
-        </div>     
       </div>
-      <div class="swiper-pagination"></div>
-      </div>
-      </div>
+    </section><!-- End Gallery Section -->
 
-
-
-
-<!-- ======= Book A Table Section ======= -->
+      <!-- ======= Book A Table Section ======= -->
 <section id="book-a-table" class="book-a-table">
   <div class="container">
 
     <div class="section-title">
       <h2>Book a <span>Table</span></h2>
-      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
     </div>
 
     <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
@@ -204,30 +236,6 @@
     var minDate = year + "-" + month + "-" + tdate; //dte format
     document.getElementById("date").setAttribute("min", minDate);
     console.log(minDate);
-</script>
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView :4,
-    spaceBetween:40,
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    breakpoints: {
-      320: {
-        slidesPerView:1,
-      },
-      640: {
-        slidesPerView:1,
-      },
-      768: {
-        slidesPerView:2,
-      },
-      1024: {
-        slidesPerView:3,
-      },
-    }
-  });
 </script>
 </body>
 </html>
