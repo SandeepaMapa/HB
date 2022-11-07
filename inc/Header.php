@@ -116,7 +116,7 @@
           </div>
           <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">NIC Number</label>
-        <input name="nicnum"  type="text" class="form-control shadow-none" required>
+        <input name="NIC"  type="text" class="form-control shadow-none" required>
           </div>
         <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Email</label>
@@ -124,20 +124,17 @@
            </div>
            <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Phone Number</label>
-        <input name="phonenum" type="number" class="form-control shadow-none" required>
+        <input name="phone_no" type="number" class="form-control shadow-none" required>
           </div>
          
         <div class="col-md-6 ps-0 mb-3">
           <label  class="form-label">Password</label>
-        <input name="pass" type="password" class="form-control shadow-none" required>
+        <input name="password" type="password" class="form-control shadow-none" required>
         </div>
-           <div class="col-md-6 ps-0 mb-3">
-          <label  class="form-label">Confirm Password</label>
-        <input name="cpass" type="password" class="form-control shadow-none" required>
-           </div>
+           
          
            <div class="text-center my-1 mb-1">
-            <button type="submit" class="btn btn-dark shadow-none">Register</button>
+            <button type="submit" name="register" class="btn btn-dark shadow-none">Register</button>
            </div>
           
           </div>
@@ -152,3 +149,26 @@
       </div>
     </div>
   </div>
+
+  <?php
+
+   if(isset($_POST['register']))
+   {
+     $frm_data = filteration($_POST);
+
+     $q = "INSERT INTO user_reg(name, NIC, phone_no, email, password) VALUES (?,?,?,?,?)";
+     $values = [$frm_data['name'],$frm_data['NIC'],$frm_data['phone_no'],$frm_data['email'],$frm_data['password']];
+
+     $res = insert($q,$values,'ssiss');
+     if($res==1)
+     {
+      alert('success','Successfully Registered');
+     }
+     else{
+      alert('error','Server Down Try again Later');
+     }
+   }
+
+
+
+?>

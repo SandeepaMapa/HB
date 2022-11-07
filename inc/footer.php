@@ -93,19 +93,24 @@ function alert(type,msg,postion='body')
       }
     }
 
-    let register_form = document.getElementById('register-form');
-
-    register_form.addEventListener('submit', (e)=>{
-      e.preventDefault();
-
-    let data = new FormData();
     
+<<<<<<< HEAD
     data.append('name'register_form.elements['name'].values);
     data.append('nicnum'register_form.elements['nicnum'].values);
     data.append('email'register_form.elements['email'].values);
     data.append('phonenum'register_form.elements['phonenum'].values);
     data.append('pass'register_form.elements['pass'].values);
     data.append('cpass'register_form.elements['cpass'].values);
+=======
+<<<<<<< HEAD
+=======
+    data.append('name',register_form.elements['name'].values);
+    data.append('nicnum',register_form.elements['nicnum'].values);
+    data.append('email',register_form.elements['email'].values);
+    data.append('phonenum',register_form.elements['phonenum'].values);
+    data.append('pass',register_form.elements['pass'].values);
+    data.append('cpass',register_form.elements['cpass'].values);
+>>>>>>> cd9cf8757d29502c6b1aca9d29205661817019be
     data.append('register','');
 
     var myModel = document.getElementById('registerModel');
@@ -140,6 +145,7 @@ function alert(type,msg,postion='body')
     xhr.send(data);
 
     });
+>>>>>>> ac4eec3dd1dc64bed102dbbf5f519215ff4fb241
 
     setActive();
   </script>

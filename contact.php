@@ -17,14 +17,18 @@
 
 <?php require('inc/Header.php'); ?>
 
-<div class="my-5 px-4">
-<h2 class="mt-5 pt-4 mb-4 text-center fw-bold f2">CONTACT</h2>
+<div class=" px-4">
+<h2 class=" pt-4 mb-4 text-center fw-bold f2">CONTACT</h2>
 <div class="h-line bg-dark"></div>
 <p class= "text-center mt-3">
+<<<<<<< HEAD
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Vel non culpa quas est, nisi deserunt explicabo earum hic<br> molestias, nam, voluptate repellendus recusandae.
   Natus vero eaque sit unde sequi illum.
 </p>
+=======
+If a stay by the beautiful river sounds exciting, contact us to find out more about what we offer for your getaway!
+>>>>>>> cd9cf8757d29502c6b1aca9d29205661817019be
 </div>
 <br><br>
 
