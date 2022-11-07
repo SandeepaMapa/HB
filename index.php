@@ -179,7 +179,7 @@
                  
                   </div>
                   <div class="d-flex justify-content-evenly mb-2">
-                    <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
+                    <a href="https://buy.stripe.com/test_eVaaG52vsab29dC5kk" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
                     <a href="room_details.php?id=$room_data[id]" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
                   </div>
              
