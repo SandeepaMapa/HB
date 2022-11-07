@@ -51,17 +51,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </a>
 </div>
 
-    <?php
-      if ($contact_r['pn2'] !=='')
-      {
-        echo<<<data
-        <a href="tel: $contact_r[pn2]" class="d-inline-block mb-2 text-decoration-none text-dark">
-          <i class="bi bi-telephone-fill"></i> $contact_r[pn2]
-        </a>
-        data;
-      }
-
-    ?>
+    
 
     
 
