@@ -322,7 +322,7 @@ $contact_r =mysqli_fetch_assoc(select($contact_q,$values,'i'));
         <i class="bi bi-telephone-fill"></i>0716388682
        </a>
     </div>
-    <div class="bg-wwhite p-4 rounded mb-4">
+    <div class="bg-white p-4 rounded mb-4">
       <h5>Follow us</h5>
       <a href="#" class="d-inline-block mb-3">
         <span class="badge bg-light text-dazrk fs-6 p-2" >

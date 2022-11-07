@@ -35,7 +35,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
         <a href="https://g.page/river-s-edge-madampe-ambalangoda?share" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
         <i class="bi bi-geo-alt-fill"></i> River's Edge madampe Ambalangoda
       </a>
-      <h5>Call us</h5>
+      <h5 class="mt-4">Call us</h5>
        <a href="tel:0771324857" class="d-inline-block mb-2 text-decoration-none text-dark">
         <i class="bi bi-telephone-fill"></i>0771324857
        </a>
@@ -43,34 +43,17 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
        <a href="tel:0716388682" class="d-inline-block mb-2 text-decoration-none text-dark">
         <i class="bi bi-telephone-fill"></i>0716388682
        </a>
-
+       <h5 class="mt-4">Email</h5>
+       <a href="mailto: Riversedge@gmail.com" class="d-inline-block text-decoration-none text-dark">
+        Riversedge@gmail.com</a>
  </div>
 </div>
   
-     <h5 class="mt-4">Call us </h5>
-     <a href="tel:  <?php echo $contact_r['pn1'] ?>" class="d-inline-block mb-2 text-decoration-none text-dark">
-      <i class="bi bi-telephone-fill"></i> <?php echo $contact_r['pn1'] ?>
-    </a>
-    <br>
 
-    <?php
-      if ($contact_r['pn2'] !=='')
-      {
-        echo<<<data
-        <a href="tel: $contact_r[pn2]" class="d-inline-block mb-2 text-decoration-none text-dark">
-          <i class="bi bi-telephone-fill"></i> $contact_r[pn2]
-        </a>
-        data;
-      }
-
-    ?>
 
     
 
-    <h5 class="mt-4">Email</h5>
-    <a href="mailto: <?php echo $contact_r['email'] ?>"class="d-inline-block text-decoration-none text-dark">
-     <i class="bi bi-envelope-fill"> </i> <?php echo $contact_r['email'] ?>
-     </a>
+  
     
      
 
