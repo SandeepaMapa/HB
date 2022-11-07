@@ -35,10 +35,6 @@
    <div >
     <h2 class=" mb-3 text-center fw-bold f2">BBQ</h2>
     <div class="h-line bg-dark"></div>
-      <p class="text-center mt-3">
-        Our meats are house-smoked daily and will truly “WOW” your taste buds. <br> 
-        This is the perfect choice for picnics, tailgating, corporate lunches, backyard BBQ’s, Father’s Day,  or even your stag night!
-      </p>
   </div>
 <main id="main">
 
@@ -48,14 +44,14 @@
 
     <div class="row">
 
-      <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/BBQ 11.jpg");'>
+      <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("Photos\Restaurant\BBQ 11.jpg");'>
         <a href="https://www.youtube.com/watch?v=VnvG08masio" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
       </div>
 
       <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
         <div class="content">
-          <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+          <h3>Always in the mood for some <strong>smokin', delish, and tender BBQ!?</strong> Handcrafted by Kumar</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
           </p>
