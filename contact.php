@@ -21,12 +21,17 @@
 <h2 class=" pt-4 mb-4 text-center fw-bold f2">CONTACT</h2>
 <div class="h-line bg-dark"></div>
 <p class= "text-center mt-3">
+<<<<<<< Updated upstream
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Vel non culpa quas est, nisi deserunt explicabo earum hic<br> molestias, nam, voluptate repellendus recusandae.
   Natus vero eaque sit unde sequi illum.
 </p>
 
+=======
+If a stay by the beautiful river sounds exciting, contact us to find out more about what we offer for your getaway!
+</div>
+>>>>>>> Stashed changes
 <br><br>
 
 <div class="row">
