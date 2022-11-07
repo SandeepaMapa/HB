@@ -9,6 +9,7 @@
       It is set in the peaceful village of Madampagama, just a few minutes from the Galle coastal road.
       </p>
     </div>
+
     <div class="col-lg-4 p-4 text-white">
       <h5 class="mb-3 text-white">Quick Links</h5>
       <a href="Accomodation.php" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">Accommodation</a><br>
@@ -18,24 +19,24 @@
       <a href="contact.php" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">Contact</a><br>
       <a href="About Us.php" class=" text-white d-inline-block mb-2 text-dark text-decoration-none">About us</a><br>
     </div>
+
     <div class="col-lg-4 p-4 text-white">
       <h5 class=" text-white mb-3">Follow us</h5>
-      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-    
-    
-
-      
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>      
       <a href="<?php echo $contact_r['insta'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
-        <i class="bi bi-instagram me-1 "></i> Instagram
-    </a><br>
-    <a href="<?php echo $contact_r['fb'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
-      <i class="bi bi-facebook me-1 "></i> Facebook
-  </a><br>
-</div>
-<!-- copyright -->
-<div class="col-md-6">
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						<span class="copyright text-white align-right">Copyright @2018 All rights reserved |  <i class="fa fa-heart-o" aria-hidden="true"></i> </span>
+          <i class="bi bi-instagram me-1 "></i> Instagram
+      </a>
+        <br>
+      <a href="<?php echo $contact_r['fb'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
+          <i class="bi bi-facebook me-1 "></i> Facebook
+      </a>
+        <br>
+    </div>
+            
+    <!-- copyright -->
+    <div class="col-md-6">
+			<span class="copyright text-white align-right">All Copyrights Reserved by River's Edge - © 2022 </span>
+    </div>
   </div>
 </div>
 </footer>
@@ -136,7 +137,7 @@ function alert(type,msg,postion='body')
 
     xhr.send(data);
 
-    });
+    ;
 
     setActive();
   </script>
