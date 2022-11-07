@@ -33,7 +33,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
   <div class="col-lg-6 col-md-6 mb-5 px-4">
 
     <div class="bg-white rounded shadow p-4 ">
-    <iframe class="w-100 rounded mb-4" height="320px" src="https://g.page/river-s-edge-madampe-ambalangoda?share></iframe>
+    <iframe class="w-100 rounded mb-4" height="320px" src="https://g.page/river-s-edge-madampe-ambalangoda?share"></iframe>
   
       <h5>Address</h5>
       <a href="+<?php echo $contact_r['gmap'] ?>" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
