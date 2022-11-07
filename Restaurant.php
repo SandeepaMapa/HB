@@ -142,7 +142,8 @@
        <!-- Reservation -->
 	   <section id="book-a-table" class="book-a-table">
   <div class="container">
- <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+
+  <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
       <div class="row">
         <div class="col-lg-4 col-md-6 form-group">
           <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -183,9 +184,13 @@
         <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
         <div class="validate"></div>
       </div>
-</section><!-- End Book A Table Section -->          
-        </div>        
-        </form>
+      <div class="mb-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+      </div>
+      <div class="text-center"><button type="submit">Send Message</button></div>
+    </form>
       </div>
     </div>
   </div>
