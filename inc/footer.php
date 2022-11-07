@@ -47,12 +47,12 @@ function alert(type,msg,postion='body')
 {
         let bs_class = (type == 'success') ? 'alert-success' : 'alert-danger';
         let element = document.createElement('div');
-        element.innerHTML =  '
-        <div class ="alert ${bs_class} alert-dismissible fade show" role="alert">
-                <strong class="me-3">${msg}</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        ';
+        element.innerHTML =  
+        '<div class ="alert ${bs_class} alert-dismissible fade show" role="alert">'
+                '<strong class="me-3">${msg}</strong>'
+                '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>'
+           ' </div>'
+        ;
         
         if(postion=='body'){
           document.body.append(element);

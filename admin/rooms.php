@@ -180,7 +180,7 @@
            </div>
 
  <!-- Manage room images modal-->
- <div class="modal fade" id="room-images" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ <div class="modal-fade" id="room-images" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
          <div class="modal-dialog modal-lg">
           <div class="modal-content">
            <div class="modal-header">
