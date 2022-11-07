@@ -23,30 +23,17 @@
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     
     
-      
-      
-      <h5>Follow us</h5>
-      <a href="#" class="d-inline-block mb-3">
-        <span class="badge bg-light text-dazrk fs-6 p-2" >
-        <i class="bi bi-facebook me-1"></i>facebook
-      </span>
-      </a>
-      <br>
-      <a href="#" class="d-inline-block mb-3">
-        <span class="badge bg-light text-dazrk fs-6 p-2" >
-        <i class="bi bi-instagram me-1"></i>Instagram
-      </span>
-      </a>
 
-  
+      
+      <a href="<?php echo $contact_r['insta'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
+        <i class="bi bi-instagram me-1 "></i> Instagram
+    </a><br>
+    <a href="<?php echo $contact_r['fb'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
+      <i class="bi bi-facebook me-1 "></i> Facebook
+  </a><br>
 </div>
-
   </div>
-  <div class="col-lg-6 col-md-12 col-xs-12"> 
-<div class="left-sec">All copyrights reserved by Heritance Ahungalla - © 2022</div>
 </div>
-</div>
-
 </footer>
 
 
@@ -113,12 +100,12 @@ function alert(type,msg,postion='body')
 
     let data = new FormData();
     
-    data.append('name',register_form.elements['name'].values);
-    data.append('nicnum',register_form.elements['nicnum'].values);
-    data.append('email',register_form.elements['email'].values);
-    data.append('phonenum',register_form.elements['phonenum'].values);
-    data.append('pass',register_form.elements['pass'].values);
-    data.append('cpass',register_form.elements['cpass'].values);
+    data.append('name'register_form.elements['name'].values);
+    data.append('nicnum'register_form.elements['nicnum'].values);
+    data.append('email'register_form.elements['email'].values);
+    data.append('phonenum'register_form.elements['phonenum'].values);
+    data.append('pass'register_form.elements['pass'].values);
+    data.append('cpass'register_form.elements['cpass'].values);
     data.append('register','');
 
     var myModel = document.getElementById('registerModel');
