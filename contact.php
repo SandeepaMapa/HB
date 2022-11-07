@@ -45,7 +45,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
        </a>
        <h5 class="mt-4">Email</h5>
        <a href="mailto: Riversedge@gmail.com" class="d-inline-block text-decoration-none text-dark">
-        Riversedge@gmail.com</a>
+        <i class="bi bi-envelope-fill"></i>Riversedge@gmail.com</a>
  </div>
 </div>
   
