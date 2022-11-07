@@ -51,7 +51,7 @@
       <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
         <div class="content">
-          <h3>Always in the mood for some <strong>smokin', delish, and tender BBQ!?</strong> Handcrafted by Kumar</h3>
+          <h3>Always in the mood for some <strong>smokin', delish, and tender BBQ!?</strong> Handcrafted by Our Chef Kumar</h3>
           <p>
           We are 100% devoted to the craft of barbeque. All of our meats are smoked on-site, hand-rubbed with spices, and take upwards of few hours to become pure barbeque perfection to achieve the most tender flavorful meat possible.
           </p>
@@ -60,7 +60,7 @@
           </p>
           <ul>
             <li><i class="bx bx-check-double"></i> Quadro Pack  -  The platter for <b>FOUR</b> people.</li>
-            <li><i class="bx bx-check-double"></i> Duo Pack  -  The platter for <b>FOUR</b> people.</li>
+            <li><i class="bx bx-check-double"></i> Duo Pack  -  The platter for <b>TWO</b> people.</li>
             <li><i class="bx bx-check-double"></i> Wolf Pack  -  The platter for <b>Eight</b> people.</li>
           </ul>
           <p>
@@ -164,48 +164,46 @@
       <h2>Book a <span>Table</span></h2>
     </div>
 
-    <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+    <form  method="post" role="form" class="php-email-form">
       <div class="row">
-        <div class="col-lg-4 col-md-6 form-group">
-          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-          <div class="validate"></div>
-        </div>
-        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-          <div class="validate"></div>
-        </div>
-        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-          <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-          <div class="validate"></div>
-        </div>
-        <div class="col-lg-4 col-md-6 form-group mt-3">
-          <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-          <div class="validate"></div>
-        </div>
-        <div class="col-lg-4 col-md-6 form-group mt-3">
-          <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-          <div class="validate"></div>
-        </div>
-        <div class="col-lg-4 col-md-6 form-group mt-3">
-          <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-          <div class="validate"></div>
-        </div>
-      </div>
-      <div class="form-group mt-3">
-        <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-        <div class="validate"></div>
-      </div>
-      <div class="mb-3">
-        <div class="loading">Loading</div>
-        <div class="error-message"></div>
-        <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-      </div>
-      <div class="text-center"><button type="submit">Send Message</button></div>
-    </form>
+      
 
+<div class=" col-lg-4 col-md-6 form-group mt-3 ">
+<input name="name" required type="text" placeholder="Your Name" class="form-control shadow-none">
+   </div>
+
+   <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+<input name="email" required type="email" placeholder="Your Email" class="form-control shadow-none">
+   </div>
+
+   <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+<input name="phone" required type="text" placeholder="Your Phone Number" class="form-control shadow-none">
+   </div>
+
+   <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+<input name="date" required type="date" placeholder="Date" class="form-control shadow-none">
+   </div>
+
+   <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+<input name="time" required type="time" placeholder="Reservation Time" class="form-control shadow-none">
+   </div>
+
+   <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+<input name="qty" required type="number" placeholder="No of people" class="form-control shadow-none">
+   </div>
+
+   <div class=" form-group mt-3">
+<textarea name="message" placeholder="Extra Notes" required  class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
+   </div>
+   
+        
+
+      
+    </form>
+    <div class="text-center"><button type="submit" name="send">Reserve Table</button></div>
+    
   </div>
 </section><!-- End Book A Table Section -->
-
 
 </main><!-- End #main -->
 <!--Footer-->
