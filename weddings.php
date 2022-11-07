@@ -85,7 +85,7 @@
   <div class=" px-4">
     <h2 class=" mb-4 text-center fw-bold f2">Weddings</h2>
     <div class="h-line bg-dark"></div>
-      <p class="text-center mt-4">
+      <p class="text-center mx-5 mt-3">
       The tearful smiles of the walk down the aisle. The first kiss as a couple.
       The celebrations that follow. Your wedding is a chance to craft moments that will last you a lifetime.<br>
       At River's Edge, we want those moments to be truly memorable.<br>

@@ -424,7 +424,7 @@ body {
   # About
   --------------------------------------------------------------*/
   .about {
-    background: #fffaf3;
+    background: #ffffff;
   }
   
   .about .content {
@@ -434,7 +434,7 @@ body {
   .about .content h3 {
     font-weight: 400;
     font-size: 34px;
-    color: #5f5950;
+    color: #000000;
   }
   
   .about .content h4 {
@@ -445,7 +445,7 @@ body {
   
   .about .content p {
     font-size: 15px;
-    color: #848484;
+    color: #4d4d4d;
   }
   
   .about .content ul {

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>River's Edge - Weddings</title>
+  <title>River's Edge - Dine-In</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,7 +24,7 @@
     <?php require('inc/links.php'); ?>
 </head>
 
-<body class="bg-light">
+<body>
 
 <!--Header-->
 <?php require('inc/header.php'); ?>
@@ -550,7 +550,5 @@
     document.getElementById("date").setAttribute("min", minDate);
     console.log(minDate);
 </script>
-
 </body>
-
 </html>

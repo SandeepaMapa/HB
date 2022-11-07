@@ -179,7 +179,7 @@
                  
                   </div>
                   <div class="d-flex justify-content-evenly mb-2">
-                    <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
+                    <a href="https://buy.stripe.com/test_eVaaG52vsab29dC5kk" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
                     <a href="room_details.php?id=$room_data[id]" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
                   </div>
              
@@ -299,9 +299,9 @@ $contact_r =mysqli_fetch_assoc(select($contact_q,$values,'i'));
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-8 p-4 mb-lg-0 bg-white rounded"></div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.151117286474!2d80.0630986!3d6.225736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36b288ccc4774ebc!2sRiver&#39;s%20Edge%20madampe%20Ambalangoda!5e0!3m2!1sen!2slk!4v1665017607784!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="w-100 rounded mb-4" height="450px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.151117286474!2d80.0630986!3d6.225736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36b288ccc4774ebc!2sRiver&#39;s%20Edge%20madampe%20Ambalangoda!5e0!3m2!1sen!2slk!4v1665017607784!5m2!1sen!2slk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="bg_white p-4 mb-lg-0 mb_3 bg_white rounded">
+    <div class="bg-white p-4 mb-lg-0 mb_3 bg_white rounded">
      <h5>Call us</h5>
        <a href="tel:0771324857" class="d-inline-block mb-2 text-decoration-none text-dark">
         <i class="bi bi-telephone-fill"></i>0771324857
@@ -314,13 +314,13 @@ $contact_r =mysqli_fetch_assoc(select($contact_q,$values,'i'));
     <div class="bg-white p-4 rounded mb-4">
       <h5>Follow us</h5>
       <a href="#" class="d-inline-block mb-3">
-        <span class="badge bg-light text-dazrk fs-6 p-2" >
+        <span class="badge bg-light text-dark fs-6 p-2" >
         <i class="bi bi-facebook me-1"></i>facebook
       </span>
       </a>
       <br>
       <a href="#" class="d-inline-block mb-3">
-        <span class="badge bg-light text-dazrk fs-6 p-2" >
+        <span class="badge bg-light text-dark fs-6 p-2" >
         <i class="bi bi-instagram me-1"></i>Instagram
       </span>
       </a>
