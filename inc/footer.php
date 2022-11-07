@@ -25,12 +25,18 @@
     
       
       
-      <a href="<?php echo $contact_r['insta'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
-        <i class="bi bi-instagram me-1 "></i> Instagram
-    </a><br>
-    <a href="<?php echo $contact_r['fb'] ?>" class=" text-white d-inline-block text-dark text-decoration-none mb-2">
-      <i class="bi bi-facebook me-1 "></i> Facebook
-  </a><br>
+      <h5>Follow us</h5>
+      <a href="#" class="d-inline-block mb-3">
+        <span class="badge bg-light text-dazrk fs-6 p-2" >
+        <i class="bi bi-facebook me-1"></i>facebook
+      </span>
+      </a>
+      <br>
+      <a href="#" class="d-inline-block mb-3">
+        <span class="badge bg-light text-dazrk fs-6 p-2" >
+        <i class="bi bi-instagram me-1"></i>Instagram
+      </span>
+      </a>
 
   
 </div>
