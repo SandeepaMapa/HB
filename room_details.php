@@ -154,8 +154,9 @@
                
 
                 echo<<<book
-                <a href="https://buy.stripe.com/test_eVaaG52vsab29dC5kk" class="btn w-100 
+                <a href="Booknow.php" class="btn w-100 
                  text-white custom-bg shadow-none mb-1">Book Now</a>
+                 
                 book;
           ?>
         </div> 
@@ -163,6 +164,9 @@
     </div> 
   </div>
  </div>
+
+
+
 
 
   <?php require('inc/footer.php') ?>

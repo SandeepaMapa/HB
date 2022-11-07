@@ -142,10 +142,9 @@
             $room_thumb = ROOMS_IMG_PATH . $thumb_res['image'];
           }
 
-       
+     
 
-
-          //print room card
+          //print room card 
         
           echo <<<data
           <div class="col-lg-4 col-md-6 my-3">
@@ -179,7 +178,7 @@
                  
                   </div>
                   <div class="d-flex justify-content-evenly mb-2">
-                    <a href="https://buy.stripe.com/test_eVaaG52vsab29dC5kk" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
+                    <a href="Booknow.php" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
                     <a href="room_details.php?id=$room_data[id]" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
                   </div>
              

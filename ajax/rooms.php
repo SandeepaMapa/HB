@@ -9,6 +9,7 @@
  {
         $chk_avail = json_decode($_GET['chk_avail'],true);
 
+        //checkin and checkout filter validation
         if($chk_avail['checkin']!='' && $chk_avail['checkout']!='')
         {
           $today_date = new DateTime(date('Y-m-d'));
@@ -29,6 +30,15 @@
           }
         }
     
+        //guests data decode
+        $guests = json_decode($_GET['guests'],true);
+        $adults = ($guests['adults']!='') ? $guests['adults'] : 0;
+        $children = ($guests['children']!='') ? $guests['children'] : 0;
+
+        //facilities data decode
+        $facility_list = json_decode($_GET['facility_list'],true);
+
+
         //count no.of rooms and output variable to store room cards
         $count_rooms = 0;
         $output = "";
@@ -37,16 +47,17 @@
         $settings_q = "SELECT * FROM settings WHERE sr_no=1";
         $settings_r = mysqli_fetch_assoc(mysqli_query($con,$settings_q));
         
-        //query for room cards
-         $room_res = select("SELECT * FROM rooms WHERE status=? AND removed=?", [1, 0], 'ii');
+        //query for room cards with guests filter
+         $room_res = select("SELECT * FROM rooms WHERE adult>=? AND children>=? AND status=? AND removed=?", [$adults,$children,1, 0], 'iiii');
+
 
          while ($room_data = mysqli_fetch_assoc($room_res)) {
           
           
-          //get facilities of room
+          //get facilities of room with filters
         
-          $fac_q = mysqli_query(
-            $con,
+          $fac_count=0;
+          $fac_q = mysqli_query($con,
             "SELECT f.name FROM `facilities` f 
                INNER JOIN room_facilities rfac ON f.id = rfac.facilities_id
                WHERE rfac.room_id = '$room_data[id]'"
@@ -58,7 +69,6 @@
             $facilities_data .= "<span class='badge rounded-pill bg-light text-dark text-wrap me-1 mb-1'>
             $fac_row[name]
          </span>";
-
           }
 
           //get thumbnail of image
@@ -116,15 +126,16 @@
              </div>   
              <div class='col-md-2 mt-lg-0 mt-md-0 mt-4 text-center'>
               <h6 class='mb-4'>Rs. $room_data[price] per night</h6>  
-                <a href='https://buy.stripe.com/test_eVaaG52vsab29dC5kk' class='btn btn-sm w-100 text-white custom-bg shadow-none mb-2'>Book Now</a>
+              <a href='Booknow.php'  class='btn btn-sm w-100 text-white custom-bg shadow-none mb-2'>Book Now</a>
                 <a href='room_details.php?id=$room_data[id]' class='btn btn-sm w-100 btn-outline-dark shadow-none'>More details</a>
                  </div>
             </div>
           </div>
         ";
         $count_rooms++; 
+        
         }
-
+       
         if($count_rooms>0){
             echo $output;
         }
@@ -133,5 +144,6 @@
         }
  }
 
+ 
  ?> 
-
+ 
