@@ -36,11 +36,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
         <i class="bi bi-geo-alt-fill"></i> River's Edge madampe Ambalangoda
       </a>
       <h5 class="mt-4">Call us</h5>
-       <a href="tel:0771324857" class="d-inline-block mb-2 text-decoration-none text-dark">
+       <a href="tel: 0771324857" class="d-inline-block mb-2 text-decoration-none text-dark">
         <i class="bi bi-telephone-fill"></i>0771324857
        </a>
        <br>
-       <a href="tel:0716388682" class="d-inline-block mb-2 text-decoration-none text-dark">
+       <a href="tel: 0716388682" class="d-inline-block mb-2 text-decoration-none text-dark">
         <i class="bi bi-telephone-fill"></i>0716388682
        </a>
        <h5 class="mt-4">Email</h5>
