@@ -35,15 +35,18 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit.
         <a href="https://g.page/river-s-edge-madampe-ambalangoda?share" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
         <i class="bi bi-geo-alt-fill"></i> River's Edge madampe Ambalangoda
       </a>
+      <h5>Call us</h5>
+       <a href="tel:0771324857" class="d-inline-block mb-2 text-decoration-none text-dark">
+        <i class="bi bi-telephone-fill"></i>0771324857
+       </a>
+       <br>
+       <a href="tel:0716388682" class="d-inline-block mb-2 text-decoration-none text-dark">
+        <i class="bi bi-telephone-fill"></i>0716388682
+       </a>
 
-      
  </div>
 </div>
-      <h5>Address</h5>
-      <a href="+<?php echo $contact_r['gmap'] ?>" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
-      <i class="bi bi-geo-alt-fill"></i> <?php echo $contact_r['address'] ?>
-      </a>
-
+  
      <h5 class="mt-4">Call us </h5>
      <a href="tel:  <?php echo $contact_r['pn1'] ?>" class="d-inline-block mb-2 text-decoration-none text-dark">
       <i class="bi bi-telephone-fill"></i> <?php echo $contact_r['pn1'] ?>
