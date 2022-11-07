@@ -142,7 +142,7 @@
        <!-- Reservation -->
 	   <section id="book-a-table" class="book-a-table">
   <div class="container">
-
+ 
   <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
       <div class="row">
         <div class="col-lg-4 col-md-6 form-group">
