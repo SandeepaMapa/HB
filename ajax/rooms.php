@@ -116,15 +116,16 @@
              </div>   
              <div class='col-md-2 mt-lg-0 mt-md-0 mt-4 text-center'>
               <h6 class='mb-4'>Rs. $room_data[price] per night</h6>  
-                <a href='https://buy.stripe.com/test_eVaaG52vsab29dC5kk' class='btn btn-sm w-100 text-white custom-bg shadow-none mb-2'>Book Now</a>
+              <a href='Booknow.php'  class='btn btn-sm w-100 text-white custom-bg shadow-none mb-2'>Book Now</a>
                 <a href='room_details.php?id=$room_data[id]' class='btn btn-sm w-100 btn-outline-dark shadow-none'>More details</a>
                  </div>
             </div>
           </div>
         ";
         $count_rooms++; 
+        
         }
-
+       
         if($count_rooms>0){
             echo $output;
         }
@@ -133,5 +134,6 @@
         }
  }
 
+ 
  ?> 
-
+ 

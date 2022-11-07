@@ -8,6 +8,7 @@
   <title>River's Edge - Accomodation</title>
   <?php require('inc/links.php') ?>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  
   <style>
     .availability-form {
       margin-top: -50px;
@@ -37,6 +38,12 @@
     <!-- Swiper -->
     <div class="swiper swiper-container">
       <div class="swiper-wrapper">
+      <div class="container">
+          <div class="carousel-caption text-start">
+            <h4>Come, stay and enjoy your day.</h4>
+            <h4><a class="btn btn-lg p-3 btn-primary" href="Booknow.php">Book Now</a></h4>
+          </div>
+        </div>
         <div class="swiper-slide">
           <img src="Photos\Rooms\ch.png" class="w-100 d-block" height="550" />
         </div>
@@ -207,6 +214,8 @@
         disableOnInteraction: false,
       }
     });
+
+
 
   </script>
 
