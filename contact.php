@@ -21,22 +21,19 @@
 <h2 class=" pt-4 mb-4 text-center fw-bold f2">CONTACT</h2>
 <div class="h-line bg-dark"></div>
 <p class= "text-center mt-3">
-<<<<<<< HEAD
+
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Vel non culpa quas est, nisi deserunt explicabo earum hic<br> molestias, nam, voluptate repellendus recusandae.
   Natus vero eaque sit unde sequi illum.
 </p>
-=======
-If a stay by the beautiful river sounds exciting, contact us to find out more about what we offer for your getaway!
->>>>>>> cd9cf8757d29502c6b1aca9d29205661817019be
-</div>
+
 <br><br>
 
 <div class="row">
   <div class="col-lg-6 col-md-6 mb-5 px-4">
 
     <div class="bg-white rounded shadow p-4 ">
-    <iframe class="w-100 rounded mb-4" height="320px" src="<?php echo $contact_r['iframe'] ?>" ></iframe>
+    <iframe class="w-100 rounded mb-4" height="320px" src="https://g.page/river-s-edge-madampe-ambalangoda?share></iframe>
   
       <h5>Address</h5>
       <a href="+<?php echo $contact_r['gmap'] ?>" target="-blank" class="d-inline-block text-decration-non text-dark mb-2">
