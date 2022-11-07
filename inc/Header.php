@@ -97,7 +97,7 @@
   <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <form action="inc/sendUreg.php" method="post" id="register-form" >
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" id="register-form" >
         <div class="modal-header">
           <h5 class="modal-title d-flex align-items-center">
           <i class="bi bi-person-lines-fill fs-3 me-2"></i>
@@ -155,23 +155,43 @@
 
   <?php
 
-   if(isset($_POST['register']))
-   {
-     $frm_data = filteration($_POST);
 
-     $q = "INSERT INTO user_reg(name, NIC, phone_no, email, password) VALUES (?,?,?,?,?)";
-     $values = [$frm_data['name'],$frm_data['NIC'],$frm_data['phone_no'],$frm_data['email'],$frm_data['password']];
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])){
 
-     $res = insert($q,$values,'ssiss');
-     if($res==1)
-     {
-      alert('success','Successfully Registered');
-     }
-     else{
-      alert('error','Server Down Try again Later');
-     }
-   }
+    $conn = mysqli_connect('localhost','root','','hbwebsite') or die ("Connection Failed:" .mysqli_connect_error());
+    if (isset($_POST['name']) && isset($_POST['nicnum']) && isset($_POST['email']) && isset($_POST['phonenum']) && isset($_POST['pass'])){
 
+        $name = $_POST['name'];
+        $nicnum = $_POST['nicnum'];
+        $email = $_POST['email'];
+        $phonenum = $_POST['phonenum'];
+        $pass = $_POST['pass'];
+        $cpass =$_POST['cpass'];
 
+        if ($_POST['pass'] !== $_POST['cpass']) {
+            die('<script type="text/javascript">alert("Passwords are not matching");</script>');
+         }
+         
+
+        $sql = "INSERT INTO `user_reg1`(`name`, `nic`, `email`, `phonenum`, `password`) VALUES ('$name', '$nicnum','$email','$phonenum', '$pass')";
+
+        $query = mysqli_query($conn,$sql);
+        if ($query){
+          echo '<script type="text/javascript">';
+          echo ' alert("Registration Completed Successfully")';  //not showing an alert box.
+          echo '</script>';
+        }
+
+        else {
+          echo '<script type="text/javascript">';
+          echo ' alert("Error Occured")';  //not showing an alert box.
+          echo '</script>';
+        }
+
+    }
+}
 
 ?>
+
+
+
