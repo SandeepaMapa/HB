@@ -183,17 +183,9 @@
         <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
         <div class="validate"></div>
       </div>
-</section><!-- End Book A Table Section -->
-
-
-		<!-- /Reservation -->
-      
-      
-          
-        </div>
-        
+</section><!-- End Book A Table Section -->          
+        </div>        
         </form>
-
       </div>
     </div>
   </div>

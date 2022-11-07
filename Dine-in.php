@@ -24,7 +24,7 @@
     <?php require('inc/links.php'); ?>
 </head>
 
-<body>
+<body class="bg-light">
 
 <!--Header-->
 <?php require('inc/header.php'); ?>
