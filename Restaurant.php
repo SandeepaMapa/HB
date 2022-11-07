@@ -39,12 +39,11 @@
   <div class="my-3 px-4">
   <h2 class="mt-3 pt-4 mb-4 text-center fw-bold f2">RESTAURANT</h2>
   <div class="h-line bg-dark"></div>
-  <p class="text-center mt-4">
-  The lake, the temple, the paddy field and the traditional festivities; the soul of every rural village in Sri Lanka is encapsulated in these four elements. At Sigiriya<br>
-   Village, we have created a village within a village, providing you with 3 types of dwellings as superior, classic and deluxe. Placed in 6 clusters, there are 120 rooms<br>
-    to choose from, every single one built to make your stay as unique and comfortable as possible.
-  Each room comes with a unique view of nature,<br> bringing you closer to island living, offering you the best of local 
-  and global comforts including free Wi-Fi <br>in rooms and public areas, so that you can sit back and enjoy tropical luxury at its finest.
+  <p class="text-center mx-5 mt-3">
+  The culinary experience at River's Edge Hotel is always a delight, with an array of cuisine to choose from!<br>
+
+    At our open air restaurant, you can experience it all, from action cooking to theme nights. 
+    Choose from menus filled with delicacies perfectly put together by our specialised chefs as you treat your taste buds to the flavours of the world.
   </p>
   </div>
 
