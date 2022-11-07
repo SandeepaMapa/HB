@@ -36,18 +36,32 @@
 						<div class="form-header">
 							<h1>BOOK A ROOM</h1>
 						</div>
-						<form>
+						<form action="bookform.php" method="POST">
+						 <div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Name</span>
+										<input class="form-control" name="name" type="text" placeholder="Enter your name" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Phone number</span>
+										<input class="form-control" name="phoneno" type="text" placeholder="Enter your phone number" required>
+									</div>
+								</div>
+							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
 										<span class="form-label">Check In</span>
-										<input class="form-control" type="date" required>
+										<input class="form-control" name="checkin" type="date" required>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<span class="form-label">Check out</span>
-										<input class="form-control" type="date" required>
+										<input class="form-control" name="checkout" type="date" required>
 									</div>
 								</div>
 							</div>
@@ -55,7 +69,7 @@
 								<div class="col-md-4">
 									<div class="form-group">
 										<span class="form-label">Room type</span>
-										<select class="form-control">
+										<select class="form-control" name="roomtype">
 											<option>Standard room</option>
 											<option>Villa</option>
 											<option>Chalet</option>
@@ -66,7 +80,7 @@
 								<div class="col-md-4">
 									<div class="form-group">
 										<span class="form-label">Adults</span>
-										<select class="form-control">
+										<select class="form-control" name="adults">
 											<option>1</option>
 											<option>2</option>
 											<option>3</option>
@@ -79,7 +93,7 @@
 								<div class="col-md-4">
 									<div class="form-group">
 										<span class="form-label">Children</span>
-										<select class="form-control">
+										<select class="form-control"  name="children">
 											<option>0</option>
 											<option>1</option>
 											<option>2</option>
@@ -91,7 +105,7 @@
 								</div>
 							</div>
 							<div class="form-btn">
-								<button style="background-color: #012e62;" class="submit-btn">Book now</button>
+								<button style="background-color: #012e62;" class="submit-btn"><a href="https://buy.stripe.com/test_eVaaG52vsab29dC5kk" style="text-decoration:none; color:white;">Book now</a></button>
 							</div>
 						</form>
 					</div>
@@ -99,5 +113,9 @@
 			</div>
 		</div>
 	</div>
+
+	
+
+
 </body>
 </html>
