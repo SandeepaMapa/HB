@@ -22,7 +22,7 @@
     <?php require('inc/links.php'); ?>
   </head>
 
-  <body class="bg-light">
+  <body>
     
 <!--Header-->
   <?php require('inc/header.php'); ?>  
