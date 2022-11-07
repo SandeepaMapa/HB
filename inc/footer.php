@@ -32,10 +32,11 @@
       <i class="bi bi-facebook me-1 "></i> Facebook
   </a><br>
 </div>
+<!-- copyright -->
+<div class="col-md-6">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<span class="copyright text-white align-right">Copyright @2018 All rights reserved |  <i class="fa fa-heart-o" aria-hidden="true"></i> </span>
   </div>
-</div>
-<div class="col-lg-6 col-md-12 col-xs-12 copy-rights"> 
-<div ><center>All copyrights reserved by Heritance Ahungalla - © 2022</center></div>
 </div>
 </footer>
 
@@ -96,12 +97,46 @@ function alert(type,msg,postion='body')
       }
     }
 
+    data.append('name',register_form.elements['name'].values);
+    data.append('nicnum',register_form.elements['nicnum'].values);
+    data.append('email',register_form.elements['email'].values);
+    data.append('phonenum',register_form.elements['phonenum'].values);
+    data.append('pass',register_form.elements['pass'].values);
+    data.append('cpass',register_form.elements['cpass'].values);
+    data.append('register','');
+
+    var myModel = document.getElementById('registerModel');
+    var model = bootstarp.Model.getInstance(myModel);
+    mddal.hide();
+
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST","ajax/login_register.php",true);
     
+    xhr.onload = function(){
+      if(this.responseText == 'pass_mismatch'){
+        alert('error',"password Mismatch!");
+      }
+      else if(this.responseText == 'email_already'){
+        alert('error',"Email is already registered!");
+      }
+      else if(this.responseText == 'phone_already'){
+        alert('error',"Phone number is already registered!");
+      }
+      else if(this.responseText == 'mail_failed'){
+        alert('error',"cannot send confirmation email! Server down!");
+      }
+      else if(this.responseText == 'ins_failed'){
+        alert('error',"Registration failed! Server down!");
+      }
+      else{
+        alert('success',"Registration successful. Confirmation link sent to email");
+        register_form.resent();
+      }
+    }
 
- 
+    xhr.send(data);
 
-   
-
+    });
 
     setActive();
   </script>
