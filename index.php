@@ -104,7 +104,7 @@
                 <input type="hidden" name="check_availability">
               </div>
                 <div class="col-lg-2 mb-lg-3 mt-2">
-                  <button type="submit" class="btn text-white shadow-none custom-bg">Book Now</button>
+                  <button type="submit" class="btn text-white shadow-none custom-bg">Check</button>
                 </div>
             </div>
 
