@@ -54,7 +54,7 @@
             </div>
 
                 <!-- Add room modal-->
-                <div class="modal fade " id="add-room" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-fade " id="add-room" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <form  id="add_room_form" >
                         <div class="modal-content">

@@ -159,49 +159,65 @@
       <!-- ======= Book A Table Section ======= -->
 <section id="book-a-table" class="book-a-table">
   <div class="container">
-
     <div class="section-title">
       <h2>Book a <span>Table</span></h2>
     </div>
 
     <form  method="post" role="form" class="php-email-form">
       <div class="row">
-      
 
-<div class=" col-lg-4 col-md-6 form-group mt-3 ">
-<input name="name" required type="text" placeholder="Your Name" class="form-control shadow-none">
-   </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+        <div class="validate"></div>
+        </div>
 
-   <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-<input name="email" required type="email" placeholder="Your Email" class="form-control shadow-none">
-   </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3 ">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+          <div class="validate"></div>
+        </div>
 
-   <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-<input name="phone" required type="text" placeholder="Your Phone Number" class="form-control shadow-none">
-   </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3 ">
+          <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
 
-   <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-<input name="date" required type="date" placeholder="Date" class="form-control shadow-none">
-   </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
 
-   <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-<input name="time" required type="time" placeholder="Reservation Time" class="form-control shadow-none">
-   </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>        
 
-   <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-<input name="qty" required type="number" placeholder="No of people" class="form-control shadow-none">
-   </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+          <div class="validate"></div>
+        </div>
 
-   <div class=" form-group mt-3">
-<textarea name="message" placeholder="Extra Notes" required  class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
-   </div>
-   
-        
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+            <select class="form-select"  name="Res-type" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                <option disabled selected >Select One</option>
+                <option value="1">Dine-In</option>
+                <option value="2">BBQ</option>
+                <option value="3">A Lar Carte</option>
+              </select>
+              <div class="validate"></div>
+        </div>
 
-      
+        <div class=" form-group mt-3">
+          <textarea name="message" placeholder="Extra Notes" required  class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
+        </div>
+
+        <div class="mb-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+        </div>
+              
     </form>
-    <div class="text-center"><button type="submit" name="send">Reserve Table</button></div>
-    
+      <div class="text-center"><button type="submit" name="send">Reserve Table</button></div>   
   </div>
 </section><!-- End Book A Table Section -->
 

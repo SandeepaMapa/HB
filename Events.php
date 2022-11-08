@@ -157,10 +157,6 @@
         <form onsubmit="sendEmail(); reset(); return false;" action="forms/book-a-table.php" class="php-email-form">
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group mt-3 ">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Family Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 ">
               <input type="text" name="name" class="form-control" id="name" placeholder="First Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
@@ -181,7 +177,7 @@
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-            <select class="form-select"  name="people" id="people" placeholder="" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+            <select class="form-select"  name="people" id="people" placeholder="time" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
                 <option disabled selected >Event Time</option>
                 <option value="1">Day</option>
                 <option value="2">Night</option>

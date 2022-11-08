@@ -3,34 +3,49 @@
  require('inc/db_config.php');
  adminLogin();
 
- if(isset($_GET['seen']))
+
+ if(isset($_GET['status']))
  {
     $frm_data = filteration($_GET);
 
-     $sq = "UPDATE bookings SET checked_in=? WHERE booking_id=?";
-        $values = [1,$frm_data['checked_in']];
-        if(update($sq,$values,'ii')){
-         alert('Success','Marked as read!');
-        }
-        else{
-         alert('error','Operation Failed!');
-        }
- }
-
-
-if(isset($_GET['del']))
- {
-    $frm_data = filteration($_GET);
-
-   $sq = "DELETE FROM bookings WHERE booking_id=?";
-   $values = [$frm_data['del']];
-   if(delete($sq,$values,'i')){
-    alert('Success','Data deleted!');
+   $sq = "UPDATE bookings SET status=? WHERE booking_id=?";
+   $values = [1,$frm_data['status']];
+   if(update($sq,$values,'ii')){
+    alert('Success','Accepted the booking!');
    }
    else{
     alert('error','Operation Failed!');
    }
  }
+
+
+if(isset($_GET['del']))
+ {
+   $frm_data = filteration($_GET);
+   $sq = "DELETE FROM bookings WHERE booking_id=?";
+   $values = [$frm_data['del']];
+   if(delete($sq,$values,'i')){
+    alert('Success','Booking deleted!');
+   }
+   else{
+    alert('error','Operation Failed!');
+   }
+ }
+
+ 
+    $email = "thayagiperera@gmail.com";
+    $subject = "Accepting the Booking";
+    $body = "Hi";
+    $headers = "From: River's Edge";
+
+    if(mail($email,$subject,$body,$headers)){
+        echo "alert,Email sent";
+    }
+    else{
+        echo "alert,Email not sent";
+    }
+    
+ 
 
 
 ?>
@@ -41,7 +56,7 @@ if(isset($_GET['del']))
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin Panel -User_queries</title>
+        <title>Admin Panel - Bookings</title>
         <?php require('inc/links.php'); ?>
     </head>
     <body class="bg-light"> 
@@ -55,18 +70,18 @@ if(isset($_GET['del']))
 
                 <div class="card border-0 shadow-sm mb-4">
                     <div class="card-body">
-
+        
+                    <div class="text-end mb-4">
                     <div class="table-responsive-md" style="height:500px; overflow-y: scroll;">
                     <table class="table table-hover border">
                     <thead class="stick-top">
                     <tr class="bg-dark text-light">
                     <th scope="col">#</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Contact No</th>
-                                <th scope="col">Room Type</th>
-                                <th scope="col">Check in</th>
-                                <th scope="col">Check out</th>
-                                <th scope="col">Action</th>
+                                <th class="text-center" scope="col">User Details</th>
+                                <th class="text-center" scope="col">Room Type</th>
+                                <th class="text-center" scope="col">Check in</th>
+                                <th class="text-center" scope="col">Booking date</th>
+                                <th class="text-center" scope="col">Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -77,22 +92,32 @@ if(isset($_GET['del']))
 
                     while($row = mysqli_fetch_assoc($data))
                     {
-                        $seen='';
-                        if($row['checked_in']!=1){
+                        $status='';
+                        if($row['status']!=1)
+                        {
 
-                        $seen = "<a href='?checked_in=$row[booking_id]' class='btn btn-sm  btn-primary'>Checked-in</a> <br>";
+                        $status = "<a href='?status=$row[booking_id]'  class='btn btn-sm  btn-primary'>Accepted</a> <br><br>";
                         }
-                        $seen.= "<a href='?checked_in=$row[booking_id]' class='btn btn-sm btn-danger mt-2'>Delete</a>";
+                        
+                            $status.= "<a href='?del=$row[booking_id]' class='btn btn-sm btn-danger'>Cancel</a><br><br>";
+                            $status.= "<button name='acceptbtn' class='btn btn-sm btn-danger'>test</button>";
+                        
+                        
                                     
                         echo<<<query
                         <tr>
-                        <td>$i</td>
-                        <td>$row[name]</td>
-                        <td>$row[phoneno]</td>
-                        <td>$row[roomtype]</td>
-                        <td>$row[checkin]</td>
-                        <td>$row[checkout]</td>
-                        <td>$seen</td>
+                        <td class="text-center">$i</td>
+                        <td class="text-center">
+                           Name: $row[name]<br>
+                           Contact no: $row[phoneno]<br>
+                           Email: $row[email]
+                                               
+                           </td>
+                        
+                        <td class="text-center">$row[roomtype]</td>
+                        <td class="text-center">$row[checkin]</td>
+                        <td class="text-center">$row[date]</td>
+                        <td class="text-center">$status</td>
                         </tr>
                         query;
                         $i++;
@@ -104,12 +129,11 @@ if(isset($_GET['del']))
                    
                 </tbody>
                 </table>
-</div>
-</div>
-</div>
-
-</div>
-</div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
 </div>
 
               

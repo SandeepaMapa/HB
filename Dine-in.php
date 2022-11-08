@@ -465,10 +465,6 @@
     <form  method="post" role="form" class="php-email-form">
       <div class="row">
 
-        <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-          <input name="name" required type="text" placeholder="Your Name" class="form-control shadow-none">
-        </div>
-
         <div class="col-lg-4 col-md-6 form-group mt-3">
           <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
         <div class="validate"></div>
@@ -492,22 +488,21 @@
         <div class="col-lg-4 col-md-6 form-group mt-3">
           <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
           <div class="validate"></div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 form-group mt-3">
-            <select class="form-select"  name="people" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                <option disabled selected >Select One</option>
-                <option value="1">Breakfast</option>
-                <option value="2">Lunch</option>
-                <option value="3">Dinner</option>
-                <option value="3">A Lar Carte</option>
-              </select>
-              <div class="validate"></div>
-        </div>
+        </div>        
 
         <div class="col-lg-4 col-md-6 form-group mt-3">
           <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
           <div class="validate"></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+            <select class="form-select"  name="Res-type" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                <option disabled selected >Select One</option>
+                <option value="1">Dine-In</option>
+                <option value="2">BBQ</option>
+                <option value="3">A Lar Carte</option>
+              </select>
+              <div class="validate"></div>
         </div>
 
         <div class=" form-group mt-3">
