@@ -142,10 +142,9 @@
             $room_thumb = ROOMS_IMG_PATH . $thumb_res['image'];
           }
 
-       
+     
 
-
-          //print room card
+          //print room card 
         
           echo <<<data
           <div class="col-lg-4 col-md-6 my-3">
