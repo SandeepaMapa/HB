@@ -102,7 +102,7 @@ if(isset($_GET['del']))
                 </thead>
                 <tbody>
                     <?php
-                    $q = "SELECT *FROM user_queries ORDER BY 'sr_no' DESC";
+                    $q = "SELECT * FROM user_queries ORDER BY 'sr_no' DESC";
                     $data = mysqli_query($con,$q);
                     $i=1;
 
