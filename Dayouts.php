@@ -125,7 +125,7 @@
 
       
     </form>
-    <div class="text-center"><button type="submit" name="send">Reserve Table</button></div>
+    <div class="text-center"><button class="btn btn-primary" type="submit" name="send">Reserve Table</button></div>
     
   </div>
 </section><!-- End Book A Table Section -->
