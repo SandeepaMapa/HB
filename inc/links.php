@@ -8,15 +8,27 @@
 
 
 
+
 <?php
 
+session_start();
+
+
+require('admin/inc/db_config.php');
+require('admin/inc/essenials.php');
+
+$Settings_q = "SELECT * FROM setting WHERE sr_no=?";
+$values = [1];
+$setting_r = mysqli_fetch_assoc(Settings_q,$values,'i');
 
 if($settings_r['shutdown']){
     echo<<<alterbar
     <div clas='bg-danger text-center p-2 fw-bold'>
     <i class="bi bi-exclamation-triangle-fill"></i>
     Bookings are temporarily closed!
+    </div>
     alterbar;
 }
+
 
 ?>
