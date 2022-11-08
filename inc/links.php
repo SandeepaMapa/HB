@@ -9,7 +9,22 @@
 <?php
 
 session_start();
-data_default_timezone_set("")
+data_default_timezone_set("asia/colombo");
+
+
+require('admin/inc/db_config.php');
+require('admin/inc/essenials.php');
+
+Settings_q = "SELECT * FROM 'setting' WHERE 'sr-no'=?";
+$values = [1];
+$setting-r = mysqli_fetch-assoc(Settings_q,$values,'i');
+
+if($settings_r['shutdown']){
+    echo<<<alterbar
+    <div clas='bg-danger text-center p-2 fw-bold'>
+    Bookings are temporarily closed!
+    alterbar;
+}
 
 
 
