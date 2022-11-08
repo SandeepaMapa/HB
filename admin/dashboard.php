@@ -25,6 +25,17 @@
         <h3>DaSHBOARD</h3>
      </div>
 
+     <div class="row mb-4">
+        <div class="col-md-3 mb-4">
+            <a href="">
+                <div class="card text-center p-3">
+                <h6>New Bookings</h6>
+                <h1>5</h1>
+            </div>
+    </a>
+</div>
+</div>
+
 </div>
 </div>
 </div>
