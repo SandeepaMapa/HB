@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    include "admin/inc/db_config.php";
+    include "logindb.php";
 
     if (isset($_POST['email']) && isset($_POST['password'])) {
 
@@ -28,7 +28,7 @@
 
     }
 
-    $sql ="SELECT * FROM `users` WHERE user_name ='$uname' AND `password` ='$pass'";
+    $sql ="SELECT * FROM `user_reg1` WHERE `email`  ='$uname' AND `password` ='$pass'";
 
     $result = mysqli_query($conn, $sql);
 
@@ -39,18 +39,17 @@
             $_SESSION['user_name'] = $row['user_name'];
             $_SESSION['name'] = $row ['name'];
             $_SESSION['id'] = $row['id'];
-            $path = $_SERVER['localhost'].'/hb/loghome.php';
-            header("Location:lhome.php");
+            header("Location: nhome.php");
             exit();
         }
         else {
-            header("Location:index.php?error=Incorrect User Name or Password");
+            header("Location:iixx.php?error=Incorrect User Name or Password");
             exit();
         }
 
     }
     else {
-        header("Location: index.php");
+        header("Location: iixx.php");
         exit();
     }
 ?>
