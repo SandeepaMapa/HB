@@ -52,6 +52,15 @@
 								</div>
 							</div>
 							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<span class="form-label">Email</span>
+										<input class="form-control" name="email" type="text" placeholder="Enter your email" required>
+									</div>
+								</div>
+								
+							</div>
+							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
 										<span class="form-label">Check In</span>

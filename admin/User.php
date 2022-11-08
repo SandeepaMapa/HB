@@ -89,17 +89,17 @@ if(isset($_GET['del']))
 
                     <div class="table-responsive-md" style="height:500px; overflow-y: scroll;">
                     <table class="table table-hover border">
-                <thead class="stick-top">
-                    <tr class="bg-dark text-light">
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col" width="20%">Subject</th>
-                    <th scope="col" width="30%">Message</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Action</th>
+                       <thead class="stick-top">
+                        <tr class="bg-dark text-light">
+                          <th scope="col">#</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Email</th>
+                          <th scope="col" width="20%">Subject</th>
+                          <th scope="col" width="30%">Message</th>
+                          <th scope="col">Date</th>
+                          <th scope="col">Action</th>
                     </tr>
-                </thead>
+                      </thead>
                 <tbody>
                     <?php
                     $q = "SELECT * FROM user_queries ORDER BY 'sr_no' DESC";
