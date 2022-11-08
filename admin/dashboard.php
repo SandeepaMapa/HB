@@ -103,7 +103,7 @@
 
      <div class="row mb-3">
      <div class="col-md-3 mb-3">
-                <div class="card text-center text-primary p-3">
+                <div class="card text-center text-success p-3">
                 <h6>New Registration</h6>
                 <h1 class="mt-2 mb-0">0</h1>
             </div>
@@ -111,7 +111,7 @@
     
 
 <div class="col-md-3 mb-3">
-                <div class="card text-center text-success p-3">
+                <div class="card text-center text-primary p-3">
                 <h6>Queries</h6>
                 <h1 class="mt-2 mb-0">0</h1>
                 
