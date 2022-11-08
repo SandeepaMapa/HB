@@ -126,14 +126,14 @@
 <div class="modal fade" id="Dine-IN-Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" id="register-form" >
+        <form action="Restaurant-Reservation.php" method="POST" id="register-form" >
         <div class="modal-header">
           <h5 class="modal-title d-flex align-items-center">Dine In Reservation</h5>
           <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
         <span class="badge rounded-pill bg-light text-dark mb-1 text-wrap lh-base">
-        Important: Since we don't charge to reserve a table, please be kind enough to inform cancelations earlier.
+        Important: Since we don't charge to reserve a table, please be kind enough to inform cancellations earlier.
         </span>
 
         <section id="book-a-table" class="book-a-table">
@@ -141,54 +141,50 @@
           <form  method="post" role="form" class="php-email-form">
           <div class="row">
 
-            <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-              <input name="name" required type="text" placeholder="Your Name" class="form-control shadow-none">
-            </div>
+          <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+        <div class="validate"></div>
+        </div>
 
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-            <div class="validate"></div>
-            </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3 ">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+          <div class="validate"></div>
+        </div>
 
-            <div class="col-lg-4 col-md-6 form-group mt-3 ">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+        <div class="col-lg-4 col-md-6 form-group mt-3 ">
+          <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>        
+
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+          <div class="validate"></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+            <select class="form-select"  name="Res-type" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                <option disabled selected >Select One</option>
+                <option value="1">Dine-In</option>
+                <option value="2">BBQ</option>
+                <option value="3">A Lar Carte</option>
+              </select>
               <div class="validate"></div>
-            </div>
+        </div>
 
-            <div class="col-lg-4 col-md-6 form-group mt-3 ">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
+        <div class=" form-group mt-3">
+          <textarea name="message" placeholder="Extra Notes" required  class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
+        </div>
 
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-                <select class="form-select"  name="people" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                    <option disabled selected >Select One</option>
-                    <option value="1">Breakfast</option>
-                    <option value="2">Lunch</option>
-                    <option value="3">Dinner</option>
-                    <option value="3">A Lar Carte</option>
-                  </select>
-                  <div class="validate"></div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-              <div class="validate"></div>
-            </div>
-
-            <div class=" form-group mt-3">
-              <textarea name="message" placeholder="Extra Notes" required  class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
-            </div>
               
     </form>
       <div class="text-center"><button class="btn btn-primary" type="submit" name="send">Reserve Table</button></div>
@@ -203,7 +199,7 @@
 <div class="modal fade" id="BBQModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" id="" >
+        <form action="Restaurant-Reservation.php" method="POST" id="" >
         <div class="modal-header">
           <h5 class="modal-title d-flex align-items-center">BBQ Reservation</h5>
           <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -211,40 +207,57 @@
 
         <div class="modal-body">
         <span class="badge rounded-pill bg-light text-dark mb-1 text-wrap lh-base">
-          Important: Since we don't charge to reserve a table, please be kind enough to inform cancelations earlier.
+          Important: Since we don't charge to reserve a table, please be kind enough to inform cancellations earlier.
        </span>
        <section id="book-a-table" class="book-a-table">
         <div class="container">
 
-        <form  method="post" role="form" class="php-email-form">
+        <form action="Restaurant-Reservation.php" method="POST" role="form" class="php-email-form">
             <div class="row">
-              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-                <input name="name" required type="text" placeholder="Your Name" class="form-control shadow-none">
-              </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+        <div class="validate"></div>
+        </div>
 
-              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-                <input name="email" required type="email" placeholder="Your Email" class="form-control shadow-none">
-              </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3 ">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+          <div class="validate"></div>
+        </div>
 
-              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-                <input name="phone" required type="text" placeholder="Your Phone Number" class="form-control shadow-none">
-              </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3 ">
+          <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
 
-              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-                <input name="date" required type="date" placeholder="Date" class="form-control shadow-none">
-              </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
 
-              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-                <input name="time" required type="time" placeholder="Reservation Time" class="form-control shadow-none">
-              </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>        
 
-              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
-                <input name="qty" required type="number" placeholder="No of people" class="form-control shadow-none">
-              </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+          <div class="validate"></div>
+        </div>
 
-              <div class=" form-group mt-3">
-                <textarea name="message" placeholder="Extra Notes" required  class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
-              </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+            <select class="form-select"  name="Res-type" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                <option disabled selected >Select One</option>
+                <option value="1">Dine-In</option>
+                <option value="2">BBQ</option>
+                <option value="3">A Lar Carte</option>
+              </select>
+              <div class="validate"></div>
+        </div>
+
+        <div class=" form-group mt-3">
+          <textarea name="message" placeholder="Extra Notes" required  class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
+        </div>
+
         </form>
     
         <div class="text-center"><button class="btn btn-primary" type="submit" name="send" >Reserve Table</button></div>
