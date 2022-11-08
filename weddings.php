@@ -285,19 +285,19 @@ Kandyan dancing group
         <!--action="forms/book-a-table.php" method="post" role="form"-->
         <form onsubmit="sendEmail(); reset(); return false;" action="forms/book-a-table.php" class="php-email-form">
           <div class="row">
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <div class="col-lg-4 col-md-6 form-group mt-3 ">
               <input type="text" name="name" class="form-control" id="name" placeholder="Family Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <div class="col-lg-4 col-md-6 form-group mt-3 ">
               <input type="text" name="name" class="form-control" id="name" placeholder="First Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <div class="col-lg-4 col-md-6 form-group mt-3 ">
               <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
               <div class="validate"></div>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <div class="col-lg-4 col-md-6 form-group mt-3 ">
               <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
@@ -318,7 +318,7 @@ Kandyan dancing group
               </select>
               <div class="validate"></div>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <div class="col-lg-4 col-md-6 form-group mt-3 ">
               <input type="text" class="form-control" name="phone" id="phone" placeholder="Menu No" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
 </div>
