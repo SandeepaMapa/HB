@@ -28,7 +28,7 @@
      <div class="row mb-4">
         <div class="col-md-3 mb-4">
             <a href="booknow.php" class="text-decoration-none">
-                <div class="card text-center text-succe p-3">
+                <div class="card text-center text-success p-3">
                 <h6>Bookings</h6>
                 <h1 class="mt-2 mb-0">5</h1>
             </div>
@@ -55,17 +55,34 @@
 </select>
      </div>
 
+
+     
+     <div class="row mb-3">
      <div class="col-md-3 mb-3">
-            <a href="booknow.php" class="text-decoration-none">
-                <div class="card text-center text-succe p-3">
+                <div class="card text-center text-primary p-3">
                 <h6>Total Bookings</h6>
                 <h1 class="mt-2 mb-0">0</h1>
                 <h4 class="mt-2 mb-0">Rs.0</h4>
             </div>
-    </a>
+    
+
+<div class="col-md-3 mb-3">
+                <div class="card text-center text-success p-3">
+                <h6>Actiive Bookings</h6>
+                <h1 class="mt-2 mb-0">0</h1>
+                <h4 class="mt-2 mb-0">Rs.0</h4>
+            </div>
+    
+
+    <div class="col-md-3 mb-3">
+                <div class="card text-center text-primary p-3">
+                <h6>Cancelled Bookings</h6>
+                <h1 class="mt-2 mb-0">0</h1>
+                <h4 class="mt-2 mb-0">Rs.0</h4>
+            </div>
+   
+
 </div>
-
-
 
 </div>
 
