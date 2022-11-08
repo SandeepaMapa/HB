@@ -27,7 +27,7 @@
 
      <div class="row mb-4">
         <div class="col-md-3 mb-4">
-            <a href="">
+            <a href="booknow.php" class="text-decoration-none">
                 <div class="card text-center p-3">
                 <h6>New Bookings</h6>
                 <h1>5</h1>
