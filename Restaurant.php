@@ -67,7 +67,7 @@
 
               </div>
               <div class="Dinner mb-3">
-                <h6 class="mb-1">Dinner     - 7PM to 10PM </h6>
+                <h6 class="mb-1">Dinner     :- 7PM to 10PM </h6>
                 
               </div>
               <div class="capacity mb-3">
@@ -76,7 +76,7 @@
               </div>
         </div>
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-          <h6 class="mb-4">Rs. 2500 per person</h6>
+          <h6 class="mb-4">Starting from <br>Rs. 2500 per person</h6>
             <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2" data-bs-toggle="modal" data-bs-target="#Dine-IN-Modal">Reservation</a>
             <a href="Dine-in.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
@@ -101,7 +101,7 @@
               
         </div>
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-          <h6 class="mb-4">Rs. 1500 per Person</h6>
+          <h6 class="mb-4"> Starting from <br>Rs. 1500 per Person</h6>
             <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2" data-bs-toggle="modal" data-bs-target="#BBQModal">Reservation</a>
             <a href="BBQ.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
