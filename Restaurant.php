@@ -265,7 +265,7 @@
       </div>
     </div>
   </div>
-
+   </div>
 
    <?php require('inc/footer.php')?>
    <!-- Initialize Swiper -->
