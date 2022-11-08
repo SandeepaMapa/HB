@@ -27,17 +27,14 @@
     
 
   <!--Topics-->
-  <div class="my-3 px-4">
-  <h2 class="mt-3 pt-4 mb-4 text-center fw-bold f2">GALLERY</h2>
+  <div class=" px-4">
+  <h2 class=" pt-4 mb-4 text-center fw-bold f2">GALLERY</h2>
   <div class="h-line bg-dark"></div>
-  <p class="text-center mt-4">
+  <p class="text-center mx-5 mt-3">
   Celebrate your love story amidst plush greenery and the magic of River's Edge Reception.<br>
        This is an OUT OF THIS WORLD venue! In our aspiration to offer a myriad of
         services that will encompass a true Rivery experience,
-       we are also prepared to assist you, with your corporate requirements.<br>
-       We spare no effort in ensuring that all corporate retreats,
-       outings and events are carried out with the zest and professionalism required
-        to ensure all your events a veritable success.<br> 
+       we are also prepared to assist you, with your corporate requirements.
        Join us, as we conjure the ideal combination of rest and relaxation
         along with the corporate requirements of today’s fast paced lifestyle.
   </p>
@@ -103,9 +100,7 @@
       <div class="swiper-pagination"></div>
       </div>
       </div>
-  
-
-
+      
       <h5 class="my-5 fw-bold h-foot text-center">Restaurant</h5>
       <div class="container px-4">
         <!-- Swiper -->
