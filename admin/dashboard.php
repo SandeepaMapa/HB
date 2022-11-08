@@ -34,7 +34,7 @@
             </div>
     </a>
 </div>
-</div>
+
 
 <div class="col-md-3 mb-4">
             <a href="user_queries.php" class="text-decoration-none">
@@ -44,7 +44,7 @@
             </div>
     </a>
 </div>
-</div>
+
 
 <div class="d-flex align-items-center justify-content-between mb-3">
         <h5>Booking Analytics</h5>
