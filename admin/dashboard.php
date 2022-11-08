@@ -55,6 +55,18 @@
 </select>
      </div>
 
+     <div class="col-md-3 mb-3">
+            <a href="booknow.php" class="text-decoration-none">
+                <div class="card text-center text-succe p-3">
+                <h6>Total Bookings</h6>
+                <h1 class="mt-2 mb-0">0</h1>
+                <h4 class="mt-2 mb-0">Rs.0</h4>
+            </div>
+    </a>
+</div>
+
+
+
 </div>
 
 </div>
