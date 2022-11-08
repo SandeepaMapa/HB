@@ -44,7 +44,16 @@
     </a>
 </div>
 
-
+<div class="d-flex align-items-center justify-content-between mb-3">
+        <h5>Booking Analytics</h5>
+        <select class="form-select shadow-none bg-light w-auto">
+            <option value="1">Past 30 Days</option>
+            <option value="2">twPast 90 Days</option>
+            <option value="3">Past 1 Year</option>
+            <option value="4">All time</option>
+            
+</select>
+     </div>
 
 </div>
 
