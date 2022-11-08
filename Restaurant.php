@@ -21,13 +21,13 @@
     <div class="swiper swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="Photos\Restaurant\slide1.jpg" class="w-100 d-block" height="550"/>
+            <img src="Photos\Gallery\rest.jpg" class="w-100 d-block" height="550"/>
           </div>
           <div class="swiper-slide">
-            <img src="Photos\Restaurant\slide2.jpg" class="w-100 d-block" height="550"/>
+            <img src="Photos\Restaurant\res.jpg" class="w-100 d-block" height="550"/>
           </div>
           <div class="swiper-slide">
-            <img src="Photos\Restaurant\slide3.jpg" class="w-100 d-block" height="550" />
+            <img src="Photos\Restaurant\brek.jpg"class="w-100 d-block" height="550" />
           </div>
         </div>
         
@@ -67,7 +67,7 @@
 
               </div>
               <div class="Dinner mb-3">
-                <h6 class="mb-1">Dinner     - 7PM to 10PM </h6>
+                <h6 class="mb-1">Dinner     :- 7PM to 10PM </h6>
                 
               </div>
               <div class="capacity mb-3">
@@ -76,7 +76,7 @@
               </div>
         </div>
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-          <h6 class="mb-4">Rs. 2500 per person</h6>
+          <h6 class="mb-4">Starting from <br>Rs. 2500 per person</h6>
             <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2" data-bs-toggle="modal" data-bs-target="#Dine-IN-Modal">Reservation</a>
             <a href="Dine-in.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
@@ -101,8 +101,8 @@
               
         </div>
         <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center">
-          <h6 class="mb-4">Rs. 1500 per Person</h6>
-            <a href="DineInnn.php" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Reservation</a>
+          <h6 class="mb-4"> Starting from <br>Rs. 1500 per Person</h6>
+            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2" data-bs-toggle="modal" data-bs-target="#BBQModal">Reservation</a>
             <a href="BBQ.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
     </div>
   </div>
@@ -121,151 +121,144 @@
     </div>
       </div>
  </div>
-<!-- Reservation Model -->
- <div class="modal fade" id="Dine-IN-Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+<!--  Dine In Reservation Model -->
+<div class="modal fade" id="Dine-IN-Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <form id="" >
-        <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" id="register-form" >
+        <div class="modal-header">
+          <h5 class="modal-title d-flex align-items-center">Dine In Reservation</h5>
+          <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
         <div class="modal-body">
-       <!-- Reservation -->
-	   <section id="book-a-table" class="book-a-table">
-  <div class="container">
- <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 form-group">
-          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-          <div class="validate"></div>
-        </div>
-        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-          <div class="validate"></div>
-        </div>
-        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-          <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-          <div class="validate"></div>
-        </div>
-        <div class="col-lg-4 col-md-6 form-group mt-3">
-          <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-          <div class="validate"></div>
-        </div>
-        <div class="col-lg-4 col-md-6 form-group mt-3">
-          <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-          <div class="validate"></div>
-        </div>
-        <div class="col-lg-4 col-md-6 form-group mt-3">
-            <select class="form-select"  name="people" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                <option disabled selected >Select One</option>
-                <option value="1">Breakfast</option>
-                <option value="2">Lunch</option>
-                <option value="3">Dinner</option>
-                <option value="3">A Lar Carte</option>
-              </select>
+        <span class="badge rounded-pill bg-light text-dark mb-1 text-wrap lh-base">
+        Important: Since we don't charge to reserve a table, please be kind enough to inform cancelations earlier.
+        </span>
+
+        <section id="book-a-table" class="book-a-table">
+          <div class="container">
+          <form  method="post" role="form" class="php-email-form">
+          <div class="row">
+
+            <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+              <input name="name" required type="text" placeholder="Your Name" class="form-control shadow-none">
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group mt-3 ">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
               <div class="validate"></div>
             </div>
-        <div class="col-lg-4 col-md-6 form-group mt-3">
-          <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-          <div class="validate"></div>
-        </div>
-      </div>
-      <div class="form-group mt-3">
-        <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-        <div class="validate"></div>
-      </div>
+
+            <div class="col-lg-4 col-md-6 form-group mt-3 ">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+                <select class="form-select"  name="people" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                    <option disabled selected >Select One</option>
+                    <option value="1">Breakfast</option>
+                    <option value="2">Lunch</option>
+                    <option value="3">Dinner</option>
+                    <option value="3">A Lar Carte</option>
+                  </select>
+                  <div class="validate"></div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+
+            <div class=" form-group mt-3">
+              <textarea name="message" placeholder="Extra Notes" required  class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
+            </div>
+              
+    </form>
+      <div class="text-center"><button class="btn btn-primary" type="submit" name="send">Reserve Table</button></div>
+  </div>
 </section><!-- End Book A Table Section -->
         </div>
-        </form>
       </div>
     </div>
   </div>
 
 <!-- BBQ Reservation Model -->
-<div class="modal fade" id="BBQ-Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="BBQModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <form id="" >
-        <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="modal-body">
-       <!-- Reservation -->
-		<div id="reservation" class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- reservation form -->
-                    <div class="card mb-3 border-0 shadow">
-                    <div class="row g-0 p-3 align-items-center">
-					<div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1">
-						<form class="reserve-form row">
-							<div class="section-header text-center">
-								<h4 class="sub-title">Reservation</h4>
-								<h2 class="title white-text">Book Your Table</h2>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="name">Name:</label>
-									<input class="input" type="text" placeholder="Name" id="name">
-								</div>
-								<div class="form-group">
-									<label for="phone">Phone:</label>
-									<input class="input" type="tel" placeholder="Phone" id="phone">
-								</div>
-								<div class="form-group">
-									<label for="date">Date:</label>
-									<input class="input" type="date" placeholder="MM/DD/YYYY" id="date">
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="email">Email:</label>
-									<input class="input" type="email" placeholder="Email" id="email">
-								</div>
-								<div class="form-group">
-									<label for="number">Number of Guests:</label>
-									<select class="input" id="number">
-										<option>1 Person</option>
-										<option>2 People</option>
-										<option>3 People</option>
-										<option>4 People</option>
-										<option>5 People</option>
-										<option>6 People</option>
-									</select>
-								</div>
-								<div class="form-group">
-								  <label for="time">Time:</label>
-								  <input class="input" type="text" placeholder="HH:MM" id="time">
-								</div>
-							</div>
-
-							<div class="col-md-12 text-center">
-								<button class="main-button">Book Now</button>
-							</div>
-
-						</form>
-					</div>
-          </div>
-          </div>
-				</div>
-				<!-- /row -->
-
-			</div>
-			<!-- /container -->
-
-		</div>
-		<!-- /Reservation -->
-      
-      
-          
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" id="" >
+        <div class="modal-header">
+          <h5 class="modal-title d-flex align-items-center">BBQ Reservation</h5>
+          <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        
-        </form>
 
+        <div class="modal-body">
+        <span class="badge rounded-pill bg-light text-dark mb-1 text-wrap lh-base">
+          Important: Since we don't charge to reserve a table, please be kind enough to inform cancelations earlier.
+       </span>
+       <section id="book-a-table" class="book-a-table">
+        <div class="container">
+
+        <form  method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+                <input name="name" required type="text" placeholder="Your Name" class="form-control shadow-none">
+              </div>
+
+              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+                <input name="email" required type="email" placeholder="Your Email" class="form-control shadow-none">
+              </div>
+
+              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+                <input name="phone" required type="text" placeholder="Your Phone Number" class="form-control shadow-none">
+              </div>
+
+              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+                <input name="date" required type="date" placeholder="Date" class="form-control shadow-none">
+              </div>
+
+              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+                <input name="time" required type="time" placeholder="Reservation Time" class="form-control shadow-none">
+              </div>
+
+              <div class=" col-lg-4 col-md-6 form-group mt-3 ">
+                <input name="qty" required type="number" placeholder="No of people" class="form-control shadow-none">
+              </div>
+
+              <div class=" form-group mt-3">
+                <textarea name="message" placeholder="Extra Notes" required  class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
+              </div>
+        </form>
+    
+        <div class="text-center"><button class="btn btn-primary" type="submit" name="send" >Reserve Table</button></div>
+    
+        </div>
+    </section><!-- End Book A Table Section -->      
+        </div>        
+        </form>
       </div>
     </div>
-  </div>
+</div>
 
+
+   </div>
 
    <?php require('inc/footer.php')?>
    <!-- Initialize Swiper -->
