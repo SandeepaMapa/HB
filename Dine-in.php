@@ -41,7 +41,7 @@
     <h2 class=" pt-1 mb-3 text-center fw-bold f2">Dine-in</h2>
     <div class="h-line bg-dark"></div>
     
-      <p class="text-center mx-5 mt-3 ">
+      <p class="text-center mx-5 mt-3">
       At River's Edge, we deliver the intense satisfaction of top-notch fusion cuisines if you love a hearty meal and a good time with family and friends.<br>
        We give you the finest dishes prepared by the hands of our professional chefs where you will have a fabulous dining experience<br>
         in our modern, outdoor and welcoming restaurant.
