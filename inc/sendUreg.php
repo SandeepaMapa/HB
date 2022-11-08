@@ -11,12 +11,21 @@
             $pass = $_POST['pass'];
             $cpass =$_POST['cpass'];
 
+            $check=mysqli_query($conn,"SELECT * from `user_reg1` WHERE `email` ='$email' OR `nic`='$nicnum' OR `phonenum`='$phonenum'");
+            $checkrows=mysqli_num_rows($check);
+
+
             if ($_POST['pass'] !== $_POST['cpass']) {
                 die('<script type="text/javascript">alert("Passwords are not matching");</script>');
              }
              
-
-            $sql = "INSERT INTO `user_reg1`(`name`, `nic`, `email`, `phonenum`, `password`) VALUES ('$name', '$nicnum','$email','$phonenum', '$pass')";
+             else{
+                
+        if($checkrows>0) {
+                    echo "customer exists";}
+                  
+        else {
+            $sql = "INSERT IGNORE INTO `user_reg1`(`name`, `nic`, `email`, `phonenum`, `password`) VALUES ('$name', '$nicnum','$email','$phonenum', '$pass')";
 
             $query = mysqli_query($conn,$sql);
             if ($query){
@@ -26,8 +35,8 @@
             else {
                 'error occured';
             }
-
         }
-    }
-
+        }
+    }}
     ?>
+

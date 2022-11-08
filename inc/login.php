@@ -39,7 +39,8 @@
             $_SESSION['user_name'] = $row['user_name'];
             $_SESSION['name'] = $row ['name'];
             $_SESSION['id'] = $row['id'];
-            header("Location :../hb/events.php");
+            $path = $_SERVER['localhost'].'/hb/loghome.php';
+            header("Location:lhome.php");
             exit();
         }
         else {
