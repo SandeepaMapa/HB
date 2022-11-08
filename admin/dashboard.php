@@ -34,6 +34,18 @@
             </div>
     </a>
 </div>
+
+<div class="col-md-3 mb-4">
+            <a href="user_queries.php" class="text-decoration-none">
+                <div class="card text-center text-info p-3">
+                <h6>User Queries</h6>
+                <h1 class="mt-2 mb-0">5</h1>
+            </div>
+    </a>
+</div>
+
+
+
 </div>
 
 </div>
