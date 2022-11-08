@@ -3,25 +3,24 @@
  require('inc/db_config.php');
  adminLogin();
 
- if(isset($_GET['seen']))
+ if(isset($_GET['checked_in']))
  {
     $frm_data = filteration($_GET);
 
-     $sq = "UPDATE bookings SET checked_in=? WHERE booking_id=?";
-        $values = [1,$frm_data['checked_in']];
-        if(update($sq,$values,'ii')){
-         alert('Success','Marked as read!');
-        }
-        else{
-         alert('error','Operation Failed!');
-        }
+   $sq = "UPDATE bookings SET checked_in=? WHERE booking_id=?";
+   $values = [1,$frm_data['checked_in']];
+   if(update($sq,$values,'ii')){
+    alert('Success','Marked as read!');
+   }
+   else{
+    alert('error','Operation Failed!');
+   }
  }
 
 
 if(isset($_GET['del']))
  {
     $frm_data = filteration($_GET);
-
    $sq = "DELETE FROM bookings WHERE booking_id=?";
    $values = [$frm_data['del']];
    if(delete($sq,$values,'i')){
@@ -31,6 +30,7 @@ if(isset($_GET['del']))
     alert('error','Operation Failed!');
    }
  }
+
 
 
 ?>
@@ -55,7 +55,8 @@ if(isset($_GET['del']))
 
                 <div class="card border-0 shadow-sm mb-4">
                     <div class="card-body">
-
+        
+                    <div class="text-end mb-4">
                     <div class="table-responsive-md" style="height:500px; overflow-y: scroll;">
                     <table class="table table-hover border">
                     <thead class="stick-top">
@@ -65,7 +66,7 @@ if(isset($_GET['del']))
                                 <th scope="col">Contact No</th>
                                 <th scope="col">Room Type</th>
                                 <th scope="col">Check in</th>
-                                <th scope="col">Check out</th>
+                                <th scope="col">Booking date</th>
                                 <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -77,12 +78,16 @@ if(isset($_GET['del']))
 
                     while($row = mysqli_fetch_assoc($data))
                     {
-                        $seen='';
-                        if($row['checked_in']!=1){
+                        $checked_in='';
+                        if($row['checked_in']!=1)
+                        {
 
-                        $seen = "<a href='?checked_in=$row[booking_id]' class='btn btn-sm  btn-primary'>Checked-in</a> <br>";
+                        $checked_in = "<a href='?checked_in=$row[booking_id]' class='btn btn-sm  btn-primary'>Checked-in</a> <br>";
                         }
-                        $seen.= "<a href='?checked_in=$row[booking_id]' class='btn btn-sm btn-danger mt-2'>Delete</a>";
+                        else{
+                            $checked_in.= "<a href='?checked_in=$row[booking_id]' class='btn btn-sm btn-danger '>Delete</a>";
+                        }
+                        
                                     
                         echo<<<query
                         <tr>
@@ -91,8 +96,8 @@ if(isset($_GET['del']))
                         <td>$row[phoneno]</td>
                         <td>$row[roomtype]</td>
                         <td>$row[checkin]</td>
-                        <td>$row[checkout]</td>
-                        <td>$seen</td>
+                        <td>$row[date]</td>
+                        <td>$checked_in</td>
                         </tr>
                         query;
                         $i++;
