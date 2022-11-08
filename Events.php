@@ -65,10 +65,34 @@
 <!--Weddings end-->
 
 
-      <!--Parties-->
+      <!--Dayouts-->
       <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-6 col-md-5 mb-4 order-lg-2 order-md-2 order-1 bg-white rounded shadow p-4 border-top border-4 border-dark pop">
+      <h3 class="mb-3">Dayouts</h3>
+        <p>
+        The city's sought-after location for Dayouts, Rivers Edge Reception offers unique and luxuriously styled venues<br> 
+      with a dedicated team who will help make your special day a memorable one.<br>
+
+    Let us make your dream wedding come to life. Browse through our curation of bespoke experiences, packages, and venues here.
+        </p>
+        <!--Buttons-->
+        <div class="col-md-4 mt-lg-0 mt-md-0 mt-4 text-center">
+            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Venue</a>
+            <a href="Dayouts.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
+        </div>
+      </div>
+        <div class="col-lg-5 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
+          <img src="Photos\Events\Oruwa.jpg" class="w-100">
+        </div>
+    </div>
+  </div>
+<!--Dayouts end-->
+
+<!--Parties-->
+<div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2 bg-white rounded shadow p-4 border-top border-4 border-dark pop">
       <h3 class="mb-3">Parties</h3>
         <p>
         The city's sought-after location for Parties, Rivers Edge Reception offers unique and luxuriously styled venues<br> 
@@ -82,36 +106,12 @@
             <a href="Parties.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
         </div>
       </div>
-        <div class="col-lg-5 col-md-5 mb-4 order-lg-1 order-md-1 order-2">
+        <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
           <img src="Photos\Events\Party2.jpg" class="w-100">
         </div>
     </div>
   </div>
 <!--Parties end-->
-
-<!--Dayouts-->
-<div class="container">
-    <div class="row justify-content-between align-items-center">
-      <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2 bg-white rounded shadow p-4 border-top border-4 border-dark pop">
-      <h3 class="mb-3">Dayouts</h3>
-        <p>
-        The city's sought-after location for Parties, Rivers Edge Reception offers unique and luxuriously styled venues<br> 
-      with a dedicated team who will help make your special day a memorable one.<br>
-
-    Let us make your dream wedding come to life. Browse through our curation of bespoke experiences, packages, and venues here.
-        </p>
-        <!--Buttons-->
-        <div class="col-md-4 mt-lg-0 mt-md-0 mt-4 text-center">
-            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Venue</a>
-            <a href="Dayouts.php" class="btn btn-sm w-100 btn-outline-dark shadow-none">More details</a>
-        </div>
-      </div>
-        <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-2 order-1">
-          <img src="Photos\Events\Oruwa.jpg" class="w-100">
-        </div>
-    </div>
-  </div>
-<!--Dayouts end-->
 
 <!--Photoshoots-->
 <div class="container">
