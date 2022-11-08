@@ -6,3 +6,19 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+<?php
+
+
+if($settings_r['shutdown']){
+    echo<<<alterbar
+    <div clas='bg-danger text-center p-2 fw-bold'>
+    <i class="bi bi-exclamation-triangle-fill"></i>
+    Bookings are temporarily closed!
+    alterbar;
+}
+
+
+
+
+
+?>
