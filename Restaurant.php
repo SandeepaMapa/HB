@@ -21,13 +21,13 @@
     <div class="swiper swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="Photos\Restaurant\slide1.jpg" class="w-100 d-block" height="550"/>
+            <img src="Photos\Gallery\rest.jpg" class="w-100 d-block" height="550"/>
           </div>
           <div class="swiper-slide">
-            <img src="Photos\Restaurant\slide2.jpg" class="w-100 d-block" height="550"/>
+            <img src="Photos\Restaurant\res.jpg" class="w-100 d-block" height="550"/>
           </div>
           <div class="swiper-slide">
-            <img src="Photos\Restaurant\slide3.jpg" class="w-100 d-block" height="550" />
+            <img src="Photos\Restaurant\brek.jpg"class="w-100 d-block" height="550" />
           </div>
         </div>
         

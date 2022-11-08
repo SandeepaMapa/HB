@@ -143,7 +143,7 @@
       <div class="modal-content">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" id="register-form" >
         <div class="modal-header">
-          <h5 class="modal-title d-flex align-items-center">Dine In Reservation</h5>
+          <h5 class="modal-title d-flex align-items-center">Wedding Reservation</h5>
           <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -220,7 +220,7 @@
       <div class="modal-content">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" id="register-form" >
         <div class="modal-header">
-          <h5 class="modal-title d-flex align-items-center">Dine In Reservation</h5>
+          <h5 class="modal-title d-flex align-items-center">Dayout Reservation</h5>
           <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
