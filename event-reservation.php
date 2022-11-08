@@ -20,7 +20,7 @@ $menutype = $_POST['menutype'];
 $msg = $_POST['msg'];
  
 // Attempt insert query execution
-$sql = "INSERT INTO rest_reserv(name, email, phoneno, date, NoOfPeople,time , menutype,msg) 
+$sql = "INSERT INTO event_reserv(name, email, phoneno, date, NoOfPeople,time , menutype,msg) 
        VALUES ('$name','$email','$phoneno','$date','$NoOfPeople','$time','$menutype','$msg')";
 if(mysqli_query($con, $sql)){
     echo "";
