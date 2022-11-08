@@ -60,51 +60,38 @@
   <div class="row ">
     <div class="col-lg-12 bg-white shadow p-4 rounded">
       <h5 class="mb-4">Check Booking Availability</h5>
-      <form action="Accomodation.php">
+      <form >
             <div class="row align-items-end">
               <div class="col-lg-3 mb-3">
                 <label class="form-label" style="font-weight: 500;">Check-in</label>
-                <input type="date" class="form-control shadow-none"  name="checkin" required>
+                <input type="date" class="form-control shadow-none">
               </div>
 
               <div class="col-lg-3 mb-3">
                 <label class="form-label" style="font-weight: 500;">Check-out</label>
-                <input type="date" class="form-control shadow-none" name="checkout" required>
+                <input type="date" class="form-control shadow-none">
               </div>
               <div class="col-lg-2 mb-3">
                 <label class="form-label" style="font-weight: 500;">Adults</label>
-                <select class="form-select shadow-none" name="adult">
-
-                <?php
-                    $guests_q = mysqli_query($con,"SELECT MAX(adult) AS 'max_adult' , MAX(children) AS 'max_children' 
-                    FROM rooms WHERE status='1' AND removed='0'");
-                    $guests_res = mysqli_fetch_assoc($guests_q);
-
-                    for($i=1;$i<=$guests_res['max_adult']; $i++){
-                      echo"<option value='$i'>$i</option>";
-                    }
-                ?>
-
-                  
+                <select class="form-select shadow-none">
+                  <option selected>Select number</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
                 </select>
               </div>
 
               <div class="col-lg-2 mb-3">
                 <label class="form-label" style="font-weight: 500;">Children</label>
-                <select class="form-select shadow-none" name="children">
-
-                <?php
-
-                    for($i=0;$i<=$guests_res['max_children']; $i++){
-                      echo"<option value='$i'>$i</option>";
-                    }
-                ?>
-                  
+                <select class="form-select shadow-none">
+                  <option selected>Select number</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
                 </select>
-                <input type="hidden" name="check_availability">
               </div>
                 <div class="col-lg-2 mb-lg-3 mt-2">
-                  <button type="submit" class="btn text-white shadow-none custom-bg">Check</button>
+                  <button type="submit" class="btn text-white shadow-none custom-bg">Book Now</button>
                 </div>
             </div>
 
@@ -155,9 +142,10 @@
             $room_thumb = ROOMS_IMG_PATH . $thumb_res['image'];
           }
 
-     
+       
 
-          //print room card 
+
+          //print room card
         
           echo <<<data
           <div class="col-lg-4 col-md-6 my-3">
@@ -191,7 +179,7 @@
                  
                   </div>
                   <div class="d-flex justify-content-evenly mb-2">
-                    <a href="Booknow.php" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
+                    <a href="https://buy.stripe.com/test_eVaaG52vsab29dC5kk" class="btn btn-sm text-white custom-bg shadow-none">Book Now</a>
                     <a href="room_details.php?id=$room_data[id]" class="btn btn-sm btn-outline-dark shadow-none">More details</a>
                   </div>
              

@@ -31,7 +31,23 @@
 <body class="bg-light">
 
   <!--Header-->
-  <?php require('inc/header.php'); ?>
+  <?php require('inc/header.php'); 
+  
+   $checkin_default="";
+   $checkout_default="";
+   $adult_default="";
+   $children_default="";
+
+   if(isset($_GET['check_availability']))
+   {
+     $frm_data = filteration($_GET);
+
+     $checkin_default = $frm_data['checkin'];
+     $checkout_default = $frm_data['checkout'];
+     $adult_default = $frm_data['adult'];
+     $children_default = $frm_data['children'];
+   }
+  ?>
 
   <!-- carousel -->
   <div class="container-fluid px-lg mt-4">
@@ -99,9 +115,9 @@
                 <button id="chk_avail_btn" onclick="chk_avail_clear()" class="btn shadow-none btn-sm text-secondary d-none">Reset</span>
                 </h5>
                 <label class="form-label">Check-in</label>
-                <input type="date" class="form-control shadow-none mb-3" id="checkin" onchange="chk_avail_filter()">
+                <input type="date" class="form-control shadow-none mb-3" value="<?php echo $checkin_default ?>" id="checkin" onchange="chk_avail_filter()">
                 <label class="form-label">Check-out</label>
-                <input type="date" class="form-control shadow-none" id="checkout" onchange="chk_avail_filter()">
+                <input type="date" class="form-control shadow-none" value="<?php echo $checkout_default ?>" id="checkout" onchange="chk_avail_filter()">
               </div>
 
               <!--facilities-->
@@ -134,11 +150,11 @@
                 <div class="d-flex">
                   <div class=me-3>
                     <label class="form-label">Adults</label>
-                    <input type="number" min="1" id="adults" oninput="guests_filter()" class="form-control shadow-none">
+                    <input type="number" min="1" id="adults" value="<?php echo $adult_default ?>" oninput="guests_filter()" class="form-control shadow-none">
                   </div>
                   <div>
                     <label class="form-label">Children</label>
-                    <input type="number"  id="children" oninput="guests_filter()" class="form-control shadow-none">
+                    <input type="number"  id="children" value="<?php echo $children_default ?>" oninput="guests_filter()" class="form-control shadow-none">
                   </div>
                 </div>
               </div>
@@ -167,7 +183,7 @@
     let children = document.getElementById('children');
     let facilities_btn = document.getElementById('facilities_btn');
 
-    facilities_btn
+    
      function fetch_rooms()
      {
       let chk_avail = JSON.stringify({
@@ -193,6 +209,7 @@
       else{
         facilities_btn.classList.add('d-none');
       }
+
       facility_list = JSON.stringify(facility_list);
 
 
@@ -240,14 +257,30 @@
 
       function guests_clear()
       {
-         adults.value='';
+         adults.value='';         
          children.value='';
          guests_btn.classList.remove('d-none');
           fetch_rooms();
           
       }
+
+      function facilities_clear()
+      {
+        let get_facilities = document.querySelectorAll('[name="facilities"]:checked');
+        get_facilities.forEach((facility)=>{
+          facility.checked=false;
+        });
+        facilities_btn.classList.add('d-none');
+          fetch_rooms();
+          
+      }
+
+      window.onload = function()
+      {
+        fetch_rooms();
+      }
      
-     fetch_rooms();
+     
   </script>
 
 
