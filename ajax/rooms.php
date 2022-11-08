@@ -35,6 +35,10 @@
         $adults = ($guests['adults']!='') ? $guests['adults'] : 0;
         $children = ($guests['children']!='') ? $guests['children'] : 0;
 
+        //facilities data decode
+        $facility_list = json_decode($_GET['facility_list'],true);
+
+
         //count no.of rooms and output variable to store room cards
         $count_rooms = 0;
         $output = "";
@@ -50,10 +54,10 @@
          while ($room_data = mysqli_fetch_assoc($room_res)) {
           
           
-          //get facilities of room
+          //get facilities of room with filters
         
-          $fac_q = mysqli_query(
-            $con,
+          $fac_count=0;
+          $fac_q = mysqli_query($con,
             "SELECT f.name FROM `facilities` f 
                INNER JOIN room_facilities rfac ON f.id = rfac.facilities_id
                WHERE rfac.room_id = '$room_data[id]'"
@@ -65,7 +69,6 @@
             $facilities_data .= "<span class='badge rounded-pill bg-light text-dark text-wrap me-1 mb-1'>
             $fac_row[name]
          </span>";
-
           }
 
           //get thumbnail of image
