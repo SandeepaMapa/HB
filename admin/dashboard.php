@@ -90,7 +90,7 @@
 </div>
 
 <div class="d-flex align-items-center justify-content-between mb-3">
-        <h5>User,Queries Analytics</h5>
+        <h5>User,Queries and Review Analytics</h5>
         <select class="form-select shadow-none bg-light w-auto">
             <option value="1">Past 30 Days</option>
             <option value="2">twPast 90 Days</option>
@@ -129,7 +129,43 @@
 </div>
 
 
+<h5>Users</h5>
 
+<div class="row mb-3">
+     <div class="col-md-3 mb-3">
+                <div class="card text-center text-info p-3">
+                <h6>Total </h6>
+                <h1 class="mt-2 mb-0">0</h1>
+            </div>
+</div>
+    
+
+<div class="col-md-3 mb-3">
+                <div class="card text-center text-success p-3">
+                <h6>Active  </h6>
+                <h1 class="mt-2 mb-0">0</h1>
+                
+            </div>
+</div>
+    
+
+    <div class="col-md-3 mb-3">
+                <div class="card text-center text-warning p-3">
+                <h6>Intactive</h6>
+                <h1 class="mt-2 mb-0">0</h1>
+            
+            </div>
+</div>
+
+<div class="col-md-3 mb-3">
+                <div class="card text-center text-danger p-3">
+                <h6>Unverified</h6>
+                <h1 class="mt-2 mb-0">0</h1>
+            
+            </div>
+</div>
+
+</div>
 
 
 </div>
