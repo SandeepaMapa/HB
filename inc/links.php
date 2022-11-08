@@ -19,8 +19,4 @@ if($settings_r['shutdown']){
     alterbar;
 }
 
-
-
-
-
 ?>
