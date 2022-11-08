@@ -180,19 +180,24 @@
         children: children.value
       });
 
-      let facilities_list = [];
+      let facility_list = {"facilities":[]};
 
       let get_facilities = document.querySelectorAll('[name="facilities"]:checked');
       if(get_facilities.length>0)
       {
         get_facilities.forEach((facility)=>{
-          facilities_list.push(facility.value);
+          facility_list.facilities.push(facility.value);
         })
+        facilities_btn.classList.remove('d-none');
       }
+      else{
+        facilities_btn.classList.add('d-none');
+      }
+      facility_list = JSON.stringify(facility_list);
 
 
       let xhr = new XMLHttpRequest();
-      xhr.open("GET","ajax/rooms.php?fetch_rooms&chk_avail="+chk_avail+"&guests="+guests,true);
+      xhr.open("GET","ajax/rooms.php?fetch_rooms&chk_avail="+chk_avail+"&guests="+guests+"&facility_list="+facility_list,true);
 
       xhr.onprogress = function(){
         rooms_data.innerHTML = 
