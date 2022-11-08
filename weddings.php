@@ -107,29 +107,35 @@
                 
                 <div class="col-lg-6 col-md-4">
             <div class="gallery-item">
-              <a href="Photos\Menus\1750.png" class="gallery-lightbox">
-                <img src="Photos\Menus\1750.png" alt="" class="img-fluid">
+              <a href="Photos\Menus\pearl.png" class="gallery-lightbox">
+                <img src="Photos\Menus\pearl.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
                 
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Menu 1</h3>
+                  <h3>Pearl</h3>
                   <div class="price">
-                    <p><span>Rs 2150</span></p>
+                    <p><span>Rs 3500</span></p>
                   </div>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                  Embracing the locale’s unique allures through its historic colonial design and warm Sri Lankan hospitality, 
+                  River's Edge welcomes you to paradise. 
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Choice between a Sri Lankan or a Western ceremony </li>
+                    <li><i class="bi bi-check-circle"></i>Floral themed décor for selected ceremony </li>
+                    <li><i class="bi bi-check-circle"></i> Traditional Kandyan dancers and drummers for Sri Lankan wedding ceremony only</li>
+                    <li><i class="bi bi-check-circle"></i> Bridal bouquet and boutonniere for groom </li>
+                    <li><i class="bi bi-check-circle"></i>Single tier wedding cake </li>
+                    <li><i class="bi bi-check-circle"></i> Fruit basket and flowers/canapés in-room on arrival  </li>
+                    <li><i class="bi bi-check-circle"></i>Wedding gift </li>
                   </ul>
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
+                  
+                    Your wedding - be it an intimate waterfront exchange of vows or the grandest event for hundreds - will be an unforgettable day. 
+                    As you promise to love and cherish one another, we will promise to make every moment exquisite for you. 
+                    Your magical journey of celebration awaits.
                   </p>
                 </div>
               </div>
@@ -138,25 +144,29 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                  <img src="Photos\Menus\saffire.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Menu No 2</h3>
+                  <h3>Saffire</h3>
                   <div class="price">
-                    <p><span>$290</span></p>
+                    <p><span>Rs 5000</span></p>
                   </div>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                  Embracing the locale’s unique allures through its historic colonial design and warm Sri Lankan hospitality, 
+                  River's Edge welcomes you to paradise. .
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Hairdressing services for the bride</li>
+                    <li><i class="bi bi-check-circle"></i> Wedding album featuring 36 photos</li>
+                    <li><i class="bi bi-check-circle"></i> In-room champagne breakfast served the morning after  wedding ceremony </li>
+                    <li><i class="bi bi-check-circle"></i> Fruit basket and flowers/canapés in-room on arriva</li>
+                    <li><i class="bi bi-check-circle"></i> One bottle of sparkling wine for wedding toast</li>
                   </ul>
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
+                  The above services are given in addition to those from Menu Pearl<br>
+                    Your wedding - be it an intimate waterfront exchange of vows or the grandest event for hundreds - will be an unforgettable day. 
+                    As you promise to love and cherish one another, we will promise to make every moment exquisite for you. 
+                    Your magical journey of celebration awaits.
                   </p>
                 </div>
               </div>
@@ -165,25 +175,29 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                  <img src="Photos\Menus\emerald.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Menu No 3</h3>
+                  <h3>Emerald</h3>
                   <div class="price">
-                    <p><span>$99</span></p>
+                    <p><span>Rs 6500</span></p>
                   </div>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                  Embracing the locale’s unique allures through its historic colonial design and warm Sri Lankan hospitality, 
+                  River's Edge welcomes you to paradise. 
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Guaranteed upgrade to next room category</li>
+                    <li><i class="bi bi-check-circle"></i> 7-course beachfront dinner for wedding couple</li>
+                    <li><i class="bi bi-check-circle"></i> In-room champagne breakfast served the morning after  wedding ceremony </li>
+                    <li><i class="bi bi-check-circle"></i> Fruit basket and flowers/canapés in-room on arriva</li>
+                    <li><i class="bi bi-check-circle"></i> One bottle of sparkling wine for wedding toast</li>
                   </ul>
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
+                    The above services are given in addition to those from Menu Saffire<br>
+                    Your wedding - be it an intimate waterfront exchange of vows or the grandest event for hundreds - will be an unforgettable day. 
+                    As you promise to love and cherish one another, we will promise to make every moment exquisite for you. 
+                    Your magical journey of celebration awaits.
                   </p>
                 </div>
               </div>
