@@ -18,10 +18,16 @@
 
        
        <div class="container-fluid"  id="main-content">
-    
-    
-       </div>
+        <div class="row">
+            <div class="col-lg-10 ms-auto p-4 overflow-hidden">
 
+            <div class="d-flex align-items-center justify-content-between mb-4">
+        <h3>DaSHBOARD</h3>
+     </div>
+
+</div>
+</div>
+</div>
 
         <?php require('inc/scripts.php'); ?>
     </body>
