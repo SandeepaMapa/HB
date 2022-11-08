@@ -98,46 +98,8 @@ function alert(type,msg,postion='body')
       }
     }
 
-    data.append('name',register_form.elements['name'].values);
-    data.append('nicnum',register_form.elements['nicnum'].values);
-    data.append('email',register_form.elements['email'].values);
-    data.append('phonenum',register_form.elements['phonenum'].values);
-    data.append('pass',register_form.elements['pass'].values);
-    data.append('cpass',register_form.elements['cpass'].values);
-    data.append('register','');
-
-    var myModel = document.getElementById('registerModel');
-    var model = bootstarp.Model.getInstance(myModel);
-    mddal.hide();
-
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST","ajax/login_register.php",true);
+   
     
-    xhr.onload = function(){
-      if(this.responseText == 'pass_mismatch'){
-        alert('error',"password Mismatch!");
-      }
-      else if(this.responseText == 'email_already'){
-        alert('error',"Email is already registered!");
-      }
-      else if(this.responseText == 'phone_already'){
-        alert('error',"Phone number is already registered!");
-      }
-      else if(this.responseText == 'mail_failed'){
-        alert('error',"cannot send confirmation email! Server down!");
-      }
-      else if(this.responseText == 'ins_failed'){
-        alert('error',"Registration failed! Server down!");
-      }
-      else{
-        alert('success',"Registration successful. Confirmation link sent to email");
-        register_form.resent();
-      }
-    }
-
-    xhr.send(data);
-
-    ;
 
     setActive();
   </script>
