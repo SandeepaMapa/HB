@@ -9,6 +9,7 @@
  {
         $chk_avail = json_decode($_GET['chk_avail'],true);
 
+        //checkin and checkout filter validation
         if($chk_avail['checkin']!='' && $chk_avail['checkout']!='')
         {
           $today_date = new DateTime(date('Y-m-d'));
@@ -29,6 +30,11 @@
           }
         }
     
+        //guests data decode
+        $guests = json_decode($_GET['guests'],true);
+        $adults = ($guests['adults']!='') ? $guests['adults'] : 0;
+        $children = ($guests['children']!='') ? $guests['children'] : 0;
+
         //count no.of rooms and output variable to store room cards
         $count_rooms = 0;
         $output = "";
@@ -37,8 +43,9 @@
         $settings_q = "SELECT * FROM settings WHERE sr_no=1";
         $settings_r = mysqli_fetch_assoc(mysqli_query($con,$settings_q));
         
-        //query for room cards
-         $room_res = select("SELECT * FROM rooms WHERE status=? AND removed=?", [1, 0], 'ii');
+        //query for room cards with guests filter
+         $room_res = select("SELECT * FROM rooms WHERE adult>=? AND children>=? AND status=? AND removed=?", [$adults,$children,1, 0], 'iiii');
+
 
          while ($room_data = mysqli_fetch_assoc($room_res)) {
           

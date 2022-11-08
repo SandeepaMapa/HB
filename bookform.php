@@ -14,12 +14,11 @@ $name = $_POST['name'];
 $phoneno = $_POST['phoneno'];
 $checkin = $_POST['checkin'];
 $checkout = $_POST['checkout'];
-$roomtype = $_POST['roomtype'];
 $adults = $_POST['adults'];
 $children = $_POST['children'];
  
 // Attempt insert query execution
-$sql = "INSERT INTO booknow(name, phoneno, checkin, checkout, roomtype, adults, children) VALUES ('$name','$phoneno','$checkin','$checkout','$roomtype','$adults','$children')";
+$sql = "INSERT INTO bookings(name, phoneno, checkin, checkout, adults, children) VALUES ('$name','$phoneno','$checkin','$checkout','$adults','$children')";
 if(mysqli_query($con, $sql)){
     echo "";
 } else{

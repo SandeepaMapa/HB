@@ -115,7 +115,7 @@ if(isset($_POST['add_room']))
     }
 
      $data = ["roomdata" => $roomdata, "facilities" => $facilities];
-    $data = json_encode($data);
+     $data = json_encode($data);
 
     echo $data;
   }

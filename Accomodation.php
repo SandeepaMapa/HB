@@ -103,31 +103,42 @@
                 <label class="form-label">Check-out</label>
                 <input type="date" class="form-control shadow-none" id="checkout" onchange="chk_avail_filter()">
               </div>
+
+              <!--facilities-->
               <div class="border bg-light p-3 rounded mb-3">
-                <h5 class="mb-3" style="font-size:18px;">FACILITIES</h5>
-                <div class="mb-2">
-                  <input type="checkbox" id="f1" class="form-check-input shadow-none me-1">
-                  <label class="form-check-label" for="f1">Facility one</label>
-                </div>
-                <div class="mb-2">
-                  <input type="checkbox" id="f2" class="form-check-input shadow-none me-1">
-                  <label class="form-check-label" for="f2">Facility two</label>
-                </div>
-                <div class="mb-2">
-                  <input type="checkbox" id="f3" class="form-check-input shadow-none me-1">
-                  <label class="form-check-label" for="f3">Facility three</label>
-                </div>
+                <h5 class="d-flex align-items-center justify-content-between mb-3" style="font-size:18px;">
+                 <span>FACILITIES</span>
+                  <button id="facilities_btn" onclick="facilities_clear()" class="btn shadow-none btn-sm text-secondary d-none">Reset</span>
+                </h5>
+
+                  <?php
+                       $facilities_q = selectAll('facilities');
+                       while($row = mysqli_fetch_assoc($facilities_q))
+                       {
+                         echo<<<facilities
+                           <div class="mb-2">
+                             <input type="checkbox" onclick="fetch_rooms()" name="facilities" value="$row[id]" class="form-check-input shadow-none me-1" id="$row[id]">
+                              <label class="form-check-label" for="$row[id]">$row[name]</label>
+                           </div>
+                         facilities;
+                       }
+                  ?>
               </div>
+
+              <!--guests-->
               <div class="border bg-light p-3 rounded mb-3">
-                <h5 class="mb-3" style="font-size:18px;">GUESTS</h5>
+                <h5 class="d-flex align-items-center justify-content-between mb-3" style="font-size:18px;">
+                <span>GUESTS</span>
+                <button id="guests_btn" onclick="guests_clear()" class="btn shadow-none btn-sm text-secondary d-none">Reset</span>
+                </h5>
                 <div class="d-flex">
                   <div class=me-3>
                     <label class="form-label">Adults</label>
-                    <input type="number" class="form-control shadow-none">
+                    <input type="number" min="1" id="adults" oninput="guests_filter()" class="form-control shadow-none">
                   </div>
                   <div>
                     <label class="form-label">Children</label>
-                    <input type="number" class="form-control shadow-none">
+                    <input type="number"  id="children" oninput="guests_filter()" class="form-control shadow-none">
                   </div>
                 </div>
               </div>
@@ -136,6 +147,7 @@
           </div>
         </nav>
       </div>
+      
       <!--Rooms-->
       <div class="col-lg-9 col-md-12 px-4" id="rooms-data">
         
@@ -150,16 +162,37 @@
     let checkin = document.getElementById('checkin');
     let checkout = document.getElementById('checkout');
     let chk_avail_btn = document.getElementById('chk_avail_btn');
- 
+
+    let adults = document.getElementById('adults');
+    let children = document.getElementById('children');
+    let facilities_btn = document.getElementById('facilities_btn');
+
+    facilities_btn
      function fetch_rooms()
      {
       let chk_avail = JSON.stringify({
         checkin: checkin.value,
         checkout: checkout.value
-      })
+      });
+
+      let guests = JSON.stringify({
+        adults: adults.value,
+        children: children.value
+      });
+
+      let facilities_list = [];
+
+      let get_facilities = document.querySelectorAll('[name="facilities"]:checked');
+      if(get_facilities.length>0)
+      {
+        get_facilities.forEach((facility)=>{
+          facilities_list.push(facility.value);
+        })
+      }
+
 
       let xhr = new XMLHttpRequest();
-      xhr.open("GET","ajax/rooms.php?fetch_rooms&chk_avail="+chk_avail,true);
+      xhr.open("GET","ajax/rooms.php?fetch_rooms&chk_avail="+chk_avail+"&guests="+guests,true);
 
       xhr.onprogress = function(){
         rooms_data.innerHTML = 
@@ -191,10 +224,24 @@
         fetch_rooms();
         
       }
+
+      function guests_filter()
+      {
+        if(adults.value>0 || children.value>0){
+          fetch_rooms();
+          guests_btn.classList.remove('d-none');
+        }
+      }
+
+      function guests_clear()
+      {
+         adults.value='';
+         children.value='';
+         guests_btn.classList.remove('d-none');
+          fetch_rooms();
+          
+      }
      
-
-
-
      fetch_rooms();
   </script>
 
