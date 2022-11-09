@@ -105,7 +105,7 @@ FROM user_queries WHERE 'seen'=0"));
 </div>
 
 <div class="d-flex align-items-center justify-content-between mb-3">
-        <h5>User,Queries and Review Analytics</h5>
+        <h5>User,Queries and Analytics</h5>
         <select class="form-select shadow-none bg-light w-auto">
             <option value="1">Past 30 Days</option>
             <option value="2">twPast 90 Days</option>
@@ -134,13 +134,7 @@ FROM user_queries WHERE 'seen'=0"));
 </div>
     
 
-    <div class="col-md-3 mb-3">
-                <div class="card text-center text-primary p-3">
-                <h6>Reviews</h6>
-                <h1 class="mt-2 mb-0">0</h1>
-            
-            </div>
-</div>
+   
 </div>
 
 
