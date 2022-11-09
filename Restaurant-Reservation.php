@@ -20,8 +20,8 @@ $bookingtype = $_POST['bookingtype'];
 $msg = $_POST['msg'];
  
 // Attempt insert query execution
-$sql = "INSERT INTO rest_reserv(name, email, phoneno, date, time, NoOfPeople, bookingtype,msg) 
-       VALUES ('$name','$email','$phoneno','$date','$time','$NoOfPeople','$bookingtype','$msg')";
+$sql = "INSERT INTO rest_reserv(name, email, phoneno, date, time, NoOfPeople, bookingtype, msg) 
+        VALUES ('$name','$email','$phoneno','$date','$date','$time,'$NoOfPeople','$bookingtype','$msg')";
 if(mysqli_query($con, $sql)){
     echo "";
 } else{
