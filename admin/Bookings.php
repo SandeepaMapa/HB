@@ -3,14 +3,15 @@
  require('inc/db_config.php');
  adminLogin();
 
- if(isset($_GET['checked_in']))
+
+ if(isset($_GET['status']))
  {
     $frm_data = filteration($_GET);
 
-   $sq = "UPDATE bookings SET checked_in=? WHERE booking_id=?";
-   $values = [1,$frm_data['checked_in']];
+   $sq = "UPDATE bookings SET status=? WHERE booking_id=?";
+   $values = [1,$frm_data['status']];
    if(update($sq,$values,'ii')){
-    alert('Success','Marked as read!');
+    alert('Success','Accepted the booking!');
    }
    else{
     alert('error','Operation Failed!');
@@ -20,16 +21,17 @@
 
 if(isset($_GET['del']))
  {
-    $frm_data = filteration($_GET);
+   $frm_data = filteration($_GET);
    $sq = "DELETE FROM bookings WHERE booking_id=?";
    $values = [$frm_data['del']];
    if(delete($sq,$values,'i')){
-    alert('Success','Data deleted!');
+    alert('Success','Booking deleted!');
    }
    else{
     alert('error','Operation Failed!');
    }
  }
+
 
 
 
@@ -62,12 +64,11 @@ if(isset($_GET['del']))
                     <thead class="stick-top">
                     <tr class="bg-dark text-light">
                     <th scope="col">#</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Contact No</th>
-                                <th scope="col">Room Type</th>
-                                <th scope="col">Check in</th>
-                                <th scope="col">Booking date</th>
-                                <th scope="col">Action</th>
+                                <th class="text-center" scope="col">User Details</th>
+                                <th class="text-center" scope="col">Room Type</th>
+                                <th class="text-center" scope="col">Check in</th>
+                                <th class="text-center" scope="col">Booking date</th>
+                                <th class="text-center" scope="col">Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -78,26 +79,31 @@ if(isset($_GET['del']))
 
                     while($row = mysqli_fetch_assoc($data))
                     {
-                        $checked_in='';
-                        if($row['checked_in']!=1)
+                        $status='';
+                        if($row['status']!=1)
                         {
 
-                        $checked_in = "<a href='?checked_in=$row[booking_id]' class='btn btn-sm  btn-primary'>Checked-in</a> <br>";
+                        $status = "<a href='?status=$row[booking_id]' class='btn btn-sm  btn-primary'>Accepted</a> <br><br>";
                         }
-                        else{
-                            $checked_in.= "<a href='?checked_in=$row[booking_id]' class='btn btn-sm btn-danger '>Delete</a>";
-                        }
+                        
+                            $status.= "<a href='?del=$row[booking_id]' class='btn btn-sm btn-danger'>Cancel</a>";
+                        
                         
                                     
                         echo<<<query
                         <tr>
-                        <td>$i</td>
-                        <td>$row[name]</td>
-                        <td>$row[phoneno]</td>
-                        <td>$row[roomtype]</td>
-                        <td>$row[checkin]</td>
-                        <td>$row[date]</td>
-                        <td>$checked_in</td>
+                        <td class="text-center">$i</td>
+                        <td class="text-center">
+                           Name: $row[name]<br>
+                           Contact no: $row[phoneno]<br>
+                           Email: $row[email]
+                                               
+                           </td>
+                        
+                        <td class="text-center">$row[roomtype]</td>
+                        <td class="text-center">$row[checkin]</td>
+                        <td class="text-center">$row[date]</td>
+                        <td class="text-center">$status</td>
                         </tr>
                         query;
                         $i++;
@@ -109,12 +115,11 @@ if(isset($_GET['del']))
                    
                 </tbody>
                 </table>
-</div>
-</div>
-</div>
-
-</div>
-</div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
 </div>
 
               

@@ -12,6 +12,7 @@ if($con === false){
 
 $name = $_POST['name'];
 $phoneno = $_POST['phoneno'];
+$email = $_POST['email'];
 $checkin = $_POST['checkin'];
 $checkout = $_POST['checkout'];
 $roomtype = $_POST['roomtype'];
@@ -19,8 +20,8 @@ $adults = $_POST['adults'];
 $children = $_POST['children'];
  
 // Attempt insert query execution
-$sql = "INSERT INTO bookings(name, phoneno, checkin, checkout, roomtype, adults, children) 
-       VALUES ('$name','$phoneno','$checkin','$checkout','$roomtype','$adults','$children')";
+$sql = "INSERT INTO bookings(name, phoneno, email, checkin, checkout, roomtype, adults, children) 
+       VALUES ('$name','$phoneno','$email','$checkin','$checkout','$roomtype','$adults','$children')";
 if(mysqli_query($con, $sql)){
     echo "";
 } else{
