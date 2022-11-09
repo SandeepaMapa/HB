@@ -17,12 +17,12 @@
     <?php 
     require('inc/header.php');
 
-    $current_booking = mysqli_fetch_assoc(mysqli_query($con,"SELECT 
+    $current_booking = mysqli_fetch_assoc(mysqli_query($conn,"SELECT 
     COUNT(CASE WHEN booking_status='booked' AND arrival=0 THEN 1 END) AS 'new_bookings',
     COUNT(CASE WHEN booking_status='cancelled' AND Rrfund=0 THEN 1 END) AS 'refund_bookings'
    FROM 'bookings'"));
 
-   $unread_queries = mysqli_fetch_assoc(mysqli_query($con,"SELECT COUNT(sr_no) AS 'COUNT'
+   $unread_queries = mysqli_fetch_assoc(mysqli_query($conn,"SELECT COUNT(sr_no) AS 'COUNT'
     FROM 'user queries' WHERE 'seen'=0"));
 
     ?>    
