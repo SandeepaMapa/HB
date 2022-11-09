@@ -17,11 +17,16 @@
     <?php 
     
     require('inc/header.php');
-    $is_shutdown = mysqli_fetch_assoc(mysqli_query($con,"SELECT shutdown FROM settings"));
+    $is_shutdown = mysqli_fetch_assoc(mysqli_query($con,"SELECT 'shutdown' FROM settings"));
     
-    $current_booking = "SELECT 
+    $current_booking = mysqli_fetch_assoc(mysqli_query($con,"SELECT 
     COUNT(CASE WHEN booking_status='booked' AND arrival=0 THEN 1 END) AS 'new_bookings'
-    COUNT(CASE WHEN booking_statu='cancelled' AND refund=0)";
+    COUNT(CASE WHEN booking_statu='cancelled' AND refund=0 THEN 1 END) AS 'refund_bookings'
+    FROM 'booking_order'"));
+
+$unread_queries = mysqli_fetch_assoc(mysqli_query($con,"SELECT COUNT(sr_no) AS 'count' 
+FROM user_queries WHERE 'seen'=0"));
+
 
     
     ?>    
@@ -40,7 +45,7 @@
             <a href="booknow.php" class="text-decoration-none">
                 <div class="card text-center text-success p-3">
                 <h6>Bookings</h6>
-                <h1 class="mt-2 mb-0">5</h1>
+                <h1 class="mt-2 mb-0"><?php echo $current_booking['new_booking'] ?></h1>
             </div>
     </a>
 </div>
