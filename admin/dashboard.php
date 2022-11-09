@@ -19,7 +19,7 @@
     require('inc/header.php');
    
     
-    $current_booking = mysqli_fetch_assoc(mysqli_query($con,"SELECT 
+    $booking = mysqli_fetch_assoc(mysqli_query($con,"SELECT 
     COUNT(CASE WHEN booking_status='booked' AND arrival=0 THEN 1 END) AS 'new_bookings'
     COUNT(CASE WHEN booking_statu='cancelled' AND refund=0 THEN 1 END) AS 'refund_bookings'
     FROM 'booking_order'"));
