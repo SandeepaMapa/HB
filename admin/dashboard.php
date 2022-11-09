@@ -45,7 +45,7 @@ FROM user_queries WHERE 'seen'=0"));
             <a href="booknow.php" class="text-decoration-none">
                 <div class="card text-center text-success p-3">
                 <h6>Bookings</h6>
-                <h1 class="mt-2 mb-0"><?php echo $current_booking['new_booking'] ?></h1>
+                <h1 class="mt-2 mb-0"><?php echo $bookings['bookings'] ?></h1>
             </div>
     </a>
 </div>
