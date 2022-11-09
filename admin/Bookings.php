@@ -32,7 +32,20 @@ if(isset($_GET['del']))
    }
  }
 
+ 
+    $email = "thayagiperera@gmail.com";
+    $subject = "Accepting the Booking";
+    $body = "Hi";
+    $headers = "From: River's Edge";
 
+    if(mail($email,$subject,$body,$headers)){
+        echo "alert,Email sent";
+    }
+    else{
+        echo "alert,Email not sent";
+    }
+    
+ 
 
 
 ?>
@@ -43,7 +56,7 @@ if(isset($_GET['del']))
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin Panel -User_queries</title>
+        <title>Admin Panel - Bookings</title>
         <?php require('inc/links.php'); ?>
     </head>
     <body class="bg-light"> 
@@ -83,10 +96,11 @@ if(isset($_GET['del']))
                         if($row['status']!=1)
                         {
 
-                        $status = "<a href='?status=$row[booking_id]' class='btn btn-sm  btn-primary'>Accepted</a> <br><br>";
+                        $status = "<a href='?status=$row[booking_id]'  class='btn btn-sm  btn-primary'>Accepted</a> <br><br>";
                         }
                         
-                            $status.= "<a href='?del=$row[booking_id]' class='btn btn-sm btn-danger'>Cancel</a>";
+                            $status.= "<a href='?del=$row[booking_id]' class='btn btn-sm btn-danger'>Cancel</a><br><br>";
+                            $status.= "<button name='acceptbtn' class='btn btn-sm btn-danger'>test</button>";
                         
                         
                                     

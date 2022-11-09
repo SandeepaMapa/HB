@@ -2,9 +2,9 @@
   require('admin/inc/db_config.php');
   require('admin/inc/essentials.php');
 
-  $contact_q = "SELECT * FROM contact_details WHERE sr_no=?";
-  $values = [1];
-  $contact_r = mysqli_fetch_assoc(select($contact_q, $values, 'i'));
+  //$contact_q = "SELECT * FROM contact_details WHERE sr_no=?";
+  //$values = [1];
+ // $contact_r = mysqli_fetch_assoc(select($contact_q, $values, 'i'));
 
 ?>
 <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light px-lg-4 py-lg-3 shadow-sm sticky-top">
@@ -43,10 +43,10 @@
         </li>
 </ul>
       
-        <div class="d-flex">
-          <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2 text-white border-white " data-bs-toggle="modal" data-bs-target="#loginModal">
+<form action="http://localhost/HB/inc/iixx.php?"> <div class="d-flex">
+          <button type="submit" class="btn btn-outline-dark shadow-none me-lg-3 me-2 text-white border-white " data-bs-toggle="modal" data-bs-target="">
   Login
-</button>
+</button></form>
 <button type="button" class="btn btn-outline-dark shadow-none text-white border-white" data-bs-toggle="modal" data-bs-target="#registerModal">
   Register
 </button> &nbsp;&nbsp;
@@ -63,7 +63,7 @@
   <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <form action="login.php" method="POST">
+        <form action="login1.php" method="POST">
         <div class="modal-header">
           <h5 class="modal-title d-flex align-items-center">
             <i class="bi bi-person-circle fs-3 me-2"></i>
@@ -73,17 +73,17 @@
         <div class="modal-body">
           <div class="mb-3">
         <label  class="form-label">Email address</label>
-        <input type="email" name="email" class="form-control shadow-none">
+        <input type="email" name="email" id="email" class="form-control shadow-none">
          
       </div>
 
       <div class="mb-4 ">
-        <label  class="form-label">Password</label>
-        <input type="password" name="password" class="form-control shadow-none">
+        <label  class="form-label">Password..s</label>
+        <input type="password" name="password" id="password" class="form-control shadow-none">
       </div> 
 
       <div class="d-flex align-items-center justify-content-between mb-2">
-        <button type="submit" class="btn btn-dark shadow-none">LOGIN  </button>
+        <button type="submit" name="lsubmit" class="btn btn-dark shadow-none">LOGIN  </button>
         <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot Password?</a>
       </div>
           
@@ -199,7 +199,16 @@
         }
         }
     }}
+
+
+   
+ 
+
+
+
+
     ?>
+
 
 
 
