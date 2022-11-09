@@ -14,7 +14,14 @@
 
     <body class="bg-light">
         
-    <?php require('inc/header.php') ?>    
+    <?php 
+    require('inc/header.php');
+
+    $current_booking = "SELECT 
+    COUNT(CASE WHEN booking_status='booked' AND arrival=0 THEN 1 END) AS 'new_bookings'
+   FROM 'booking_order'";
+
+    ?>    
 
        
        <div class="container-fluid"  id="main-content">
@@ -35,6 +42,14 @@
     </a>
 </div>
 
+<div class="col-md-3 mb-4">
+            <a href="booknow.php" class="text-decoration-none">
+                <div class="card text-center text-warning p-3">
+                <h6>Refund Bookings</h6>
+                <h1 class="mt-2 mb-0">5</h1>
+            </div>
+    </a>
+</div>
 
 <div class="col-md-3 mb-4">
             <a href="user_queries.php" class="text-decoration-none">
