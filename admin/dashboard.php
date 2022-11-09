@@ -14,22 +14,7 @@
 
     <body class="bg-light">
         
-    <?php 
-    
-    require('inc/header.php');
-   
-    
-    $bookings = mysqli_fetch_assoc(mysqli_query($con,"SELECT 
-    COUNT(CASE WHEN booking_status='booked' AND arrival=0 THEN 1 END) AS 'new_bookings'
-    COUNT(CASE WHEN booking_status='cancelled' AND refund=0 THEN 1 END) AS 'refund_bookings'
-    FROM 'bookings'"));
-
-$unread_queries = mysqli_fetch_assoc(mysqli_query($con,"SELECT COUNT(sr_no) AS 'count' 
-FROM user_queries WHERE 'seen'=0"));
-
-
-    
-    ?>    
+    <?php require('inc/header.php') ?>    
 
        
        <div class="container-fluid"  id="main-content">
@@ -45,7 +30,7 @@ FROM user_queries WHERE 'seen'=0"));
             <a href="booknow.php" class="text-decoration-none">
                 <div class="card text-center text-success p-3">
                 <h6>Bookings</h6>
-                <h1 class="mt-2 mb-0"><?php echo $bookings['bookings'] ?></h1>
+                <h1 class="mt-2 mb-0">5</h1>
             </div>
     </a>
 </div>
@@ -105,7 +90,7 @@ FROM user_queries WHERE 'seen'=0"));
 </div>
 
 <div class="d-flex align-items-center justify-content-between mb-3">
-        <h5>User,Queries and Analytics</h5>
+        <h5>User,Queries and Review Analytics</h5>
         <select class="form-select shadow-none bg-light w-auto">
             <option value="1">Past 30 Days</option>
             <option value="2">twPast 90 Days</option>
@@ -134,7 +119,13 @@ FROM user_queries WHERE 'seen'=0"));
 </div>
     
 
-   
+    <div class="col-md-3 mb-3">
+                <div class="card text-center text-primary p-3">
+                <h6>Reviews</h6>
+                <h1 class="mt-2 mb-0">0</h1>
+            
+            </div>
+</div>
 </div>
 
 
