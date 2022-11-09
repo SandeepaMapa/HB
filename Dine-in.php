@@ -476,7 +476,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 form-group mt-3 ">
-          <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <input type="text" class="form-control" name="phoneno" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
           <div class="validate"></div>
         </div>
 
@@ -491,29 +491,25 @@
         </div>        
 
         <div class="col-lg-4 col-md-6 form-group mt-3">
-          <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+          <input type="number" class="form-control" name="NoOfPeople" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
           <div class="validate"></div>
         </div>
 
         <div class="col-lg-4 col-md-6 form-group mt-3">
-            <select class="form-select"  name="Res-type" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+            <select class="form-select"  name="bookingtype" id="people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
                 <option disabled selected >Select One</option>
-                <option value="1">Dine-In</option>
-                <option value="2">BBQ</option>
-                <option value="3">A Lar Carte</option>
+                <option >Dine-In</option>
+                <option >BBQ</option>
+                <option >A Lar Carte</option>
               </select>
               <div class="validate"></div>
         </div>
 
         <div class=" form-group mt-3">
-          <textarea name="message" placeholder="Extra Notes" required  class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
+          <textarea name="msg" placeholder="Extra Notes" required  class ="form-control shadow-none" rows="5" style="resize:none;"></textarea>
         </div>
 
-        <div class="mb-3">
-        <div class="loading">Loading</div>
-        <div class="error-message"></div>
-        <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-        </div>
+        
               
     </form>
       <div class="text-center"><button type="submit" name="send">Reserve Table</button></div>   
