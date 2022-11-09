@@ -22,7 +22,7 @@
     COUNT(CASE WHEN booking_status='cancelled' AND Rrfund=0 THEN 1 END) AS 'refund_bookings'
    FROM 'bookings'"));
 
-   $unread_queries = mysqli_fetch_assoc(mysqli_query($con,"SELECT COUNT(sr_no) AS 'COUNT'
+   $unread_queries = mysqli_fetch_assoc(mysqli_query($con,"SELECT COUNT(sr_no) AS 'count'
     FROM 'user queries' WHERE 'seen'=0"));
 
     ?>    
