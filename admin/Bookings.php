@@ -88,8 +88,7 @@ if(isset($_GET['del']))
                         }
                         
                             $status.= "<a href='?del=$row[booking_id]' class='btn btn-sm btn-danger'>Cancel</a><br><br>";
-                            $status.= "<button name='acceptbtn' class='btn btn-sm btn-danger'>test</button>";
-                        
+                            
                         
                                     
                         echo<<<query
