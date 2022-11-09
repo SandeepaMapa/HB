@@ -17,7 +17,7 @@
     <?php 
     
     require('inc/header.php');
-    $is_shutdown = mysqli_fetch_assoc(mysqli_query($con,"SELECT 'shutdown' FROM settings"));
+   
     
     $current_booking = mysqli_fetch_assoc(mysqli_query($con,"SELECT 
     COUNT(CASE WHEN booking_status='booked' AND arrival=0 THEN 1 END) AS 'new_bookings'
