@@ -462,7 +462,7 @@
       <h2>Book a <span>Table</span></h2>
     </div>
 
-    <form  method="post" role="form" class="php-email-form">
+    <form  action="Restaurant-Reservation.php" method="POST" class="php-email-form">
       <div class="row">
 
         <div class="col-lg-4 col-md-6 form-group mt-3">
