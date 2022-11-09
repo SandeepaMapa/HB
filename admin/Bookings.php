@@ -32,19 +32,7 @@ if(isset($_GET['del']))
    }
  }
 
- 
-    $email = "thayagiperera@gmail.com";
-    $subject = "Accepting the Booking";
-    $body = "Hi";
-    $headers = "From: River's Edge";
 
-    if(mail($email,$subject,$body,$headers)){
-        echo "alert,Email sent";
-    }
-    else{
-        echo "alert,Email not sent";
-    }
-    
  
 
 

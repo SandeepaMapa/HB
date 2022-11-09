@@ -1,4 +1,4 @@
-<?php session_start() ?>
+
 <?php 
 $connection = mysqli_connect('localhost', 'root', '', 'hbwebsite');
 
@@ -22,7 +22,7 @@ $query = "SELECT * FROM user_reg1
 					$user = mysqli_fetch_assoc($result_set);
 					$_SESSION['user_id'] = $user['id'];
 					$_SESSION['name'] = $user['name'];
-					header('Location: user.php');
+					header('Location: http://localhost/HB/inc/user.php');
 						}else{
 							echo "Inavalid username or password";
 						}
